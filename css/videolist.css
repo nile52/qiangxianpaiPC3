@@ -1,0 +1,358 @@
+﻿
+
+video{width:1200px;height:560px;}
+
+
+.b1{width:100%;;height:1070px;background:url(../images/vediolist/sp-bg.jpg) center center;border-top:1px solid #cccccc}
+.b1>img{margin-left:-100px}
+.b1 .video{margin-top:-230px;background:#000;position:relative}
+
+
+.sm{margin:30px auto }
+.sm .smt{font-size:24px;float:left}
+.sm .smt span{font-size:16px;padding:0 20px}.sm .smt img{padding:0 10px}
+.sm .share{float:right;margin-right:20px}
+.sm .share img{float:left;margin:0 10px}
+
+.sm .new>img{margin-top:-20px;margin-left:-33px}
+
+.crousel{width:1200px;height:190px;background:#fff;border:1px solid #ccc;margin:20px auto;padding:15px}
+
+
+
+
+
+
+
+
+
+
+.slide { width:1090px; margin:0 auto}
+
+.slide { _margin-top:-10000px; }
+.slide ul.widget { float:left; width:340px;margin:0 10px }
+.slide ul.last { margin-right:0px; }
+.slide ul.widget .img {float:left; }
+.slide ul.widget img {width:150px;height:110px;margin-right:10px }
+.slide ul.widget .xinxi2 p{padding:2px 0}
+.slide ul.widget .xinxi2 .pt{color:#e66140;font-size:18px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+
+.slide ul.widget .xinxi2 p span.qipaijia{color:#e66140;font-size:24px;}
+
+.jingpin{padding:30px 0 }
+.jingpin>p{font-size:18px;padding:20px 0 10px 0}
+.jingpin .leftbig{float:left;margin:9px}
+.jingpin .righteight{}
+
+.jingpin .righteight .ybl{float:left;width:186px;height:106px;margin:9px}
+
+.wangqi .ebl .wrap{margin:10px;float:left}
+
+
+.carousel-control.right {
+background-image: none;	right:-100px}
+.carousel-control.left {
+    background-image: none;left:-100px
+}
+.carousel{margin-top:20px}
+
+.carousel-control {
+    top: 40px;
+	left:-100px
+}
+
+
+.carousel-inner {
+    position: relative;
+	left:30px
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-25px;position:absolute;height:25px;line-height:25px;padding:0 5px}
+.mask p span{font-size:16px;color:#e66140}
+.mask.heavy p{background:#333;height:40px;line-height:40px;width:360px;font-size:14px;padding:0 10px;margin-top:-40px;}
+.mask.heavy p span{float:right;font-size:12px;color:#666}
+.mask.heavy p img{padding:0 5px}
+.mask p img{padding:0 5px}
+.w186 p{width:186px}
+.w280 p{width:280px}
+
+
+/*! fancyBox v2.1.3 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8020;
+}
+
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+.fancybox-opened {
+	z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.fancybox-outer, .fancybox-inner {
+	position: relative;
+}
+
+.fancybox-inner {
+	overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+	-webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 15px;
+	white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background-image: url('../images/fancyBox/fancybox_sprite.png');
+}
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url('../images/fancyBox/fancybox_loading.gif') center center no-repeat;
+}
+
+.fancybox-close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url('../images/fancyBox/fancyBoxblank.gif'); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+
+.fancybox-prev {
+	left: 0;
+}
+
+.fancybox-next {
+	right: 0;
+}
+
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 34px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 8040;
+	visibility: hidden;
+}
+
+.fancybox-prev span {
+	left: 10px;
+	background-position: 0 -36px;
+}
+
+.fancybox-next span {
+	right: 10px;
+	background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	visibility: hidden;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+
+/* Overlay helper */
+
+.fancybox-lock {
+	overflow: hidden;
+}
+
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url('../images/fancyBox/fancybox_overlay.png');
+}
+
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+	overflow: auto;
+	overflow-y: scroll;
+}
+
+/* Title helper */
+
+.fancybox-title {
+	visibility: hidden;
+	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+	visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-bottom: -35px;
+	z-index: 8050;
+	text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+	text-shadow: 0 1px 2px #222;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+	padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px;
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px){	
+	.sm {display:none;}
+	.b1 {height: auto;}	
+}
+
+@media (max-width: 1220px){	
+	.jingpin .righteight .ybl {
+    float: left;
+    width: 186px;
+    height: 106px;
+    margin: 9px;
+}
+}
+
+@media (max-width: 1200px){	
+	video{width:100%;height:auto;}
+}
+

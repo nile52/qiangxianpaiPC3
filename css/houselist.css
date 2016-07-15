@@ -1,0 +1,134 @@
+#houselist_header #top {height: 100px;}
+#houselist_header #top #nav {height: 50px;}
+#houselist_header #top #search_anchor{height: 50px;background:#E6F3FF}
+#houselist_header #top #search_anchor form{
+	margin: 10px;
+    width: 200px;
+    float: left;
+    background: #fff;
+}
+#houselist_header #top #search_anchor form input{
+	padding: 0 5px;
+    width: 170px;
+    line-height: 30px;
+    margin-top: -10px;
+    border: 0;    float: left;
+    margin-top: 0px;
+}
+#houselist_header #top #search_anchor form button{
+	margin:5px;
+    background: url(../images/public/search1.png);
+    width: 20px;
+    height: 20px;
+    float: right;
+    border: none;}
+
+#houselist_header #top #search_anchor form button:hover{background:url(../images/public/search2.png)}
+
+
+.nav-tabs>li>a {
+    margin-right:-2px;
+    border-top: 0px solid #fff;
+	border-bottom: 0px solid #fff;
+    border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+    border-radius:0;height:50px;
+	line-height:30px;
+}
+.nav-tabs>li>a:hover {
+    border-color:#fff;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: #E6F3FF;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+    background-color: #E6F3FF;
+    border-color: #fff;
+}
+
+.dropdown-menu {
+
+    min-width: 104px;
+
+}
+
+
+
+#container{height:100%;}
+.column{width:620px;padding:20px;background:#fff;overflow-y:scroll;height:auto;display: block;position: absolute;
+    right: 0;
+    top: 100px;
+    bottom: 0;}
+.column .column_item{height:100%;}
+.column .column_item .houselist_title h1{font-size:36px;}
+.column .column_item .sort_control_container{margin: 10px;padding:8px;border-bottom: 1px solid #ccc;}
+.column .column_item .sort_control_container ul li{float:left}
+.column .column_item .sort_control_container ul li a{font-size:18px;padding:10px 0;margin:10px;}
+.column .column_item .sort_control_container ul li.tab_active a{border-bottom:2px solid #E66140}
+
+
+.column .column_item .property_list .property_list_item {border-bottom:1px solid #eee;padding:10px 0;margin:10px}
+.column .column_item .property_list .property_list_item .houselist_img{float:left;width:150px;}
+
+.column .column_item .property_list .property_list_item .houselist_img img{height:112px;width:138px;}
+
+
+.mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-25px;position:absolute;height:25px;line-height:25px;padding:0 5px}
+.mask p span{font-size:16px;color:#e66140}
+
+.column .column_item .property_list .property_list_item .houselist_text .list_type span.red_icon{    background: #c00;
+    border-radius: 50%;
+    height: 10px;
+    width:10px; 
+    display: inline-block;
+}
+
+
+.page{text-align:center}
+
+
+
+
+
+
+
+
+
+
+
+
+#content{margin-right:390px;background:#eee;height:100%;}
+
+
+
+
+
+
+
+@media (max-width:1500px){
+	.column{width:400px}
+	.column .column_item .houselist_title h1{font-size:25px;}	
+	.column .column_item .sort_control_container ul li a {
+		font-size:14px;
+	}	
+	.column .column_item .sort_control_container {
+		margin: 0;
+		padding: 10px;
+		border-bottom: 1px solid #ccc;
+	}	
+}
+
+
+@media (max-width:1000px){
+	.column{display:none}
+	#content {
+		margin-right: 0;
+	}	
+}
+
+
+
+
+

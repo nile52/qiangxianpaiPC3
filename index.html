@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>首页 - 抢先拍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/public.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	
+	
+	
+	
+</head>
+<body>
+	
+	
+	<div id="header">	
+		<div class="con14">
+			<a href="" class="logo"></a>
+			<div id="top">
+				<div id="nav">
+					<nav class="navbar navbar-default" role="navigation">
+					   <div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" 
+							 data-target="#example-navbar-collapse">
+							 <span class="sr-only">切换导航</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						  </button>
+					   </div>
+					   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+						  <ul class="nav navbar-nav">
+							 <li class="active"><a href="index.html">首页</a></li>
+							 <li><a href="houselist.html">房屋列表</a></li>
+							 <li><a href="newslist.html">资讯信息</a></li>
+							 <li><a href="videolist.html">视频中心</a></li>
+							 <li><a href="about.html">关于我们</a></li>
+						  </ul>
+					   </div>
+					</nav>
+				</div>
+				<div id="other">
+					<p><a data-toggle="modal" data-target="#myModal_login">登录</a></p>	
+					<p><span style="margin:0 10px">|</span></p>	
+					<p><a data-toggle="modal" data-target="#myModal_reg">注册</a></p>
+				</div>		
+
+				<!-- 登录-模态框（Modal） -->
+				<div class="modal fade" id="myModal_login" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">登录</h4>
+						 </div>
+						 <div class="modal-body">
+							<form>
+								<input type="text" placeholder="账号">
+								<input type="text" placeholder="密码">
+								<p><a href="" data-toggle="modal" data-target="#myModal_findpaw"  data-dismiss="modal" aria-hidden="true">忘记密码？</a></p>
+								<input type="submit" value="submit">	
+								<p>还没有账户？ <a href="" data-toggle="modal" data-target="#myModal_reg" data-dismiss="modal" aria-hidden="true">立即注册</a></p>
+							</form>
+						 </div>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-default" 
+							   data-dismiss="modal">关闭
+							</button>
+							<button type="button" class="btn btn-primary">
+							   提交更改
+							</button>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+
+
+				<!-- 注册-模态框（Modal） -->
+				<div class="modal fade" id="myModal_reg" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">注册</h4>
+						 </div>
+						 <div class="modal-body">
+							<form>
+								<input type="text" placeholder="账号">
+								<input type="text" placeholder="密码">
+								<input type="submit" value="">	
+							</form>
+						 </div>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-default" 
+							   data-dismiss="modal">关闭
+							</button>
+							<button type="button" class="btn btn-primary">
+							   提交更改
+							</button>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+
+				<!-- 忘记密码-模态框（Modal） -->
+				<div class="modal fade" id="myModal_findpaw" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">重置密码</h4>
+						 </div>
+						 <div class="modal-body">
+							<form>
+								<input type="text" placeholder="账号">
+								<input type="text" placeholder="密码">
+								<input type="submit" value="">	
+							</form>
+						 </div>
+						 <div class="modal-footer">
+							<button type="button" class="btn btn-default" 
+							   data-dismiss="modal">关闭
+							</button>
+							<button type="button" class="btn btn-primary">
+							   提交更改
+							</button>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+
+
+
+
+
+				
+				<div style="clear:both"></div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	
+	<div id="indexCarousel" class="carousel slide">
+	   <!-- 背景轮播 -->
+	   <div class="carousel-inner">
+		  <div class="item carouselimg1 active"></div>
+		  <div class="item carouselimg2"></div>
+		  <div class="item carouselimg3"> </div>
+	   </div>
+	   <!-- 搜索框 -->
+		<div class="nav-box">
+			<div class="search-con">
+				<h1>超值资产 抢先一步</h1>
+				<div class="search-box">
+					<div class="search-panel">
+                        <ul class="search-tab tab ib" id="tabBar">
+                            <li class="search_list on" tips="请输入产品名称">留学生公寓</li>
+                            <li class="search_list" tips="请输入产v品名称">海外租房</li>
+                            <li class="search_list" tips="请输入产dasds品名称">买学区房</li>
+                        </ul>
+                        <div class="">
+                            <div class="search-sort-con">
+                                <form class="search-form clearfix">
+                                    <input class="txt" type="text" id="keyword" name="keyword" placeholder="您想去哪里找留学生公寓? (请输入城市或学校名称)">
+                                    <input type="submit" class="btn" value="搜索">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+					<button class="btn" data-toggle="modal" onclick="playPause()"
+					   data-target="#myModal_video1" style="margin:20px 0">
+					   视频播放
+					</button>
+					<!-- 视频模态框（Modal） -->
+					<div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
+					   aria-labelledby="myModalLabel" aria-hidden="true">
+					   <div class="modal-dialog">
+						  <div class="modal-content">
+							<video width="100%" controls id="video1">
+							  <source src="images/index/sp(1).mp4" type="video/mp4">
+							</video>
+						  </div><!-- /.modal-content -->
+					   </div><!-- /.modal -->
+					</div>					
+				</div>
+			</div>
+		</div>	   
+	</div> 
+	<script>
+	   $(function(){		  
+		$("#indexCarousel").carousel('cycle');// 自动轮播
+		// 搜索切换
+		$('#tabBar').on('click', 'li', function(){
+			var tips = $(this).attr('tips');
+			if(tips){
+				$(this).addClass('on').siblings().removeClass('on');
+				$('#keyword').val(tips);
+			}
+		});		
+	   });
+		// 视频播放	   
+		var myVideo=document.getElementById("video1"); 
+		function playPause(){ 
+			if ($('#tabBar').css) 
+			  myVideo.play(); 
+			else 
+			  myVideo.pause(); 
+		} 	   	   
+	</script>
+
+
+	<div class="datedisplay">
+	 <div class="container">
+		<ul class="params-summary-list">
+			<li>
+				<em>507</em><small>亿元</small>
+				<label>累计金额</label>
+			</li>
+			<li>
+				<em>19649</em><small>套</small>
+				<label>累计套数</label>
+			</li>
+			<li>
+				<em>23562</em>
+				<label>累计用户</label>
+			</li>
+		</ul>
+		 <div class="clearfix"></div>
+	 </div>
+	</div>
+
+	
+	<div class="module-entrance">
+		<div class="container">
+			<div class="module-grids">
+				<div class="col-md-3 module-grid">
+					<h4>专家解读</h4>				
+					<img src="images/index/service-1.png" class="img-responsive" alt="">
+					<p>我们拥有关于资深房地产专家对于我们平台的拍卖标的进行准确的解读，拥有资深金融专家解答竞拍者在资金借贷过程中遇到的一切问题，拥有法律专家提供竞拍者拍卖过程中的一切相关法律咨询服务。</p>
+				</div>
+				<div class="col-md-3 module-grid">
+					<h4>数据分析</h4>				
+					<img src="images/index/service-4.png" class="img-responsive" alt="">
+					<p>我们拥有全国范围内的房地产以及司法拍卖不动产的数据，以此建立强大的大数据库，为竞拍者提供强大的数据支撑，同时会有相关专家为竞拍者提供细致，专业的数据分析。</p>
+				</div>
+				<div class="col-md-3 module-grid">
+					<h4>全程服务</h4>				
+					<img src="images/index/service-3.png" class="img-responsive" alt="">
+					<p>我们对竞拍者提供在拍卖前的所有咨询服务，提供在拍卖过程中的资金服务，提供拍卖结束之后的标的交接服务以及其他所有的相关服务。</p>
+				</div>
+				<div class="col-md-3 module-grid">
+					<h4>金融助力</h4>				
+					<img src="images/index/service-5.png" class="img-responsive" alt="">
+					<p>我们对符合要求的竞拍者提供最大程度的金融资金助力。并且保证一切资金来源的合法性。</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>	
+	
+	
+	
+	
+	
+	
+	
+	<div class="city-entrance">
+		<div class="container">
+			<h2>城市入口？专题入口</h2>
+			<div class="city-grids">
+				<div class="projects1">
+					<div class="col-md-4 city-grid">
+						<div class="city_img">
+							<a href=""><h1>北京</h1></a>
+						</div>						
+					</div>
+					<div class="col-md-4 city-grid">
+						<div class="city_img">
+							<a href=""><h1>北京</h1></a>
+						</div>						
+					</div>
+					<div class="col-md-4 city-grid">
+						<div class="city_img">
+							<a href=""><h1>北京</h1></a>
+						</div>						
+					</div>
+					<div class="col-md-4 city-grid">
+						<div class="city_img">
+							<a href=""><h1>北京</h1></a>
+						</div>						
+					</div>
+					<div class="col-md-4 city-grid">
+						<div class="city_img">
+							<a href=""><h1>北京</h1></a>
+						</div>						
+					</div>
+					<div class="col-md-4 city-grid">
+						<div class="city_img">
+							<a href=""><h1>北京</h1></a>
+						</div>						
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	<div class="value con12">
+	
+		<div class="smt">
+			<p class="fs30">推荐推荐推荐推荐推荐推荐</p>
+			<p>推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐推荐</p>
+		</div>	
+	
+		<div class="value_con w360">
+			<div class="value_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w360">
+					<p title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="value_text">
+				<p>起拍价：<span class="fs20 c_red">91.98万元</span></p>			
+				<p>评估价：<span class="c_999">102.2万元</span></p>			
+			</div>
+		</div>	
+
+		<div class="value_con w360">
+			<div class="value_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w360">
+					<p title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="value_text">
+				<p>起拍价：<span class="fs20 c_red">91.98万元</span></p>			
+				<p>评估价：<span class="c_999">102.2万元</span></p>			
+			</div>
+		</div>	
+
+		<div class="value_con w360">
+			<div class="value_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w360">
+					<p title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="value_text">
+				<p>起拍价：<span class="fs20 c_red">91.98万元</span></p>			
+				<p>评估价：<span class="c_999">102.2万元</span></p>			
+			</div>
+		</div>	
+
+		<div class="value_con w360">
+			<div class="value_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w360">
+					<p title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="value_text">
+				<p>起拍价：<span class="fs20 c_red">91.98万元</span></p>			
+				<p>评估价：<span class="c_999">102.2万元</span></p>			
+			</div>
+		</div>	
+
+		<div class="value_con w360">
+			<div class="value_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w360">
+					<p title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="value_text">
+				<p>起拍价：<span class="fs20 c_red">91.98万元</span></p>			
+				<p>评估价：<span class="c_999">102.2万元</span></p>			
+			</div>
+		</div>	
+
+		<div class="value_con w360">
+			<div class="value_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w360">
+					<p title="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="value_text">
+				<p>起拍价：<span class="fs20 c_red">91.98万元</span></p>			
+				<p>评估价：<span class="c_999">102.2万元</span></p>			
+			</div>
+		</div>	
+
+
+		
+		
+		<div style="clear:both"></div>
+	</div>	
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+
+
+		
+	<div class="news con12">
+		<p class="fs30">热点热点热点</p>
+		<div class="news_con">
+			<div class="news_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w372">
+					<p>标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="news_text">
+				<p>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容</p>			
+			</div>
+		</div>			
+		<div class="news_con">
+			<div class="news_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w372">
+					<p>标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="news_text">
+				<p>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容</p>			
+			</div>
+		</div>		
+		<div class="news_con">
+			<div class="news_img">
+				<a href=""><img src="images/index/new1.jpg"></a>	
+				<div class="mask red w372">
+					<p>标题标题标题标题</p>
+				</div>			
+			</div>
+			<div class="news_text">
+				<p>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容</p>			
+			</div>
+		</div>		
+		<div style="clear:both"></div>
+	</div>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	<div style="clear:both"></div>
+	
+	<div id="footer">	
+		<div id="footernav">
+			<p><a href="">首页</a>
+			<a href="">房屋列表</a>
+			<a href="">资讯信息</a>
+			<a href="">视频中心</a>
+			<a href="">关于我们</a></p>
+		</div>			
+		<div id="footercode">			
+			<div><img src="images/public/qrcode_wechat_qxp_120.png"><p>微信公众号</p></div>
+			<div><img src="images/public/qrcode_app_qxp_120.png"><p>APP下载</p></div>			
+		</div>			
+		<div style="clear:both"></div>
+		<p>
+			<span>400电话：400-060-2595</span>
+			<span>企业QQ：2014827338</span>
+			<span>企业邮箱：kefu@qiangxianpai.com</span>
+			<span>地址：杭州市拱墅区万达广场D座16楼</span>
+		</p>
+		<p>
+			<span>抢先拍@2016 All rights reserved </span>
+			<span>增值电信业务经营许可证:浙B2-20160073</span>
+			<span>浙ICP备15018503号</span>
+		</p>
+		<p ><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#666;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a><span></p></br>
+	</div>		
+
+
+</body>
+</html>
+
+

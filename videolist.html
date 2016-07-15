@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>视频中心 - 抢先拍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/public.css" rel="stylesheet">
+	<link href="css/videolist.css" rel="stylesheet">
+
+	
+	<!-- video -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jwplayer.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	
+	<script>
+	/* <![CDATA[ */
+	$(document).ready(function () {
+	  $(".fancybox").fancybox({
+		fitToView: false,
+		content: '<span></span>', // create temp content
+		scrolling: 'no',
+		afterLoad: function () {
+		  var $width = $(this.element).data('width'); // get dimensions from data attributes
+		  var $height = $(this.element).data('height');
+		  this.content = "<embed src='player.swf?file=" + this.href + "&autostart=true&amp;wmode=opaque' type='application/x-shockwave-flash' width='" + $width + "' height='" + $height + "'></embed>"; // replace temp content
+		}
+	  });
+	}); // ready
+	/* ]]> */
+	</script>	
+	
+	
+</head>
+<body>
+	
+	
+	<div id="header">	
+		<div class="con14">
+			<a href="" class="logo"></a>
+			<div id="top">
+				<div id="nav">
+					<nav class="navbar navbar-default" role="navigation">
+					   <div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" 
+							 data-target="#example-navbar-collapse">
+							 <span class="sr-only">切换导航</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						  </button>
+					   </div>
+					   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+						  <ul class="nav navbar-nav">
+							 <li><a href="index.html">首页</a></li>
+							 <li><a href="houselist.html">房屋列表</a></li>
+							 <li><a href="newslist.html">资讯信息</a></li>
+							 <li class="active"><a href="videolist.html">视频中心</a></li>
+							 <li><a href="about.html">关于我们</a></li>
+						  </ul>
+					   </div>
+					</nav>	
+				</div>
+				<div id="other">
+					<p>累计成交量：<span class="c_red">2595</span></p>	
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;累计房源：<span class="c_red">9001800</span></p>					
+				</div>			
+				<div style="clear:both"></div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	
+	
+	<div class="b1">
+		<img src="images/vediolist/lanmu.png">
+		
+		<div class="con12 video">
+			<video controls>
+			  <source src="images/vediolist/mov_bbb.mp4" type="video/mp4">
+			</video>		
+		</div>
+	    <div style="clear:both"></div>
+		<div class="con12 sm">
+			<div class="smt"><img src="images/vediolist/analytics.png">拱墅区御峰大厦<span>2016年06月01日</span></div>
+			<div class="share">
+				<div class="fs">
+					<a href=""><img src="images/vediolist/mlogo1.png"></a>
+					<a href=""><img src="images/vediolist/mlogo2.png"></a>
+					<a href=""><img src="images/vediolist/mlogo3.png"></a>
+					<a href=""><img src="images/vediolist/mlogo4.png"></a>	
+					<a href=""><span style="width:0px;height:0px;border-top:5px solid #8c8c8c;border-left:8px solid transparent;border-bottom:5px solid transparent;border-right:8px solid transparent;position:absolute;margin-top:10px"></span></a>
+				</div>
+				<div class="new">
+					<img src="images/vediolist/mlogo5.png">
+				</div>				
+			
+			</div>
+			<div style="clear:both"></div>
+			<div class="crousel">
+				<p><b>拱墅区御峰大厦</b> 相关房产信息</p>
+				
+				
+				<div id="myCarousel" class="carousel slide">
+				   <!-- 轮播（Carousel）项目 -->
+				   <div class="carousel-inner">
+					  <div class="item active">
+						  <div class="slide">
+							<ul class="widget">
+								<div class="img">								
+									<a href=""><img src="images/vediolist/n(1).jpg"/></a>
+									<div class="mask">
+										<p>倒计时<span>14</span>天</p>
+									</div>
+								</div>								
+
+								<div class="xinxi2">
+									<p class="pt">杭州市萧山区城厢街道街道街道街道</p>
+									<p><b>起拍价：</b><span class="qipaijia">44万元</span></p>
+									<p>评估价：<span>54.74万元</span></p>
+									<p>杭州萧山区崇化住宅区</p>
+								</div>	
+							</ul>          
+							<ul class="widget">
+								<div class="img">								
+									<a href=""><img src="images/vediolist/n(2).jpg"/></a>
+									<div class="mask">
+										<p>倒计时<span>14</span>天</p>
+									</div>
+								</div>	
+								<div class="xinxi2">
+									<p class="pt">杭州市萧山区城厢街道</p>
+									<p><b>起拍价：</b><span class="qipaijia">44万元</span></p>
+									<p>评估价：<span>54.74万元</span></p>
+									<p>杭州萧山区崇化住宅区</p>
+								</div>
+							</ul>						
+							<ul class="widget last">
+								<div class="img">								
+									<a href=""><img src="images/vediolist/n(3).jpg"/></a>
+									<div class="mask">
+										<p>倒计时<span>14</span>天</p>
+									</div>
+								</div>	
+								<div class="xinxi2">
+									<p class="pt">杭州市萧山区城厢街道</p>
+									<p><b>起拍价：</b><span class="qipaijia">44万元</span></p>
+									<p>评估价：<span>54.74万元</span></p>
+									<p>杭州萧山区崇化住宅区</p>
+								</div>
+							</ul>
+						  </div>
+					  </div>
+					  
+					  <div class="item">
+						  <div class="slide">
+							<ul class="widget">
+								<div class="img">								
+									<a href=""><img src="images/vediolist/n(4).jpg"/></a>
+									<div class="mask">
+										<p>倒计时<span>14</span>天</p>
+									</div>
+								</div>	
+								<div class="xinxi2">
+									<p class="pt">杭州市萧山区城厢街道</p>
+									<p><b>起拍价：</b><span class="qipaijia">44万元</span></p>
+									<p>评估价：<span>54.74万元</span></p>
+									<p>杭州萧山区崇化住宅区</p>
+								</div>	
+							</ul>          
+							<ul class="widget">
+								<div class="img">								
+									<a href=""><img src="images/vediolist/n(1).jpg"/></a>
+									<div class="mask">
+										<p>倒计时<span>14</span>天</p>
+									</div>
+								</div>	
+								<div class="xinxi2">
+									<p class="pt">杭州市萧山区城厢街道</p>
+									<p><b>起拍价：</b><span class="qipaijia">44万元</span></p>
+									<p>评估价：<span>54.74万元</span></p>
+									<p>杭州萧山区崇化住宅区</p>
+								</div>
+							</ul>						
+							<ul class="widget last">
+								<div class="img">								
+									<a href=""><img src="images/vediolist/n(2).jpg"/></a>
+									<div class="mask">
+										<p>倒计时<span>14</span>天</p>
+									</div>
+								</div>	
+								<div class="xinxi2">
+									<p class="pt">杭州市萧山区城厢街道</p>
+									<p><b>起拍价：</b><span class="qipaijia">44万元</span></p>
+									<p>评估价：<span>54.74万元</span></p>
+									<p>杭州萧山区崇化住宅区</p>
+								</div>
+							</ul>
+						  </div>
+					  </div>
+
+				   </div>
+				   <!-- 轮播（Carousel）导航 -->
+				   <a class="carousel-control left" href="#myCarousel" 
+					  data-slide="prev"><img src="images/vediolist/btn-prev.png"></a>
+				   <a class="carousel-control right" href="#myCarousel" 
+					  data-slide="next"><img src="images/vediolist/btn-next.png"></a>
+				</div> 				
+			
+			</div>		
+		</div>	
+
+	</div>
+	
+	<div class="jingpin con12">
+		<p>精品房源推荐</p>
+		<div class="leftbig">
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">				
+				<img src="images/vediolist/sp(1).jpg" width="360" height="230">
+				<div class="mask heavy">
+					<p><img src="images/vediolist/red.png">拱墅区御峰大厦<span>2016-02-11</span></p>
+				</div>
+				</a>
+			</div>
+		</div>
+	    <div class="righteight">
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(2).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(2).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>						
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(3).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(3).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>							
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(4).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(4).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>							
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(5).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(5).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>							
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(6).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(6).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>							
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(7).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(7).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>							
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(8).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(8).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>								
+			</div>
+			
+			<div class="ybl">
+				<div class="wrap">
+					<a class="fancybox" href="images/vediolist/sp(9).mp4" data-width="640" data-height="480">
+					<img src="images/vediolist/sp(2).jpg" width="186" height="106">
+					<div class="mask w186">
+						<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+					</div></a>
+				</div>					
+			</div>		<div style="clear:both"></div>
+		</div>
+	</div>
+	
+
+	<div class="wangqi jingpin con12">
+	
+		<p>往期回顾</p>
+		<div class="ebl">
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(1).jpg" width="280" height="158"></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(2).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(3).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(4).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(5).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(6).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(7).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(8).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>			
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(9).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>	
+			<div class="wrap">
+				<a class="fancybox" href="images/vediolist/sp(1).mp4" data-width="640" data-height="480">
+				<img src="images/vediolist/sp(10).jpg" width="280" height="158">
+				<div class="mask w280">
+					<p><img src="images/vediolist/white.png">拱墅区御峰大厦</p>
+				</div></a>
+			</div>				
+			
+		</div>
+
+	</div>
+	<div style="clear:both"></div>
+	
+	<div id="footer">	
+		<div id="footernav">
+			<p><a href="">首页</a>
+			<a href="">房屋列表</a>
+			<a href="">资讯信息</a>
+			<a href="">视频中心</a>
+			<a href="">关于我们</a></p>
+		</div>			
+		<div id="footercode">			
+			<div><img src="images/public/qrcode_wechat_qxp_120.png"><p>微信公众号</p></div>
+			<div><img src="images/public/qrcode_app_qxp_120.png"><p>APP下载</p></div>
+			
+		</div>			
+		<div style="clear:both"></div>
+		<p>
+			<span>400电话：400-060-2595</span>
+			<span>企业QQ：2014827338</span>
+			<span>企业邮箱：kefu@qiangxianpai.com</span>
+			<span>地址：杭州市拱墅区万达广场D座16楼</span>
+		</p>
+		<p>
+			<span>抢先拍@2016 All rights reserved </span>
+			<span>增值电信业务经营许可证:浙B2-20160073</span>
+			<span>浙ICP备15018503号</span>
+		</p>
+		<p><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#666;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a><span></p></br>
+	</div>		
+
+
+</body>
+</html>
+
+
