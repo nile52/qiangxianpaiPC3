@@ -93,26 +93,26 @@
 }
 
 
-
+/* 数据展示 */
 .datedisplay {
     width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background: #000;
-    color: #fff;
-    padding: 20px 0;margin-top:-50px;margin-bottom:50px;
+    padding: 20px 0;
 }
 .params-summary-list li:first-child {
     padding-left: 0;
 }
 .params-summary-list li {
     display: inline-block;
-    border-right: 1px solid #333;
     padding: 0 5.83333%;
 }
+.params-summary-list img {
+	margin-top:30px;
+}
 .params-summary-list li em {
-    font-size: 2.14286em;
+    font-size: 48px;font-weight:bold;
 }
 .params-summary-list li small {
     font-size: 1.28571em;
@@ -121,14 +121,15 @@
 .params-summary-list li label {
     font-size: 1.28571em;
     padding-top: 20px;
-    display: block;
+    display: block;text-align:left;
 }
 
 
 
 
-
-.city-entrance .container h2 {margin: 50px 0 20px;}
+/* 城市入口 */
+.city-entrance .container h2 {margin: 50px 0 20px;font-size:30px;}
+.city-entrance .container h2 span{margin: 50px 0 20px;font-size:16px;}
 .city-entrance .container .city-grids .projects1 .col-md-4 {
     position: relative;
     min-height: 1px;
@@ -137,17 +138,17 @@
 }
 .city-entrance .container .city-grids .projects1 .col-md-4 .city_img{
     width:350px;
-	height:233px;
+	height:220px;
 }
 .city-entrance .container .city-grids .projects1 .col-md-4 .city_img a{
     width:350px;
-	height:233px;
+	height:220px;
 	background:rgba(0,0,0,0.1);
 	position:absolute;
 }
 .city-entrance .container .city-grids .projects1 .col-md-4 .city_img a h1{
 	text-align:center;
-	line-height:233px;
+	line-height:220px;
 	font-size:25px;color:#fff;	
 }
 .city-entrance .container .city-grids .projects1 .col-md-4 .city_img a:hover h1{
@@ -155,45 +156,66 @@
 	transition: color 2s;
 	-moz-transition: color 2s;	/* Firefox 4 */
 	-webkit-transition: color 2s;	/* Safari 和 Chrome */
-	-o-transition: color 2s;	
-	
+	-o-transition: color 2s;		
 }
-
-
-
 .city-entrance .container .city-grids .projects1 .col-md-4 .city_img a:hover{
 	background:rgba(0,0,0,0);
 }
-
 .city-entrance .container .city-grids .projects1 .col-md-4:nth-child(1) .city_img{
-    background: url(../images/index/img2.jpg);
+    background: url(../images/index/city1.jpg);
 }
 .city-entrance .container .city-grids .projects1 .col-md-4:nth-child(2) .city_img{
-    background: url(../images/index/img3.jpg);
+    background: url(../images/index/city2.jpg);
 }
 .city-entrance .container .city-grids .projects1 .col-md-4:nth-child(3) .city_img{
-    background: url(../images/index/img4.jpg);
+    background: url(../images/index/city3.jpg);
 }
 .city-entrance .container .city-grids .projects1 .col-md-4:nth-child(4) .city_img{
-    background: url(../images/index/img5.jpg);
+    background: url(../images/index/city4.jpg);
 }
 .city-entrance .container .city-grids .projects1 .col-md-4:nth-child(5) .city_img{
-    background: url(../images/index/img6.jpg);
+    background: url(../images/index/city5.jpg);
 }
 .city-entrance .container .city-grids .projects1 .col-md-4:nth-child(6) .city_img{
-    background: url(../images/index/img7.jpg);
+    background: url(../images/index/city6.jpg);
 }
 
 
 
+/* 司法拍卖 */
+.city_tuijian h2 {margin: 50px 0 20px;font-size: 30px;}
+.city_tuijian ul {margin: 50px 0 20px;}
+.city_tuijian h2 span{margin: 50px 0 20px;font-size: 16px;}
+.city_tuijian .nav-tabs>li.active>a, .city_tuijian .nav-tabs>li.active>a:hover, 
+.city_tuijian.nav-tabs>li.active>a:focus {background-color: #e66140;border: 1px solid #e66140; color:#fff;}
+.city_tuijian .nav-tabs {border-bottom:0px;}
+.city_tuijian .nav-tabs>li>a:hover {border: 1px solid #000; }
+.city_tuijian .nav-tabs>li>a {margin-right: 10px;border: 1px solid #000; border-radius: 0;color:#000;}
+.city_tuijian .nav>li>a {position: relative;display: block;padding: 5px 20px;}
+.city_tuijian .nav-tabs>li.active>a:after {content: '';width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #e66140;margin: 0;position: absolute;z-index: 22;bottom: -10px;left: 24px;}
+.city_tuijian .mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-32px;position:absolute;padding:5px 5px;width:360px}
+.city_tuijian .mask p .area_name{float:left}
+.city_tuijian .mask p .area_position{float:right}
+.city_tuijian .mask p .area_position small{margin:0 5px}
+.mask p span{font-size:16px;color:#fff}
+.mask p img{padding:0 5px}
+.city_tuijian .value_text {padding:5px 10px}
+.city_tuijian .info1{border-bottom:1px solid #eee;}
+.city_tuijian .info1 .info1_text{}
+.city_tuijian .info1 .info1_text .size{float:left;font-size:16px}
+.city_tuijian .info1 .info1_text .price{float:right;font-size:14px;}
+.city_tuijian .info1 .info1_text .price em{font-size:16px;}
+.city_tuijian .info2{}
+.city_tuijian .info2 .house_name{font-size:16px;}
+.city_tuijian .info2 .house_otherinfo{margin:10px 0}
+.city_tuijian .info2 .house_otherinfo .house_tags{float:left}
+.city_tuijian .info2 .house_otherinfo .house_tags .house_tag{padding:2px 5px;margin:0 5px;background:#e66140;color:#fff;font-size:14px;}
+.city_tuijian .info2 .house_otherinfo .discount{float:right;font-size:16px;color:#e66140;}
+.city_tuijian .info2 .house_otherinfo .discount i{font-size:25px}
 
 
 
 
-
-
-
-.b1{width:100%;;height:600px;background:url(../images/index/s01.jpg) center center;border-top:1px solid #cccccc}
 
 .search-wrapper{width:610px;margin:0 auto;text-align:center;margin-top:200px}
 .search-body{width:100%;height:60px;background:#fff;border-radius:10px;padding:8px}
@@ -202,27 +224,23 @@
 
 
 
-.b2{width:100%;;height:690px;background:url(../images/index/s09.jpg) center center;text-align:center}
-.b2 .fs30{padding-top:100px}
-.b2 p{margin:20px 0}
-
-
-.sm{margin:100px auto 50px auto }
-.sm .smt{text-align:center}
-
-.sm .smt .fs30{margin:20px 0}
-
-.crousel{width:1200px;height:190px;background:#fff;margin:20px auto;padding:15px}
 
 
 
-.news{text-align:center}
+/* 司法拍卖 */
+
+.news{width:1040px;margin:0 auto}
+.news>h2 {margin: 50px 0 20px;font-size: 30px;}
+.news ul {margin: 50px 0 20px;}
+.news h2 span{margin: 50px 0 20px;font-size: 16px;}
 .news .fs30{margin-top:100px;margin-bottom:30px}
-.news_con{float:left;box-shadow: 0 1px 2px #ddd;width:372px;height:385px;margin:14px;}
+.news_con{float:left;box-shadow: 0 1px 2px #ddd;width:490px;height:220px;margin:14px;}
 .news_con:hover{box-shadow: 5px 5px 5px #ddd;}
-.news_con img{width:372px;height:225px}
-
-.news_text{padding:20px;text-align:left;color:#888}
+.news_con .news_img{width:200px;height:200px;float:left;padding:10px}
+.news_con img{width:200px;height:200px}
+.news_text{padding:20px;text-align:left;color:#888;float:left;width:290px;}
+.news_text h2{font-size:20px;margin-bottom:5px;max-height:45px;text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;color:#222}
+.news_text p{padding-bottom:5px;max-height:140px;text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;color:#666}
 
 
 
@@ -236,11 +254,10 @@
 
 .value{text-align:center}
 .value .fs30{margin-top:100px;margin-bottom:30px}
-.value_con{float:left;box-shadow: 0 1px 2px #ddd;height:340px;margin:20px}
+.value_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:20px;background:#fff}
 .value_con:hover{box-shadow: 5px 5px 5px #ddd;}
-.value_con img{width:360px;height:250px}
-
-.value_text{padding:20px;text-align:left;}
+.value_con img{width:360px;height:240px}
+.value_text{text-align:left;}
 
 
 
@@ -278,13 +295,181 @@ background-image: none;	right:-100px}
 }
 
 
-.mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-25px;position:absolute;padding:0 5px}
-.mask p span{font-size:16px;color:#e66140}
 
-.mask.red p{background:rgba(229,97,64,0.80);height:40px;line-height:40px;font-size:14px;padding:0 10px;margin-top:-40px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
-.mask.red p span{float:right;font-size:12px;color:#666}
-.mask.red p img{padding:0 5px}
-.mask p img{padding:0 5px}
+
+
+
+
+
+
+
+
+/* 合作伙伴 */
+.mask4-wrapper {
+    margin: 50px auto 60px;
+    width: 1000px;
+    text-align: center;
+}
+.mask4-wrapper h2 {
+    font-size: 32px;
+    color: #333;
+    line-height: 1;
+}
+.mask4-wrapper p {
+    font-size: 20px;
+    line-height: 1;
+    padding: 30px 0 15px;
+}
+.mask4-wrapper ul li:nth-child(1) {
+    background: url(../images/index/adv1.png) no-repeat center 40px;
+    background-size:80px 80px;
+}
+.mask4-wrapper ul li:nth-child(2) {
+	background: url(../images/index/adv2.png) no-repeat center 40px;
+    background-size:80px 80px;
+}
+.mask4-wrapper ul li:nth-child(3) {
+    background: url(../images/index/adv3.png) no-repeat center 40px;
+    background-size:80px 80px;
+}
+.mask4-wrapper ul li:nth-child(4) {
+    background: url(../images/index/adv4.png) no-repeat center 40px;
+    background-size:80px 80px;
+}
+.mask4-wrapper ul li {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 260px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    -webkit-transition: box-shadow ease-in-out .3s;
+    transition: box-shadow ease-in-out .3s;
+}
+.mask4-wrapper ul li h3 {
+    font-size: 24px;
+    line-height: 1;
+    color: #666;
+    padding-top: 140px;
+    font-weight: 500;
+}
+.mask4-wrapper ul li:hover {
+    box-shadow: 0 0 8px;
+}
+
+
+/* 下载APP */
+.app-wrapper {
+    padding: 40px 0;
+    background-color: #fff;
+}
+.app-wrapper .app-info {
+    margin: 0 auto;
+    width: 1000px;
+    height: 485px;
+    background: url(http://pc.pic.uhouzz.com/online/cdn/common/images/phone.cb778400.jpg) no-repeat right top;
+    background-size: 475px 485px;
+}
+.app-wrapper .app-info h1 {
+    font-size: 40px;
+    line-height: 1;
+    padding-top: 35px;
+    font-weight: 700;
+    color: #222;
+}
+.app-wrapper .app-info h6 {
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    color: #222;
+    width: 500px;
+}
+.app-wrapper .app-info p {
+    font-size: 14px;
+    line-height: 2;
+    color: #666;
+    width: 500px;
+}
+.app-wrapper .app-info p {
+    font-size: 14px;
+    line-height: 2;
+    color: #666;
+    width: 500px;
+}
+.app-wrapper .app-info .link {
+    position: relative;
+    margin-top: 55px;
+}
+.app-wrapper .app-info .link div {
+    padding-left: 5px;
+    padding-right: 15px;
+}
+.app-wrapper .app-info .link div a {
+    margin-bottom: 15px;
+    display: block;
+    width: 180px;
+    height: 50px;
+    background: url(http://pc.pic.uhouzz.com/online/cdn/common/images/iphone.61d5452a.png) no-repeat;
+}
+.app-wrapper .app-info .link div a:last-child {
+    background: url(http://pc.pic.uhouzz.com/online/cdn/common/images/android.a6fb4d99.png) no-repeat;
+}
+.app-wrapper .app-info .link .qrcode {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+.app-wrapper .app-info .link .videos {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* 合作伙伴 */
+#partners{margin:100px 0}
+#partners .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #e66140;
+	border: 1px solid #e66140;
+}
+#partners .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1200px){

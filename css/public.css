@@ -14,7 +14,6 @@
 .w372 p{width:372px}
 .w327 p{width:327px}
 .w360{width:360px}
-.w360 p{width:360px}
 
 
 .c_yellow{color:#ffd862}
@@ -42,6 +41,11 @@ transition: background 1s;
 -webkit-transition: background 1s;	/* Safari 和 Chrome */
 -o-transition: background 1s;
 }
+
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%}
+
 
 
 #top{height:50px;line-height:50px}
