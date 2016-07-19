@@ -1,40 +1,23 @@
-﻿.modal-title {
-    margin: 0;
-    line-height: 1.42857143;
-    text-align: center;
-    font-size: 20px;
-}
-.modal-body form{
-	width:400px;
-	margin:0 auto;
-}
-.modal-body form input{
-	width:400px;
-	margin:0 auto;
-	height: 43px;
-    padding:0px 20px;
-	outline-color:#e66140;
-}
+﻿a {color: #e66140;}
+.modal-title {margin: 0;line-height: 1.42857143;text-align: center;font-size: 20px;}
+.modal-body form{width:80%;margin:0 auto;}
+.modal-body form input{width:100%;margin:0 auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
+.modal-body form input.verification{width:70%;float:left;}
+.modal-body form input.getcode{width:26%;float:right;margin:0 2%;background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
+.modal-body form input[type=submit] {background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
+.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
+.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
+#myModal_xieyi .modal-body p{line-height: 20px;text-indent: 2em;padding: 5px;}
+#myModal_xieyi .modal-body{max-height:550px;overflow-y:scroll;}
 
 
 
 
 
-#indexCarousel .carousel-inner .carouselimg1{
-	background:url(../images/index/carousel1.jpg) no-repeat center;;
-	height: 550px;
-    background-size: cover;
-}
-#indexCarousel .carousel-inner .carouselimg2{
-	background:url(../images/index/carousel2.jpg) no-repeat center;;
-	height: 550px;
-    background-size: cover;
-}
-#indexCarousel .carousel-inner .carouselimg3{
-	background:url(../images/index/carousel3.jpg) no-repeat center;;
-	height: 550px;
-    background-size: cover;
-}
+
+#indexCarousel .carousel-inner .carouselimg1{background:url(../images/index/carousel1.jpg) no-repeat center;height: 550px;background-size: cover;}
+#indexCarousel .carousel-inner .carouselimg2{background:url(../images/index/carousel2.jpg) no-repeat center;height: 550px;background-size: cover;}
+#indexCarousel .carousel-inner .carouselimg3{background:url(../images/index/carousel3.jpg) no-repeat center;height: 550px;background-size: cover;}
 
 
 .nav-box {top: 0;width: 100%;position: absolute;}
@@ -49,7 +32,7 @@
 .search-tab.tab.ib li:last-child {border-right: 1px solid #fff;}
 .search-con h1, .search-tab li, div.homemask div h2 {text-align: center;font-size: 24px;}
 .search-panel .search-form {padding: 8px 0;background-color: #fff;}
-.search-panel input.txt {height: 50px;padding-left: 30px;font-size: 20px;color: #999;width: 500px;}
+.search-panel input.txt {height: 50px;padding-left: 30px;font-size: 20px;color: #999;width: 500px;outline:none}
 .search-sort-con .btn, .search-sort-con .txt {border: 0;padding: 0;}
 .search-panel input.btn {float: right;height: 50px;width: 100px;margin-right: 8px;font-size: 24px;}
 .search-sort-con .btn {background-color: #e66140;color: #fff;}
