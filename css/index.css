@@ -51,7 +51,9 @@
 .text{ color: #a9a9a9; width:376px; height: 31px; border:none; text-indent: 10px; float:left; outline: none; border:0;}
 .button{ width: 97px; height: 32px; text-align: center; color: #fff; font-size:18px;background: #1d7ad9; border:none; float: left;}
 
-
+.playvideo{margin:20px;text-align:center;}
+.playvideo a{margin:20px;color:#fff;font-size:20px}
+.playvideo img{margin:0 20px;}
 
 
 
@@ -281,8 +283,23 @@ background-image: none;	right:-100px}
 
 
 
-
-
+/* 城市选择 */
+.City {
+    width: 70px;
+    height: 42px;
+    background: #C00;
+    padding-left: 10px;
+    position: relative;
+    margin-left: -70px;
+    top: 50px;
+}
+.City strong{width:48px;height:42px;color:#FFF;line-height:42px;font-size:14px;font-weight:bold;display:block;float:left;}
+.City span{width:50px;height:24px;line-height:24px;border:1px solid #999;background:#FFF url(../images/index/province_sprites.png) no-repeat 39px -2px;display:block;float:left;margin-top:8px;padding-left:4px;cursor:pointer;}
+.City ul{width:70px;height:auto;background:#FFF;border:1px solid #dfdfdf;border-bottom:none;clear:both;position:absolute;left:0;top:42px;display:none;z-index:9999;}
+.City ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf;padding-left:10px;}
+.City ul li b{font-weight:bold;}
+ul,li{list-style:none;}
+.show{display:block;}
 
 
 
@@ -290,15 +307,12 @@ background-image: none;	right:-100px}
 
 /* 平台特点 */
 .mask4-wrapper {
-    margin: 100px auto 60px;
-    width: 1000px;
+    margin: 50px auto 60px;
+    width: 1140px;
     text-align: center;
 }
-.mask4-wrapper h2 {
-    font-size: 32px;
-    color: #333;
-    line-height: 1;
-}
+.mask4-wrapper>h2 {margin: 50px 0 20px;font-size: 30px;text-align:left}
+.mask4-wrapper h2 span{margin: 50px 0 20px;font-size: 16px;}
 .mask4-wrapper p {
     font-size: 20px;
     line-height: 1;
@@ -329,7 +343,7 @@ background-image: none;	right:-100px}
     cursor: pointer;
     float: left;
     -webkit-transition: box-shadow ease-in-out .3s;
-    transition: box-shadow ease-in-out .3s;
+    transition: box-shadow ease-in-out .3s;margin:0 17px;
 }
 .mask4-wrapper ul li h3 {
     font-size: 24px;

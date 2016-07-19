@@ -225,23 +225,30 @@
                                 </form>
                             </div>
                         </div>
+						<p class="playvideo"><a href="" data-toggle="modal" data-target="#myModal_video1" data-dismiss="modal" aria-hidden="true"><img src="images/index/play.png">  超值资产，点击开启简陋之旅</a></p>		
+						<!-- 视频模态框（Modal） -->
+						<div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
+						   aria-labelledby="myModalLabel" aria-hidden="true">
+						   <div class="modal-dialog">
+							  <div class="modal-content">
+								<video width="100%" controls id="video1">
+								  <source src="images/index/sp(1).mp4" type="video/mp4">
+								</video>
+							  </div><!-- /.modal-content -->
+						   </div><!-- /.modal -->
+						</div>							
+						<script>
+							// 视频播放	   
+							var myVideo=document.getElementById("video1"); 
+							function playPause(){ 
+								  myVideo.play(); 
+							} 	  
+						</script>													
                     </div>				
 				</div>
 			</div>
 		</div>
-	<script>
-	   $(function(){		  
-		$("#indexCarousel").carousel('cycle');// 背景图片自动轮播
-		// 搜索切换
-		$('#tabBar').on('click', 'li', function(){
-			var tips = $(this).attr('tips');
-			if(tips){
-				$(this).addClass('on').siblings().removeClass('on');
-				$('#keyword').attr('placeholder',tips)
-			}
-		});		
-	   });  	   
-	</script>		
+
 	</div> 
 	<!-- 模块入口 -->
 	<div class="module-entrance">
@@ -289,8 +296,20 @@
 		</ul>
 		 <div class="clearfix"></div>
 	 </div>
-	</div> 	
-<div style="background:#f5f5f5;padding-bottom:50px">	
+	</div> 
+</div><!-- 背景f5结束标签 -->	
+	
+<div style="background:#f5f5f5;padding:50px 0">	
+<!-- 平台特点 -->	
+<div class="mask4-wrapper">
+	<h2>价值资产 <span>覆盖全国16座城市，持续扩张中</span></h2>
+	<ul class="clearfix">
+		<li><h3>专家解读</h3><p>资深专家</br>在线答疑</p></li>
+		<li><h3>数据分析</h3><p>大数据库</br>专业分析</p></li>
+		<li><h3>全程服务</h3><p>从始而终</br>安心无忧</p></li>
+		<li><h3>金融助力</h3><p>合法资金</br>强大保障</p></li>
+	</ul>
+</div>		
 	<!-- 城市入口 -->
 	<div class="city-entrance">
 		<div class="container">
@@ -332,7 +351,7 @@
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>		
 <!-- 司法拍卖	 -->
 <div class="city_tuijian con12">
 	<h2 style="float:left;">司法拍卖 <span>专业指导，精确捡漏</span></h2>
@@ -343,7 +362,7 @@
 	   <li><a href="#gengduo" data-toggle="tab">更多</a></li>
 	</ul>
 	<div class="clearfix"></div>
-	<div id="myTabContent" class="tab-content">
+	<div id="myTabContent" class="tab-content" >
 		<!-- 城市1 -->
 		<div class="value con12 tab-pane fade in active" id="beijing">
 			<div class="value_con w360">
@@ -915,17 +934,7 @@
 	</div>	
 </div>		
 <div class="clearfix"></div>	
-<!-- 平台特点 -->	
-<div class="mask4-wrapper">
-	<h2>平台特点</h2>
-	<p>我们足够专业，所以更值得信任</p>
-	<ul class="clearfix">
-		<li><h3>专家解读</h3><p>资深专家</br>在线答疑</p></li>
-		<li><h3>数据分析</h3><p>大数据库</br>专业分析</p></li>
-		<li><h3>全程服务</h3><p>从始而终</br>安心无忧</p></li>
-		<li><h3>金融助力</h3><p>合法资金</br>强大保障</p></li>
-	</ul>
-</div>	
+</div><!-- 背景f5结束标签 -->
 <!-- 下载APP -->
 <div class="app-wrapper">
 	<div class="app-info">
@@ -963,6 +972,8 @@
 		  myVideo.play(); 
 	} 	  
 </script>	
+
+<div style="background:#f5f5f5;padding:50px 0">	
 	<div class="news">
 		<h2>资讯信息 <span>热门资讯，一手掌握</span></h2>
 		<div class="news_con">
@@ -1003,7 +1014,7 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>	
-</div><!-- 背景f5结束标签 -->
+</div>	<!-- 背景f5结束标签 -->
 <!-- 合作伙伴 -->
 <div class="partners">
 	<h2>合作伙伴</h2>
@@ -1046,6 +1057,66 @@ function hideImg(){
 	$(".wechat").css("display","none");
 }
 </script>
+
+<script type="text/javascript">
+	function addLoadEvent(func) {
+	  var oldonload = window.onload;
+	  if (typeof window.onload != 'function') {
+		window.onload = func;
+	  } else {  
+		window.onload = function() {
+		  oldonload();
+		  func();
+		}
+	  }
+	}
+	function $(id){
+		return document.getElementById(id);
+	}
+	function showProvince(){
+		$("selectProvince").onclick = showAllProvince;
+		selectProvince();
+	}
+	function showAllProvince(){
+		$("allProvince").style.display = "block";
+		$("selectProvince").style.color = "#CCCCCC";
+		$("selectProvince").style.backgroundPosition = "39px -17px";
+	}
+	function hideAllProvince(){
+		$("allProvince").style.display = "none";
+		$("selectProvince").style.color = "#000000";
+		$("selectProvince").style.backgroundPosition = "49px -2px";
+	}
+	function selectProvince(){
+		var pro = $("allProvince").getElementsByTagName("li");
+		var links;
+		for(var i=0;i<pro.length;i++){
+			links = pro[i].getElementsByTagName("a");
+			for(var j=0;j<links.length;j++){
+				links[j].onclick = function(){
+					$("selectProvince").innerHTML = this.innerHTML;
+					hideAllProvince();
+				}
+			}
+		}
+	}
+	addLoadEvent(showProvince);
+</script>
+
+	<script>
+	   $(function(){		  
+		$("#indexCarousel").carousel('cycle');// 背景图片自动轮播
+		// 搜索切换
+		$('#tabBar').on('click', 'li', function(){
+			var tips = $(this).attr('tips');
+			if(tips){
+				$(this).addClass('on').siblings().removeClass('on');
+				$('#keyword').attr('placeholder',tips)
+			}
+		});		
+	   });  	   
+	</script>		
+
 </body>
 </html>
 
