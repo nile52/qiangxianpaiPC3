@@ -12,6 +12,7 @@
 	<link href="css/index.css" rel="stylesheet">	
 </head>
 <body>	
+	<!-- 头部开始 -->
 	<div id="header">	
 		<div class="con14">
 			<a href="" class="logo"></a>
@@ -139,6 +140,7 @@
 			</div>
 		</div>	
 	</div>	
+	<!-- 头部结束 -->
 	<div id="indexCarousel" class="carousel slide">
 	   <!-- 背景轮播 -->
 	   <div class="carousel-inner">
@@ -168,11 +170,10 @@
                     </div>				
 				</div>
 			</div>
-		</div>	   
-	</div> 
+		</div>
 	<script>
 	   $(function(){		  
-		$("#indexCarousel").carousel('cycle');// 自动轮播
+		$("#indexCarousel").carousel('cycle');// 背景图片自动轮播
 		// 搜索切换
 		$('#tabBar').on('click', 'li', function(){
 			var tips = $(this).attr('tips');
@@ -182,11 +183,8 @@
 			}
 		});		
 	   });  	   
-	</script>
-	
-
-
-
+	</script>		
+	</div> 
 	<!-- 模块入口 -->
 	<div class="module-entrance">
 		<div class="container">
@@ -211,7 +209,6 @@
 			</div>
 		</div>
 	</div>	
-
 	<!-- 数据展示 -->
 	<div class="datedisplay">
 	 <div class="container">
@@ -234,17 +231,14 @@
 		</ul>
 		 <div class="clearfix"></div>
 	 </div>
-	</div> 
-	
-	
-	
-	
-<div style="background:#f5f5f5;padding-bottom:50px">
-	
+	</div> 	
+<div style="background:#f5f5f5;padding-bottom:50px">	
 	<!-- 城市入口 -->
 	<div class="city-entrance">
 		<div class="container">
 			<h2>价值资产 <span>覆盖全国16座城市，持续扩张中</span></h2>
+			<a href="">更多<span class="glyphicon glyphicon-chevron-right"></span></a>
+			<div class="clearfix"></div>
 			<div class="city-grids">
 				<div class="projects1">
 					<div class="col-md-4 city-grid">
@@ -274,17 +268,13 @@
 					</div>
 					<div class="col-md-4 city-grid">
 						<div class="city_img">
-							<a href=""><h1>更多</h1></a>
+							<a href=""><h1>厦门</h1></a>
 						</div>						
 					</div>				
 				</div>
 			</div>
 		</div>
 	</div>	
-	
-	
-	
-	
 <!-- 司法拍卖	 -->
 <div class="city_tuijian con12">
 	<h2 style="float:left;">司法拍卖 <span>专业指导，精确捡漏</span></h2>
@@ -296,7 +286,7 @@
 	</ul>
 	<div class="clearfix"></div>
 	<div id="myTabContent" class="tab-content">
-
+		<!-- 城市1 -->
 		<div class="value con12 tab-pane fade in active" id="beijing">
 			<div class="value_con w360">
 				<div class="value_img">
@@ -438,8 +428,7 @@
 				</div>				
 			</div>	
 		</div>	
-		
-		
+		<!-- 城市2 -->
 		<div class="value con12 tab-pane fade" id="shanghai">
 			<div class="value_con w360">
 				<div class="value_img">
@@ -581,12 +570,7 @@
 			</div>	
 			<div class="clearfix"></div>
 		</div>	
-		
-		
-		
-		
-
-		
+		<!-- 城市3 -->
 	    <div class="value con12 tab-pane fade" id="guangzhou">
 			<div class="value_con w360">
 				<div class="value_img">
@@ -728,10 +712,7 @@
 			</div>	
 			<div class="clearfix"></div>
 		</div>	
-		
-		
-		
-		
+		<!-- 城市4 -->
 	   <div class="value con12 tab-pane fade" id="gengduo">
 			<div class="value_con w360">
 				<div class="value_img">
@@ -876,13 +857,6 @@
 	</div>	
 </div>		
 <div class="clearfix"></div>	
-	
-	
-	
-	
-	
-	
-	
 <!-- 平台特点 -->	
 <div class="mask4-wrapper">
 	<h2>平台特点</h2>
@@ -894,9 +868,6 @@
 		<li><h3>金融助力</h3><p>合法资金</br>强大保障</p></li>
 	</ul>
 </div>	
-	
-	
-	
 <!-- 下载APP -->
 <div class="app-wrapper">
 	<div class="app-info">
@@ -915,8 +886,7 @@
 			<img src="images/index/video.png" title="抢先拍视频" alt="videos" class="videos" data-toggle="modal" onclick="playPause()" data-target="#myModal_video1">
 		</div>
 	</div>
-</div>	
-		
+</div>			
 <!-- 视频模态框（Modal） -->
 <div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
@@ -927,8 +897,7 @@
 		</video>
 	  </div><!-- /.modal-content -->
    </div><!-- /.modal -->
-</div>		
-					
+</div>							
 <script>
 	// 视频播放	   
 	var myVideo=document.getElementById("video1"); 
@@ -936,16 +905,6 @@
 		  myVideo.play(); 
 	} 	  
 </script>	
-	
-	
-	
-
-
-
-	
-
-
-		
 	<div class="news">
 		<h2>资讯信息 <span>热门资讯，一手掌握</span></h2>
 		<div class="news_con">
@@ -986,40 +945,18 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>	
-</div>		
-		
-		
-
-		
-		
-		
+</div><!-- 背景f5结束标签 -->
 <!-- 合作伙伴 -->
-
-	<div class="partners">
-		<h2>合作伙伴</h2>
-		<img src="images/index/partner (1).jpg">
-		<img src="images/index/partner (2).jpg">
-		<img src="images/index/partner (3).jpg">
-		<img src="images/index/partner (4).jpg">
-		<img src="images/index/partner (5).jpg">
-		<img src="images/index/partner (6).jpg">
-		<img src="images/index/partner (7).jpg">
-	</div>
-
-
-
-
-
-
-
-
-		
-		
-		
-		
-		
-		
-		
+<div class="partners">
+	<h2>合作伙伴</h2>
+	<img src="images/index/partner (1).jpg">
+	<img src="images/index/partner (2).jpg">
+	<img src="images/index/partner (3).jpg">
+	<img src="images/index/partner (4).jpg">
+	<img src="images/index/partner (5).jpg">
+	<img src="images/index/partner (6).jpg">
+	<img src="images/index/partner (7).jpg">
+</div>
 <footer class="noprint">
 	<ul class="ib sub-nav">
 		<li><a target="_self" href="/general-pages/about-us">关于我们</a></li>
@@ -1042,6 +979,7 @@
 	<p>抢先拍@2016 All rights reserved | 增值电信业务经营许可证:浙B2-20160073<br>
 		浙ICP备15018503号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
 </footer>
+<!-- 二维码显隐 -->
 <script type="text/javascript">
 function  showImg(){
 	$(".wechat").css("display","block");
@@ -1050,7 +988,6 @@ function hideImg(){
 	$(".wechat").css("display","none");
 }
 </script>
-
 </body>
 </html>
 
