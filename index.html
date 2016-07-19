@@ -165,22 +165,7 @@
                                 </form>
                             </div>
                         </div>
-                    </div>
-					<button class="btn" data-toggle="modal" onclick="playPause()"
-					   data-target="#myModal_video1" style="margin:20px 0">
-					   视频播放
-					</button>
-					<!-- 视频模态框（Modal） -->
-					<div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
-					   aria-labelledby="myModalLabel" aria-hidden="true">
-					   <div class="modal-dialog">
-						  <div class="modal-content">
-							<video width="100%" controls id="video1">
-							  <source src="images/index/sp(1).mp4" type="video/mp4">
-							</video>
-						  </div><!-- /.modal-content -->
-					   </div><!-- /.modal -->
-					</div>					
+                    </div>				
 				</div>
 			</div>
 		</div>	   
@@ -196,15 +181,7 @@
 				$('#keyword').val(tips);
 			}
 		});		
-	   });
-		// 视频播放	   
-		var myVideo=document.getElementById("video1"); 
-		function playPause(){ 
-			if ($('#tabBar').css) 
-			  myVideo.play(); 
-			else 
-			  myVideo.pause(); 
-		} 	   	   
+	   });  	   
 	</script>
 	
 
@@ -262,7 +239,7 @@
 	
 	
 	
-<div style="background:#f5f5f5">
+<div style="background:#f5f5f5;padding-bottom:50px">
 	
 	<!-- 城市入口 -->
 	<div class="city-entrance">
@@ -898,6 +875,7 @@
 		</div>	
 	</div>	
 </div>		
+<div class="clearfix"></div>	
 	
 	
 	
@@ -905,8 +883,7 @@
 	
 	
 	
-	
-<!-- 合作伙伴 -->	
+<!-- 平台特点 -->	
 <div class="mask4-wrapper">
 	<h2>平台特点</h2>
 	<p>我们足够专业，所以更值得信任</p>
@@ -931,17 +908,34 @@
 		<p>* 布局全国16城，覆盖15000余个社区，近10万条房源信息，不断增加中</p>
 		<div class="link">
 			<div>
-				<a href="https://itunes.apple.com/cn/app/uhouzz-quan-wei-liu-xue-zu/id997644191?mt=8">
-				</a> <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yxhjandroid.uhouzz"></a>
+				<a href="https://itunes.apple.com/cn/app/qiang-xian-pai-fang-chan-wei/id1068135130?mt=8">
+				</a> <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.lightappbuilder.qxp"></a>
 			</div>
-			<img src="http://pc.pic.uhouzz.com/online/cdn/common/images/0224qr.dd04a21e.png" alt="qr" class="qrcode"> 
-			<img src="http://pc.pic.uhouzz.com/online/cdn/common/images/videos.606f48ac.jpg" title="Uhouzz品牌视频" alt="videos" class="videos">
+			<img src="images/index/wechat.png" alt="qr" class="qrcode"> 
+			<img src="images/index/video.png" title="抢先拍视频" alt="videos" class="videos" data-toggle="modal" onclick="playPause()" data-target="#myModal_video1">
 		</div>
 	</div>
 </div>	
 		
-	
-	
+<!-- 视频模态框（Modal） -->
+<div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+	  <div class="modal-content">
+		<video width="100%" controls id="video1">
+		  <source src="images/index/sp(1).mp4" type="video/mp4">
+		</video>
+	  </div><!-- /.modal-content -->
+   </div><!-- /.modal -->
+</div>		
+					
+<script>
+	// 视频播放	   
+	var myVideo=document.getElementById("video1"); 
+	function playPause(){ 
+		  myVideo.play(); 
+	} 	  
+</script>	
 	
 	
 	
@@ -989,50 +983,29 @@
 				<a href=""><h2 title="这里是新闻标题标题">这里是新闻标题标题</h2></a>
 				<p>这里是新闻内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容</p>			
 			</div>
-		</div>		
+		</div>
 		<div class="clearfix"></div>
 	</div>	
-		
-		
-		
-
-		
+</div>		
 		
 		
 
-
+		
+		
+		
 <!-- 合作伙伴 -->
-<div class="con12">
-	<div id="partners" class="carousel slide">
-	   <!-- 轮播（Carousel）指标 -->
-	   <ol class="carousel-indicators">
-		  <li data-target="#partners" data-slide-to="0" class="active"></li>
-		  <li data-target="#partners" data-slide-to="1"></li>
-		  <li data-target="#partners" data-slide-to="2"></li>
-	   </ol>   
-	   <!-- 轮播（Carousel）项目 -->
-	   <div class="carousel-inner">
-		  <div class="item active">
-			<div class="partners_img" style="text-align:center">
-				<img src="images/index/partners1.jpg" alt="">
-				<img src="images/index/partners1.jpg" alt="">
-			</div>
-		  </div>
-		  <div class="item">
-			<div class="partners_img" style="text-align:center">
-				<img src="images/index/partners2.jpg" alt="">
-				<img src="images/index/partners2.jpg" alt="">
-			</div>
-		  </div>
-		  <div class="item">
-			<div class="partners_img" style="text-align:center">
-				<img src="images/index/partners1.jpg" alt="">
-				<img src="images/index/partners2.jpg" alt="">
-			</div>
-		  </div>
-	   </div>
-	</div> 
-</div>
+
+	<div class="partners">
+		<h2>合作伙伴</h2>
+		<img src="images/index/partner (1).jpg">
+		<img src="images/index/partner (2).jpg">
+		<img src="images/index/partner (3).jpg">
+		<img src="images/index/partner (4).jpg">
+		<img src="images/index/partner (5).jpg">
+		<img src="images/index/partner (6).jpg">
+		<img src="images/index/partner (7).jpg">
+	</div>
+
 
 
 
@@ -1047,34 +1020,36 @@
 		
 		
 		
-	<div class="clearfix"></div>	
-	<div id="footer">	
-		<div id="footernav">
-			<p><a href="">首页</a>
-			<a href="">房屋列表</a>
-			<a href="">资讯信息</a>
-			<a href="">视频中心</a>
-			<a href="">关于我们</a></p>
-		</div>			
-		<div id="footercode">			
-			<div><img src="images/public/qrcode_wechat_qxp_120.png"><p>微信公众号</p></div>
-			<div><img src="images/public/qrcode_app_qxp_120.png"><p>APP下载</p></div>			
-		</div>			
-		<div class="clearfix"></div>
-		<p>
-			<span>400电话：400-060-2595</span>
-			<span>企业QQ：2014827338</span>
-			<span>企业邮箱：kefu@qiangxianpai.com</span>
-			<span>地址：杭州市拱墅区万达广场D座16楼</span>
-		</p>
-		<p>
-			<span>抢先拍@2016 All rights reserved </span>
-			<span>增值电信业务经营许可证:浙B2-20160073</span>
-			<span>浙ICP备15018503号</span>
-		</p>
-		<p ><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#666;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a><span></p></br>
-	</div>		
-
+<footer class="noprint">
+	<ul class="ib sub-nav">
+		<li><a target="_self" href="/general-pages/about-us">关于我们</a></li>
+		<li class="line" ng-if="!is91Flight">|</li>
+		<li><a target="_self" href="/general-pages/partners">合作伙伴</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/business-cooperation">商务合作</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/join-us" >加入我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/contact-us">联系我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/service-protocol">服务声明</a></li>
+	</ul>
+	<ul class="ib im">
+		<li class="wechat-con"><a href="javscript:void(0);" onMouseOut="hideImg()"  onmouseover="showImg()">微信</a><div class="wechat"></div></li>
+		<li class="sina"><a href="http://weibo.com/qiangxianpai?refer_flag=1001030101_" target="_blank">新浪微博</a></li>
+		<li class="taobao" ng-if="!is91Flight"><a href="https://shop143101383.taobao.com/index.htm?spm=2013.1.w5002-14693851524.2.TSpzsC" target="_blank">淘宝</a></li>
+	</ul>
+	<p>抢先拍@2016 All rights reserved | 增值电信业务经营许可证:浙B2-20160073<br>
+		浙ICP备15018503号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
+</footer>
+<script type="text/javascript">
+function  showImg(){
+	$(".wechat").css("display","block");
+}
+function hideImg(){
+	$(".wechat").css("display","none");
+}
+</script>
 
 </body>
 </html>

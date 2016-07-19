@@ -234,7 +234,7 @@
 .news ul {margin: 50px 0 20px;}
 .news h2 span{margin: 50px 0 20px;font-size: 16px;}
 .news .fs30{margin-top:100px;margin-bottom:30px}
-.news_con{float:left;box-shadow: 0 1px 2px #ddd;width:490px;height:220px;margin:14px;}
+.news_con{float:left;box-shadow: 0 1px 2px #ddd;width:490px;height:220px;margin:14px;background:#fff;}
 .news_con:hover{box-shadow: 5px 5px 5px #ddd;}
 .news_con .news_img{width:200px;height:200px;float:left;padding:10px}
 .news_con img{width:200px;height:200px}
@@ -304,9 +304,9 @@ background-image: none;	right:-100px}
 
 
 
-/* 合作伙伴 */
+/* 平台特点 */
 .mask4-wrapper {
-    margin: 50px auto 60px;
+    margin: 100px auto 60px;
     width: 1000px;
     text-align: center;
 }
@@ -367,14 +367,14 @@ background-image: none;	right:-100px}
 .app-wrapper .app-info {
     margin: 0 auto;
     width: 1000px;
-    height: 485px;
-    background: url(http://pc.pic.uhouzz.com/online/cdn/common/images/phone.cb778400.jpg) no-repeat right top;
-    background-size: 475px 485px;
+    height: 735px;
+    background: url(../images/index/app.png) no-repeat right top;
+    background-size: 534px 728px;
 }
 .app-wrapper .app-info h1 {
     font-size: 40px;
     line-height: 1;
-    padding-top: 35px;
+    padding-top: 120px;
     font-weight: 700;
     color: #222;
 }
@@ -411,10 +411,10 @@ background-image: none;	right:-100px}
     display: block;
     width: 180px;
     height: 50px;
-    background: url(http://pc.pic.uhouzz.com/online/cdn/common/images/iphone.61d5452a.png) no-repeat;
+    background: url(../images/index/apple.jpg) no-repeat;
 }
 .app-wrapper .app-info .link div a:last-child {
-    background: url(http://pc.pic.uhouzz.com/online/cdn/common/images/android.a6fb4d99.png) no-repeat;
+    background: url(../images/index/android.jpg) no-repeat;
 }
 .app-wrapper .app-info .link .qrcode {
     position: absolute;
@@ -436,29 +436,10 @@ background-image: none;	right:-100px}
 
 
 /* 合作伙伴 */
-#partners{margin:100px 0}
-#partners .carousel-indicators .active {
-    width: 12px;
-    height: 12px;
-    margin: 0;
-    background-color: #e66140;
-	border: 1px solid #e66140;
-}
-#partners .carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #000 \9;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-}
-
-
-
+.partners{width:1040px;margin:0 auto}
+.partners img{width: 125px;margin: 10px;}
+.partners img:hover{box-shadow:0 0 10px #000}
+.partners h2 {margin: 50px 0 20px;font-size: 30px;}
 
 
 

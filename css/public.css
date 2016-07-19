@@ -59,14 +59,70 @@ transition: background 1s;
 #nav a.c_ed{color:#e66140}
 
 
-#footer{margin-top:50px;background:#000;text-align:center;color:#666}
-#footernav{border-bottom:1px solid #333}
+#footer{margin-top:50px;background:#cd5134;text-align:center;color:#fff}
 #footernav p{text-align:center;line-height:40px}
-#footernav p a{margin:10px;color:#666;white-space:nowrap;}
-#footercode{width:320px;margin:0px auto;background:#000}
+#footernav p a{margin:10px;color:#fff;white-space:nowrap;}
+#footercode{width:320px;margin:0px auto;background:#cd5134}
 #footercode div{float:left;text-align:center;margin:20px}
 #footercode div p{margin-top:10px;}
 #footer>p span{margin:0 10px;white-space:nowrap;}
+
+
+
+
+
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: #cd5134;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+	margin-top:50px;
+}
+footer .im li {
+    margin-right: 50px;
+    position: relative;
+}
+.datepicker, .ib li {
+    display: inline-block;
+}
+footer .sub-nav {margin: 50px 0 15px;font-size: 0;}
+footer .sub-nav li {display: inline-block;margin-right: 15px;font-size: 12px;}
+footer .sub-nav li a{color:#fff}
+footer .im {margin-bottom: 20px;height: 30px;}
+footer .im li {margin-right: 50px;position: relative}
+footer .im li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -100px;
+    overflow: hidden;
+}
+footer .im li.wechat-con a {background: url(../images/public/weixin.png) no-repeat;}
+footer .im li.sina a {background: url(../images/public/sina.png) no-repeat;}
+footer .im li.taobao a {background: url(../images/public/taobao.png) no-repeat;}
+
+footer .im .wechat-con .wechat {
+    width: 145px;
+    height: 140px;
+    background: url(../images/public/qrcode_wechat_qxp_120.png) no-repeat;
+    position: absolute;
+    left: -150px;
+    top: -55px;
+    display: none;
+}
+footer .im li:last-child {margin-right: 0;}
+
+
+
+
+
+
+
+
 
 
 
