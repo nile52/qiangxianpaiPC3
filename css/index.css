@@ -214,13 +214,15 @@
 
 
 /* 司法拍卖 */
-
 .news{width:1040px;margin:0 auto}
-.news>h2 {margin: 50px 0 20px;font-size: 30px;}
+.news1{width:520px;margin:0 auto;float:left}
+.news2{width:520px;margin:0 auto;float:right}
+.news1>h2,.news2>h2{margin: 50px 0 20px;font-size: 30px;}
+.news1 .news_more, .news2 .news_more{background:#e66140;padding:5px 10px;color:#fff;float:right;margin:10px 30px}
 .news ul {margin: 50px 0 20px;}
 .news h2 span{margin: 50px 0 20px;font-size: 16px;}
 .news .fs30{margin-top:100px;margin-bottom:30px}
-.news_con{float:left;box-shadow: 0 1px 2px #ddd;width:490px;height:220px;margin:14px;background:#fff;}
+.news_con{float:left;box-shadow: 0 1px 2px #ddd;width:490px;height:220px;background:#fff;}
 .news_con:hover{box-shadow: 5px 5px 5px #ddd;}
 .news_con .news_img{width:200px;height:200px;float:left;padding:10px}
 .news_con img{width:200px;height:200px}
