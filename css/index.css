@@ -169,6 +169,7 @@
 
 
 /* 司法拍卖 */
+.city_tuijian{width:1140px;margin:0 auto}
 .city_tuijian h2 {margin: 50px 0 20px;font-size: 30px;}
 .city_tuijian ul {margin: 50px 0 20px;}
 .city_tuijian h2 span{margin: 50px 0 20px;font-size: 16px;}
@@ -214,11 +215,18 @@
 
 
 /* 司法拍卖 */
-.news{width:1040px;margin:0 auto}
-.news1{width:520px;margin:0 auto;float:left}
-.news2{width:520px;margin:0 auto;float:right}
+.news{width:1140px;margin:0 auto}
+.news1{    width: 570px;
+    margin: 0 auto;
+    float: left;
+    background: #fff;
+    padding: 0 40px;
+    padding-bottom: 30px;}
+.news2{width:570px;margin:0 auto;float:right;background: #fff;
+    padding: 0 40px;
+    padding-bottom: 30px;}
 .news1>h2,.news2>h2{margin: 50px 0 20px;font-size: 30px;}
-.news1 .news_more, .news2 .news_more{background:#e66140;padding:5px 10px;color:#fff;float:right;margin:10px 30px}
+.news1 .news_more, .news2 .news_more{background:#e66140;padding:5px 10px;color:#fff;float:right;margin:10px 0px}
 .news ul {margin: 50px 0 20px;}
 .news h2 span{margin: 50px 0 20px;font-size: 16px;}
 .news .fs30{margin-top:100px;margin-bottom:30px}
@@ -242,7 +250,7 @@
 
 .value{text-align:center}
 .value .fs30{margin-top:100px;margin-bottom:30px}
-.value_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:20px;background:#fff}
+.value_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:10px;background:#fff}
 .value_con:hover{box-shadow: 5px 5px 5px #ddd;}
 .value_con img{width:360px;height:240px}
 .value_text{text-align:left;}
@@ -436,8 +444,8 @@ ul,li{list-style:none;}
 
 
 /* 合作伙伴 */
-.partners{width:1040px;margin:0 auto}
-.partners img{width: 125px;margin: 10px;}
+.partners{width:1140px;margin:0 auto}
+.partners img{width: 125px;margin: 17px;}
 .partners img:hover{box-shadow:0 0 10px #000}
 .partners h2 {margin: 50px 0 20px;font-size: 30px;}
 
