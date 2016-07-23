@@ -34,9 +34,8 @@
     border: 1px solid #000;
     margin-top: 5px;    height:24px;
     line-height:24px;    padding-left: 4px;
-    background: #FFF url(../images/h/province_sprites2.jpg) no-repeat 65px -3px;
-}	
-	
+    background:url(../images/h/province_sprites2.jpg) no-repeat 65px -3px;
+}		
 .subhead_city ul{
     width: 80px;
     height: auto;
@@ -49,16 +48,62 @@
     top: 100px;
     z-index: 10;
 }
-.select_dropdown ul{
-    top: 200px;
-}
+.select_dropdown ul{top: 271px;}
 .select_dropdown ul li a{ color: #000;}
 .subhead_city ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf;padding-left:10px;}
 .subhead_city ul li b{font-weight:bold;}
-ul,li{list-style:none;}
 .show{display:block;}
-.subhead_search{float:right;}
 
+/* selectNumberScreen */
+.selectNumberScreen{width:795px;height:240px;margin:20px auto;}
+.screenBox dl{width:200px;float:left;overflow:hidden}
+.screenBox dl.noborder{border-bottom:0px;border-left:0px;border-top:0px;border-right:0px}
+.screenBox dl.goodstype{border-bottom:#e6e6e6 1px dashed}
+.screenBox dl dt{    font-size: 16px;
+    padding: 8px 10px;
+    float: left;}
+
+
+
+
+.screenBox dl dd a.selected{background:#39c;color:#fff}
+.screenBox dl dd span.more{position:absolute;width:39px;display:block;height:14px;top:6px;cursor:pointer;right:1px}
+.screenBox dl dd span.more label{display:inline-block;cursor:pointer}
+.hasBeenSelected{padding:2px;margin-top:10px;overflow:hidden;}
+.hasBeenSelected dl{width:784px;background:#f6f8fd;overflow:hidden}
+.hasBeenSelected dl dt{float:left}
+.hasBeenSelected dl dd{float:left}
+.hasBeenSelected dl dt{text-align:right;line-height:30px;width:108px;height:30px;font-weight:600}
+.hasBeenSelected dl dd{padding-bottom:4px;padding-left:0px;width:676px;padding-right:0px;padding-top:0px}
+.selectedInfor{position:relative;white-space:nowrap;float:left;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-top: 5px;margin-right:20px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4px;width:80px;
+
+}
+.selectedInfor label{color:#111;font-weight:normal;}
+.eliminateCriteria{line-height: 24px;
+    margin-top: 4px;
+    float: left;
+    color: #000;
+    cursor: pointer;
+    background: #eee;
+    border-radius: 25%;
+    padding: 2px 5px;}
+.selectedInfor em{background:url("../images/h/close.png") no-repeat;cursor:pointer;display:block;height:13px;overflow:hidden;position:absolute;right:2px;top:5px;width:13px;}
+
+
+
+
+
+
+
+
+
+.subhead_search{float:right;}
 .subhead_search .search-form {padding: 8px 0;background-color: #fff;}
 .subhead_search input.txt {    height: 35px;
     padding-left: 10px;
@@ -73,6 +118,30 @@ ul,li{list-style:none;}
     height: 45px;
     width: 40px;}
 .search-sort-con .btn {background:url(../images/h/ic_search_search.png) no-repeat center center}
+.select_com .select{margin:20px 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -288,9 +357,24 @@ ol.type li a:hover {
 .houselist_head{border:1px solid #000;margin:50px auto 20px;}
 .houselists ul.filter1_1 { text-align: left; font-size: 0;margin: 0 }
 .filter1_1 li { display: inline-block; padding: 10px 20px; font-size: 14px; color: #333;cursor: pointer;border-right:1px solid;}
-.ordered li {background: url(../images/h/province_sprites2.jpg) no-repeat 65px -3px;border-left:1px solid;border-right:0px solid;}
+
+
+
+
+
+.ordered li {border:none;padding: 10px;text-align:center}
+.ordered li em{cursor: pointer; 
+    display: block;
+    height: 13px;
+    float: right;
+    margin-top:3px;
+    width: 13px;
+    background: url(../images/h/province_sprites4.png) no-repeat;}
+	
+	
 .filter1_1 .active { color: #fff; background-color: #e66140;border-right:1px solid #000;}
-.ordered .active { color: #fff; background-color: #e66140;border-left:1px solid #000;}
+.ordered .active { color: #000; background:none;border:none;}
+.ordered .active em{ background: url(../images/h/province_sprites3.png) no-repeat;}
 .filtr-item {width: 390px;padding:10px;}
 
 
@@ -298,12 +382,30 @@ ol.type li a:hover {
 
 .houselist2_l{width:840px;float:left;background:#fff;padding:20px;}
 
+.houselist2_l .filtr-item {
+    width: 840px;
+}
 
-.houselist2_con{box-shadow: 0 1px 2px #ddd;height:240px;padding:20px;background:#fff;width:800px;border-bottom:1px solid #eee;float:left}
+
+.houselist2_con{box-shadow: 0 1px 2px #ddd;height:240px;padding:20px;background:#fff;width:780px;border-bottom:1px solid #eee;float:left}
+
+.houselist2_con.wf{height:auto}
+.houselist2_con.wf p.fs14 span{
+	margin:0 2px;padding:2px 5px;background:#e66140;color:#fff;border-radius:5px;
+}
+.houselist2_con.wf p.fs14{
+	text-align:center;
+}
+.houselist2_countdown{float:left;width:320px;}
+.houselist2_vouchers{text-align:left;float:left;width:400px}
+.houselist2_vouchers .voucher{border:1px solid #e66140;}
+
+
+
 .houselist2_con:hover{box-shadow: 5px 5px 5px #ddd;border-left:1px solid #eee}
 .houselist2_img{float:left;width:320px;height:210px;margin-right:10px}
 .houselist2_img img{width:300px;height:200px;}
-.houselist2_text{text-align:left;float:left}
+.houselist2_text{text-align:left;float:left;width:400px;border-bottom:2px dashed #eee}
 .houselist2_text p{padding:10px}
 .houselist2_text p.house_price1{font-weight:bold}
 .houselist2_text p.house_price1 span{padding-right:5px}

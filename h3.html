@@ -5,7 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript">
+		var $143 = $;
+	</script>
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/public.css" rel="stylesheet">
 	<link href="css/h.css" rel="stylesheet">
@@ -245,13 +248,12 @@
 		</div>
 	</div>
 
-
-
+<div style="background:#f8f8f8;padding:50px 0">
 
 <div class="wrapper houselists con12">
-	<div class="select_com">
+	<div class="select_com screenBox screenBackground" id="selectList">
 		<div class="select select1">
-			<h2 style="float:left;">房产列表</h2>
+			<h2>房产列表</h2>
 			<ul id="myTab" class="nav nav-tabs">
 			   <li><a href="h1.html">司法拍卖</a></li>
 			   <li><a href="h2.html">资产直通车</a></li>
@@ -261,150 +263,239 @@
 		
 		
 		<div class="select select2">
-			<h2>房源区域</h2>
-			<div class="subhead_city select_dropdown">
-				<span id="selectArea">杭州</span>
-				<ul id="allArea" class="">
-					<li><a href="javascript:void(0);">安徽</a></li>
-					<li><a href="javascript:void(0);">北京</a></li>
-					<li><a href="javascript:void(0);">重庆</a></li>
-					<li><a href="javascript:void(0);">福建</a></li>
-					<li><a href="javascript:void(0);">广东</a></li>
-					<li><a href="javascript:void(0);">广西</a></li>
-					<li><a href="javascript:void(0);">河北</a></li>
-					<li><a href="javascript:void(0);">河南</a></li>
-				</ul>		
-			</div>
-			<h2>房源类型</h2>
-			<div class="subhead_city select_dropdown">
+			<dl class="listIndex">
+				<dt>房源区域</dt>
+				<dd class="subhead_city select_dropdown">
+					<span id="selectArea">杭州</span>
+					<ul id="allArea" class="ddown">
+						<li><a href="javascript:void(0);">安徽</a></li>
+						<li><a href="javascript:void(0);">北京</a></li>
+						<li><a href="javascript:void(0);">重庆</a></li>
+						<li><a href="javascript:void(0);">福建</a></li>
+						<li><a href="javascript:void(0);">广东</a></li>
+						<li><a href="javascript:void(0);">广西</a></li>
+						<li><a href="javascript:void(0);">河北</a></li>
+						<li><a href="javascript:void(0);">河南</a></li>
+					</ul>	
+				</dd>
+			</dl>						
+			<dl class="listIndex">
+				<dt>房源类型</dt>
+				<dd class="subhead_city select_dropdown">
 				<span id="selectType">房源类型</span>
-				<ul id="allType" class="">
+				<ul id="allType" class="ddown">
 					<li><a href="javascript:void(0);">房源类型</a></li>
 					<li><a href="javascript:void(0);">房源类型</a></li>
 					<li><a href="javascript:void(0);">房源类型</a></li>
-				</ul>		
-			</div>			
-			<h2>房源特色</h2>
-			<div class="subhead_city select_dropdown">
-				<span id="selectFeature">房源特色</span>
-				<ul id="allFeature" class="">
-					<li><a href="javascript:void(0);">房源特色</a></li>
-					<li><a href="javascript:void(0);">房源特色</a></li>
-					<li><a href="javascript:void(0);">房源特色</a></li>
-					<li><a href="javascript:void(0);">福建</a></li>
-					<li><a href="javascript:void(0);">房源特色</a></li>
-				</ul>		
-			</div>					
+				</ul>	
+				</dd>
+			</dl>		
+			<dl class="listIndex">
+				<dt>房源特色</dt>
+				<dd class="subhead_city select_dropdown">
+					<span id="selectFeature">房源特色</span>
+					<ul id="allFeature" class="ddown">
+						<li><a href="javascript:void(0);">房源特色</a></li>
+						<li><a href="javascript:void(0);">房源特色</a></li>
+						<li><a href="javascript:void(0);">房源特色</a></li>
+						<li><a href="javascript:void(0);">福建</a></li>
+						<li><a href="javascript:void(0);">房源特色</a></li>
+					</ul>
+				</dd>
+			</dl>
 		</div>		
 		<div class="clearfix"></div>
-		<div class="select select3">
+		<div class="select select3 hasBeenSelected">
 			<h2 style="float:left;">已选条件</h2>
+				<dd style="display:none" class="clearDd">
+					<div class="clearList"></div>
+					<div style="display:none;" class="eliminateCriteria">重置</div>
+				</dd>
 		</div>
 	</div>
-
-
-
 	<div class="clearfix"></div>
-	<div id="myTabContent" class="tab-content" >		
-		<!-- 一手特惠房<h2>一手特惠房 <span>投资风险小，价格优势大</span></h2> -->	
-	    <div class="value con12 tab-pane fade in active" id="weifang">
-			
-			<div class="houselist_con w360">
-				<div class="houselist_img">
-					<a href=""><img src="images/index/new1.jpg"></a>	
-					<div class="mask w360">
-						<p><span class="area_name">小区名字</span>
-							<span class="area_position"><small>江干区</small><small>丁桥</small></span>
-						</p><div class="clearfix"></div>	
-					</div>			
-				</div>
-				<div class="houselist_text info1">
-					<p class="info1_text">
-						<span class="size">204.91㎡</span>
-						<span class="price">起拍价：<em class="c_red">576万元</em></span>
-					</p><div class="clearfix"></div>			
-				</div>
-				<div class="houselist_text info2">
-					<p class="house_name">广州广州广州广州广州广州广州</p>
-					<p class="house_otherinfo">
-						<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
-						<span class="discount"><i>8</i>折</span>
-					</p><div class="clearfix"></div>			
-				</div>				
+		<!-- 一手特惠房 -->
+		<div class="houselist value con12 tab-pane fade in active" id="zhitongche">
+			<div class="houselist_head">
+				<ul class="filter1_1" style="float:left">
+					<li data-filter="7">正在热抢</li>
+					<li data-filter="8">即将上线</li>
+				</ul>
+				<div class="clearfix"></div>
 			</div>	
-			<div class="houselist_con w360">
-				<div class="houselist_img">
-					<a href=""><img src="images/index/new1.jpg"></a>	
-					<div class="mask w360">
-						<p><span class="area_name">小区名字</span>
-							<span class="area_position"><small>江干区</small><small>丁桥</small></span>
-						</p><div class="clearfix"></div>	
-					</div>			
+
+
+
+			<div class="houselist2_l">
+				<h2>一手特惠房 <span>投资风险小，价格优势大</span></h2>					
+				<div class="dowebok">	
+					<div class="filtr-item" data-category="7">
+						<div class="houselist2_con wf">
+							<div class="houselist2_img">
+								<a href="filtr-item"><img src="images/index/new1.jpg"></a>									
+							</div>
+							<div class="houselist2_text">
+								<p class="info2_text house_name">开拍中开拍中开拍中开拍中开拍中开拍中</p>
+								<p class="info2_text house_price1">处置价：<span>超值</span><span>面议</span></p>
+								<p class="info2_text house_price2">市场价：<span>323万</span></p>
+								<p class="info2_text house_time">截止至：2013-06-11</p>
+								<p class="info2_text house_tags">
+									<span class="house_tag">可贷款</span>
+									<span class="house_tag">可按揭</span>
+									<span class="house_tag">无过户障碍</span>
+								</p>
+							</div>	
+							<div class="clearfix"></div>
+							<div class="houselist2_countdown">
+								<p class="fs14" id="down1">0天0小时0分0秒</p>
+							</div>
+							<div class="houselist2_vouchers">
+								<div class="voucher">
+									<div class="voucher_info"
+									>
+										<p class="voucher_name"><span>￥8000</span>抵扣券</p>
+										<p class="voucher_limit">90-140㎡以下户型</p>
+									</div>
+									<div class="voucher_btn">
+										<p>￥1000</p>
+										<p>立即领券</p>
+									</div>
+								</div>
+								<div class="vouchers"></div>
+							</div>	
+
+							
+						</div>	
+					</div>	
+					<div class="filtr-item" data-category="7">
+						<div class="houselist2_con wf">
+							<div class="houselist2_img">
+								<a href="filtr-item"><img src="images/index/new1.jpg"></a>									
+							</div>
+							<div class="houselist2_text">
+								<p class="info2_text house_name">开拍中开拍中开拍中开拍中开拍中开拍中</p>
+								<p class="info2_text house_price1">处置价：<span>超值</span><span>面议</span></p>
+								<p class="info2_text house_price2">市场价：<span>323万</span></p>
+								<p class="info2_text house_time">截止至：2013-06-11</p>
+								<p class="info2_text house_tags">
+									<span class="house_tag">可贷款</span>
+									<span class="house_tag">可按揭</span>
+									<span class="house_tag">无过户障碍</span>
+								</p>
+							</div>			
+						</div>	
+					</div>						
+					<div class="filtr-item" data-category="8">
+						<div class="houselist2_con wf">
+							<div class="houselist2_img">
+								<a href="filtr-item"><img src="images/index/new1.jpg"></a>									
+							</div>
+							<div class="houselist2_text">
+								<p class="info2_text house_name">开拍中开拍中开拍中开拍中开拍中开拍中</p>
+								<p class="info2_text house_price1">处置价：<span>超值</span><span>面议</span></p>
+								<p class="info2_text house_price2">市场价：<span>323万</span></p>
+								<p class="info2_text house_time">截止至：2013-06-11</p>
+								<p class="info2_text house_tags">
+									<span class="house_tag">可贷款</span>
+									<span class="house_tag">可按揭</span>
+									<span class="house_tag">无过户障碍</span>
+								</p>
+							</div>			
+						</div>	
+					</div>						
+					<div class="filtr-item" data-category="8">
+						<div class="houselist2_con wf">
+							<div class="houselist2_img">
+								<a href="filtr-item"><img src="images/index/new1.jpg"></a>									
+							</div>
+							<div class="houselist2_text">
+								<p class="info2_text house_name">开拍中开拍中开拍中开拍中开拍中开拍中</p>
+								<p class="info2_text house_price1">处置价：<span>超值</span><span>面议</span></p>
+								<p class="info2_text house_price2">市场价：<span>323万</span></p>
+								<p class="info2_text house_time">截止至：2013-06-11</p>
+								<p class="info2_text house_tags">
+									<span class="house_tag">可贷款</span>
+									<span class="house_tag">可按揭</span>
+									<span class="house_tag">无过户障碍</span>
+								</p>
+							</div>			
+						</div>	
+					</div>						
 				</div>
-				<div class="houselist_text info1">
-					<p class="info1_text">
-						<span class="size">204.91㎡</span>
-						<span class="price">起拍价：<em class="c_red">576万元</em></span>
-					</p><div class="clearfix"></div>			
-				</div>
-				<div class="houselist_text info2">
-					<p class="house_name">广州广州广州广州广州广州广州</p>
-					<p class="house_otherinfo">
-						<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
-						<span class="discount"><i>8</i>折</span>
-					</p><div class="clearfix"></div>			
-				</div>				
-			</div>	
-			<div class="houselist_con w360">
-				<div class="houselist_img">
-					<a href=""><img src="images/index/new1.jpg"></a>	
-					<div class="mask w360">
-						<p><span class="area_name">小区名字</span>
-							<span class="area_position"><small>江干区</small><small>丁桥</small></span>
-						</p><div class="clearfix"></div>	
-					</div>			
-				</div>
-				<div class="houselist_text info1">
-					<p class="info1_text">
-						<span class="size">204.91㎡</span>
-						<span class="price">起拍价：<em class="c_red">576万元</em></span>
-					</p><div class="clearfix"></div>			
-				</div>
-				<div class="houselist_text info2">
-					<p class="house_name">广州广州广州广州广州广州广州</p>
-					<p class="house_otherinfo">
-						<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
-						<span class="discount"><i>8</i>折</span>
-					</p><div class="clearfix"></div>			
-				</div>				
-			</div>	
-			<div class="houselist_con w360">
-				<div class="houselist_img">
-					<a href=""><img src="images/index/new1.jpg"></a>	
-					<div class="mask w360">
-						<p><span class="area_name">小区名字</span>
-							<span class="area_position"><small>江干区</small><small>丁桥</small></span>
-						</p><div class="clearfix"></div>	
-					</div>			
-				</div>
-				<div class="houselist_text info1">
-					<p class="info1_text">
-						<span class="size">204.91㎡</span>
-						<span class="price">起拍价：<em class="c_red">576万元</em></span>
-					</p><div class="clearfix"></div>			
-				</div>
-				<div class="houselist_text info2">
-					<p class="house_name">广州广州广州广州广州广州广州</p>
-					<p class="house_otherinfo">
-						<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
-						<span class="discount"><i>8</i>折</span>
-					</p><div class="clearfix"></div>			
-				</div>				
-			</div>	
-			<div class="clearfix"></div>
+
+			</div>			
 		</div>	
+		<div class="houselist2_2">		
+			<h2>特惠抢购</h2>
+			<div class="houselist2_recommended">
+				<div class="houselist2_img">
+					<a href=""><img src="images/index/new1.jpg"></a>
+				</div>
+				<div class="houselist2_text">
+					<p class="info2_text re_info">
+						<span class="re_name">金地自在城</span>
+						<span class="re_price">均价：15000元/㎡</span>
+					</p>
+					<p class="info2_text re_voucher">
+						<span class="re_v">1000抵10000券</span>
+						<span class="re_btn">立即抢购</span>
+					</p>
+				</div>			
+			</div>	
+			<div class="houselist2_recommended">
+				<div class="houselist2_img">
+					<a href=""><img src="images/index/new1.jpg"></a>
+				</div>
+				<div class="houselist2_text">
+					<p class="info2_text re_info">
+						<span class="re_name">金地自在城</span>
+						<span class="re_price">均价：15000元/㎡</span>
+					</p>
+					<p class="info2_text re_voucher">
+						<span class="re_v">1000抵10000券</span>
+						<span class="re_btn">立即抢购</span>
+					</p>
+				</div>			
+			</div>			
+			<div class="houselist2_recommended">
+				<div class="houselist2_img">
+					<a href=""><img src="images/index/new1.jpg"></a>
+				</div>
+				<div class="houselist2_text">
+					<p class="info2_text re_info">
+						<span class="re_name">金地自在城</span>
+						<span class="re_price">均价：15000元/㎡</span>
+					</p>
+					<p class="info2_text re_voucher">
+						<span class="re_v">1000抵10000券</span>
+						<span class="re_btn">立即抢购</span>
+					</p>
+				</div>			
+			</div>			
+			<div class="houselist2_recommended">
+				<div class="houselist2_img">
+					<a href=""><img src="images/index/new1.jpg"></a>
+				</div>
+				<div class="houselist2_text">
+					<p class="info2_text re_info">
+						<span class="re_name">金地自在城</span>
+						<span class="re_price">均价：15000元/㎡</span>
+					</p>
+					<p class="info2_text re_voucher">
+						<span class="re_v">1000抵10000券</span>
+						<span class="re_btn">立即抢购</span>
+					</p>
+				</div>			
+			</div>			
+		</div>
 	</div>	
-</div>		
+	
+
+
+
+
+<div class="clearfix"></div>
+</div>	
 
 
 
@@ -414,7 +505,24 @@
 
 
 
-
+<script language="javascript" type="text/javascript"> 
+var interval = 1000; 
+function ShowCountDown(year,month,day,divname) 
+{ 
+var now = new Date(); 
+var endDate = new Date(year, month-1, day); 
+var leftTime=endDate.getTime()-now.getTime(); 
+var leftsecond = parseInt(leftTime/1000); 
+//var day1=parseInt(leftsecond/(24*60*60*6)); 
+var day1=Math.floor(leftsecond/(60*60*24)); 
+var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+var cc = document.getElementById(divname); 
+cc.innerHTML = "<p class='fs14'>倒计时：<span>"+day1+"天</span><span>"+hour+"小时</span><span>"+minute+"分</span><span>"+second+"秒</span></p>	"; 
+} 
+window.setInterval(function(){ShowCountDown(2018,4,20,'down1');}, interval); 
+</script> 	
 
 
 
@@ -480,7 +588,48 @@ function hideImg(){
 	});
 </script>	
 <script src="js/select.js"></script>	
+<script type="text/javascript">
+var dlNum  =$143("#selectList").find("dl");
+for (i = 0; i < dlNum.length; i++) {
+	$143(".hasBeenSelected .clearList").append("<div class=\"selectedInfor selectedShow\" style=\"display:none\"><span></span><label></label><em></em></div>");
+}
 
+var refresh = "true";
+
+$143(".listIndex a ").live("click",function(){
+	var text =$143(this).text();
+	var selectedShow = $143(".selectedShow");
+	var textTypeIndex =$143(this).parents("dl").index();
+	var textType =$143(this).parent("dd").siblings("dt").text();
+	index = textTypeIndex -(2);
+	$143(".clearDd").show();
+	$143(".selectedShow").eq(index).show();
+	$143(this).addClass("selected").siblings().removeClass("selected");
+	selectedShow.eq(index).find("span").text(textType);
+	selectedShow.eq(index).find("label").text(text);
+	var show = $143(".selectedShow").length - $143(".selectedShow:hidden").length;
+	if (show > 1) {
+		$143(".eliminateCriteria").show();
+	}
+   
+});
+$143(".selectedShow em").live("click",function(){
+	$143(this).parents(".selectedShow").hide();
+	var textTypeIndex =$143(this).parents(".selectedShow").index();
+	index = textTypeIndex;
+	$143(".listIndex").eq(index).find("a").removeClass("selected");
+	
+	if($(".listIndex .selected").length < 2){
+		$143(".eliminateCriteria").hide();
+	}
+});
+
+$143(".eliminateCriteria").live("click",function(){
+	$143(".selectedShow").hide();
+	$143(this).hide();
+	$143(".listIndex a ").removeClass("selected");
+}); 
+</script>
 
 </body>
 </html>
