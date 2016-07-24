@@ -1,4 +1,6 @@
-﻿a {color: #e66140;}
+﻿*{color:#444}
+footer *{color:#fff}
+a {color: #e66140;}
 .modal-title {margin: 0;line-height: 1.42857143;text-align: center;font-size: 20px;}
 .modal-body form{width:80%;margin:0 auto;}
 .modal-body form input{width:100%;margin:0 auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
@@ -27,46 +29,32 @@
     margin-top: 18px;
     cursor: pointer;
     font-size: 20px;
-    color: #000;}
+    color: #e66140;}
 .select_dropdown {margin-right:15px;}		
 .select_dropdown span{    
     font-size: 14px;
-    border: 1px solid #000;
+    border: 1px solid #666;
     margin-top: 5px;    height:24px;
     line-height:24px;    padding-left: 4px;
-    background:url(../images/h/province_sprites2.jpg) no-repeat 65px -3px;
+    background:url(../images/h/province_sprites.png) no-repeat 65px -3px;
 }		
-.subhead_city ul{
-    width: 80px;
-    height: auto;
-    background: #FFF;
-    border: 1px solid #dfdfdf;
-    border-bottom: none;
-    clear: both;
-    display: none;
-    position: absolute;
-    top: 100px;
-    z-index: 10;
-}
-.select_dropdown ul{top: 271px;}
-.select_dropdown ul li a{ color: #000;}
-.subhead_city ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf;padding-left:10px;}
+
+
+
+
+
+.select_dropdown ul{top: 232px;}
+.select_dropdown ul li a{ color: #666;}
+.subhead_city ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf}
 .subhead_city ul li b{font-weight:bold;}
 .show{display:block;}
 
 /* selectNumberScreen */
 .selectNumberScreen{width:795px;height:240px;margin:20px auto;}
-.screenBox dl{width:200px;float:left;overflow:hidden}
 .screenBox dl.noborder{border-bottom:0px;border-left:0px;border-top:0px;border-right:0px}
 .screenBox dl.goodstype{border-bottom:#e6e6e6 1px dashed}
-.screenBox dl dt{    font-size: 16px;
-    padding: 8px 10px;
+.screenBox dl dt{font-size: 14px;font-weight:normal;
     float: left;}
-
-
-
-
-.screenBox dl dd a.selected{background:#39c;color:#fff}
 .screenBox dl dd span.more{position:absolute;width:39px;display:block;height:14px;top:6px;cursor:pointer;right:1px}
 .screenBox dl dd span.more label{display:inline-block;cursor:pointer}
 .hasBeenSelected{padding:2px;margin-top:10px;overflow:hidden;}
@@ -77,18 +65,18 @@
 .hasBeenSelected dl dd{padding-bottom:4px;padding-left:0px;width:676px;padding-right:0px;padding-top:0px}
 .selectedInfor{position:relative;white-space:nowrap;float:left;
     font-size: 14px;
-    border: 1px solid #000;
+    border: 1px solid #e8e8e8;
     margin-top: 5px;margin-right:20px;
     height: 24px;
     line-height: 24px;
     padding-left: 4px;width:80px;
 
 }
-.selectedInfor label{color:#111;font-weight:normal;}
+.selectedInfor label{color:#666;font-weight:normal;}
 .eliminateCriteria{line-height: 24px;
     margin-top: 4px;
     float: left;
-    color: #000;
+    color: #666;
     cursor: pointer;
     background: #eee;
     border-radius: 25%;
@@ -134,6 +122,32 @@
 
 
 
+/* selectd */
+.selectd{float:left;margin-right:10px;}
+.selectd dt{height:28px;display:inline-block;border:1px solid #e8e8e8;background:url(../images/h/province_sprites4.png) no-repeat 60px center;line-height:28px;font-weight:bold;padding-left:10px;cursor:pointer;width:80px;padding-right:12px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;z-index:99;}
+.selectd dt:hover,.selectd dt.cur{border:1px solid #e66140}
+.selectd dd{position:absolute;top:228px;border:1px solid #e8e8e8;background:#fff;display:none;width:80px;z-index:9}
+
+
+
+
+.selectd dd ul{width:78px;max-height:250px;overflow:auto;}
+.selectd dd ul li a{line-height:28px;display:block;padding:0 8px;color:#666}
+.selectd dd ul li a:hover{background:#f5f5f5;}
+
+
+
+
+.subhead_city .selectd dd {
+    top:100px;z-index:100;
+}
+
+.subhead_city .selectd dt {
+	border:none;
+	margin-top:20px;
+	font-size:20px;
+	color:#e66140;font-weight: normal;
+}
 
 
 
@@ -143,13 +157,7 @@
 
 
 
-
-
-
-
-
-
-.houselist h2 {margin: 50px 0 20px;font-size:30px;text-align:left}
+.houselist h2 {margin: 20px 0 20px;font-size:30px;text-align:left}
 .houselist h2 span{margin: 50px 0 20px;font-size:16px;}
 
 
@@ -315,18 +323,18 @@ ol.type li a:hover {
 
 
 /* 司法拍卖 */
-.houselists .select h2 {font-size:16px;padding: 8px 10px;float:left}
+.houselists .select h2 {font-size:14px;padding: 8px 10px;float:left}
 .houselists h2 span{margin: 50px 0 20px;font-size: 16px;}
 .houselists .nav-tabs>li.active>a, .city_tuijian .nav-tabs>li.active>a:hover, 
 .houselists.nav-tabs>li.active>a:focus {background-color: #e66140;border: 1px solid #e66140; color:#fff;border-radius:4px}
 .houselists .nav-tabs {border-bottom:0px;}
-.houselists .nav-tabs>li>a:hover {border: 1px solid #000; }
-.houselists .nav-tabs>li>a {margin-right: 10px;border: 1px solid #000; border-radius:5px;color:#000;}
+.houselists .nav-tabs>li>a:hover {border: 1px solid #e8e8e8; }
+.houselists .nav-tabs>li>a {margin-right: 10px;border: 1px solid #e8e8e8; border-radius:5px;color:#666;}
 .houselists .nav>li>a {position: relative;display: block;padding: 5px 20px;}
 .houselists .mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-32px;position:absolute;padding:5px 5px;width:360px}
 .houselists .mask p .area_name{float:left}
 .houselists .mask p .area_position{float:right}
-.houselists .mask p .area_position small{margin:0 5px}
+.houselists .mask p .area_position small{margin:0 5px;color:#fff}
 .mask p span{font-size:16px;color:#fff}
 .mask p img{padding:0 5px}
 .houselists .houselist_text {padding:5px 10px}
@@ -341,7 +349,7 @@ ol.type li a:hover {
 .houselists .info2 .house_otherinfo .house_tags{float:left}
 .houselists .info2 .house_otherinfo .house_tags .house_tag{padding:2px 5px;margin:0 5px;background:#e66140;color:#fff;font-size:14px;}
 .houselists .info2 .house_otherinfo .discount{float:right;font-size:16px;color:#e66140;}
-.houselists .info2 .house_otherinfo .discount i{font-size:25px}
+.houselists .info2 .house_otherinfo .discount i{font-size:25px;color:#e66140}
 
 
 
@@ -354,9 +362,9 @@ ol.type li a:hover {
 
 
 
-.houselist_head{border:1px solid #000;margin:50px auto 20px;}
+.houselist_head{border:1px solid #e8e8e8;margin:0px auto 20px;}
 .houselists ul.filter1_1 { text-align: left; font-size: 0;margin: 0 }
-.filter1_1 li { display: inline-block; padding: 10px 20px; font-size: 14px; color: #333;cursor: pointer;border-right:1px solid;}
+.filter1_1 li { display: inline-block; padding: 10px 20px; font-size: 14px; color: #333;cursor: pointer;border-right:1px solid #e8e8e8;}
 
 
 
@@ -372,8 +380,8 @@ ol.type li a:hover {
     background: url(../images/h/province_sprites4.png) no-repeat;}
 	
 	
-.filter1_1 .active { color: #fff; background-color: #e66140;border-right:1px solid #000;}
-.ordered .active { color: #000; background:none;border:none;}
+.filter1_1 .active { color: #fff; background-color: #e66140;border-right:1px solid #e8e8e8;}
+.ordered .active { color: #666; background:none;border:none;}
 .ordered .active em{ background: url(../images/h/province_sprites3.png) no-repeat;}
 .filtr-item {width: 390px;padding:10px;}
 
@@ -397,22 +405,47 @@ ol.type li a:hover {
 	text-align:center;
 }
 .houselist2_countdown{float:left;width:320px;}
-.houselist2_vouchers{text-align:left;float:left;width:400px}
-.houselist2_vouchers .voucher{border:1px solid #e66140;}
+.houselist2_vouchers{text-align:left;float:left;width:418px;overflow:hidden;height:60px}
+
+.houselist2_vouchers .voucher {border:1px solid #e66140;width:200px;margin:4px;float:left}
+.houselist2_vouchers .voucher .voucher_info{width:70%;float:left;text-align:center;padding-top:2px}
+.houselist2_vouchers .voucher .voucher_info .voucher_name{color:#e66140;}
+.houselist2_vouchers .voucher .voucher_info .voucher_name span{font-size:18px;font-weight:bold;color:#e66140}
+.houselist2_vouchers .voucher .voucher_info .voucher_limit{font-size:12px}
+.houselist2_vouchers .voucher .voucher_a {width:30%;float:right;text-align:center;background:#e66140;height:48px;padding-top:8px}
+.houselist2_vouchers .voucher .voucher_a p{color:#fff;font-size:12px}
 
 
 
-.houselist2_con:hover{box-shadow: 5px 5px 5px #ddd;border-left:1px solid #eee}
+
+
+.houselist2_con:hover{box-shadow: 5px 5px 5px #ddd;border-left:1px solid #eee;z-index:999;}
 .houselist2_img{float:left;width:320px;height:210px;margin-right:10px}
 .houselist2_img img{width:300px;height:200px;}
-.houselist2_text{text-align:left;float:left;width:400px;border-bottom:2px dashed #eee}
+.houselist2_text{text-align:left;float:left;width:400px;}
+.wf .houselist2_text{border-bottom:2px dashed #eee;height:200px}
+.wf .houselist2_text.hot{border-bottom:0}
 .houselist2_text p{padding:10px}
+.hot p{padding:5px}
+.hot p.wf_focus span{color:#e66140;font-size:20px}
+
+
+
+.hot{width: 120px;
+    position: relative;
+    top: -165px;
+    float: right;}
+
+
+
+	
+	
+
+
 .houselist2_text p.house_price1{font-weight:bold}
 .houselist2_text p.house_price1 span{padding-right:5px}
 .houselist2_text p.house_price2 span{text-decoration:line-through}
 .houselist2_text p.house_tags span{background:#e66140;margin:0 2px;padding:2px 5px;border-radius:2px;color:#fff;font-size:12px}
-
-
 
 
 .houselist2_2{width:340px;float:right;background:#fff;padding:20px;}
@@ -436,7 +469,12 @@ ol.type li a:hover {
 
 /* 司法拍卖 */
 
-
+.wf_name{font-size: 20px;font-weight: bold;}
+.wf_name span{font-size: 12px;
+    padding: 2px;
+    background: #e66140;
+    margin-left:5px;
+    color: #fff;}
 
 
 
@@ -448,6 +486,59 @@ ol.type li a:hover {
 .houselist_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:20px;background:#fff}
 .houselist_con:hover{box-shadow: 5px 5px 5px #ddd;}
 .houselist_con img{width:360px;height:240px}
+
+
+.houselist_con .tips{
+    position: absolute;
+    top: 41px;
+    left: 15px;
+    z-index: 200;
+
+}
+.houselist_con .tips p{
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-45deg);
+    border-bottom: 16px solid #e66140;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    height: 0;
+}
+
+
+
+.houselist2_con .tips{
+    position: absolute;
+    top: 41px;
+    left: 25px;
+    z-index: 200;
+
+}
+.houselist2_con .tips p{
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-45deg);
+    border-bottom: 16px solid #e66140;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    height: 0;
+}
+
+
+
+
+
+
+
+
 .houselist_text{text-align:left;}
 
 
@@ -490,11 +581,30 @@ background-image: none;	right:-100px}
 
 
 
+.pagination {
+    border-radius:0px;
+}
+.pagination>li:first-child>a ,.pagination>li:last-child>a{
+    border-radius: 0px;
+}
+.pagination>li>a{
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #666;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #666;
+	margin:5px
+}
 
-
-
-
-
+.pagination>li>a:hover, .pagination>li>a:focus{
+    color: #666;
+    background-color: #eee;
+    border-color: #666;
+}
 
 
 
