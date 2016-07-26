@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>直通车详情页 - 抢先拍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">	
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 	
+	<!-- 头部图片展示 -->
+	<script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
+	<script language="javascript" type="text/javascript" src="js/script.js"></script>
+	<!-- 头部图片展示 -->
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/public.css" rel="stylesheet">
+	<link href="css/d.css" rel="stylesheet">
+</head>
+<body>	
+	<!-- 头部开始 -->
+	<div id="header">	
+		<div class="con14">
+			<div id="top">
+				<div id="nav">
+					<nav class="navbar navbar-default" role="navigation">
+					   <div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" 
+							 data-target="#example-navbar-collapse">
+							 <span class="sr-only">切换导航</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						  </button>
+					   </div>
+					   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+						  <ul class="nav navbar-nav">
+							 <li><a href="index.html">首页</a></li>
+							 <li class="active"><a href="houselist.html">房屋列表</a></li>
+							 <li><a href="newslist.html">资讯信息</a></li>
+							 <li><a href="videolist.html">视频中心</a></li>
+							 <li><a href="about.html">关于我们</a></li>
+						  </ul>
+					   </div>
+					</nav>
+				</div>
+				<div id="other">
+					<p><a data-toggle="modal" data-target="#myModal_login">登录</a></p>	
+					<p><span style="margin:0 10px">|</span></p>	
+					<p><a data-toggle="modal" data-target="#myModal_reg">注册</a></p>
+				</div>		
+				<!-- 登录-模态框（Modal） -->
+				<div class="modal fade" id="myModal_login" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">登录</h4>
+						 </div>
+						 <div class="modal-body">
+							<form>
+								<input type="text" placeholder="账号">
+								<input type="text" placeholder="密码">
+								<p><a href="" data-toggle="modal" data-target="#myModal_findpaw"  data-dismiss="modal" aria-hidden="true">忘记密码？</a></p>
+								<input type="submit" value="立即登录">	
+								<p>还没有账户？ <a href="" data-toggle="modal" data-target="#myModal_reg" data-dismiss="modal" aria-hidden="true">立即注册</a></p>
+							</form>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+				<!-- 注册-模态框（Modal） -->
+				<div class="modal fade" id="myModal_reg" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">注册</h4>
+						 </div>
+						 <div class="modal-body">
+							<form>
+								<input type="text" placeholder="账号">
+								<input type="text" placeholder="手机验证码" class="verification"><input type="button" value="立刻获取" class="getcode">
+								<input type="text" placeholder="密码">
+								<p class="agree-warp">
+									<label class="user-xieyi">
+										<input type="checkbox" name="tongyi" checked="" class="checkbox">已阅读并同意<a id="xieyi" data-toggle="modal" data-target="#myModal_xieyi" data-dismiss="modal" aria-hidden="true">《用户使用协议》</a>
+									</label>
+								</p>
+								<input type="submit" value="注册">	
+								<input type="submit" value="用户登录" data-toggle="modal" data-target="#myModal_login"  data-dismiss="modal" aria-hidden="true">	
+							</form>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+				<!-- 忘记密码-模态框（Modal） -->
+				<div class="modal fade" id="myModal_findpaw" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">重置密码</h4>
+						 </div>
+						 <div class="modal-body">
+							<form>
+								<input type="text" placeholder="手机号">
+								<input type="text" placeholder="手机验证码" class="verification"><input type="button" value="立刻获取" class="getcode">
+								<input type="text" placeholder="输入新密码">
+								<input type="submit" value="确认修改">	
+							</form>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>
+				<!-- 用户使用协议-模态框（Modal） -->
+				<div class="modal fade" id="myModal_xieyi" tabindex="-1" role="dialog" 
+				   aria-labelledby="myModalLabel" aria-hidden="true">
+				   <div class="modal-dialog">
+					  <div class="modal-content">
+						 <div class="modal-header">
+							<button type="button" class="close" 
+							   data-dismiss="modal" aria-hidden="true">
+								  &times;
+							</button>
+							<h4 class="modal-title" id="myModalLabel">用户使用协议</h4>
+						 </div>
+						 <div class="modal-body">
+							<p>一、抢先拍服务条款的接受 </p>
+							<p>1.通过完成抢先拍注册程序，用户便表明其接受了本服务协议的条款，并同意受本服务协议的约束。</p>
+							<p>2.用户保证其提交的信息真实、准确、及时和完整。</p>
+							<p>3.本服务协议所称的用户是指完全同意所有条款(以下简称“服务条款”)并完成注册程序的服务接受者。</p>
+							<p>二、服务条款的变更和修改</p>
+							<p>1.抢先拍保留依其自主判断在将来的任何时间变更、修改、增加或删除本服务协议条款的权利。所有修改的协议均构成本服务协议的一部分。</p>
+							<p>2.抢先拍有权随时对服务条款进行修改，一旦发生服务条款的变动，抢先拍将提示修改的内容。</p>
+							<p>3.当用户使用抢先拍的特殊服务时，应接受抢先拍随时提供的与该特殊服务相关的规则或说明，并且此规则或说明均构成本服务条款的一部分。</p>
+							<p>4.用户如果不同意服务条款的修改，可以主动取消已经获得的网络服务；如果用户继续享用网络服务，则视为用户已经接受服务条款的修改。</p>
+							<p> 三、用户资格的规定</p>
+							<p>只有符合下列条件之一的自然人或法人才能申请成为抢先拍用户，可以使用抢先拍的服务：</p>
+							<p>1.年满十八周岁，并具有民事权利能力和民事行为能力的自然人。</p>
+							<p>2.无民事行为能力人或限制民事行为能力人应经过其监护人的同意。</p>
+							<p>四、用户隐私权</p>
+							<p>1.当用户注册抢先拍的服务时，用户须提供个人信息。抢先拍收集个人信息的目的是为用户提供尽可能多的个人化网上服务以及为广告商提供一个方便的途径来接触到适合的用户，并且可以发送相关的信息和广告。在此过程中，广告商绝对不会接触到用户的个人信息。</p>
+							<p> 2.抢先拍不会在未经合法用户授权时，公开、编辑或透露其个人信息及保存在抢先拍中的非公开内容，除非有下列情况：</p>
+							<p> (1).有关法律规定或抢先拍合法服务程序规定； </p>
+							<p>(2).在紧急情况下，为维护用户及公众的权益； </p>
+							<p>(3).为维护抢先拍的合法权益； </p>
+							<p>(4).其他需要公开、编辑或透露个人信息的情况。 </p>
+							<p>3.在以下(包括但不限于)几种情况下，抢先拍有权使用用户的个人信息： </p>
+							<p>(1).在进行促销或抽奖时，抢先拍可能会与赞助商共享用户的个人信息，在这些情况下抢先拍会在发送用户信息之前进行提示，并且用户可以通过不参与来终止传送过程。 </p>
+							<p>(2).抢先拍可以将用户信息与第三方数据匹配。 </p>
+							<p>(3).抢先拍会通过透露合计用户统计数据，向未来的合作伙伴、广告商及其他第三方以及为了其他合法目的而描述抢先拍的服务。 </p>
+							<p>4.抢先拍会向用户发送客户订制的信息或者抢先拍认为用户会感兴趣的其他信息。如果用户不希望收到这样的信息，只需在提供个人信息时或其他任何时候告知即可。</p>
+							<p>5.抢先拍会采取行业惯用措施保护用户信息的安全，但抢先拍不能确信或保证任何个人信息的完全安全性，用户须自己承担风险。</p>
+							<p>6.用户同意并认可，因用户自身或第三方的行为导致用户信息的披露，比如用户联机公布可被公众访问的个人信息时，用户有可能会收到未经用户同意的信息；抢先拍的合作伙伴和可通过抢先拍访问的第三方因特网站点和服务；通过抽奖、促销等活动得知用户个人信息的第三方会进行独立的数据收集工作等活动。抢先拍对用户及其他任何第三方的上述行为，不承担任何责任。</p>
+							<p>五、用户账号、密码和安全</p>
+							<p>1.用户一旦注册成功，便成为抢先拍的合法用户，将得到一个密码和帐号。用户有义务保证密码和帐号的安全。用户对利用该密码和帐号所进行的一切活动负全部责任；因此所衍生的任何损失或损害，抢先拍无法也不承担任何责任。</p><p>
+							2.用户的密码和帐号遭到未授权的使用或发生其他任何安全问题，用户可以立即通知抢先拍，并且用户在每次连线结束，应结束帐号使用，否则用户可能得不到抢先拍的安全保护。 </p>
+							<p>六、用户信息的存储与限制</p>
+							<p>1.抢先拍不对用户所发布信息的删除或储存失败负责。抢先拍并不承诺对用户的存储信息进行无限期保留。除非本协议中另有规定，否则抢先拍不保证服务一定会满足用户的使用要求，也不保证服务不会受中断，对服务的及时性、安全性、准确性也不作担保。</p>
+							<p>2.抢先拍有判定用户的行为是否符合抢先拍服务条款的要求和精神的保留权利，如果用户违背了服务条款的规定，抢先拍有中断对其提供网络服务的权利。</p>
+							<p>七、免责声明</p>
+							<p>1.抢先拍不保证所有信息、文本、图形、链接及其它项目的绝对准确性和完整性，故仅供访问者参照使用。其中政策法规中文本不得作为正式法规文本使用。</p>
+							<p>2.用户明确同意其使用本站网络服务所存在的风险及一切后果将完全由用户本人承担，抢先拍对此不承担任何责任。 </p>
+							<p>3.如果单位或个人认为本网站某部分内容有侵权嫌疑，敬请立即通知我们，我们将第一时间予以更该或删除。本网站并不承担查清事情的责任和证实事情公正性和合法性的责任，同时在事情查清前保留对该部分内容继续刊载的权利。</p>
+							<p>4.本服务可能会提供与其他国际互联网网站或资源进行链接。对于前述网站或资源是否可以利用，抢先拍不予担保。因使用或依赖上述网站或资源所产生的损失或损害，抢先拍也不承担任何责任。</p>
+							<p>5.对于因不可抗力或本站不能控制的原因造成的网络服务中断或其它缺陷，本站不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。</p>
+							<p>6.对于站向用户提供的下列产品或者服务的质量缺陷本身及其引发的任何损失，本站无需承担任何责任：</p>
+							<p>(1)本站向用户免费提供的各项网络服务；</p>
+							<p>(2)本站向用户赠送的任何产品或者服务。</p>
+							<p>7.本站有权于任何时间暂时或永久修改或终止本服务(或其任何部分)，而无论其通知与否，本站对用户和任何第三人均无需承担任何责任。</p>
+							<p>八、法律的管辖和适用</p>
+							<p>1.本协议的订立、执行和解释及争议的解决均应适用中国法律。</p>
+							<p>2.如发生本站服务条款与中国法律相抵触时，则这些条款将完全按法律规定重新解释，而其它合法条款则依旧保持对注册会员产生法律效力和影响。</p>
+							<p>3.本协议的规定是可分割的，如本协议任何规定被裁定为无效或不可执行，该规定可被删除而其余条款应予以执行。</p>
+							<p>4.如双方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决；协商不成时，任何一方均可向本站所在地的人民法院提起诉讼。</p>
+							<p>九、其他规定</p>
+							<p>1.抢先拍对本服务协议包括基于本服务协议制定的各项规则拥有最终解释权。</p>
+							<p>2.本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。</p>
+							<p>3.如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。</p>								
+						 </div>
+						 <div class="modal-footer">
+							<button type="button" class="btn" data-toggle="modal" data-target="#myModal_reg" data-dismiss="modal" aria-hidden="true">
+							   返回注册
+							</button>
+						 </div>
+					  </div><!-- /.modal-content -->
+					</div><!-- /.modal -->
+				</div>								
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+	</div>	
+	<!-- 头部结束 -->
+	<div class="subhead">
+		<div class="con12">
+			<div class="subhead_logo"></div>
+			<div class="subhead_city">
+				<dl class="selectd listIndex">
+					<dt>不限</dt>
+					<dd>
+						<ul class="">
+							<li><a href="javascript:void(0);">安徽</a></li>
+							<li><a href="javascript:void(0);">北京</a></li>
+							<li><a href="javascript:void(0);">重庆</a></li>
+							<li><a href="javascript:void(0);">福建</a></li>
+							<li><a href="javascript:void(0);">广东</a></li>
+							<li><a href="javascript:void(0);">广西</a></li>
+							<li><a href="javascript:void(0);">河北</a></li>
+							<li><a href="javascript:void(0);">河南</a></li>
+							<li><a href="javascript:void(0);">黑龙江</a></li>
+							<li><a href="javascript:void(0);">吉林</a></li>
+							<li><a href="javascript:void(0);">江苏</a></li>
+							<li><a href="javascript:void(0);">辽宁</a></li>
+							<li><a href="javascript:void(0);">内蒙古</a></li>
+							<li><a href="javascript:void(0);">青海</a></li>
+							<li><a href="javascript:void(0);">上海</a></li>
+							<li><a href="javascript:void(0);">山东</a></li>
+							<li><a href="javascript:void(0);">天津</a></li>
+							<li><a href="javascript:void(0);">新疆</a></li>
+							<li><a href="javascript:void(0);">云南</a></li>
+							<li><a href="javascript:void(0);">浙江</a></li>
+						</ul>	
+					</dd>
+				</dl>		
+			</div>
+			<div class="subhead_search">
+				<div class="search-sort-con">
+					<form class="search-form clearfix">
+						<input class="txt" type="text" id="keyword" name="keyword" placeholder="请输入小区、商圈名称">
+						<input type="btn" class="btn">
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"></div>	
+		</div>
+	</div>
+
+<div class="d_top con11">
+	<h2>杭州市西湖区香墅9幢2号101室房产-204.91</h2>
+	<div class="d_top_l">
+		<div id="container">
+			<div id="lofslidecontent45" class="lof-slidecontent" style="width:500px; height:420px;">
+			<div class="preload"><div></div></div>
+			<div class="lof-main-outer" style="width:500px; height:420px;">
+			<ul class="lof-main-wapper">
+				<li><img src="images/d/w1.jpg" title=""></li> 
+				<li><img src="images/d/w2.jpg" title=""></li> 
+				<li><img src="images/d/w3.jpg" title=""></li> 
+				<li><img src="images/d/w4.jpg" title=""> </li> 
+				<li><img src="images/d/w5.jpg" title=""></li> 
+				<li><img src="images/d/w6.jpg" title=""> </li> 
+				<li><img src="images/d/w7.jpg" title=""> </li> 
+				<li><img src="images/d/w8.jpg" title=""> </li> 
+			</ul>  	
+			</div>
+				<div class="lof-navigator-wapper">
+					<div onclick="return false" href="" class="lof-previous">Previous</div>			
+					<div class="lof-navigator-outer">
+						<ul class="lof-navigator">
+							<li><img src="images/d/w1.jpg" /></li>
+							<li><img src="images/d/w2.jpg" /></li>
+							<li><img src="images/d/w3.jpg" /></li>
+							<li><img src="images/d/w4.jpg" /></li>    
+							<li><img src="images/d/w5.jpg" /></li>
+							<li><img src="images/d/w6.jpg" /></li>       
+							<li><img src="images/d/w7.jpg" /></li>       
+							<li><img src="images/d/w8.jpg" /></li>  		
+						</ul>
+					</div>
+					<div onclick="return false" href="" class="lof-next">Next</div>
+				</div> 
+			</div> 
+		</div>
+	</div>
+	<div class="d_top_r">
+		<p class="d_top_dealprice">起拍价：超值 面议</p>
+		<p class="d_top_marketprice">市场价：<span>￥220万</span></p>
+		<p class="d_top_address">地址：杭州西湖区紫金港湾东区商铺</p>
+		<p class="d_top_type">类型：住宅</p>
+		<p class="d_top_time">截止日期：2016-07-19</p>
+		<p class="d_top_tags"><span>可贷款</span><span>可按揭</span><span>无过户障碍</span>
+		</p>
+	</div><div class="clearfix"></div>
+</div>	
+<div class="d_mid con11">
+	<div class="d_mid_l noline">
+		<p>所属机构：机构直供</p>
+		<p>第三方佣金：</p>
+		<p>其他费用：￥0</p>
+		<p>税费：￥0</p>
+		<p>联系人：抢先拍交易服务平台</p>
+		<p>联系电话：400-251-4212</p>
+		<h2>资产描述</h2>
+		<p>区域：虹口区</p>
+		<p>房屋用途：办公</p>
+		<p>竣工日期：2010</p>
+		<p>总层数：19</p>
+		<p>欠费承担：买受人</p>
+		<p>地址：上海市虹口区水电路1422号1201室</p>
+		<p>房产类型：办公楼</p>
+		<p>房屋结构：钢混</p>
+		<p>楼层：12</p>
+		<p>装修程度：现场勘查为准</p>
+		<p>税费承担：根据执行法院规定</p>
+		<p>房屋内占用状况：详见拍品描述</p>
+		<p>交通状况：周边有97、745、823、758路等公交以及地铁三号线。交通便捷度较好</p>
+		<p>标的为上海市虹口区水电路1422号1201室房地产。其东临水电路，南近车站南路，西近凉城路，北临车站北路。该标的位于凉城中心办公楼内，总高19层，2010年竣工房屋结构为钢混，外墙为大理石及铝塑板，彩铝门窗，石膏板吊顶，装修情况良好。楼内有安保监控系统、消防配电梯两部，喷淋系统等，水、电、通讯等设施正常，整体维护状况良好。标的对象位于第12层，1201室，建筑面积127.34平方米，朝向南，室内毛坯空置。附近办公聚集度高、商业和生活配套设施齐全，能满足日常需要。周边有97、745、823、758路等公交以及地铁三号线。交通便捷度较好</p>		
+	</div>
+	<div class="d_mid_r">
+		<div class="d_recommend">
+			<a href=""><img src="images/d/w1.jpg"/>
+			<p>上海区闵行区疏影路711号弄27号1203市1203市1203市</p>
+			<h2>处置价：110万</h2></a>
+		</div>
+		<div class="d_recommend">
+			<a href=""><img src="images/d/w1.jpg"/>
+			<p>上海区闵行区疏影路711号弄27号1203市1203市1203市</p>
+			<h2>处置价：110万</h2></a>
+		</div>
+		<div class="d_recommend">
+			<a href=""><img src="images/d/w1.jpg"/>
+			<p>上海区闵行区疏影路711号弄27号1203市1203市1203市</p>
+			<h2>处置价：110万</h2></a>
+		</div>		
+	</div><div class="clearfix"></div>	
+</div>
+
+<footer class="noprint">
+	<ul class="ib sub-nav">
+		<li><a target="_self" href="/general-pages/about-us">关于我们</a></li>
+		<li class="line" ng-if="!is91Flight">|</li>
+		<li><a target="_self" href="/general-pages/partners">合作伙伴</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/business-cooperation">商务合作</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/join-us" >加入我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/contact-us">联系我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/service-protocol">服务声明</a></li>
+	</ul>
+	<ul class="ib im">
+		<li class="wechat-con"><a href="javscript:void(0);" onMouseOut="hideImg()"  onmouseover="showImg()">微信</a><div class="wechat"></div></li>
+		<li class="sina"><a href="http://weibo.com/qiangxianpai?refer_flag=1001030101_" target="_blank">新浪微博</a></li>
+		<li class="taobao" ng-if="!is91Flight"><a href="https://shop143101383.taobao.com/index.htm?spm=2013.1.w5002-14693851524.2.TSpzsC" target="_blank">淘宝</a></li>
+	</ul>
+	<p>抢先拍@2016 All rights reserved | 增值电信业务经营许可证:浙B2-20160073<br>
+		浙ICP备15018503号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
+</footer>
+<!-- 二维码显隐 -->
+<script type="text/javascript">
+function  showImg(){
+	$(".wechat").css("display","block");
+}
+function hideImg(){
+	$(".wechat").css("display","none");
+}
+</script>
+	
+<script type="text/javascript">
+$(document).ready( function(){	
+	var buttons = { 
+		previous:$('#lofslidecontent45 .lof-previous') ,
+			next:$('#lofslidecontent45 .lof-next') 
+	};					
+	$obj = $('#lofslidecontent45').lofJSidernews({ 
+		interval        : 4000,
+		direction		: 'opacitys',	
+		easing			: 'easeInOutExpo',
+		duration		: 1200,
+		auto		 	: false,
+		maxItemDisplay  : 5,
+		navPosition     : 'horizontal', // 头部图片展示
+		navigatorHeight : 60,
+		navigatorWidth  : 85,
+		mainWidth       : 500,
+		buttons			: buttons
+	});	
+});
+</script>
+</body>
+</html>
+
+

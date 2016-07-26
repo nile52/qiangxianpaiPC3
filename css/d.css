@@ -1,0 +1,861 @@
+﻿*{color:#444}
+footer *{color:#fff}
+footer {margin-top: 0px;}
+a {color: #e66140;}
+.con11{width:1100px;margin:0 auto}
+
+
+/* 司法拍卖 */
+.d_top h2{font-size:20px;font-weight:bold;padding:20px 0 15px 0}
+.d_top_l,.d_top_r{float:left;}
+.d_top_l{width:560px}
+.d_top_r{width:460px}
+.d_top_r p{padding:10px 0;font-size:16px}
+.d_top_r p button{float:right;border:0;background:#e1e1e1;border-radius:5px;margin:0 5px;padding:2px 10px}
+.d_top_r p a{float:right;font-size:14px;color:#444}
+.d_top_r p.d_top_price span{font-size:30px;color:#e66140}
+.d_top_r p.d_top_tags span{padding:5px 10px;background:#e66140;margin:0 2px;border-radius:10px;color:#fff}
+.d_top_r p.d_top_floor a img{width:25px; background:#e66140;margin:5px;border-radius:5px}
+.countdown p span{padding:2px 5px;background:#e66140;margin:0 2px;border-radius:10px;color:#fff}
+.d_mid_l {width:600px;padding:0 20px;border-right:2px dashed #cfcfcf;margin:20px 0;float:left}
+.d_mid_l.noline{border-right:0px dashed #cfcfcf;}
+.d_mid_l h2, .d_mid_r h2, .d_map h2{font-size:20px;color:#e66140;padding:20px 0 10px 0}
+.d_mid_l p{padding:10px 0}
+.d_short p{font-size:16px}
+.d_short .ll,.d_short .lr{float:left;width:50%;}
+.d_short .ll p, .d_short .lr p{padding:10px 0}
+.d_short p{font-size:16px}
+.d_mid_r{width:400px;padding:0 20px;margin:20px 0;float:left}
+.d_card{padding:0 20px;}
+.d_card .d_card_text{float:left;text-align:center;padding-top:40px}
+.d_card .d_card_text p{padding:5px 0;}
+.d_card .d_card_text .d_card_name{font-size:20px}
+.d_card .d_card_text .d_card_belong{font-size:16px}
+.d_card .d_card_img{float:left;margin-left:20px}
+.d_card .d_card_img img{width:140px;height:140px;border-radius:50%}
+.d_ask_card{border-bottom:2px dashed #cfcfcf;}
+.d_ask_title{font-size:16px;border-bottom:2px dashed #8c8c8c;padding:10px 0}
+.d_ask_title a{padding:2px 5px;background:#eee;margin:0 2px;border-radius:10px;color:#fff;float:right }
+.d_ask_qusetion{padding:10px 0;font-size:16px}
+.d_ask_answer{padding-left:50px;background:url(../images/d/yqf.png) no-repeat}
+.d_ask_answer p{max-height:45px;padding:5px 0;overflow:hidden;text-overflow:ellipsis;}
+.d_ask_answer p.d_ask_time{float:right}
+p.d_ask_more a{padding: 2px 5px;background: #eee;margin: 0 2px;border-radius: 10px;color: #fff;float: right;margin:5px;font-size:16px}
+.d_map{padding:20px}
+.d_map ul li {float:left;margin:0 10px;padding:5px 10px;}
+.d_map ul li a{color:#444}
+.d_map ul li.active {float:left;margin:0 10px;padding:5px 10px;border:1px solid #e66140;border-radius:10px}
+.dt-table tbody tr td{padding:10px 0}
+/* 头部图片展示 */
+.lof-slidecontent, .lof-slidecontent a {color:#FFF;	}
+.lof-slidecontent a.readmore{color:#58B1EA;font-size:95%;}
+.lof-slidecontent{position:relative;overflow:hidden;}
+.lof-slidecontent .preload{height:100%;width:100%;position:absolute;top:0;left:0;z-index:100000;text-align:center;background:#FFF}
+.lof-slidecontent .preload div{height:100%;width:100%;}
+.lof-main-outer{position:relative;height:100%;width:900px;z-index:3px;overflow:hidden;}
+ul.lof-main-wapper{overflow:hidden;padding:0px;margin:0;position:absolute;overflow:hidden;}
+ul.lof-main-wapper li{overflow:hidden;padding:0px;margin:0px;float:left;position:relative;}
+.lof-opacity  li{position:absolute;top:0;left:0;float:inherit;}
+ul.lof-main-wapper li img{padding:0px;width:500px;	}
+.lof-navigator-wapper {position:absolute;bottom:10px;right:10px;padding:5px 0px;}
+.lof-navigator-outer{position:relative;z-index:100;height:180px;width:310px;overflow:hidden;color:#FFF;float:left}
+ul.lof-navigator{top:0;padding:0;margin:0;position:absolute;width:100%;}
+ul.lof-navigator li{cursor:hand; cursor:pointer;list-style:none;padding:0;margin-left:0px;overflow:hidden;float:left;display:block;text-align:center;}
+ul.lof-navigator li img{border:#fff solid 2px;	width:80px;}
+ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#e66140 solid 2px;}
+.lof-navigator-wapper .lof-next,  .lof-navigator-wapper .lof-previous{display:block;width:22px;height:30px;color:#FFF;cursor:pointer;}
+.lof-navigator-wapper .lof-next {float:left;	text-indent:-999px;margin-right:5px;margin-top:15px;background:url(../images/d/arrow-l.png) no-repeat right center;}
+.lof-navigator-wapper .lof-previous {float:left;	text-indent:-999px;margin-left:5px;margin-top:15px;background:url(../images/d/arrow-r.png) no-repeat left center;}
+/* 司法拍卖 */
+
+
+
+/* 资产直通车 */
+.d_top_r p.d_top_dealprice{font-size:30px;font-weight:bold}
+.d_top_r p.d_top_marketprice span{text-decoration:line-through}
+.d_recommend{width:340px}
+.d_recommend img{width:340px}
+.d_recommend p{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:5px 0px}
+.d_recommend p:hover{color:#e66140}
+.d_recommend h2{padding:5px 0 20px 0;text-align:center}
+/* 资产直通车 */
+
+
+
+
+
+/* 尾房 */
+.d_top_phone span{font-size:14px;border:1px solid #ddd;padding:5px 20px;border-radius:10px;}
+.d_top_show img{margin:0 5px}
+.countdown2 p span{padding:2px 5px;background:#e66140;margin:0 2px;border-radius:10px;color:#fff}
+.countdown2 p{text-align:center;width:500px}
+
+
+.d_voucher{padding-top:20px}
+.d_voucher_l{float:left;width:75%;margin:10px 1%;border:1px solid #ccc;border-radius:10px;height:75px}
+.d_voucher_ll{float:left;width:30%;border-radius:10px;background:#e66140;height:73px}
+.d_voucher_ll p{font-size:16px;line-height:73px;color:#fff;text-align:center}
+.d_voucher_lr{float:left;width:70%;border-radius:10px;padding:0 5%;height:73px}
+.d_voucher_lrl{float:left;width:40%;text-align:center;}
+.d_voucher_lrl p{font-size:16px;line-height:73px;text-align:center}
+.d_voucher_lrr{float:left;width:60%;text-align:center;height:73px;padding:15px 0}
+
+
+.d_voucher_r{float:left;width:20%;margin:10px 1%;border:1px solid #ccc;border-radius:10px;height:75px;text-align:center;padding: 15px 0;}
+.d_voucher_r .d_voucher_price{color:#e66140}
+.d_voucher_r .d_voucher_btn span{background:#e66140;color:#fff;padding:2px 10px;border-radius:5px}
+
+.d_rule{padding:20px}
+.d_rule h2,.d_models h2{padding:20px;font-size:20px;padding:20px 0 15px 0;color:#e66140}
+.d_rule p{line-height:25px}
+
+.d_models{padding:20px}
+.d_models>p{text-align:center;margin:20px 0;border-top:2px dashed #ddd;padding:10px 0}
+.d_model{padding:20px 20px 0 20px}
+.d_model_img {width:350px;float:left}
+.d_model_img img{width:340px;height:280px}
+.d_model_text{width:550px;float:left;padding:20px}
+.d_model_text p{padding:10px 0}
+#d_models_con{max-height:900px;overflow:hidden;}
+#more_model:hover{color:#e66140}
+.d_lp .d_lp_l{width:50%;padding:20px;float:left}
+.d_lp .d_lp_r{width:50%;padding:20px;float:left}
+.d_lp .d_lp_l p,.d_lp .d_lp_r p{padding:10px}
+
+
+
+ 
+/* 尾房 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-title {margin: 0;line-height: 1.42857143;text-align: center;font-size: 20px;}
+.modal-body form{width:80%;margin:0 auto;}
+.modal-body form input{width:100%;margin:0 auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
+.modal-body form input.verification{width:70%;float:left;}
+.modal-body form input.getcode{width:26%;float:right;margin:0 2%;background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
+.modal-body form input[type=submit] {background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
+.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
+.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
+#myModal_xieyi .modal-body p{line-height: 20px;text-indent: 2em;padding: 5px;}
+#myModal_xieyi .modal-body{max-height:550px;overflow-y:scroll;}
+
+
+
+
+
+.subhead{border-bottom:1px solid #eee;border-top:1px solid #eee;width:100%;height:70px}
+.subhead .subhead_logo{width:174px;height:65px;background:url(../images/h/logo2.jpg) 0px 0px;float:left;transition: background 1s;
+-moz-transition: background 1s;	/* Firefox 4 */
+-webkit-transition: background 1s;	/* Safari 和 Chrome */
+-o-transition: background 1s;}
+.subhead .subhead_logo:hover{background:url(../images/h/logo2.jpg) 0px 65px;transition: background 1s;
+-moz-transition: background 1s;	/* Firefox 4 */
+-webkit-transition: background 1s;	/* Safari 和 Chrome */
+-o-transition: background 1s;}
+
+
+
+.subhead_city{width:80px;float:left;}
+.subhead_city span{    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background: #FFF url(../images/h/province_sprites.jpg) no-repeat 50px 5px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #e66140;}
+.select_dropdown {margin-right:15px;}		
+.select_dropdown span{    
+    font-size: 14px;
+    border: 1px solid #666;
+    margin-top: 5px;    height:24px;
+    line-height:24px;    padding-left: 4px;
+    background:url(../images/h/province_sprites.png) no-repeat 65px -3px;
+}		
+
+
+
+
+
+.select_dropdown ul{top: 232px;}
+.select_dropdown ul li a{ color: #666;}
+.subhead_city ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf}
+.subhead_city ul li b{font-weight:bold;}
+.show{display:block;}
+
+/* selectNumberScreen */
+.selectNumberScreen{width:795px;height:240px;margin:20px auto;}
+.screenBox dl.noborder{border-bottom:0px;border-left:0px;border-top:0px;border-right:0px}
+.screenBox dl.goodstype{border-bottom:#e6e6e6 1px dashed}
+.screenBox dl dt{font-size: 14px;font-weight:normal;
+    float: left;}
+.screenBox dl dd span.more{position:absolute;width:39px;display:block;height:14px;top:6px;cursor:pointer;right:1px}
+.screenBox dl dd span.more label{display:inline-block;cursor:pointer}
+.hasBeenSelected{padding:2px;margin-top:10px;overflow:hidden;}
+.hasBeenSelected dl{width:784px;background:#f6f8fd;overflow:hidden}
+.hasBeenSelected dl dt{float:left}
+.hasBeenSelected dl dd{float:left}
+.hasBeenSelected dl dt{text-align:right;line-height:30px;width:108px;height:30px;font-weight:600}
+.hasBeenSelected dl dd{padding-bottom:4px;padding-left:0px;width:676px;padding-right:0px;padding-top:0px}
+.selectedInfor{position:relative;white-space:nowrap;float:left;
+    font-size: 14px;
+    border: 1px solid #e8e8e8;
+    margin-top: 5px;margin-right:20px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 4px;width:80px;
+
+}
+.selectedInfor label{color:#666;font-weight:normal;}
+.eliminateCriteria{line-height: 24px;
+    margin-top: 4px;
+    float: left;
+    color: #666;
+    cursor: pointer;
+    background: #eee;
+    border-radius: 25%;
+    padding: 2px 5px;}
+.selectedInfor em{background:url("../images/h/close.png") no-repeat;cursor:pointer;display:block;height:13px;overflow:hidden;position:absolute;right:2px;top:5px;width:13px;}
+
+
+
+
+
+
+
+
+
+.subhead_search{float:right;}
+.subhead_search .search-form {padding: 8px 0;background-color: #fff;}
+.subhead_search input.txt {    height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #999;
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-top: 8px;}
+.search-sort-con .btn, .search-sort-con .txt {border: 0;padding: 0;}
+.subhead_search input.btn {float: right;
+    height: 45px;
+    width: 40px;}
+.search-sort-con .btn {background:url(../images/h/ic_search_search.png) no-repeat center center}
+.select_com .select{margin:20px 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* selectd */
+.selectd{float:left;margin-right:10px;}
+.selectd dt{height:28px;display:inline-block;border:1px solid #e8e8e8;background:url(../images/h/province_sprites4.png) no-repeat 60px center;line-height:28px;font-weight:bold;padding-left:10px;cursor:pointer;width:80px;padding-right:12px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;z-index:99;}
+.selectd dt:hover,.selectd dt.cur{border:1px solid #e66140}
+.selectd dd{position:absolute;top:228px;border:1px solid #e8e8e8;background:#fff;display:none;width:80px;z-index:9}
+
+
+
+
+.selectd dd ul{width:78px;max-height:250px;overflow:auto;}
+.selectd dd ul li a{line-height:28px;display:block;padding:0 8px;color:#666}
+.selectd dd ul li a:hover{background:#f5f5f5;}
+
+
+
+
+.subhead_city .selectd dd {
+    top:100px;z-index:100;
+}
+
+.subhead_city .selectd dt {
+	border:none;
+	margin-top:20px;
+	font-size:20px;
+	color:#e66140;font-weight: normal;
+	background:url(../images/h/updown.png) no-repeat 60px -12px;
+}
+
+
+
+
+
+
+
+
+
+.houselist h2 {margin: 20px 0 20px;font-size:30px;text-align:left}
+.houselist h2 span{margin: 50px 0 20px;font-size:16px;}
+
+
+
+
+
+
+.search{position: absolute;top:14px; left: 34%; width:477px; _width:477px; height: 81px;}
+.keyword a{ font-size: 12px; line-height: 18px; color:#999; padding:0 4px;}
+.keyword a span{ color:#fb5004;}
+.tab-bar li.current{ color: #1d7ad9; font-weight: bold; background: url(../images/trian_up.png) no-repeat center bottom; padding-bottom: 9px;}
+.tab-bar li{ width:38px; text-align: center; color: #444; float: left; cursor: pointer;}
+.tab-bar li.tab-line{ width: 2px; color: #c9c9c9; margin:0 2px;}
+.tab-box{ border:2px solid #1d7ad9;}
+.text{ color: #a9a9a9; width:376px; height: 31px; border:none; text-indent: 10px; float:left; outline: none; border:0;}
+.button{ width: 97px; height: 32px; text-align: center; color: #fff; font-size:18px;background: #1d7ad9; border:none; float: left;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gallery Section 
+==============================*/
+#works-section {
+	padding: 80px 0;
+}
+.categories {
+	padding-bottom: 30px;
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+#works-section li.pull-right {
+	margin-top: 10px;
+}
+ol.type li {
+	display: inline-block;
+	margin-left: 20px;
+}
+ol.type li:after {
+	content: ' | ';
+	margin-left: 20px;
+}
+ol.type li:last-child:after {
+	content: '';
+}
+ol.type li a {
+	color: #222222
+}
+ol.type li a.active {
+	color: #c08d00;
+	font-weight: bold;
+}
+ol.type li a:hover {
+	color: #c08d00;
+}
+.isotope-item {
+	z-index: 2
+}
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+.isotope, .isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.portfolio-item {
+	margin-bottom: 30px;
+}
+.portfolio-item .hover-bg {
+	height: 260px;
+	overflow: hidden;
+	position: relative;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.66);
+	padding: 25% 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-bg .hover-text>i {
+	opacity: 0;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>i {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+#works-section i.fa {
+	height: 30px;
+	width: 30px;
+	border: 1px solid #c08d00;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 50%;
+	color: #c08d00;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 司法拍卖 */
+.houselists .select h2 {font-size:14px;padding: 8px 10px;float:left}
+.houselists h2 span{margin: 50px 0 20px;font-size: 16px;}
+.houselists .nav-tabs>li.active>a, .city_tuijian .nav-tabs>li.active>a:hover, 
+.houselists.nav-tabs>li.active>a:focus {background-color: #e66140;border: 1px solid #e66140; color:#fff;border-radius:4px}
+.houselists .nav-tabs {border-bottom:0px;}
+.houselists .nav-tabs>li>a:hover {border: 1px solid #e8e8e8; }
+.houselists .nav-tabs>li>a {margin-right: 10px;border: 1px solid #e8e8e8; border-radius:5px;color:#666;}
+.houselists .nav>li>a {position: relative;display: block;padding: 5px 20px;}
+.houselists .mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-32px;position:absolute;padding:5px 5px;width:360px}
+.houselists .mask p .area_name{float:left}
+.houselists .mask p .area_position{float:right}
+.houselists .mask p .area_position small{margin:0 5px;color:#fff}
+.mask p span{font-size:16px;color:#fff}
+.mask p img{padding:0 5px}
+.houselists .houselist_text {padding:5px 10px}
+.houselists .info1{border-bottom:1px solid #eee;}
+.houselists .info1 .info1_text{}
+.houselists .info1 .info1_text .size{float:left;font-size:16px}
+.houselists .info1 .info1_text .price{float:right;font-size:14px;}
+.houselists .info1 .info1_text .price em{font-size:16px;}
+.houselists .info2{}
+.houselists .info2 .house_name{font-size:16px;}
+.houselists .info2 .house_otherinfo{margin:10px 0}
+.houselists .info2 .house_otherinfo .house_tags{float:left}
+.houselists .info2 .house_otherinfo .house_tags .house_tag{padding:2px 5px;margin:0 5px;background:#e66140;color:#fff;font-size:14px;}
+.houselists .info2 .house_otherinfo .discount{float:right;font-size:16px;color:#e66140;}
+.houselists .info2 .house_otherinfo .discount i{font-size:25px;color:#e66140}
+
+
+
+
+
+.search-wrapper{width:610px;margin:0 auto;text-align:center;margin-top:200px}
+.search-body{width:100%;height:60px;background:#fff;border-radius:10px;padding:8px}
+.search-body input{border:none;float:left;line-height:44px;outline:none;margin-left:5px}
+.search-body button{border:none;background:#e66140;border-radius: 5px;height: 44px;width:100px;color:#fff;float:right;line-height:44px}
+
+
+
+.houselist_head{border:1px solid #e8e8e8;margin:0px auto 20px;}
+.houselists ul.filter1_1 { text-align: left; font-size: 0;margin: 0 }
+.filter1_1 li { display: inline-block; padding: 10px 20px; font-size: 14px; color: #333;cursor: pointer;border-right:1px solid #e8e8e8;}
+
+
+
+
+
+.ordered li {border:none;padding: 10px;text-align:center}
+.ordered li em{cursor: pointer; 
+    display: block;
+    height: 13px;
+    float: right;
+    margin-top:3px;
+    width: 13px;
+    background: url(../images/h/province_sprites4.png) no-repeat;}
+	
+	
+.filter1_1 .active { color: #fff; background-color: #e66140;border-right:1px solid #e8e8e8;}
+.ordered .active { color: #666; background:none;border:none;}
+.ordered .active em{ background: url(../images/h/province_sprites3.png) no-repeat;}
+.filtr-item {width: 390px;padding:10px;}
+
+
+
+
+.houselist2_l{width:840px;float:left;background:#fff;padding:20px;}
+
+.houselist2_l .filtr-item {
+    width: 840px;
+}
+
+
+.houselist2_con{box-shadow: 0 1px 2px #ddd;height:240px;padding:20px;background:#fff;width:780px;border-bottom:1px solid #eee;float:left}
+
+.houselist2_con.wf{height:auto}
+.houselist2_con.wf p.fs14 span{
+	margin:0 2px;padding:2px 5px;background:#e66140;color:#fff;border-radius:5px;
+}
+.houselist2_con.wf p.fs14{
+	text-align:center;
+}
+.houselist2_countdown{float:left;width:320px;}
+.houselist2_vouchers{text-align:left;float:left;width:418px;overflow:hidden;height:60px}
+
+.houselist2_vouchers .voucher {border:1px solid #e66140;width:200px;margin:4px;float:left}
+.houselist2_vouchers .voucher .voucher_info{width:70%;float:left;text-align:center;padding-top:2px}
+.houselist2_vouchers .voucher .voucher_info .voucher_name{color:#e66140;}
+.houselist2_vouchers .voucher .voucher_info .voucher_name span{font-size:18px;font-weight:bold;color:#e66140}
+.houselist2_vouchers .voucher .voucher_info .voucher_limit{font-size:12px}
+.houselist2_vouchers .voucher .voucher_a {width:30%;float:right;text-align:center;background:#e66140;height:48px;padding-top:8px}
+.houselist2_vouchers .voucher .voucher_a p{color:#fff;font-size:12px}
+
+
+.wf .voucher_more{
+    width: 420px;
+    float: right;
+}
+
+
+
+.houselist2_con:hover{box-shadow: 5px 5px 5px #ddd;border-left:1px solid #eee;z-index:999;}
+.houselist2_img{float:left;width:320px;height:210px;margin-right:10px}
+.houselist2_img img{width:300px;height:200px;}
+.houselist2_text{text-align:left;float:left;width:400px;}
+.wf .houselist2_text{border-bottom:2px dashed #eee;height:200px}
+.wf .houselist2_text.hot{border-bottom:0}
+.houselist2_text p{padding:10px}
+.hot p{padding:5px}
+.hot p.wf_focus span{color:#e66140;font-size:20px}
+
+
+
+.hot{width: 120px;
+    position: relative;
+    top: -165px;
+    float: right;}
+
+
+
+	
+	
+
+
+.houselist2_text p.house_price1{font-weight:bold}
+.houselist2_text p.house_price1 span{padding-right:5px}
+.houselist2_text p.house_price2 span{text-decoration:line-through}
+.houselist2_text p.house_tags span{background:#e66140;margin:0 2px;padding:2px 5px;border-radius:2px;color:#fff;font-size:12px}
+
+
+.houselist2_2{width:340px;float:right;background:#fff;padding:20px;}
+.houselist2_2 h2 {
+    margin: 50px 0 20px;
+    font-size: 30px;
+    text-align: left;
+}
+.houselist2_recommended{height:274px;padding:20px;background:#fff;width:300px;border-bottom:1px solid #eee;float:right}
+.houselist2_recommended .houselist2_img{float:left;width:260px;height:175px;}
+.houselist2_recommended .houselist2_img img{width:260px;height:175px;}
+.houselist2_recommended .houselist2_text{text-align:left;float:left;width:260px}
+.houselist2_recommended .houselist2_text p{padding:10px}
+.houselist2_recommended .houselist2_text p.re_info .re_name{width:50%;float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.houselist2_recommended .houselist2_text p.re_info .re_price{width:50%;float:right;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:12px;line-height:20px;text-align:right}
+.houselist2_recommended .houselist2_text p.re_voucher .re_v{float:left;color:#e66140;line-height:30px}
+.houselist2_recommended .houselist2_text p.re_voucher .re_btn{float:right;color:#fff;background:#e66140;padding:3px 10px}
+
+
+
+
+/* 司法拍卖 */
+
+.wf_name{font-size: 20px;font-weight: bold;}
+.wf_name span{font-size: 12px;
+    padding: 2px;
+    background: #e66140;
+    margin-left:5px;
+    color: #fff;}
+
+
+
+
+
+
+.houselist{text-align:center}
+.houselist .fs30{margin-top:100px;margin-bottom:30px}
+.houselist_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:20px;background:#fff}
+.houselist_con:hover{box-shadow: 5px 5px 5px #ddd;}
+.houselist_con img{width:360px;height:240px}
+
+
+.houselist_con .tips{
+    position: absolute;
+    top: 41px;
+    left: 15px;
+    z-index: 200;
+
+}
+.houselist_con .tips p{
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-45deg);
+    border-bottom: 16px solid #e66140;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    height: 0;
+}
+
+
+
+.houselist2_con .tips{
+    position: absolute;
+    top: 41px;
+    left: 25px;
+    z-index: 200;
+
+}
+.houselist2_con .tips p{
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-45deg);
+    border-bottom: 16px solid #e66140;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    height: 0;
+}
+
+
+.wf .tips{
+    position: static;
+	margin-top:-190px;margin-left:-5px;
+    z-index: 200;width:66px
+}
+.wf .tips p{
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-45deg);
+    border-bottom: 16px solid #e66140;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    height: 0;
+}
+
+
+
+
+
+
+
+.houselist_text{text-align:left;}
+
+
+
+
+
+.slide { _margin-top:-10000px; }
+.slide ul.widget { float:left; width:340px;margin:0 10px }
+.slide ul.last { margin-right:0px; }
+.slide ul.widget .img {float:left; }
+.slide ul.widget img {width:150px;height:110px;margin-right:10px }
+.slide ul.widget .xinxi2 p{padding:2px 0}
+.slide ul.widget .xinxi2 .pt{color:#e66140;font-size:18px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+
+.slide ul.widget .xinxi2 p span.qipaijia{color:#e66140;font-size:24px;}
+
+
+
+
+.carousel-control.right {
+background-image: none;	right:-100px}
+.carousel-control.left {
+    background-image: none;left:-100px
+}
+
+.carousel-control {
+    top: 40px;
+	left:-100px
+}
+
+
+.carousel-inner {
+    position: relative;top:-50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.pagination {
+    border-radius:0px;
+}
+.pagination>li:first-child>a ,.pagination>li:last-child>a{
+    border-radius: 0px;
+}
+.pagination>li>a{
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #666;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #666;
+	margin:5px
+}
+
+.pagination>li>a:hover, .pagination>li>a:focus{
+    color: #666;
+    background-color: #eee;
+    border-color: #666;
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+	.news.con12{width:800px}
+	.value.con12{width:800px;}
+}
+@media (max-width: 820px){
+	.value.con12{width:400px;}
+}
+
+@media (max-width: 800px){
+	.news.con12{width:400px}
+	video{width:100%;height:auto}
+}
+
+@media (max-width: 630px){
+	.search-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 200px;
+	}
+}
+
+@media (max-width: 480px){
+	.search-hdr img{
+		width:100%;
+	}
+}
+
+@media (max-width: 420px){
+	.value.con12{width:100%;}
+	.value_con {
+		float: none;
+		width: 300px;margin:5px auto;
+	}	
+	.w360 p {
+		width: 300px;
+	}
+	.w372 p {
+		width: 300px;
+	}
+	.value_con img {
+		width: 300px;
+		height: 225px;
+	}	
+	.news.con12{width:100%}	
+	
+	.news_con {
+		float: none;
+		box-shadow: 0 1px 2px #ddd;
+		width: 300px;
+		height: 385px;margin:5px auto;
+	}
+	.news_con img {
+		width: 300px;
+		height: 225px;
+	}
+	
+}
+
