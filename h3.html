@@ -254,69 +254,81 @@
 			   <li class="active"><a href="h3.html">一手特惠房</a></li>
 			</ul>	
 		</div>
-		<div class="select select2">
-			<h2>房产区域</h2>
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">房产dsdv</a></li>
-						<li><a href="#">房产vd</a></li>
-						<li><a href="#">房产sv</a></li>
-						<li><a href="#">房产ds</a></li>
-						<li><a href="#">房产v</a></li>
-						<li><a href="#">房产dsvd</a></li>
-					</ul>
-				</dd>
-			</dl>
-			<h2>房产类型</h2>
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">列表dv</a></li>
-						<li><a href="#">列表fdb</a></li>
-						<li><a href="#">列表fef</a></li>
-						<li><a href="#">列表dsfd</a></li>
-						<li><a href="#">列表adsvd</a></li>
-					</ul>
-				</dd>
-			</dl>									
-			<h2>房产特色</h2>			
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">产列1</a></li>
-						<li><a href="#">产列2</a></li>
-						<li><a href="#">产列3</a></li>
-					</ul>
-				</dd>
-			</dl>					
-		</div>		
-		<div class="clearfix"></div>
-		<div class="select select3 hasBeenSelected">
-			<h2 style="float:left;">已选条件</h2>
-				<dd style="display:none" class="clearDd">
-					<div class="clearList"></div>
-					<div style="display:none;" class="eliminateCriteria">重置</div>
-				</dd>
-		</div>
+		<div class="demo">	
+			<ul class="selects">
+				<li class="select-list">
+					<dl id="select1">
+						<dt>房产区域</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select2">
+						<dt>房产类型</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">住宅</a></dd>
+						<dd><a href="#">别墅</a></dd>
+						<dd><a href="#">酒店式公寓</a></dd>
+						<dd><a href="#">商铺</a></dd>
+						<dd><a href="#">办公楼</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select3">
+						<dt>房产特色</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">地铁房</a></dd>
+						<dd><a href="#">学区房</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select4">
+						<dt>拍卖状态</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">正在热抢</a></dd>
+						<dd><a href="#">即将上线</a></dd>
+					</dl>
+				</li>								
+			</ul>
+		</div>	
 	</div>
+	
+	
+	
 	<div class="clearfix"></div>
 		<!-- 一手特惠房 -->
 		<div class="houselist value con12 tab-pane fade in active" id="zhitongche">
-			<div class="houselist_head">
+<!-- 			<div class="houselist_head">
 				<ul class="filter1_1" style="float:left">
 					<li data-filter="7">正在热抢</li>
 					<li data-filter="8">即将上线</li>
 				</ul>
 				<div class="clearfix"></div>
-			</div>	
+			</div>	 -->
 			<div class="houselist2_l">
 				<h2>一手特惠房 <span>投资风险小，价格优势大</span></h2>				
 				<div class="dowebok">	
-					<div class="" data-category="7">
+					<div class="">
 						<div class="houselist2_con wf">
 							<div class="houselist2_img">
 								<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>									
@@ -670,16 +682,7 @@ function hideImg(){
 </script>
 <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
-<!-- <script src="js/jquery.filterizr.js"></script>	
-<script>
-	$(function() {
-		$('.dowebok').filterizr();
 
-		$('.filter1_1 li').on('click', function() {
-			$(this).toggleClass('active').siblings().removeClass('active');
-		});
-	});
-</script>	 -->
 <script type="text/javascript">
 $(function(){
 	$(".selectd").each(function(){
@@ -695,57 +698,23 @@ $(function(){
 	})
 })
 </script>
-<script type="text/javascript">
-var dlNum  =$143("#selectList").find("dl");
-for (i = 0; i < dlNum.length; i++) {
-	$143(".hasBeenSelected .clearList").append("<div class=\"selectedInfor selectedShow\" style=\"display:none\"><span></span><label></label><em></em></div>");
-}
-var refresh = "true";
-$143(".listIndex a ").live("click",function(){
-	var text =$143(this).text();
-	var selectedShow = $143(".selectedShow");
-	var textTypeIndex =$143(this).parents("dl").index();
-	var textType =$143(this).parent("dd").siblings("dt").text();
-	index = textTypeIndex -(4);
-	$143(".clearDd").show();
-	$143(".selectedShow").eq(index).show();
-	$143(this).addClass("selected").siblings().removeClass("selected");
-	selectedShow.eq(index).find("span").text(textType);
-	selectedShow.eq(index).find("label").text(text);
-	var show = $143(".selectedShow").length - $143(".selectedShow:hidden").length;
-	if (show > 1) {
-		$143(".eliminateCriteria").show();
-	}   
-});
-$143(".selectedShow em").live("click",function(){
-	$143(this).parents(".selectedShow").hide();
-	var textTypeIndex =$143(this).parents(".selectedShow").index();
-	index = textTypeIndex;
-	$143(".listIndex").eq(index).find("a").removeClass("selected");
-	
-	if($(".listIndex .selected").length < 2){
-		$143(".eliminateCriteria").hide();
-	}
-});
-$143(".eliminateCriteria").live("click",function(){
-	$143(".selectedShow").hide();
-	$143(this).hide();
-	$143(".listIndex a ").removeClass("selected");
-}); 
-</script>
 
-
-<script type="text/javascript">
-function zhankai(c_str,imgg){
-	if(document.all(c_str).style.height=='60px'){
-		document.all(c_str).style.height='120px';
-		document.all(imgg).src='images/h/up.png'
-	}else{
-		document.all(c_str).style.height='60px';
-		document.all(imgg).src='images/h/down.png'
-	}
-}
-</script>
+<script>  //7.27号新的筛选
+$(document).ready(function(){			
+	$("#select1 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select2 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select3 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});		
+	$("#select4 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+});
+</script>	
 
 </body>
 </html>

@@ -418,7 +418,7 @@ ol.type li a:hover {
 
 
 
-.ordered li {border:none;padding: 10px;text-align:center}
+.ordered li {padding: 10px;text-align:center}
 .ordered li em{cursor: pointer; 
     display: block;
     height: 13px;

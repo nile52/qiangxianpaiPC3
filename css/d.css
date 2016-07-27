@@ -120,10 +120,6 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#e66140 so
 .d_lp .d_lp_l{width:50%;padding:20px;float:left}
 .d_lp .d_lp_r{width:50%;padding:20px;float:left}
 .d_lp .d_lp_l p,.d_lp .d_lp_r p{padding:10px}
-
-
-
- 
 /* 尾房 */
 
 
@@ -150,21 +146,69 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#e66140 so
 
 
 
-
+/* 模态框 */
 
 
 
 
 .modal-title {margin: 0;line-height: 1.42857143;text-align: center;font-size: 20px;}
 .modal-body form{width:80%;margin:0 auto;}
-.modal-body form input{width:100%;margin:0 auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
+.modal-body form input{width:100%;margin:5px auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
 .modal-body form input.verification{width:70%;float:left;}
-.modal-body form input.getcode{width:26%;float:right;margin:0 2%;background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
+.modal-body form input.getcode{width:25%;float:right;background:#e66140;line-height:20px;color:#fff;}
 .modal-body form input[type=submit] {background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
 .modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
-.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
+.modal-body form p .forgetpwd{float:right;}
+.modal-body form p{line-height:50px}
+.modal-body p.process{text-align:center}
+.modal-body p.process span{margin:10px;color:#e66140;font-weight:bold}
+.modal-body .conditions{width:50%;float:left;padding:20px}
+.modal-body .loan_form{width:50%;float:left}
+.modal-body .calculator_inputs{width:60%;float:left}
+.modal-body .calculator_show{width:40%;float:left}
+.modal-body .conditions h2{font-size:20px;font-weight:bold;color:#e66140;margin:20px 0 10px 0}
+.modal-body .conditions p{padding:5px 0}
+
+#myModal_loan .modal-body form input, #myModal_calculator .modal-body form input{
+    width:69%;
+    margin:0px;
+    height: 30px;
+    padding:0px;
+    outline-color: #e66140;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.modal-body .calculator_show .show_name{width:150px;}
+.modal-body .calculator_show .show_name{width:150px;line-height:50px}
+#myModal_calculator h2{font-size:20px;font-weight:bold;color:#e66140;margin:20px 0 10px 0}
+.calculator_btn .count{height:50px;width:30px}
+
+
+
+
+.modal-body .modal_logo{text-align:center;border-bottom:2px dashed #e66140;margin-bottom:20px}
 #myModal_xieyi .modal-body p{line-height: 20px;text-indent: 2em;padding: 5px;}
 #myModal_xieyi .modal-body{max-height:550px;overflow-y:scroll;}
+.modal-header {
+    background: -webkit-linear-gradient(red, blue);
+    background: -o-linear-gradient(red, blue);
+    background: -moz-linear-gradient(red, blue);
+    background: linear-gradient(#ef8657, #e66140);
+    color: #fff;
+}
+#myModal_entrust{width:400px;margin:300px auto}
+#myModal_entrust .modal-dialog {
+    width: 300px;
+    margin: 30px auto;
+}
+
+
+
+/* 模态框 */
+
+
+
 
 
 
