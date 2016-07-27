@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>房屋列表 - 抢先拍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<!-- 	<script type="text/javascript">
+		var $143 = $;
+	</script> -->
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/public.css" rel="stylesheet">
+	<link href="css/h.css" rel="stylesheet">
+</head>
+<body>	
+	<!-- 头部开始 -->
+	<div id="header">	
+		<div class="con14">
+			<div id="top">
+				<div id="nav">
+					<nav class="navbar navbar-default" role="navigation">
+					   <div class="navbar-header">
+						  <button type="button" class="navbar-toggle" data-toggle="collapse" 
+							 data-target="#example-navbar-collapse">
+							 <span class="sr-only">切换导航</span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+							 <span class="icon-bar"></span>
+						  </button>
+					   </div>
+					   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+						  <ul class="nav navbar-nav">
+							 <li><a href="index.html">首页</a></li>
+							 <li class="active"><a href="houselist.html">房屋列表</a></li>
+							 <li><a href="newslist.html">资讯信息</a></li>
+							 <li><a href="videolist.html">视频中心</a></li>
+							 <li><a href="about.html">关于我们</a></li>
+						  </ul>
+					   </div>
+					</nav>
+				</div>
+				<div id="other">
+					<p><a data-toggle="modal" data-target="#myModal_login">登录</a></p>	
+					<p><span style="margin:0 10px">|</span></p>	
+					<p><a data-toggle="modal" data-target="#myModal_reg">注册</a></p>
+				</div>								
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+	</div>	
+	<!-- 头部结束 -->
+	<div class="subhead">
+		<div class="con12">
+			<div class="subhead_logo"></div>
+			<div class="subhead_city">
+				<dl class="selectd listIndex">
+					<dt>不限</dt>
+					<dd>
+						<ul class="">
+							<li><a href="javascript:void(0);">安徽</a></li>
+							<li><a href="javascript:void(0);">北京</a></li>
+							<li><a href="javascript:void(0);">重庆</a></li>
+							<li><a href="javascript:void(0);">福建</a></li>
+							<li><a href="javascript:void(0);">广东</a></li>
+							<li><a href="javascript:void(0);">广西</a></li>
+							<li><a href="javascript:void(0);">河北</a></li>
+							<li><a href="javascript:void(0);">河南</a></li>
+							<li><a href="javascript:void(0);">黑龙江</a></li>
+							<li><a href="javascript:void(0);">吉林</a></li>
+							<li><a href="javascript:void(0);">江苏</a></li>
+							<li><a href="javascript:void(0);">上海</a></li>
+							<li><a href="javascript:void(0);">山东</a></li>
+							<li><a href="javascript:void(0);">天津</a></li>
+							<li><a href="javascript:void(0);">新疆</a></li>
+							<li><a href="javascript:void(0);">云南</a></li>
+							<li><a href="javascript:void(0);">浙江</a></li>
+						</ul>	
+					</dd>
+				</dl>		
+			</div>
+			<div class="subhead_search">
+				<div class="search-sort-con">
+					<form class="search-form clearfix">
+						<input class="txt" type="text" id="keyword" name="keyword" placeholder="请输入小区、商圈名称">
+						<input type="btn" class="btn">
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"></div>	
+		</div>
+	</div>
+<div style="background:#f8f8f8;padding:10px 0 50px 0">
+<div class="wrapper houselists con12">
+	<div class="select_com screenBox screenBackground" id="selectList">
+		<div class="select select1">
+			<h2>房产列表</h2>
+			<ul id="myTab" class="nav nav-tabs">
+			   <li class="active"><a href="h1.html">司法拍卖</a></li>
+			   <li><a href="h2.html">资产直通车</a></li>
+			   <li><a href="h3.html">一手特惠房</a></li>
+			</ul>	
+		</div>
+		
+		<div class="demo">	
+			<ul class="selects">
+				<li class="select-list">
+					<dl id="select1">
+						<dt>房产区域</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select2">
+						<dt>房产类型</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">住宅</a></dd>
+						<dd><a href="#">别墅</a></dd>
+						<dd><a href="#">酒店式公寓</a></dd>
+						<dd><a href="#">商铺</a></dd>
+						<dd><a href="#">办公楼</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select3">
+						<dt>房产特色</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">地铁房</a></dd>
+						<dd><a href="#">学区房</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select4">
+						<dt>拍卖状态</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">开拍中</a></dd>
+						<dd><a href="#">即将开拍</a></dd>
+						<dd><a href="#">已中标</a></dd>
+						<dd><a href="#">已流拍</a></dd>
+					</dl>
+				</li>				
+				
+				<li class="select-result">
+					<dl>
+						<dt>已选条件</dt>
+						<dd class="select-no">暂时没有选择过滤条件</dd>
+						<span class="eliminateCriteria">重置</span>
+					</dl>
+					
+				</li>
+			</ul>
+		</div>	
+
+<!-- 		<div class="select select2">
+			<h2>房产区域</h2>
+			<dl class="selectd listIndex">
+				<dt>不限</dt>
+				<dd>
+					<ul>
+						<li><a href="#">房产dsdv</a></li>
+						<li><a href="#">房产vd</a></li>
+						<li><a href="#">房产sv</a></li>
+						<li><a href="#">房产ds</a></li>
+						<li><a href="#">房产v</a></li>
+						<li><a href="#">房产dsvd</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<h2>房产类型</h2>
+			<dl class="selectd listIndex">
+				<dt>不限</dt>
+				<dd>
+					<ul>
+						<li><a href="#">列表dv</a></li>
+						<li><a href="#">列表fdb</a></li>
+						<li><a href="#">列表fef</a></li>
+						<li><a href="#">列表dsfd</a></li>
+						<li><a href="#">列表adsvd</a></li>
+					</ul>
+				</dd>
+			</dl>									
+			<h2>房产特色</h2>			
+			<dl class="selectd listIndex">
+				<dt>不限</dt>
+				<dd>
+					<ul>
+						<li><a href="#">产列1</a></li>
+						<li><a href="#">产列2</a></li>
+						<li><a href="#">产列3</a></li>
+					</ul>
+				</dd>
+			</dl>					
+		</div>	 -->
+
+
+<!-- 		<div class="select select3 hasBeenSelected">
+			<h2 style="float:left;">已选条件</h2>
+			<dd style="display:none" class="clearDd">
+				<div class="clearList"></div>
+				<div style="display:none;" class="eliminateCriteria">重置</div>
+			</dd>
+		</div> -->
+
+	</div>
+	<div class="clearfix"></div>
+	<div id="myTabContent" class="tab-content" >
+		<!-- 司法拍卖 -->
+		<div class="houselist con12 tab-pane fade in active">	
+			<div class="houselist_head">
+				<ul class="filter1_1" style="float:left">
+					<li>默认排序<em></em></li>
+					<li>发布时间<em></em></li>
+					<li>折扣力度<em></em></li>
+					<li>总价<em></em></li>
+				</ul>
+				<ul class="filter1_1 ordered" style="float:right">
+
+				</ul>
+				<div class="clearfix"></div>
+			</div>			
+			<h2>司法拍卖 <span>专业指导，精准捡漏</span></h2>				
+			<div class="dowebok">	
+				<div class="filtr-item" data-category="1">
+					<div class="houselist_con w360">
+						<div class="houselist_img">
+							<a href="">
+								<img src="images/index/new1.jpg"></a>
+								<div class="tips"><p>独家</p></div>
+							<div class="mask w360">
+								<p><span class="area_name">小区名字</span>
+									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
+								</p><div class="clearfix"></div>	
+							</div>			
+						</div>
+						<div class="houselist_text info1">
+							<p class="info1_text">
+								<span class="size">204.91㎡</span>
+								<span class="price">起拍价：<em class="c_red">576万元</em></span>
+							</p><div class="clearfix"></div>			
+						</div>
+						<div class="houselist_text info2">
+							<p class="house_name">开拍中开拍中开拍中开拍中开拍中开拍中</p>
+							<p class="house_otherinfo">
+								<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
+								<span class="discount"><i>8</i>折</span>
+							</p><div class="clearfix"></div>			
+						</div>				
+					</div>	
+				</div>	
+				<div class="filtr-item" data-category="2">
+					<div class="houselist_con w360">
+						<div class="houselist_img">
+							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>	
+							<div class="mask w360">
+								<p><span class="area_name">小区名字</span>
+									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
+								</p><div class="clearfix"></div>	
+							</div>			
+						</div>
+						<div class="houselist_text info1">
+							<p class="info1_text">
+								<span class="size">204.91㎡</span>
+								<span class="price">起拍价：<em class="c_red">576万元</em></span>
+							</p><div class="clearfix"></div>			
+						</div>
+						<div class="houselist_text info2">
+							<p class="house_name">22222222222222222222222222222222222222</p>
+							<p class="house_otherinfo">
+								<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
+								<span class="discount"><i>8</i>折</span>
+							</p><div class="clearfix"></div>			
+						</div>				
+					</div>	
+				</div>	
+				<div class="filtr-item" data-category="3">
+					<div class="houselist_con w360">
+						<div class="houselist_img">
+							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>	
+							<div class="mask w360">
+								<p><span class="area_name">小区名字</span>
+									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
+								</p><div class="clearfix"></div>	
+							</div>			
+						</div>
+						<div class="houselist_text info1">
+							<p class="info1_text">
+								<span class="size">204.91㎡</span>
+								<span class="price">起拍价：<em class="c_red">576万元</em></span>
+							</p><div class="clearfix"></div>			
+						</div>
+						<div class="houselist_text info2">
+							<p class="house_name">33333333333333333333333333333333333</p>
+							<p class="house_otherinfo">
+								<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
+								<span class="discount"><i>8</i>折</span>
+							</p><div class="clearfix"></div>			
+						</div>				
+					</div>	
+				</div>					
+				<div class="filtr-item" data-category="4">
+					<div class="houselist_con w360">
+						<div class="houselist_img">
+							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>	
+							<div class="mask w360">
+								<p><span class="area_name">小区名字</span>
+									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
+								</p><div class="clearfix"></div>	
+							</div>			
+						</div>
+						<div class="houselist_text info1">
+							<p class="info1_text">
+								<span class="size">204.91㎡</span>
+								<span class="price">起拍价：<em class="c_red">576万元</em></span>
+							</p><div class="clearfix"></div>			
+						</div>
+						<div class="houselist_text info2">
+							<p class="house_name">44444444444444444444444444444444</p>
+							<p class="house_otherinfo">
+								<span class="house_tags"><em class="house_tag">一拍</em><em class="house_tag">一拍</em><em class="house_tag">一拍</em></span>
+								<span class="discount"><i>8</i>折</span>
+							</p><div class="clearfix"></div>			
+						</div>				
+					</div>	
+				</div>					
+			</div>	
+			<div class="page">	
+				<ul class="pagination">
+				  <li><a href="#">上一页</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">下一页</a></li>
+				</ul>	
+			</div>	
+			
+		</div>			
+	</div>	
+</div>		
+</div><!-- 背景结束标签 -->
+<footer class="noprint">
+	<ul class="ib sub-nav">
+		<li><a target="_self" href="/general-pages/about-us">关于我们</a></li>
+		<li class="line" ng-if="!is91Flight">|</li>
+		<li><a target="_self" href="/general-pages/partners">合作伙伴</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/business-cooperation">商务合作</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/join-us" >加入我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/contact-us">联系我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/service-protocol">服务声明</a></li>
+	</ul>
+	<ul class="ib im">
+		<li class="wechat-con"><a href="javscript:void(0);" onMouseOut="hideImg()"  onmouseover="showImg()">微信</a><div class="wechat"></div></li>
+		<li class="sina"><a href="http://weibo.com/qiangxianpai?refer_flag=1001030101_" target="_blank">新浪微博</a></li>
+		<li class="taobao" ng-if="!is91Flight"><a href="https://shop143101383.taobao.com/index.htm?spm=2013.1.w5002-14693851524.2.TSpzsC" target="_blank">淘宝</a></li>
+	</ul>
+	<p>抢先拍@2016 All rights reserved | 增值电信业务经营许可证:浙B2-20160073<br>
+		浙ICP备15018503号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
+</footer>
+<!-- 二维码显隐 -->
+<script type="text/javascript">
+function  showImg(){
+	$(".wechat").css("display","block");
+}
+function hideImg(){
+	$(".wechat").css("display","none");
+}
+</script>
+<script src="http://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+<!-- jq 引1.8版本一下的，不然删除已选效果出不来 -->
+
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+<script src="js/jquery.filterizr.js"></script>	<!-- 筛选后出现消失的效果 -->
+<script> //排序的点击效果
+	$(function() {
+		$('.dowebok').filterizr();
+
+		$('.filter1_1 li').on('click', function() {
+			$(this).toggleClass('active').siblings().removeClass('active');
+		});
+	});
+</script>	
+
+
+
+<script type="text/javascript">//头部选择城市的
+$(function(){
+	$(".selectd").each(function(){
+		var s=$(this);
+		var z=parseInt(s.css("z-index"));
+		var dt=$(this).children("dt");
+		var dd=$(this).children("dd");
+		var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
+		var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
+		dt.click(function(){dd.is(":hidden")?_show():_hide();});
+		dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
+		$("body").click(function(i){ !$(i.target).parents(".selectd").first().is(s) ? _hide():"";});
+	})
+})
+</script>
+
+
+
+
+<script>  //7.27号新的筛选
+$(document).ready(function(){
+			
+	$("#select1 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+		if ($(this).hasClass("select-all")) {
+			$("#selectA").remove();
+		} else {
+			var copyThisA = $(this).clone();
+			if ($("#selectA").length > 0) {
+				$("#selectA a").html($(this).text());
+			} else {
+				$(".select-result dl").append(copyThisA.attr("id", "selectA"));
+			}
+		}
+	});
+	
+	$("#select2 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+		if ($(this).hasClass("select-all")) {
+			$("#selectB").remove();
+		} else {
+			var copyThisB = $(this).clone();
+			if ($("#selectB").length > 0) {
+				$("#selectB a").html($(this).text());
+			} else {
+				$(".select-result dl").append(copyThisB.attr("id", "selectB"));
+			}
+		}
+	});	
+	$("#select3 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+		if ($(this).hasClass("select-all")) {
+			$("#selectC").remove();
+		} else {
+			var copyThisC = $(this).clone();
+			if ($("#selectC").length > 0) {
+				$("#selectC a").html($(this).text());
+			} else {
+				$(".select-result dl").append(copyThisC.attr("id", "selectC"));
+			}
+		}
+	});		
+	$("#select4 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+		if ($(this).hasClass("select-all")) {
+			$("#selectD").remove();
+		} else {
+			var copyThisD = $(this).clone();
+			if ($("#selectD").length > 0) {
+				$("#selectD a").html($(this).text());
+			} else {
+				$(".select-result dl").append(copyThisD.attr("id", "selectD"));
+			}
+		}
+	});		
+	$("#selectA").live("click", function () {
+		$(this).remove();
+		$("#select1 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+	$("#selectB").live("click", function () {
+		$(this).remove();
+		$("#select2 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+	$("#selectC").live("click", function () {
+		$(this).remove();
+		$("#select3 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+	$("#selectD").live("click", function () {
+		$(this).remove();
+		$("#select4 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+	$(".selects dd").live("click", function () {
+		if ($(".select-result dd").length > 1) {
+			$(".select-no").hide(); 
+			$("#eliminateCriteria2").show(); 
+		} else {
+			$(".select-no").show();	
+			$("#eliminateCriteria2").hide(); 
+		}
+	});	
+	$(".eliminateCriteria").click(function () {
+		$("#selectA").remove();
+		$("#select1 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+		$("#selectB").remove();
+		$("#select2 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+		$("#selectC").remove();
+		$("#select3 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
+		$("#selectD").remove();
+		$("#select4 .select-all").addClass("s_ed").siblings().removeClass("s_ed");		
+		$(".select-no").show();	
+		
+	});	
+});
+</script>	
+
+
+
+
+
+
+
+</body>
+</html>
+
+
