@@ -18,7 +18,6 @@ a {color: #e66140;}
 .d_top_r p.d_top_floor a img{width:25px; background:#e66140;margin:5px;border-radius:5px}
 .countdown p span{padding:2px 5px;background:#e66140;margin:0 2px;border-radius:10px;color:#fff}
 .d_mid_l {width:600px;padding:0 20px;border-right:2px dashed #cfcfcf;margin:20px 0;float:left}
-.d_mid_l.noline{border-right:0px dashed #cfcfcf;}
 .d_mid_l h2, .d_mid_r h2, .d_map h2{font-size:20px;color:#e66140;padding:20px 0 10px 0}
 .d_mid_l p{padding:10px 0}
 .d_short p{font-size:16px}

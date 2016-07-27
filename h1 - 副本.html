@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
-<!-- 	<script type="text/javascript">
-		var $143 = $;
+<!--	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+ 	<script type="text/javascript">
+		var $143 = $;//1.4.3版本的删掉，保留一个1.9以下的版本就好
 	</script> -->
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/public.css" rel="stylesheet">
@@ -158,70 +158,14 @@
 						<dd><a href="#">已中标</a></dd>
 						<dd><a href="#">已流拍</a></dd>
 					</dl>
-				</li>				
-				
-				<li class="select-result">
-					<dl>
-						<dt>已选条件</dt>
-						<dd class="select-no">暂时没有选择过滤条件</dd>
-						<span class="eliminateCriteria">重置</span>
-					</dl>
-					
-				</li>
+				</li>								
 			</ul>
 		</div>	
-
-<!-- 		<div class="select select2">
-			<h2>房产区域</h2>
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">房产dsdv</a></li>
-						<li><a href="#">房产vd</a></li>
-						<li><a href="#">房产sv</a></li>
-						<li><a href="#">房产ds</a></li>
-						<li><a href="#">房产v</a></li>
-						<li><a href="#">房产dsvd</a></li>
-					</ul>
-				</dd>
-			</dl>
-			<h2>房产类型</h2>
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">列表dv</a></li>
-						<li><a href="#">列表fdb</a></li>
-						<li><a href="#">列表fef</a></li>
-						<li><a href="#">列表dsfd</a></li>
-						<li><a href="#">列表adsvd</a></li>
-					</ul>
-				</dd>
-			</dl>									
-			<h2>房产特色</h2>			
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">产列1</a></li>
-						<li><a href="#">产列2</a></li>
-						<li><a href="#">产列3</a></li>
-					</ul>
-				</dd>
-			</dl>					
-		</div>	 -->
-
-
-<!-- 		<div class="select select3 hasBeenSelected">
-			<h2 style="float:left;">已选条件</h2>
-			<dd style="display:none" class="clearDd">
-				<div class="clearList"></div>
-				<div style="display:none;" class="eliminateCriteria">重置</div>
-			</dd>
-		</div> -->
-
 	</div>
+	
+	
+	
+	
 	<div class="clearfix"></div>
 	<div id="myTabContent" class="tab-content" >
 		<!-- 司法拍卖 -->
@@ -392,8 +336,6 @@ function hideImg(){
 </script>
 <script src="http://cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
 <!-- jq 引1.8版本一下的，不然删除已选效果出不来 -->
-
-<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
 <script src="js/jquery.filterizr.js"></script>	<!-- 筛选后出现消失的效果 -->
 <script> //排序的点击效果
 	$(function() {
@@ -404,8 +346,6 @@ function hideImg(){
 		});
 	});
 </script>	
-
-
 
 <script type="text/javascript">//头部选择城市的
 $(function(){
@@ -423,112 +363,22 @@ $(function(){
 })
 </script>
 
-
-
-
 <script>  //7.27号新的筛选
-$(document).ready(function(){
-			
+$(document).ready(function(){			
 	$("#select1 dd").click(function () {
-		$(this).addClass("s_ed").siblings().removeClass("s_ed");
-		if ($(this).hasClass("select-all")) {
-			$("#selectA").remove();
-		} else {
-			var copyThisA = $(this).clone();
-			if ($("#selectA").length > 0) {
-				$("#selectA a").html($(this).text());
-			} else {
-				$(".select-result dl").append(copyThisA.attr("id", "selectA"));
-			}
-		}
-	});
-	
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
 	$("#select2 dd").click(function () {
-		$(this).addClass("s_ed").siblings().removeClass("s_ed");
-		if ($(this).hasClass("select-all")) {
-			$("#selectB").remove();
-		} else {
-			var copyThisB = $(this).clone();
-			if ($("#selectB").length > 0) {
-				$("#selectB a").html($(this).text());
-			} else {
-				$(".select-result dl").append(copyThisB.attr("id", "selectB"));
-			}
-		}
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
 	});	
 	$("#select3 dd").click(function () {
-		$(this).addClass("s_ed").siblings().removeClass("s_ed");
-		if ($(this).hasClass("select-all")) {
-			$("#selectC").remove();
-		} else {
-			var copyThisC = $(this).clone();
-			if ($("#selectC").length > 0) {
-				$("#selectC a").html($(this).text());
-			} else {
-				$(".select-result dl").append(copyThisC.attr("id", "selectC"));
-			}
-		}
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
 	});		
 	$("#select4 dd").click(function () {
 		$(this).addClass("s_ed").siblings().removeClass("s_ed");
-		if ($(this).hasClass("select-all")) {
-			$("#selectD").remove();
-		} else {
-			var copyThisD = $(this).clone();
-			if ($("#selectD").length > 0) {
-				$("#selectD a").html($(this).text());
-			} else {
-				$(".select-result dl").append(copyThisD.attr("id", "selectD"));
-			}
-		}
-	});		
-	$("#selectA").live("click", function () {
-		$(this).remove();
-		$("#select1 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-	});	
-	$("#selectB").live("click", function () {
-		$(this).remove();
-		$("#select2 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-	});	
-	$("#selectC").live("click", function () {
-		$(this).remove();
-		$("#select3 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-	});	
-	$("#selectD").live("click", function () {
-		$(this).remove();
-		$("#select4 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-	});	
-	$(".selects dd").live("click", function () {
-		if ($(".select-result dd").length > 1) {
-			$(".select-no").hide(); 
-			$("#eliminateCriteria2").show(); 
-		} else {
-			$(".select-no").show();	
-			$("#eliminateCriteria2").hide(); 
-		}
-	});	
-	$(".eliminateCriteria").click(function () {
-		$("#selectA").remove();
-		$("#select1 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-		$("#selectB").remove();
-		$("#select2 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-		$("#selectC").remove();
-		$("#select3 .select-all").addClass("s_ed").siblings().removeClass("s_ed");
-		$("#selectD").remove();
-		$("#select4 .select-all").addClass("s_ed").siblings().removeClass("s_ed");		
-		$(".select-no").show();	
-		
 	});	
 });
 </script>	
 
-
-
-
-
-
-
 </body>
 </html>
-
-
