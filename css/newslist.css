@@ -1,6 +1,4 @@
-﻿
-
-.header3_logo{width:134px;height:50px;background:url(../images/h/logo3.jpg) 0px 0px;float:left;transition: background 1s;
+﻿.header3_logo{width:134px;height:50px;background:url(../images/h/logo3.jpg) 0px 0px;float:left;transition: background 1s;
 -moz-transition: background 1s;	/* Firefox 4 */
 -webkit-transition: background 1s;	/* Safari 和 Chrome */
 -o-transition: background 1s;}
@@ -8,129 +6,52 @@
 -moz-transition: background 1s;	/* Firefox 4 */
 -webkit-transition: background 1s;	/* Safari 和 Chrome */
 -o-transition: background 1s;}
-
-
-
-
-
-
 .b1{width:100%;height:300px;background:url(../images/newslist/news_bg.jpg);
     background-size: cover;
     background-position: center;border-top:1px solid #cccccc;text-align:center}
-	
-.b1 .fs50{color:#fff}	
-.b1 .fs28{color:#ffd862}	
-
-.newslist_con{background:#fff;}
-.con880{float:left;background:#fff;}
-
-h1.newstitle{font-size:24px; font-weight:bold;    margin: 15px 0;
-    line-height: 36px;}
-
-h3.date {
-    color: #aaa;
-}
-h3.date .nd{
-    color: #e66140;
-}
-	
-	
-
-
-
-.line .br {
-    width: 100%;
-    border-bottom: 1px solid #999;
-    margin-top: 42px;
-}
-.line p {
-    padding: 0 20px;
-    background: #fff;
-    text-align: center;
-    width: 110px;
-    margin: 0 auto;
-    margin-top: -12px;
-	color:#999;
-	font-size:16px;
-}
-
-
-.con880 .newslist{padding:30px 0;border-bottom:1px solid #e4e4e4;margin:0 30px}
-.con880 .newslist .news_img{float:left;margin:0 15px}
-.con880 .newslist .news_text{margin:0 15px}
-.con880 .newslist .news_img img{width:200px;border-radius:5px}
-.con880 .newslist .news_text p{padding:5px;}
-.con880 .newslist .news_text p.con{height:110px;overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis}
-
-
-.con880 .page{text-align:center}
-
-
-.con3 .house_recommended{margin:10px;border:1px solid #e4e4e4;background:#fff;padding:10px}
-.con3 .house_recommended_add .fs16{padding:5px 0}
-.con3 .house_recommended_text p{padding:5px 0}
-
-.con3 .house_recommended .house_recommended_img{float:left;margin-right:5px}
-.con3 .house_recommended .house_recommended_img img{width:124px;height:92px;}
-.con3 .house_recommended .house_recommended_text{width:128px;float:left;}
-.con3 .house_recommended .house_recommended_text p{white-space:nowrap;text-overflow:ellipsis;}
-
-.mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-25px;position:absolute;height:25px;line-height:25px;padding:0 5px}
-.mask p span{font-size:16px;color:#e66140}
+.bg_f8{background:#f8f8f8;padding:30px 0 }
+.news_nav{width:100%;background:#fff;margin-bottom:20px}
+.news_navs{float:left;}
+.news_navs ul li{float:left;margin:0 20px;padding:10px 5px;font-size:16px;cursor:pointer;}
+.news_navs ul li.active{border-bottom:2px solid #e66140}
+.news_search {float:right;}
+.news_search input{margin:10px 0}
+.news_search input[type="submit"]{background:#e66140 url(../images/public/search_write.png) no-repeat center;border-color:#e66140;width:30px;box-shadow:none}
+.newslists{float:left;width:850px;}
+.newslist{margin:10px 20px;background:#fff;padding:20px;position:relative;}
+.newslist .news_img{width:170px;margin-right:20px;float:left}
+.newslist .news_img img{width:170px;height:170px}
+.newslist .news_text{width:550px;float:left}
+.newslist .news_text h4{font-size:16px;font-weight:bold;padding-bottom:10px}
+.newslist .news_text h4 a{color:#444}
+.newslist .news_text h4 a:hover{color:#e66140}
+.newslist .news_text p.date{padding-bottom:10px}
+.newslist .news_text p.text{max-height:120px;overflow:hidden;text-overflow:ellipsis;}
+.tag{position: absolute;top: 20px;right: -25px;z-index: 200;}
+.tag p{height: 25px;line-height: 25px;width: 120px;font-size: 14px;text-align: center;color: #fff;transform: rotate(45deg);border-bottom: 25px solid rgba(255,0,0,0.5);border-left: 25px solid transparent;border-right: 25px solid transparent;height: 0;}
+.news_more{width:200px;height:50px;background:#ddd;margin:50px auto;text-align:center;font-size:20px;line-height:50px;cursor:pointer;border-radius:5px}
+.news_more p img{margin-top: -2px;}
+.houselist2_2{width:340px;float:right;background:#fff;padding:20px;}
+.houselist2_2 h2 {margin: 20px 0 0px;font-size: 30px;text-align: left;}
+.houselist2_recommended{height:274px;padding:20px;background:#fff;width:300px;border-bottom:1px solid #eee;float:right}
+.houselist2_recommended .houselist2_img{float:left;width:260px;height:175px;}
+.houselist2_recommended .houselist2_img img{width:260px;height:175px;}
+.houselist2_recommended .houselist2_text{text-align:left;float:left;width:260px}
+.houselist2_recommended .houselist2_text p{padding:10px}
+.houselist2_recommended .houselist2_text p.re_info .re_name{width:50%;float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.houselist2_recommended .houselist2_text p.re_info .re_price{width:50%;float:right;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:12px;line-height:20px;text-align:right}
+.houselist2_recommended .houselist2_text p.re_voucher .re_v{float:left;color:#e66140;line-height:30px}
+.houselist2_recommended .houselist2_text p.re_voucher .re_btn{float:right;color:#fff;background:#e66140;padding:3px 10px}
 
 
 
 
-.details_t p{text-align:left;padding:0 10px }
-.details_con{padding:20px 10px}
-.details_con p{font-size:18px;line-height:2em;margin:5px;text-indent:2em}
-.details_con p.details_img{text-align:center;text-indent:0em}
-.details_con p.details_img img{max-width:800px;    margin: 30px auto;}
+.newsdetails{float:left;width:850px;padding:30px;background:#fff}
+.newsdetails h2{font-size:20px;font-weight:bold;padding:10px 0;}
+.newsdetails p{padding:5px 0;text-indent:2em}
+.newsdetails p.news_info span{margin-right:10px}
+.newsdetails p.news_info{text-indent:0em}
+.newsdetails img{max-width:790px;text-align:center}
 
 
 
-
-
-.RecentPosts-section{width:1170px;margin:0 auto}
-
-
-.container {
-    width: 800px;float:left;
-}
-
-
-@media (max-width: 1220px){
-	.con3{display:none}
-	.con880{float:none}
-}
-
-@media (min-width: 992px){
-	.col-md-3 {
-		width: 250px;
-		height: 250px;
-		float: left;
-		padding:0;margin:0 15px;
-	}		
-}
-@media (min-width: 992px){
-	.col-md-9 {width: 490px;float:left;}
-}
-
-
-@media (max-width: 900px){
-	.details_t .fs50{font-size:24px;margin:20px 0}
-	.details_t .fs18{font-size:14px}
-	.details_con p{font-size:14px;}
-	.con880{margin:2%;width:96%;}
-	.details_con p.details_img img{
-		width:100%;
-	}
-}
-
-
-
-
-
-@media (max-width: 540px){
-	.con880 .newslist .news_img{float:none;margin: 0 auto;text-align:center;}
-}

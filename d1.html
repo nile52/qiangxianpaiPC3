@@ -10,10 +10,16 @@
 	<!-- 头部图片展示 -->
 	<script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
 	<script language="javascript" type="text/javascript" src="js/script.js"></script>
+	<script src="http://api.map.baidu.com/api?v=2.0&ak=Qi5AthdE9qmY8XtzN7f5iZri2IztigdY"></script>
 	<!-- 头部图片展示 -->
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/public.css" rel="stylesheet">
 	<link href="css/d.css" rel="stylesheet">
+	<style type="text/css">
+		#allmap {width: 100%;height: 100%; margin:0;font-family:"微软雅黑";}
+		#l-map{height:400px;width:80%;float:left;}
+		#r-result{width:20%;float:left;max-height:400px;overflow-y:scroll}
+	</style>
 </head>
 <body>	
 	<!-- 头部开始 -->
@@ -211,15 +217,14 @@
 <div class="d_map con11">
 	<h2>周边配套</h2>
 	<ul>
-	   <li class="active"><a href="">交通</a></li>
-	   <li><a href="">学校</a></li>
-	   <li><a href="">医疗</a></li>
-	   <li><a href="">商业</a></li>
+	   <li class="active">交通</li>
+	   <li></li>
+	   <li>医疗</li>
+	   <li>商业</li>
 	</ul><div class="clearfix"></div>
-	<div class="map" style="border:2px solid #e66140;height:400px;width:100%;margin:20px 0">
-
-
-	
+	<div style="border:2px solid #e66140;height:404px;width:100%;margin:20px 0">
+		<div id="l-map"></div>
+		<div id="r-result"></div>	
 	</div>
 	<table class="dt-table">
 		<tbody>
@@ -273,7 +278,6 @@ function hideImg(){
 	$(".wechat").css("display","none");
 }
 </script>
-
 <!-- 倒计时 -->
 <script language="javascript" type="text/javascript"> 
 var interval = 1000; 
@@ -291,8 +295,6 @@ function ShowCountDown(year,month,day,divname) {
 } 
 window.setInterval(function(){ShowCountDown(2018,4,20,'down1');}, interval); 
 </script> 	
-
-
 <script type="text/javascript">
 $(document).ready( function(){	
 	var buttons = { 
@@ -314,9 +316,20 @@ $(document).ready( function(){
 	});	
 });
 </script>
-
-
-
+<script type="text/javascript">				
+	$(".d_map ul li").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");					 
+	})
+	// 百度地图API功能
+	var map = new BMap.Map("l-map");            // 创建Map实例
+	map.centerAndZoom(new BMap.Point(116.404, 39.915),11);
+	var myKeys = ["交通"];
+	var local = new BMap.LocalSearch(map, {
+		renderOptions:{map: map, panel:"r-result"},
+		pageCapacity:5
+	});
+	local.searchInBounds(myKeys, map.getBounds());
+</script>
 
 
 
@@ -477,11 +490,6 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>	
-
-
-
-
-
 <!-- 房贷计算器-模态框（Modal） -->
 <div class="modal fade" id="myModal_calculator" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
@@ -517,16 +525,6 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
-
-
-
-
-
-
-
-
-
-
 <!-- 申请贷款-模态框（Modal） -->
 <div class="modal fade" id="myModal_loan" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
@@ -562,17 +560,6 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
-
-
-
-
-
-
-
-
-
-
-
 <!-- 委托拍卖-模态框（Modal） -->
 <div class="modal fade" id="myModal_entrust" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
@@ -584,41 +571,6 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script type="text/javascript">  
 /*----------手机验证码-------手机验证码---------*/  
 var InterValObj; //timer变量，控制时间  
@@ -656,38 +608,6 @@ function SetRemainTime() {
     }  
 }  
 </script>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
 

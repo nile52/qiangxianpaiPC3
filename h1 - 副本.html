@@ -371,48 +371,27 @@ function hideImg(){
 
 
 <script type="text/javascript"> //7.28新版城市头
-        $("#all_city li[data-province='11'][data-city='1']").addClass("selected");		 
-        var curCity = $("#all_city li[class='selected']").text() ;		
-        $("#tab_city").text(curCity);    
-        // 样式切换
-        $(".filter-menu legend").click(function(){
-            if(!$(this).parent().hasClass("menu-open")){
-                $(".filter-menu").removeClass("menu-open");
-                $(this).parent().addClass("menu-open");
-            }
-            else{
-                $(".filter-menu").removeClass("menu-open");
-            }
-        });
-         
-        // 选择所在城市
-        $("#all_city li").click(function(){
-            $(".filter-menu").removeClass("menu-open");
-            $("#all_city li").removeClass("selected");
-            $(this).addClass("selected");
-        });
+	$("#all_city li[data-province='11'][data-city='1']").addClass("selected");		 
+	var curCity = $("#all_city li[class='selected']").text() ;		
+	$("#tab_city").text(curCity);    
+	// 样式切换
+	$(".filter-menu legend").click(function(){
+		if(!$(this).parent().hasClass("menu-open")){
+			$(".filter-menu").removeClass("menu-open");
+			$(this).parent().addClass("menu-open");
+		}
+		else{
+			$(".filter-menu").removeClass("menu-open");
+		}
+	});
+	 
+	// 选择所在城市
+	$("#all_city li").click(function(){
+		$(".filter-menu").removeClass("menu-open");
+		$("#all_city li").removeClass("selected");
+		$(this).addClass("selected");
+	});		
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script>  //7.27号新的筛选
