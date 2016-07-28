@@ -82,6 +82,81 @@ a {color: #e66140;}
 
 
 
+.filter-menu {
+    float: left;
+    width: auto;
+    padding: 0;
+}
+
+
+
+.filter-menu legend {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    z-index: 1;
+    height: 50px;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 0;
+    width: 100px;
+    color:#e66140;
+    padding-top: 20px;margin-bottom:5px
+}
+.filter-menu legend>a,  legend>a:focus,  legend>a:hover {
+    outline: 0;
+}
+.filter-menu legend>a {
+    color: #333;
+}
+.filter-menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #E66140;
+}
+.filter-menu legend>a>div {
+    padding: 0px 23px;
+    color: #e66140;background: url(../images/h/down.png) right 9px no-repeat
+}
+
+.filter-pane {
+    background-color: #fff;
+    position: absolute;
+    margin-left: 1px;
+    display: none;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.5);
+}
+#all_city_info li {
+    width: 100px;
+}
+.filter-pane li {
+    line-height: 27px;
+}
+
+#all_city li.selected a.option:not(:hover) {
+    background: #E66140;
+    color: #fff;
+}
+.filter-pane .zf-dropdown-options li a.option {
+    text-align: center;
+}
+.filter-pane .zf-dropdown-options li:not(.selected) a.option:focus:not(:hover){background:#fff;color:#333}
+.filter-pane .zf-dropdown-options li:not(.selected) a.option:hover{color:#e66140}
+.filter-pane .zf-dropdown-options li a.option{display:inline-block;line-height:normal;height:auto;width:100%}
+.filter-pane .zf-dropdown-options li a.option:focus{font-weight:700}
+.filter-pane .zf-dropdown-options li.selected a.option:not(:hover){background: #E66140;color:#fff}
+
+ .menu-open legend a, .menu-open legend a:focus, .menu-open legend a:hover{color:#0074e4}
+ .menu-open legend a .zsg-icon-arrow-menu-down::before,.menu-open legend a:focus .zsg-icon-arrow-menu-down::before, .menu-open legend a:hover .zsg-icon-arrow-menu-down::before{-webkit-transform:rotate(-180deg);transform:rotate(-180deg)}
+.menu-open .filter-pane{display:block;z-index:999}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -540,14 +615,14 @@ ol.type li a:hover {
 .houselist_con img{width:360px;height:240px}
 
 
-.houselist_con .tips{
+/* .houselist_con .tips{
     position: absolute;
     top: 41px;
     left: 15px;
     z-index: 200;
 
-}
-.houselist_con .tips p{
+} */
+/* .houselist_con .tips p{
     height: 16px;
     line-height: 16px;
     padding: 0 5px;
@@ -560,6 +635,50 @@ ol.type li a:hover {
     border-right: 16px solid transparent;
     height: 0;
 }
+ */
+/* .houselist_con .tips p{
+	height:50px ;line-height:50px ;
+	width:100px;
+    padding: 0 5px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+	background:#e66140;
+}
+ */
+ 
+.houselist_con .tips{
+    position: absolute;
+    top: 55px;
+    left: 3px;
+    z-index: 200;
+}
+.houselist_con .tips p{
+    height: 25px;
+    line-height: 25px;
+	width: 125px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-45deg);
+    border-bottom: 25px solid rgba(255,0,0,0.5);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+}
+
+.houselist_con .tips.past p {
+    border-bottom: 25px solid rgba(0,0,0,0.5);
+}
+.houselist_con .tips p span{
+    font-size:20px!important;color:#fff;
+}
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,136 @@
+﻿
+
+.header3_logo{width:134px;height:50px;background:url(../images/h/logo3.jpg) 0px 0px;float:left;transition: background 1s;
+-moz-transition: background 1s;	/* Firefox 4 */
+-webkit-transition: background 1s;	/* Safari 和 Chrome */
+-o-transition: background 1s;}
+.header3_logo:hover{background:url(../images/h/logo3.jpg) 0px 50px;transition: background 1s;
+-moz-transition: background 1s;	/* Firefox 4 */
+-webkit-transition: background 1s;	/* Safari 和 Chrome */
+-o-transition: background 1s;}
+
+
+
+
+
+
+.b1{width:100%;height:300px;background:url(../images/newslist/news_bg.jpg);
+    background-size: cover;
+    background-position: center;border-top:1px solid #cccccc;text-align:center}
+	
+.b1 .fs50{color:#fff}	
+.b1 .fs28{color:#ffd862}	
+
+.newslist_con{background:#fff;}
+.con880{float:left;background:#fff;}
+
+h1.newstitle{font-size:24px; font-weight:bold;    margin: 15px 0;
+    line-height: 36px;}
+
+h3.date {
+    color: #aaa;
+}
+h3.date .nd{
+    color: #e66140;
+}
+	
+	
+
+
+
+.line .br {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    margin-top: 42px;
+}
+.line p {
+    padding: 0 20px;
+    background: #fff;
+    text-align: center;
+    width: 110px;
+    margin: 0 auto;
+    margin-top: -12px;
+	color:#999;
+	font-size:16px;
+}
+
+
+.con880 .newslist{padding:30px 0;border-bottom:1px solid #e4e4e4;margin:0 30px}
+.con880 .newslist .news_img{float:left;margin:0 15px}
+.con880 .newslist .news_text{margin:0 15px}
+.con880 .newslist .news_img img{width:200px;border-radius:5px}
+.con880 .newslist .news_text p{padding:5px;}
+.con880 .newslist .news_text p.con{height:110px;overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis}
+
+
+.con880 .page{text-align:center}
+
+
+.con3 .house_recommended{margin:10px;border:1px solid #e4e4e4;background:#fff;padding:10px}
+.con3 .house_recommended_add .fs16{padding:5px 0}
+.con3 .house_recommended_text p{padding:5px 0}
+
+.con3 .house_recommended .house_recommended_img{float:left;margin-right:5px}
+.con3 .house_recommended .house_recommended_img img{width:124px;height:92px;}
+.con3 .house_recommended .house_recommended_text{width:128px;float:left;}
+.con3 .house_recommended .house_recommended_text p{white-space:nowrap;text-overflow:ellipsis;}
+
+.mask p{font-size:12px;float:left;background:rgba(0,0,0,0.5);color:#fff;margin-top:-25px;position:absolute;height:25px;line-height:25px;padding:0 5px}
+.mask p span{font-size:16px;color:#e66140}
+
+
+
+
+.details_t p{text-align:left;padding:0 10px }
+.details_con{padding:20px 10px}
+.details_con p{font-size:18px;line-height:2em;margin:5px;text-indent:2em}
+.details_con p.details_img{text-align:center;text-indent:0em}
+.details_con p.details_img img{max-width:800px;    margin: 30px auto;}
+
+
+
+
+
+.RecentPosts-section{width:1170px;margin:0 auto}
+
+
+.container {
+    width: 800px;float:left;
+}
+
+
+@media (max-width: 1220px){
+	.con3{display:none}
+	.con880{float:none}
+}
+
+@media (min-width: 992px){
+	.col-md-3 {
+		width: 250px;
+		height: 250px;
+		float: left;
+		padding:0;margin:0 15px;
+	}		
+}
+@media (min-width: 992px){
+	.col-md-9 {width: 490px;float:left;}
+}
+
+
+@media (max-width: 900px){
+	.details_t .fs50{font-size:24px;margin:20px 0}
+	.details_t .fs18{font-size:14px}
+	.details_con p{font-size:14px;}
+	.con880{margin:2%;width:96%;}
+	.details_con p.details_img img{
+		width:100%;
+	}
+}
+
+
+
+
+
+@media (max-width: 540px){
+	.con880 .newslist .news_img{float:none;margin: 0 auto;text-align:center;}
+}

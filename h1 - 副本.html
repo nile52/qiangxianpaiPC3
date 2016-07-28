@@ -54,30 +54,48 @@
 		<div class="con12">
 			<div class="subhead_logo"></div>
 			<div class="subhead_city">
-				<dl class="selectd listIndex">
-					<dt>不限</dt>
-					<dd>
-						<ul class="">
-							<li><a href="javascript:void(0);">安徽</a></li>
-							<li><a href="javascript:void(0);">北京</a></li>
-							<li><a href="javascript:void(0);">重庆</a></li>
-							<li><a href="javascript:void(0);">福建</a></li>
-							<li><a href="javascript:void(0);">广东</a></li>
-							<li><a href="javascript:void(0);">广西</a></li>
-							<li><a href="javascript:void(0);">河北</a></li>
-							<li><a href="javascript:void(0);">河南</a></li>
-							<li><a href="javascript:void(0);">黑龙江</a></li>
-							<li><a href="javascript:void(0);">吉林</a></li>
-							<li><a href="javascript:void(0);">江苏</a></li>
-							<li><a href="javascript:void(0);">上海</a></li>
-							<li><a href="javascript:void(0);">山东</a></li>
-							<li><a href="javascript:void(0);">天津</a></li>
-							<li><a href="javascript:void(0);">新疆</a></li>
-							<li><a href="javascript:void(0);">云南</a></li>
-							<li><a href="javascript:void(0);">浙江</a></li>
-						</ul>	
-					</dd>
-				</dl>		
+				<div id="search-filters" class="zsg-nav-item search-filters">
+					<form name="searchfilters" id="searchfilters" class="zsg-form" action="#">
+						<fieldset class="filter-menu listings-menu">
+							<legend data-za-label="Listing Type">
+								<a class="menu-label">
+									<div id="tab_city">杭州</div>
+								</a>
+							</legend>
+							<div id="all_city_info" class="filter-pane">
+								<ul id="all_city" class="bed-options zf-dropdown-options zsg-menu-linklist">
+									<li data-province="1" data-city="1" data-country="0"><a class="option">北京</a></li>
+									<li data-province="2" data-city="1" data-country="0"><a class="option">天津</a></li>
+									<li data-province="9" data-city="1" data-country="0"><a class="option">上海</a></li>
+									<li data-province="10" data-city="1" data-country="0"><a class="option">南京</a></li>
+									<li data-province="10" data-city="5" data-country="0"><a class="option">苏州</a></li>
+									<li data-province="11" data-city="1" data-country="0" class="selected"><a class="option">杭州</a></li>
+									<li data-province="11" data-city="2" data-country="0"><a class="option">宁波</a></li>
+									<li data-province="11" data-city="3" data-country="0"><a class="option">温州</a></li>
+									<li data-province="11" data-city="4" data-country="0"><a class="option">嘉兴</a></li>
+									<li data-province="11" data-city="6" data-country="0"><a class="option">绍兴</a></li>
+									<li data-province="11" data-city="10" data-country="0"><a class="option">台州</a></li>
+									<li data-province="12" data-city="1" data-country="0"><a class="option">合肥</a></li>
+									<li data-province="13" data-city="1" data-country="0"><a class="option">福州</a></li>
+									<li data-province="13" data-city="2" data-country="0"><a class="option">厦门</a></li>
+									<li data-province="15" data-city="4" data-country="0"><a class="option">济南</a></li>
+									<li data-province="19" data-city="1" data-country="0"><a class="option">广州</a></li>
+									<li data-province="19" data-city="3" data-country="0"><a class="option">深圳</a></li>
+									<li data-province="19" data-city="7" data-country="0"><a class="option">江门</a></li>
+									<li data-province="19" data-city="10" data-country="0"><a class="option">肇庆</a></li>
+									<li data-province="19" data-city="16" data-country="0"><a class="option">清远</a></li>
+									<li data-province="19" data-city="18" data-country="0"><a class="option">中山</a></li>
+								</ul>
+							</div>
+						</fieldset>
+					</form>
+				</div>	
+							
+							
+							
+							
+							
+							
 			</div>
 			<div class="subhead_search">
 				<div class="search-sort-con">
@@ -187,7 +205,7 @@
 						<div class="houselist_img">
 							<a href="">
 								<img src="images/index/new1.jpg"></a>
-								<div class="tips"><p>独家</p></div>
+								<div class="tips"><p>开拍中</p></div>
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -212,7 +230,8 @@
 				<div class="filtr-item" data-category="2">
 					<div class="houselist_con w360">
 						<div class="houselist_img">
-							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>	
+							<a href=""><img src="images/index/new1.jpg"><div class="tips past
+							"><p>已流拍</p></div></a>	
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -237,7 +256,7 @@
 				<div class="filtr-item" data-category="3">
 					<div class="houselist_con w360">
 						<div class="houselist_img">
-							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>	
+							<a href=""><img src="images/index/new1.jpg"><div class="tips past"><p>已中标</p></div></a>	
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -262,7 +281,7 @@
 				<div class="filtr-item" data-category="4">
 					<div class="houselist_con w360">
 						<div class="houselist_img">
-							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>独家</p></div></a>	
+							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>还剩<span>04</span>天</p></div></a>	
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -334,7 +353,7 @@ function hideImg(){
 </script>
 <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
-<!-- jq 引1.8版本一下的，不然删除已选效果出不来 -->
+
 <script src="js/jquery.filterizr.js"></script>	<!-- 筛选后出现消失的效果 -->
 <script> //排序的点击效果
 	$(function() {
@@ -346,21 +365,55 @@ function hideImg(){
 	});
 </script>	
 
-<script type="text/javascript">//头部选择城市的
-$(function(){
-	$(".selectd").each(function(){
-		var s=$(this);
-		var z=parseInt(s.css("z-index"));
-		var dt=$(this).children("dt");
-		var dd=$(this).children("dd");
-		var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
-		var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
-		dt.click(function(){dd.is(":hidden")?_show():_hide();});
-		dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
-		$("body").click(function(i){ !$(i.target).parents(".selectd").first().is(s) ? _hide():"";});
-	})
-})
+
+
+
+
+
+<script type="text/javascript"> //7.28新版城市头
+        $("#all_city li[data-province='11'][data-city='1']").addClass("selected");		 
+        var curCity = $("#all_city li[class='selected']").text() ;		
+        $("#tab_city").text(curCity);    
+        // 样式切换
+        $(".filter-menu legend").click(function(){
+            if(!$(this).parent().hasClass("menu-open")){
+                $(".filter-menu").removeClass("menu-open");
+                $(this).parent().addClass("menu-open");
+            }
+            else{
+                $(".filter-menu").removeClass("menu-open");
+            }
+        });
+         
+        // 选择所在城市
+        $("#all_city li").click(function(){
+            $(".filter-menu").removeClass("menu-open");
+            $("#all_city li").removeClass("selected");
+            $(this).addClass("selected");
+        });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>  //7.27号新的筛选
 $(document).ready(function(){			
