@@ -17,8 +17,8 @@
 	<link href="css/d.css" rel="stylesheet">
 	<style type="text/css">
 		#allmap {width: 100%;height: 100%; margin:0;font-family:"微软雅黑";}
-		#l-map{height:400px;width:80%;float:left;}
-		#r-result{width:20%;float:left;max-height:400px;overflow-y:scroll}
+		#l-map{height:400px;width:70%;float:left;}
+		#r-result{width:30%;float:left;max-height:400px;overflow-y:scroll}
 	</style>
 </head>
 <body>	
@@ -107,9 +107,9 @@
 	<h2>浦发罗兰翡丽浦发罗兰翡丽浦发罗兰翡丽浦发罗兰翡丽</h2>
 	<div class="d_top_l">
 		<div id="container">
-			<div id="lofslidecontent45" class="lof-slidecontent" style="width:500px; height:420px;">
+			<div id="lofslidecontent45" class="lof-slidecontent" style="width:550px; height:450px;">
 			<div class="preload"><div></div></div>
-			<div class="lof-main-outer" style="width:500px; height:420px;">
+			<div class="lof-main-outer" style="width:550px; height:450px;">
 			<ul class="lof-main-wapper">
 				<li><img src="images/d/w1.jpg" title=""></li> 
 				<li><img src="images/d/w2.jpg" title=""></li> 
@@ -130,9 +130,9 @@
 							<li><img src="images/d/w3.jpg" /></li>
 							<li><img src="images/d/w4.jpg" /></li>    
 							<li><img src="images/d/w5.jpg" /></li>
-							<li><img src="images/d/w6.jpg" /></li>       
-							<li><img src="images/d/w7.jpg" /></li>       
-							<li><img src="images/d/w8.jpg" /></li>  		
+							<li><img src="images/d/w6.jpg" /></li>
+							<li><img src="images/d/w7.jpg" /></li>
+							<li><img src="images/d/w8.jpg" /></li>
 						</ul>
 					</div>
 					<div onclick="return false" href="" class="lof-next">Next</div>
@@ -142,21 +142,35 @@
 	</div>
 	<div class="d_top_r">
 		<p class="d_top_price">起拍价：<span>120万</span>
-			<button  data-toggle="modal" data-target="#myModal_loan" data-dismiss="modal" aria-hidden="true">申请贷款</button><button  data-toggle="modal" data-target="#myModal_calculator" data-dismiss="modal" aria-hidden="true">房贷计算器</button>
+			<button class="brn_small" data-toggle="modal" data-target="#myModal_calculator" data-dismiss="modal" aria-hidden="true">房贷计算器</button>
 		</p>
 		<div class="countdown">
 			<p id="down1">0天0小时0分0秒</p>
 		</div>
+<!-- 		<p class="d_top_status">本场拍卖已流拍</p>
+		<p class="d_top_status">本场拍卖已抢完</p> -->
+		<!-- 这个不一定要 -->
 		<p class="d_top_num">房产编号：167276</p>
-		<p class="d_top_size">面积：240.79平方米<button data-toggle="modal" data-target="#myModal_entrust" data-dismiss="modal" aria-hidden="true">委托拍卖</button></p>
+		<p class="d_top_size">面积：240.79平方米</p>
 		<p class="d_top_address">地址：杭州西湖区紫金港湾东区商铺</p>
 		<p class="d_top_decorate">装修标准：简装</p>
 		<p class="d_top_floor">楼层：5 总楼层：7
 			<a href=""> <img src="images/d/taobao.png" class="tao_logo">去淘宝看看</a>
 		</p>
-		<p class="d_top_tags"><span>办公楼</span><span>地铁房</span><span>一拍</span>
+		<p class="d_top_tags">特色：<span>办公楼</span><span>地铁房</span><span>一拍</span>
 		</p>
-	</div><div class="clearfix"></div>
+		<p class="d_top_two_btn">
+			<button data-toggle="modal" data-target="#myModal_loan" data-dismiss="modal" aria-hidden="true">申请贷款</button><button data-toggle="modal" data-target="#myModal_entrust" data-dismiss="modal" aria-hidden="true">委托拍卖</button>
+			<!-- <button class="past" disabled="disabled">申请贷款</button> -->
+			<!-- 加 past 类变灰色 -->
+		</p>
+		<div class="tip_status"><p>已流拍</p></div> 
+		<!-- <div class="tip_status"><p>已抢完</p></div> -->
+		<!-- 红底斜印章标签 -->
+	</div>
+	
+	
+	<div class="clearfix"></div>
 </div>	
 <div class="d_mid con11">
 	<div class="d_mid_l">
@@ -218,11 +232,11 @@
 	<h2>周边配套</h2>
 	<ul>
 	   <li class="active">交通</li>
-	   <li></li>
+	   <li>学校</li>
 	   <li>医疗</li>
 	   <li>商业</li>
 	</ul><div class="clearfix"></div>
-	<div style="border:2px solid #e66140;height:404px;width:100%;margin:20px 0">
+	<div class="map" style="border:2px solid #e66140;height:404px;width:100%;margin:20px 0">
 		<div id="l-map"></div>
 		<div id="r-result"></div>	
 	</div>
@@ -291,7 +305,7 @@ function ShowCountDown(year,month,day,divname) {
 	var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
 	var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
 	var cc = document.getElementById(divname); 
-	cc.innerHTML = "倒计时：<span>"+day1+"</span>天<span>"+hour+"</span>小时<span>"+minute+"</span>分<span>"+second+"</span>秒"; 	
+	cc.innerHTML = "倒计时：<span>"+day1+"</span>天<span>"+hour+"</span>小时<span>"+minute+"</span>分<span>"+second+"</span>秒";
 } 
 window.setInterval(function(){ShowCountDown(2018,4,20,'down1');}, interval); 
 </script> 	
@@ -311,24 +325,28 @@ $(document).ready( function(){
 		navPosition     : 'horizontal', // 头部图片展示
 		navigatorHeight : 60,
 		navigatorWidth  : 85,
-		mainWidth       : 500,
+		mainWidth       : 550,
 		buttons			: buttons
 	});	
 });
 </script>
-<script type="text/javascript">				
-	$(".d_map ul li").click(function(){
-		$(this).addClass("active").siblings().removeClass("active");					 
+<script type="text/javascript">		
+	
+	$(".d_map ul li").click(function(){		
+		$(this).addClass("active").siblings().removeClass("active");
+				
 	})
-	// 百度地图API功能
+	index = $('.d_map ul li.active').text();
 	var map = new BMap.Map("l-map");            // 创建Map实例
 	map.centerAndZoom(new BMap.Point(116.404, 39.915),11);
-	var myKeys = ["交通"];
+	var myKeys = [index];
 	var local = new BMap.LocalSearch(map, {
 		renderOptions:{map: map, panel:"r-result"},
 		pageCapacity:5
 	});
-	local.searchInBounds(myKeys, map.getBounds());
+	local.searchInBounds(myKeys, map.getBounds());			
+
+
 </script>
 
 
