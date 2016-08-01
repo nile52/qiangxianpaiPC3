@@ -43,6 +43,17 @@ transition: background 1s;
 }
 
 
+.header3_logo{width:134px;height:50px;background:url(../images/h/logo3.jpg) 0px 0px;float:left;transition: background 1s;
+-moz-transition: background 1s;	/* Firefox 4 */
+-webkit-transition: background 1s;	/* Safari 和 Chrome */
+-o-transition: background 1s;}
+.header3_logo:hover{background:url(../images/h/logo3.jpg) 0px 50px;transition: background 1s;
+-moz-transition: background 1s;	/* Firefox 4 */
+-webkit-transition: background 1s;	/* Safari 和 Chrome */
+-o-transition: background 1s;}
+
+
+
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*+height:1%}
 

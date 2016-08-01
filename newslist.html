@@ -47,7 +47,8 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>	
-	</div>		
+	</div>	
+	
 	<div class="b1"></div>
 
 
@@ -207,33 +208,37 @@
 	</div>
 </div> <!-- 背景F8结束标签 -->
 
-<!-- 页脚 -->
-<div id="footer">	
-	<div id="footernav">
-		<p><a href="">首页</a>
-		<a href="">房屋列表</a>
-		<a href="">资讯信息</a>
-		<a href="">视频中心</a>
-		<a href="">关于我们</a></p>
-	</div>			
-	<div id="footercode">			
-		<div><img src="images/public/qrcode_wechat_qxp_120.png"><p>微信公众号</p></div>
-		<div><img src="images/public/qrcode_app_qxp_120.png"><p>APP下载</p></div>			
-	</div>			
-	<div style="clear:both"></div>
-	<p>
-		<span>400电话：400-060-2595</span>
-		<span>企业QQ：2014827338</span>
-		<span>企业邮箱：kefu@qiangxianpai.com</span>
-		<span>地址：杭州市拱墅区万达广场D座16楼</span>
-	</p>
-	<p>
-		<span>抢先拍@2016 All rights reserved </span>
-		<span>增值电信业务经营许可证:浙B2-20160073</span>
-		<span>浙ICP备15018503号</span>
-	</p>
-	<p><span><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#666;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a><span></p></br>
-</div>	
+<footer class="noprint">
+	<ul class="ib sub-nav">
+		<li><a target="_self" href="/general-pages/about-us">关于我们</a></li>
+		<li class="line" ng-if="!is91Flight">|</li>
+		<li><a target="_self" href="/general-pages/partners">合作伙伴</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/business-cooperation">商务合作</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/join-us" >加入我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/contact-us">联系我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="/general-pages/service-protocol">服务声明</a></li>
+	</ul>
+	<ul class="ib im">
+		<li class="wechat-con"><a href="javscript:void(0);" onMouseOut="hideImg()"  onmouseover="showImg()">微信</a><div class="wechat"></div></li>
+		<li class="sina"><a href="http://weibo.com/qiangxianpai?refer_flag=1001030101_" target="_blank">新浪微博</a></li>
+		<li class="taobao" ng-if="!is91Flight"><a href="https://shop143101383.taobao.com/index.htm?spm=2013.1.w5002-14693851524.2.TSpzsC" target="_blank">淘宝</a></li>
+	</ul>
+	<p>抢先拍@2016 All rights reserved | 增值电信业务经营许可证:浙B2-20160073<br>
+		浙ICP备15018503号 | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
+</footer>
+<!-- 二维码显隐 -->
+<script type="text/javascript">
+function  showImg(){
+	$(".wechat").css("display","block");
+}
+function hideImg(){
+	$(".wechat").css("display","none");
+}
+</script>
 
 
 
