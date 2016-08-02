@@ -62,6 +62,7 @@ transition: background 1s;
 #top{height:50px;line-height:50px}
 
 #other{float:right}
+#other a{color:#e66140}
 #other p{float:left}
 #other p img{padding:0px 10px 0 20px}
 

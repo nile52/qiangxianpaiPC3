@@ -100,8 +100,9 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#e66140 so
 .d_top_r p.d_top_dealprice{font-size:30px;font-weight:bold}
 .d_top_r p.d_top_marketprice span{text-decoration:line-through}
 .d_recommend{width:340px}
-.d_recommend img{width:340px}
+.d_recommend img{width:340px;margin-top:20px}
 .d_recommend p{font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:5px 0px}
+.d_recommend p.d_recommend_price{color:#e66140;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0px}
 .d_recommend p:hover{color:#e66140}
 .d_recommend h2{padding:5px 0 20px 0;text-align:center}
 /* 资产直通车 */
