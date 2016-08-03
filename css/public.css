@@ -89,7 +89,7 @@ transition: background 1s;
 
 
 /* 新版footer */
-footer {clear: both;text-align: center;background-color: #cd5134;padding-bottom: 50px;color: #fff;font-size: 14px;overflow: hidden;margin-top:50px;}
+footer {clear: both;text-align: center;background-color: #cd5134;padding-bottom: 50px;color: #fff;font-size: 14px;overflow: hidden;}
 footer .im li {margin-right: 50px;position: relative;}
 .ib li {display: inline-block;}
 footer .sub-nav {margin: 50px 0 15px;font-size: 0;}

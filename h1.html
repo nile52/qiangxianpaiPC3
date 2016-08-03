@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
-	<script type="text/javascript">
-		var $143 = $;
-	</script>
+<!--	<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+ 	<script type="text/javascript">
+		var $143 = $;//1.4.3版本的删掉，保留一个1.9以下的版本就好
+	</script> -->
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/public.css" rel="stylesheet">
 	<link href="css/h.css" rel="stylesheet">
@@ -45,7 +45,7 @@
 					<p><a data-toggle="modal" data-target="#myModal_login">登录</a></p>	
 					<p><span style="margin:0 10px">|</span></p>	
 					<p><a data-toggle="modal" data-target="#myModal_reg">注册</a></p>
-				</div>					
+				</div>								
 				<div class="clearfix"></div>
 			</div>
 		</div>	
@@ -54,33 +54,48 @@
 	<div class="subhead">
 		<div class="con12">
 			<div class="subhead_city">
-				<dl class="selectd listIndex">
-					<dt>不限</dt>
-					<dd>
-						<ul class="">
-							<li><a href="javascript:void(0);">安徽</a></li>
-							<li><a href="javascript:void(0);">北京</a></li>
-							<li><a href="javascript:void(0);">重庆</a></li>
-							<li><a href="javascript:void(0);">福建</a></li>
-							<li><a href="javascript:void(0);">广东</a></li>
-							<li><a href="javascript:void(0);">广西</a></li>
-							<li><a href="javascript:void(0);">河北</a></li>
-							<li><a href="javascript:void(0);">河南</a></li>
-							<li><a href="javascript:void(0);">黑龙江</a></li>
-							<li><a href="javascript:void(0);">吉林</a></li>
-							<li><a href="javascript:void(0);">江苏</a></li>
-							<li><a href="javascript:void(0);">辽宁</a></li>
-							<li><a href="javascript:void(0);">内蒙古</a></li>
-							<li><a href="javascript:void(0);">青海</a></li>
-							<li><a href="javascript:void(0);">上海</a></li>
-							<li><a href="javascript:void(0);">山东</a></li>
-							<li><a href="javascript:void(0);">天津</a></li>
-							<li><a href="javascript:void(0);">新疆</a></li>
-							<li><a href="javascript:void(0);">云南</a></li>
-							<li><a href="javascript:void(0);">浙江</a></li>
-						</ul>	
-					</dd>
-				</dl>		
+				<div id="search-filters" class="zsg-nav-item search-filters">
+					<form name="searchfilters" id="searchfilters" class="zsg-form" action="#">
+						<fieldset class="filter-menu listings-menu">
+							<legend data-za-label="Listing Type">
+								<a class="menu-label">
+									<div id="tab_city">杭州</div>
+								</a>
+							</legend>
+							<div id="all_city_info" class="filter-pane">
+								<ul id="all_city" class="bed-options zf-dropdown-options zsg-menu-linklist">
+									<li data-province="1" data-city="1" data-country="0"><a class="option">北京</a></li>
+									<li data-province="2" data-city="1" data-country="0"><a class="option">天津</a></li>
+									<li data-province="9" data-city="1" data-country="0"><a class="option">上海</a></li>
+									<li data-province="10" data-city="1" data-country="0"><a class="option">南京</a></li>
+									<li data-province="10" data-city="5" data-country="0"><a class="option">苏州</a></li>
+									<li data-province="11" data-city="1" data-country="0" class="selected"><a class="option">杭州</a></li>
+									<li data-province="11" data-city="2" data-country="0"><a class="option">宁波</a></li>
+									<li data-province="11" data-city="3" data-country="0"><a class="option">温州</a></li>
+									<li data-province="11" data-city="4" data-country="0"><a class="option">嘉兴</a></li>
+									<li data-province="11" data-city="6" data-country="0"><a class="option">绍兴</a></li>
+									<li data-province="11" data-city="10" data-country="0"><a class="option">台州</a></li>
+									<li data-province="12" data-city="1" data-country="0"><a class="option">合肥</a></li>
+									<li data-province="13" data-city="1" data-country="0"><a class="option">福州</a></li>
+									<li data-province="13" data-city="2" data-country="0"><a class="option">厦门</a></li>
+									<li data-province="15" data-city="4" data-country="0"><a class="option">济南</a></li>
+									<li data-province="19" data-city="1" data-country="0"><a class="option">广州</a></li>
+									<li data-province="19" data-city="3" data-country="0"><a class="option">深圳</a></li>
+									<li data-province="19" data-city="7" data-country="0"><a class="option">江门</a></li>
+									<li data-province="19" data-city="10" data-country="0"><a class="option">肇庆</a></li>
+									<li data-province="19" data-city="16" data-country="0"><a class="option">清远</a></li>
+									<li data-province="19" data-city="18" data-country="0"><a class="option">中山</a></li>
+								</ul>
+							</div>
+						</fieldset>
+					</form>
+				</div>	
+							
+							
+							
+							
+							
+							
 			</div>
 			<div class="subhead_search">
 				<div class="search-sort-con">
@@ -104,72 +119,83 @@
 			   <li><a href="h3.html">一手特惠房</a></li>
 			</ul>	
 		</div>
-		<div class="select select2">
-			<h2>房产区域</h2>
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">房产dsdv</a></li>
-						<li><a href="#">房产vd</a></li>
-						<li><a href="#">房产sv</a></li>
-						<li><a href="#">房产ds</a></li>
-						<li><a href="#">房产v</a></li>
-						<li><a href="#">房产dsvd</a></li>
-					</ul>
-				</dd>
-			</dl>
-			<h2>房产类型</h2>
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">列表dv</a></li>
-						<li><a href="#">列表fdb</a></li>
-						<li><a href="#">列表fef</a></li>
-						<li><a href="#">列表dsfd</a></li>
-						<li><a href="#">列表adsvd</a></li>
-					</ul>
-				</dd>
-			</dl>									
-			<h2>房产特色</h2>			
-			<dl class="selectd listIndex">
-				<dt>不限</dt>
-				<dd>
-					<ul>
-						<li><a href="#">产列1</a></li>
-						<li><a href="#">产列2</a></li>
-						<li><a href="#">产列3</a></li>
-					</ul>
-				</dd>
-			</dl>					
-		</div>		
-		<div class="clearfix"></div>
-		<div class="select select3 hasBeenSelected">
-			<h2 style="float:left;">已选条件</h2>
-			<dd style="display:none" class="clearDd">
-				<div class="clearList"></div>
-				<div style="display:none;" class="eliminateCriteria">重置</div>
-			</dd>
-		</div>
+		
+		<div class="demo">	
+			<ul class="selects">
+				<li class="select-list">
+					<dl id="select1">
+						<dt>房产区域</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+						<dd><a href="#">下城区</a></dd>
+						<dd><a href="#">江干区</a></dd>
+						<dd><a href="#">拱墅区</a></dd>
+						<dd><a href="#">西湖区</a></dd>
+						<dd><a href="#">滨江区</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select2">
+						<dt>房产类型</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">住宅</a></dd>
+						<dd><a href="#">别墅</a></dd>
+						<dd><a href="#">酒店式公寓</a></dd>
+						<dd><a href="#">商铺</a></dd>
+						<dd><a href="#">办公楼</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select3">
+						<dt>房产特色</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">地铁房</a></dd>
+						<dd><a href="#">学区房</a></dd>
+					</dl>
+				</li>
+				<li class="select-list">
+					<dl id="select4">
+						<dt>拍卖状态</dt>
+						<dd class="select-all s_ed"><a href="#">全部</a></dd>
+						<dd><a href="#">开拍中</a></dd>
+						<dd><a href="#">即将开拍</a></dd>
+						<dd><a href="#">已中标</a></dd>
+						<dd><a href="#">已流拍</a></dd>
+					</dl>
+				</li>								
+			</ul>
+		</div>	
 	</div>
+	
+	
+	
+	
 	<div class="clearfix"></div>
 	<div id="myTabContent" class="tab-content" >
 		<!-- 司法拍卖 -->
 		<div class="houselist con12 tab-pane fade in active">	
 			<div class="houselist_head">
-				<ul class="filter1_1" style="float:left">
-					<li data-filter="1">开拍中</li>
-					<li data-filter="2">已中标</li>
-					<li data-filter="3">即将开拍</li>
-					<li data-filter="4">已流拍</li>
-				</ul>
-				<ul class="filter1_1 ordered" style="float:right">
+				<ul class="filter1_1 " style="float:left">
 					<li>默认排序<em></em></li>
 					<li>发布时间<em></em></li>
 					<li>折扣力度<em></em></li>
 					<li>总价<em></em></li>
 				</ul>
+
 				<div class="clearfix"></div>
 			</div>			
 			<h2>司法拍卖 <span>专业指导，精准捡漏</span></h2>				
@@ -204,7 +230,8 @@
 				<div class="filtr-item" data-category="2">
 					<div class="houselist_con w360">
 						<div class="houselist_img">
-							<a href=""><img src="images/index/new1.jpg"><div class="tips past"><p>已中标</p></div></a>	
+							<a href=""><img src="images/index/new1.jpg"><div class="tips past
+							"><p>已流拍</p></div></a>	
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -229,7 +256,7 @@
 				<div class="filtr-item" data-category="3">
 					<div class="houselist_con w360">
 						<div class="houselist_img">
-							<a href=""><img src="images/index/new1.jpg"><div class="tips past"><p>已流拍</p></div></a>	
+							<a href=""><img src="images/index/new1.jpg"><div class="tips past"><p>已中标</p></div></a>	
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -254,7 +281,7 @@
 				<div class="filtr-item" data-category="4">
 					<div class="houselist_con w360">
 						<div class="houselist_img">
-							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>还剩<span style="font-size:16px">04</span>天</p></div></a>	
+							<a href=""><img src="images/index/new1.jpg"><div class="tips"><p>还剩<span>04</span>天</p></div></a>	
 							<div class="mask w360">
 								<p><span class="area_name">小区名字</span>
 									<span class="area_position"><small>江干区</small><small>丁桥</small></span>
@@ -326,8 +353,9 @@ function hideImg(){
 </script>
 <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
-<script src="js/jquery.filterizr.js"></script>	
-<script>
+
+<script src="js/jquery.filterizr.js"></script>	<!-- 筛选后出现消失的效果 -->
+<script> //排序的点击效果
 	$(function() {
 		$('.dowebok').filterizr();
 
@@ -336,63 +364,52 @@ function hideImg(){
 		});
 	});
 </script>	
-<script type="text/javascript">
-$(function(){
-	$(".selectd").each(function(){
-		var s=$(this);
-		var z=parseInt(s.css("z-index"));
-		var dt=$(this).children("dt");
-		var dd=$(this).children("dd");
-		var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};   //展开效果
-		var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};    //关闭效果
-		dt.click(function(){dd.is(":hidden")?_show():_hide();});
-		dd.find("a").click(function(){dt.html($(this).html());_hide();});     //选择效果（如需要传值，可自定义参数，在此处返回对应的“value”值 ）
-		$("body").click(function(i){ !$(i.target).parents(".selectd").first().is(s) ? _hide():"";});
-	})
-})
-</script>
-<script type="text/javascript">
-var dlNum  =$143("#selectList").find("dl");
-for (i = 0; i < dlNum.length; i++) {
-	$143(".hasBeenSelected .clearList").append("<div class=\"selectedInfor selectedShow\" style=\"display:none\"><label></label><em></em></div>");
-}
-var refresh = "true";
-$143(".listIndex a ").live("click",function(){
-	var text =$143(this).text();
-	var selectedShow = $143(".selectedShow");
-	var textTypeIndex =$143(this).parents("dl").index();
-	console.log(textTypeIndex);
-	var textType =$143(this).parent("dd").siblings("dt").text();
-	index = textTypeIndex -(4);
-	$143(".clearDd").show();
-	$143(".selectedShow").eq(index).show();
-	$143(this).addClass("selected").parent().siblings().children().removeClass("selected");
-	selectedShow.eq(index).find("label").text(text);
-	var show = $143(".selectedShow").length - $143(".selectedShow:hidden").length;
-	if (show > 1) {
-		$143(".eliminateCriteria").show();
-	}
-   
-});
-$143(".selectedShow em").live("click",function(){
-	$143(this).parents(".selectedShow").hide();
-	var textTypeIndex =$143(this).parents(".selectedShow").index();
-	index = textTypeIndex;
-	$143(".listIndex").eq(index).find("a").removeClass("selected");
-	
-	if($(".listIndex .selected").length < 2){
-		$143(".eliminateCriteria").hide();
-	}
-});
 
-$143(".eliminateCriteria").live("click",function(){
-	$143(".selectedShow").hide();
-	$143(this).hide();
-	$143(".listIndex a ").removeClass("selected");
-	$143("dt").text("不限");
-}); 
+
+
+
+
+
+<script type="text/javascript"> //7.28新版城市头
+	$("#all_city li[data-province='11'][data-city='1']").addClass("selected");		 
+	var curCity = $("#all_city li[class='selected']").text() ;		
+	$("#tab_city").text(curCity);    
+	// 样式切换
+	$(".filter-menu legend").click(function(){
+		if(!$(this).parent().hasClass("menu-open")){
+			$(".filter-menu").removeClass("menu-open");
+			$(this).parent().addClass("menu-open");
+		}
+		else{
+			$(".filter-menu").removeClass("menu-open");
+		}
+	});
+	 
+	// 选择所在城市
+	$("#all_city li").click(function(){
+		$(".filter-menu").removeClass("menu-open");
+		$("#all_city li").removeClass("selected");
+		$(this).addClass("selected");
+	});		
 </script>
+
+
+<script>  //7.27号新的筛选
+$(document).ready(function(){			
+	$("#select1 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select2 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select3 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});		
+	$("#select4 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+});
+</script>	
+
 </body>
 </html>
-
-
