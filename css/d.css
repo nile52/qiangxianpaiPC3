@@ -58,12 +58,15 @@ a {color: #e66140;}
 .d_card .d_card_img img{width:140px;height:140px;border-radius:50%}
 .d_ask_card{border-bottom:2px dashed #cfcfcf;}
 .d_ask_title{font-size:16px;border-bottom:2px dashed #8c8c8c;padding:10px 0}
-.d_ask_title a{padding:2px 5px;background:#eee;margin:0 2px;border-radius:10px;color:#fff;float:right }
+.d_ask_title a{padding:2px 5px;background:#e66140;margin:0 2px;border-radius:10px;color:#fff;float:right}
+.d_ask_title a.past{padding:2px 5px;background:#ddd;margin:0 2px;border-radius:10px;color:#fff;float:right}
+
+
 .d_ask_qusetion{padding:10px 0;font-size:16px}
 .d_ask_answer{padding-left:50px;background:url(../images/d/yqf.png) no-repeat}
 .d_ask_answer p{max-height:45px;padding:5px 0;overflow:hidden;text-overflow:ellipsis;}
 .d_ask_answer p.d_ask_time{float:right}
-p.d_ask_more a{padding: 2px 5px;background: #eee;margin: 0 2px;border-radius: 10px;color: #fff;float: right;margin:5px;font-size:16px}
+p.d_ask_more a{padding: 2px 5px;background:#e66140;margin:0 2px;border-radius:10px;color:#fff;float: right;margin:5px;font-size:16px}
 .d_map{padding:20px}
 .d_map ul li {float:left;margin:0 10px;padding:5px 10px;}
 .d_map ul li a{color:#444}
@@ -205,6 +208,9 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#e66140 so
 
 .modal-body .calculator_show .show_name{width:150px;}
 .modal-body .calculator_show .show_name{width:150px;line-height:50px}
+#myModal_calculator .modal-dialog {
+    width: 900px;
+}
 #myModal_calculator h2{font-size:20px;font-weight:bold;color:#e66140;margin:20px 0 10px 0}
 .calculator_btn .count{height:50px;width:30px}
 
@@ -228,6 +234,23 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#e66140 so
 }
 
 
+#myModal_ask .d_card_ask span {color:#e66140}
+#myModal_ask .d_card .d_card_text {
+    float: left;
+    text-align: center;
+    padding-top: 40px;
+}
+#myModal_ask .d_card .d_card_answer {
+    float: right;
+    text-align: center;
+    padding-top: 50px;
+}
+#myModal_ask .d_card .d_card_img {
+    margin-right: 20px;
+}
+#myModal_ask .ask_box {
+    margin:20px auto;text-align:center;
+}
 
 /* 模态框 */
 

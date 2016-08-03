@@ -139,8 +139,6 @@
 		<!-- <div class="tip_status"><p>已抢完</p></div> -->
 		<!-- 红底斜印章标签 -->
 	</div>
-	
-	
 	<div class="clearfix"></div>
 </div>	
 <div class="d_mid con11">
@@ -166,7 +164,7 @@
 	</div>
 	<div class="d_mid_r">
 		<h2>专家在线</h2>
-		<div class="d_card">
+		<div class="d_card">			
 			<div class="d_card_text">
 				<p class="d_card_name">何义平</p>
 				<p class="d_card_belong">浙江西湖律师事务所</p>
@@ -176,15 +174,17 @@
 			</div>	<div class="clearfix"></div>		
 		</div>		
 		<div class="d_ask_title">
-			<p>问答记录 <a href="">提问</a></p>
+			<p>问答记录 <a href="" data-toggle="modal" data-target="#myModal_ask">提问</a>
+			<!-- <a href="" class="past">提问</a> -->
+			<!-- 若拍品过期，提问按钮不可点击 class="past" 按钮灰色 --></p>
 		</div>	
 		<!-- <div class="alert alert-danger">本场拍卖已结束，无法提问，请您参考一下历史记录</div> -->
-		<!-- 若拍品过期，提问按钮不可点击 -->
+		
 		<div class="d_ask">
 			<div class="d_ask_card">
 				<p class="d_ask_qusetion">你好，这个房子评估价是不是偏贵了？</p>
 				<div class="d_ask_answer">
-					<p>可以，可以联系抢险拍工作人员，带您去看房可以，可以联系抢险拍工作人员，带您去看房可以，可以联系抢险拍工作人员，带您去看房可以，可以联系抢险拍工作人员，带您去看房</p>
+					<p>可以，可以联系抢先拍工作人员，带您去看房可以，可以联系抢先拍工作人员，带您去看房可以，可以联系抢先拍工作人员，带您去看房可以，可以联系抢先拍工作人员，带您去看房</p>
 					<p class="d_ask_time">2016-06-26 10:25</p>
 					<div class="clearfix"></div>	
 				</div>						
@@ -192,7 +192,7 @@
 			<div class="d_ask_card">
 				<p class="d_ask_qusetion">你好，这个房子评估价是不是偏贵了？</p>
 				<div class="d_ask_answer">
-					<p>可以，可以联系抢险拍工作人员，带您去看房可以，可以联系抢险拍工作人员，带您去看房可以，可以联系抢险拍工作人员，带您去看房可以，可以联系抢险拍工作人员，带您去看房</p>
+					<p>可以，可以联系抢先拍工作人员，带您去看房可以，可以联系抢先拍工作人员，带您去看房可以，可以联系抢先拍工作人员，带您去看房可以，可以联系抢先拍工作人员，带您去看房</p>
 					<p class="d_ask_time">2016-06-26 10:25</p>
 					<div class="clearfix"></div>	
 				</div>						
@@ -304,22 +304,23 @@ $(document).ready( function(){
 });
 </script>
 <script type="text/javascript">		
-	
+	index = $('.d_map ul li.active').text();
+	showmap();
 	$(".d_map ul li").click(function(){		
 		$(this).addClass("active").siblings().removeClass("active");
-				
-	})
-	index = $('.d_map ul li.active').text();
-	var map = new BMap.Map("l-map");            // 创建Map实例
-	map.centerAndZoom(new BMap.Point(116.404, 39.915),11);
-	var myKeys = [index];
-	var local = new BMap.LocalSearch(map, {
-		renderOptions:{map: map, panel:"r-result"},
-		pageCapacity:5
-	});
-	local.searchInBounds(myKeys, map.getBounds());			
-
-
+		index = $('.d_map ul li.active').text();
+		showmap();
+	})	
+	function showmap(){
+		var map = new BMap.Map("l-map");            // 创建Map实例
+		map.centerAndZoom(new BMap.Point(116.404, 39.915),11);
+		var myKeys = [index];
+		var local = new BMap.LocalSearch(map, {
+			renderOptions:{map: map, panel:"r-result"},
+			pageCapacity:10
+		});
+		local.searchInBounds(myKeys, map.getBounds());		
+	}
 </script>
 
 
@@ -351,6 +352,9 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
+
+
+
 <!-- 注册-模态框（Modal） -->
 <div class="modal fade" id="myModal_reg" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
@@ -481,34 +485,39 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>	
+
 <!-- 房贷计算器-模态框（Modal） -->
 <div class="modal fade" id="myModal_calculator" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
    <div class="modal-dialog">
 	  <div class="modal-content">
 		 <div class="modal-body">		 
-			<div class="calculator_inputs">
-				<h2>房贷计算器</h2>				
+			<div class="calculator_inputs">							
 				<form>
 					<div style="width:83%;float:left">
-						<p>房屋总额：<input type="text"></p>
-						<p>贷款总额：<input type="text"></p>
-						<p>贷款期限：<input type="text"></p>					
-						<p>贷款利率：<input type="text"></p>						
+						<h2>房贷计算器</h2>	
+						<p>房屋总额：<input type="text" id="h_price" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"> 万元</p>
+						<p>贷款总额：<input type="text" id="l_price"></p>
+						<p>贷款期限：<select id="time">
+										<option name="time" value="30">30天</option>
+										<option name="time" value="60">60天</option>
+										<option name="time" value="90">90天</option>
+						</select></p>					
+						<p>贷款利率：<input type="text" id="rate" value="0.05%" readOnly="true"></p>						
 					</div>
 					<div class="calculator_btn">				
-						<input type="submit" value="开始计算" class="count">	
+						<input type="button" value="开始计算" class="count" id="count"/>	
 					</div>					
 				</form>	
 			</div>			
 			<div class="calculator_show">
 				<h2>房贷计算器</h2>	
 				<div>
-					<p><span class="show_name">支付利息：</span><span></span></p>
-					<p><span class="show_name">贷款金额：</span><span></span></p>
-					<p><span class="show_name">贷款手续费：</span><span></span></p>					
-					<p><span class="show_name">预审核费用：</span><span></span></p>					
-					<p><span class="show_name">费用合计：</span><span></span></p>					
+					<p><span class="show_name">支付利息：</span><span id="interest">0.00</span>万元</p>
+					<p><span class="show_name">贷款金额：</span><span id="loanamount">0.00</span>万元</p>
+					<p><span class="show_name">贷款手续费：</span><span id="poundage">0.00</span>万元</p>					
+					<p><span class="show_name">预审核费用：</span><span id="audit">0.00</span>万元</p>					
+					<p><span class="show_name">费用合计：</span><span id="all">0.00</span>万元</p>					
 				</div>
 			</div>			
 			<div class="clearfix"></div>	
@@ -516,6 +525,43 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
+<script type="text/javascript"> //房贷计算器 
+$("#count").click(function(event){
+    var h_price = parseFloat($("#h_price").val());
+    var h_price_7= h_price*0.7;	
+    var l_price = parseFloat($("#l_price").val());	
+    var time = $("#time").val();		
+    var rate = parseFloat($("#rate").val());
+    var loanamount = l_price;
+    var poundage = l_price*0.01;   
+	var audit = 0;
+	var interest = 0;
+	if (l_price>h_price_7){
+		alert("贷款总额应为房屋总额的70%以下！")
+	}else{
+		var time = $("#time").val();
+		switch (time)
+		{
+		case '30':
+		  interest = l_price/10000*5*30;	
+		  break;
+		case '60':
+		  interest = l_price/10000*5*60;	
+		  break;
+		case '90':
+		  interest = (l_price/10000*5*60) + (l_price/1000*2*30);	
+		  break;
+		}				
+		var all = l_price + interest + poundage;	
+		$("#interest").text(interest);
+		$("#loanamount").text(loanamount);
+		$("#poundage").text(poundage);
+		$("#audit").text(audit);
+		$("#all").text(all);
+	}
+}) 
+</script>	
+
 <!-- 申请贷款-模态框（Modal） -->
 <div class="modal fade" id="myModal_loan" tabindex="-1" role="dialog" 
    aria-labelledby="myModalLabel" aria-hidden="true">
@@ -562,6 +608,42 @@ $(document).ready( function(){
 	  </div><!-- /.modal-content -->
 	</div><!-- /.modal -->
 </div>
+
+<!-- 律师解答-模态框（Modal） -->
+<div class="modal fade" id="myModal_ask" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+	  <div class="modal-content">
+		 <div class="modal-header">
+			<button type="button" class="close" 
+			   data-dismiss="modal" aria-hidden="true">
+				  &times;
+			</button>
+			<h4 class="modal-title" id="myModalLabel">律师解答</h4>
+		 </div>
+		 <div class="modal-body">		 
+			<div class="d_card">				
+				<div class="d_card_img">
+					<img src="images/d/laohe.jpg">
+				</div>
+				<div class="d_card_text">
+					<p class="d_card_name">何义平</p>
+					<p class="d_card_belong">浙江西湖律师事务所</p>
+				</div>
+				<div class="d_card_answer">
+					<p class="d_card_ask"><span>5</span>个回答</p>
+				</div><div class="clearfix"></div>		
+			</div>	
+			<div class="ask_box">
+				<form>
+					<textarea rows="5" cols="60"></textarea>
+					<input type="submit" value="提问"></input>
+				</form>				
+			</div>			
+		 </div>
+	  </div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
 <script type="text/javascript">  
 /*----------手机验证码-------手机验证码---------*/  
 var InterValObj; //timer变量，控制时间  
@@ -599,6 +681,8 @@ function SetRemainTime() {
     }  
 }  
 </script>  
+
+
 </body>
 </html>
 
