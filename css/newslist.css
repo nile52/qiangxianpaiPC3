@@ -16,9 +16,7 @@
 .news_navs ul li.active{border-bottom:2px solid #e66140}
 .news_search {float:right;}
 .news_search input{margin:10px 0}
-.news_search input[type="submit"]{background: #e66140 url(../images/public/search_write.png) no-repeat center;
-    border: 2px solid #e66140;
-    width: 30px;
+.news_search input[type="submit"]{background:#e66140 url(../images/public/search_write.png) no-repeat center;border-color:#e66140;width:30px;box-shadow:none}
 .newslists{float:left;width:850px;}
 .newslist{margin:10px 20px;background:#fff;padding:20px;position:relative;}
 .newslist .news_img{width:170px;margin-right:20px;float:left}

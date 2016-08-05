@@ -1,8 +1,8 @@
 ﻿/* 登录 注册 忘记密码 */
-.content {position: relative;border-top: 1px solid #eee;}
-.inner {position: relative;width: 1190px;margin: auto;}
+.content {position: relative;border-top: 1px solid #eee;background:url(../images/login_bg.jpg)}
+.inner {position: relative;width: 1190px;margin: auto;height:670px}
 .content .form {position: absolute;top: 91px;right: 425px;}
-.login-box {padding: 25px 25px 40px;background: #fff;width:350px;}
+.login-box {padding: 25px 25px 40px;background: #fff;width:350px;border-radius:20px}
 .login-title {height: 18px;line-height: 18px;font-size: 16px;color: #3c3c3c;margin-top: 9px;padding-bottom: 8px;font-weight: 700;}
 #content .login-box .field {margin-top: 25px;}
 .static-form .field {margin-top: 20px;position: relative;}
