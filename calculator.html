@@ -57,10 +57,10 @@
 				</div>				
 				<div class="calculator_inputs">							
 					<form>
-						<div style="width:83%;float:left">
+						<div style="width:83%;float:right">
 							<h2>房贷计算器</h2>	
 							<p>房屋总额：<input type="text" id="h_price" onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"> 万元</p>
-							<p>贷款总额：<input type="text" id="l_price"></p>
+							<p>贷款总额：<input type="text" id="l_price"  onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')"> 万元</p>
 							<p>贷款期限：<select id="time">
 											<option name="time" value="30">30天</option>
 											<option name="time" value="60">60天</option>

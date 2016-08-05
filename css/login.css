@@ -1,14 +1,14 @@
 ﻿.content {position: relative;border-top: 1px solid #eee;}
 .inner {position: relative;width: 1190px;margin: auto;}
 .content .form {position: absolute;top: 91px;right: 425px;}
-.login-box {padding: 25px 25px 40px;background: #fff;}
+.login-box {padding: 25px 25px 40px;background: #fff;width:350px;}
 .login-title {height: 18px;line-height: 18px;font-size: 16px;color: #3c3c3c;margin-top: 9px;padding-bottom: 8px;font-weight: 700;}
 #content .login-box .field {margin-top: 25px;}
 .static-form .field {margin-top: 20px;position: relative;}
-.static-form .field label {width: 40px;height: 40px;line-height:40px;background: #ddd url(../images/public/login_icon.png) 11px -14px no-repeat;text-align: center;position: absolute;left:1px;top: 1px;outline: 0;}
-.static-form .pwd-field label {background-position: 11px 14px;}
-.static-form .verify-field label {background-position: 11px -40px;}
-.static-form .verify-field label.get_code{width: 90px;left: 200px;background: #e66140;color: #fff;height: 30px;line-height: 30px;margin: 5px;border-radius: 3px;cursor: pointer;}
+.static-form .field i {width: 40px;height: 40px;line-height:40px;background: #ddd url(../images/public/login_icon.png) 11px -14px no-repeat;text-align: center;position: absolute;left:1px;top: 1px;outline: 0;}
+.static-form .pwd-field i {background-position: 11px 14px;}
+.static-form .verify-field i {background-position: 11px -40px;}
+.static-form .verify-field i.get_code{width: 90px;left: 200px;background: #e66140;color: #fff;height: 30px;line-height: 30px;margin: 5px;border-radius: 3px;cursor: pointer;}
 .static-form .login-text {width: 300px;font-size: 14px;line-height: 18px;height: 18px;padding:20px 8px 20px 50px;border: 1px solid #ddd;outline-color:#e66140}
 #content .login-box .login-links {margin-top: 25px;}
 .static-form .login-links {margin-top: 25px;overflow: hidden;}
@@ -19,6 +19,11 @@
 .login-box .submit button {width: 300px;height: 42px;border: 0;display: inline-block;overflow: hidden;vertical-align: middle;line-height: 42px;font-size: 16px;font-weight: 700;color: #fff;background: #e66140;border-radius: 3px;cursor: pointer;zoom: 1;}
 
 
+label.error {
+    margin-left: 10px;
+    color: red;    display: inline-block;
+    min-width: 140px;
+}
 
 
 
@@ -28,13 +33,13 @@
 .calculator-box {width:900px;background: #fff;margin:80px auto}
 
 
-.calculator_inputs{width:60%;float:left}
-.calculator_show{width:40%;float:left;margin:50px 0;}
+.calculator_inputs{width:50%;float:left}
+.calculator_show{width:35%;float:right;margin:50px 0;}
 .conditions h2{font-size:20px;font-weight:bold;color:#e66140;margin:20px 0 10px 0}
 .conditions p{padding:5px 0}
 
 #calculator form input{
-    width:69%;
+    width:50%;
     margin:0px;
     height: 30px;
     padding:0px;
@@ -42,12 +47,20 @@
     border-radius: 5px;
     border: 1px solid #eee;
 }
-
+#calculator form input.count{
+	background: #e66140;outline:none;
+    color: #fff;
+    position: relative;
+    top: -200px;
+    left: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+	}
 .calculator_show .show_name{width:150px;}
 .calculator_show .show_name{width:150px;line-height:50px}
 
 #calculator h2{font-size:20px;font-weight:bold;color:#e66140;margin:20px 0 10px 0}
-.calculator_btn .count{background:#e66140;color:#fff;}
 
 
 

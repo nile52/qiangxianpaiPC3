@@ -57,14 +57,14 @@
 			<div class="login-box">
 				<div class="static-form">
 					<div class="login-title">账户登录</div>
-					<form action="" method="post">
+					<form action="" method="" id="LoginForm">
 						<div class="field username-field">
-							<label></label>
-							<input type="text" name="" id="" class="login-text" value="" maxlength="32" tabindex="1">
+							<i></i>
+							<input type="text" name="phone" id="phone" class="login-text" onkeyup="this.value=this.value.replace(/\D/g,'')" placeholder="请输入11位手机号">
 						</div>
 						<div class="field pwd-field">
-							<label></label> 
-							<input type="password" name="" id="" class="login-text" maxlength="40" tabindex="2">
+							<i></i> 
+							<input type="password" name="password" id="password" class="login-text" maxlength="40" tabindex="2">
 						</div>	
 						<div class="login-links">
 							<a href="passport.html" class="forget-pwd" target="_blank">
@@ -112,7 +112,46 @@ function hideImg(){
 	$(".wechat").css("display","none");
 }
 </script>
-
+<script src="js/jquery.validate-1.13.1.js"></script>
+<script>//基本表单验证
+    var validator;
+    $(document).ready(function () {
+        $.validator.setDefaults({
+            debug: true
+        });
+        validator = $("#LoginForm").validate({
+            rules: {
+                phone: {
+                    required: true,
+					rangelength: [11,11],
+                    phonerule : "手机"
+                },
+                password: {
+                    required: true,
+                    rangelength: [6,18]
+                }
+            },
+            messages: {
+                phone: {
+                    required: "必须填写手机号",
+					rangelength: "请输入11位手机号",
+					remote: "用户名不存在"
+                },
+                password: {
+                    required: "必须填写密码",
+                    rangelength: "请输入6-18位之间的密码"
+                }
+            },
+            submitHandler: function (form) {
+                console.log($(form).serialize());
+            }
+        });
+        $.validator.addMethod("phonerule", function(value, element, params){
+            var phonerule = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+            return this.optional(element) || (phonerule.test(value));
+        }, $.validator.format("请填写正确的手机号！"));
+    });
+</script>
 </body>
 </html>
 
