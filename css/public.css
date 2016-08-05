@@ -156,7 +156,7 @@ footer .im li:last-child {margin-right: 0;}
 
 .active a{color:#e66140}
 
-nav{width:440px;float:left}
+nav{width:500px;float:left}
 .navbar-default .navbar-nav>li>a {color: #333;}
 @media (max-width: 786px){
 	nav{width:100%;float:right;margin-top:-100px;position:static;z-index:1;}
