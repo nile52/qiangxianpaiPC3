@@ -2,7 +2,7 @@
 .content {position: relative;border-top: 1px solid #eee;background:url(../images/login_bg.jpg)}
 .inner {position: relative;width: 1190px;margin: auto;height:670px}
 .content .form {position: absolute;top: 91px;right: 425px;}
-.login-box {padding: 25px 25px 40px;background: #fff;width:350px;border-radius:20px}
+.login-box {padding: 25px 25px 40px;background: #fff;width:350px;border-radius:20px;box-shadow: 0 0 10px rgba(0,0,0,0.3);}
 .login-title {height: 18px;line-height: 18px;font-size: 16px;color: #3c3c3c;margin-top: 9px;padding-bottom: 8px;font-weight: 700;}
 #content .login-box .field {margin-top: 25px;}
 .static-form .field {margin-top: 20px;position: relative;}
@@ -63,5 +63,13 @@ label.error {margin-left: 10px;color: red;    display: inline-block;min-width: 1
 
 
 
+@media (max-width: 1220px){
+	.inner {width: 100%}	
+	.content .form {
+	    position: absolute;
+	    top: 91px;
+	    right: 425px;
+	}		
+}
 
 
