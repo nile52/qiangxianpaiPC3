@@ -100,7 +100,7 @@
 	</div>
 <div style="background:#f8f8f8;padding:10px 0 50px 0">
 <div class="wrapper houselists con12">
-	<div class="select_com screenBox screenBackground" id="selectList">
+	<div class="select_com screenBox" id="selectList">
 		<div class="select select1">
 			<h2>房产列表</h2>
 			<ul id="myTab" class="nav nav-tabs">
@@ -177,9 +177,9 @@
 			<div class="houselist_head">
 				<ul class="filter1_1 " style="float:left">
 					<li class="active">默认排序</li>
-					<li>发布时间<em class="aorder arrow2"></em></li>
-					<li>折扣力度<em class="aorder arrow2"></em></li>
-					<li>总价<em class="aorder arrow2"></em></li>
+					<li>发布时间<em></em></li>
+					<li>折扣力度<em></em></li>
+					<li>总价<em></em></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>			
@@ -344,12 +344,6 @@ function hideImg(){
 <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
 
-
-
-
-
-
-
 <script type="text/javascript"> //7.28新版城市头
 	$("#all_city li[data-province='11'][data-city='1']").addClass("selected");		 
 	var curCity = $("#all_city li[class='selected']").text() ;		
@@ -373,7 +367,6 @@ function hideImg(){
 	});		
 </script>
 
-
 <script>  //7.27号新的筛选
 $(document).ready(function(){			
 	$("#select1 dd").click(function () {
@@ -389,8 +382,9 @@ $(document).ready(function(){
 		$(this).addClass("s_ed").siblings().removeClass("s_ed");
 	});	
 	
-	$ (".aorder").click (function (){
-		$ (this).toggleClass ("arrow3");
+	$ ("li").click (function (){
+		$(this).addClass("active arrow2").siblings().removeClass("active arrow2");
+		$ (".arrow2").toggleClass ("arrow3");
 	});	
 
 });

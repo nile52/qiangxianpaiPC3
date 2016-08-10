@@ -1,449 +1,70 @@
 ﻿*{color:#444}
 footer *{color:#fff}
-footer {
-    margin-top: 0px;
-}
-
-
-
+footer {margin-top: 0px;}
 a {color: #e66140;}
-.modal-title {margin: 0;line-height: 1.42857143;text-align: center;font-size: 20px;}
-.modal-body form{width:80%;margin:0 auto;}
-.modal-body form input{width:100%;margin:0 auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
-.modal-body form input.verification{width:70%;float:left;}
-.modal-body form input.getcode{width:26%;float:right;margin:0 2%;background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
-.modal-body form input[type=submit] {background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
-.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
-.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
-#myModal_xieyi .modal-body p{line-height: 20px;text-indent: 2em;padding: 5px;}
-#myModal_xieyi .modal-body{max-height:550px;overflow-y:scroll;}
 
-
-
-
-
+/* 副级头部 城市选择 搜索框 */
 .subhead{border-bottom:1px solid #eee;border-top:1px solid #eee;width:100%;height:70px}
-.subhead .subhead_logo{width:174px;height:65px;background:url(../images/h/logo2.jpg) 0px 0px;float:left;transition: background 1s;
--moz-transition: background 1s;	/* Firefox 4 */
--webkit-transition: background 1s;	/* Safari 和 Chrome */
--o-transition: background 1s;}
-.subhead .subhead_logo:hover{background:url(../images/h/logo2.jpg) 0px 65px;transition: background 1s;
--moz-transition: background 1s;	/* Firefox 4 */
--webkit-transition: background 1s;	/* Safari 和 Chrome */
--o-transition: background 1s;}
-
-
-
-.subhead_city{width:80px;float:left;}
-.subhead_city span{    width: 80px;
-    height: 35px;
-    line-height: 35px;
-    background: #FFF url(../images/h/province_sprites.jpg) no-repeat 50px 5px;
-    display: block;
-    float: left;
-    margin-top: 18px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #e66140;}
-.select_dropdown {margin-right:15px;}		
-.select_dropdown span{    
-    font-size: 14px;
-    border: 1px solid #666;
-    margin-top: 5px;    height:24px;
-    line-height:24px;    padding-left: 4px;
-    background:url(../images/h/province_sprites.png) no-repeat 65px -3px;
-}		
-
-
-
-
-
-
-/* select */
-.selects{padding:5px 10px;border:#ddd 1px solid;border-radius:4px;width:100%;margin:20px auto;}
-.selects li{list-style:none;padding:10px 0 5px 100px}
-.selects .select-list{border-bottom:#eee 1px dashed}
-.selects .select-list:last-child{border-bottom:#eee 0px dashed}
-
-.selects dl{zoom:1;position:relative;line-height:24px;}
-.selects dl:after{content:" ";display:block;clear:both;height:0;overflow:hidden}
-.selects dt{width:100px;margin-bottom:5px;position:absolute;top:0;left:-100px;text-align:center;color:#666;height:24px;line-height:24px}
-.selects dd{float:left;display:inline;margin:0 0 5px 5px;}
-.selects a{display:inline-block;white-space:nowrap;height:24px;padding:0 10px;text-decoration:none;color:#444;border-radius:2px;line-height:24px;}
-.selects a:hover{color:#444;background-color:#eee}
-.selects .s_ed a{color:#fff;background-color:#e66140}
-.select-result dt{font-weight:bold}
-.select-no{color:#999}
-
-.eliminateCriteria{float:right}
-.selects .select-result a{padding-right:20px;background:#e66140 url(../images/h/close.gif) right 9px no-repeat}
-.selects .select-result a:hover{background-position:right -15px}
-
-
-
-
-.filter-menu {
-    float: left;
-    width: auto;
-    padding: 0;
-}
-
-
-
-.filter-menu legend {
-    display: block;
-    font-size: 20px;
-    text-transform: uppercase;
-    z-index: 1;
-    height: 50px;
-    border-right: 1px solid #FFFFFF;
-    border-bottom: 0;
-    width: 100px;
-    color:#e66140;
-    padding-top: 20px;margin-bottom:5px
-}
-.filter-menu legend>a,  legend>a:focus,  legend>a:hover {
-    outline: 0;
-}
-.filter-menu legend>a {
-    color: #333;
-}
-.filter-menu a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #E66140;
-}
-.filter-menu legend>a>div {
-    padding: 0px 23px;
-    color: #e66140;background: url(../images/h/down.png) right 9px no-repeat
-}
-
-.filter-pane {
-    background-color: #fff;
-    position: absolute;
-    margin-left: 1px;
-    display: none;
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.5);
-}
-#all_city_info li {
-    width: 100px;
-}
-.filter-pane li {
-    line-height: 27px;
-}
-
-#all_city li.selected a.option:not(:hover) {
-    background: #E66140;
-    color: #fff;
-}
-.filter-pane .zf-dropdown-options li a.option {
-    text-align: center;
-}
+.subhead_city span{width: 80px;height: 35px;line-height: 35px;background: #FFF url(../images/h/province_sprites.jpg) no-repeat 50px 5px;display: block;float: left;margin-top: 18px;cursor: pointer;font-size: 20px;color: #e66140;}
+/* 副级头部的城市选择 新版 */
+.filter-menu {float: left;width: auto;padding: 0;}
+.filter-menu legend {display: block;font-size: 20px;text-transform: uppercase;z-index: 1;height: 50px;border-right: 1px solid #FFFFFF;border-bottom: 0;width: 100px;color:#e66140;padding-top: 20px;margin-bottom:5px}
+.filter-menu legend>a,  legend>a:focus,  legend>a:hover {outline: 0;}
+.filter-menu legend>a {color: #333;}
+.filter-menu a {text-decoration: none;cursor: pointer;color: #E66140;}
+.filter-menu legend>a>div {padding: 0px 23px;color: #e66140;background: url(../images/h/down.png) right 9px no-repeat}
+.filter-pane {background-color: #fff;position: absolute;margin-left: 1px;display: none;box-shadow: 0 1px 4px 0 rgba(0,0,0,.5);}
+#all_city_info li {width: 100px;}
+.filter-pane li {line-height: 27px;}
+#all_city li.selected a.option:not(:hover) {background: #E66140;color: #fff;}
+.filter-pane .zf-dropdown-options li a.option {text-align: center;}
 .filter-pane .zf-dropdown-options li:not(.selected) a.option:focus:not(:hover){background:#fff;color:#333}
 .filter-pane .zf-dropdown-options li:not(.selected) a.option:hover{color:#e66140}
 .filter-pane .zf-dropdown-options li a.option{display:inline-block;line-height:normal;height:auto;width:100%}
 .filter-pane .zf-dropdown-options li a.option:focus{font-weight:700}
 .filter-pane .zf-dropdown-options li.selected a.option:not(:hover){background: #E66140;color:#fff}
-
- .menu-open legend a, .menu-open legend a:focus, .menu-open legend a:hover{color:#0074e4}
- .menu-open legend a .zsg-icon-arrow-menu-down::before,.menu-open legend a:focus .zsg-icon-arrow-menu-down::before, .menu-open legend a:hover .zsg-icon-arrow-menu-down::before{-webkit-transform:rotate(-180deg);transform:rotate(-180deg)}
+.menu-open legend a, .menu-open legend a:focus, .menu-open legend a:hover{color:#0074e4}
+.menu-open legend a .zsg-icon-arrow-menu-down::before,.menu-open legend a:focus .zsg-icon-arrow-menu-down::before, .menu-open legend a:hover .zsg-icon-arrow-menu-down::before{-webkit-transform:rotate(-180deg);transform:rotate(-180deg)}
 .menu-open .filter-pane{display:block;z-index:999}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.select_dropdown ul{top: 232px;}
-.select_dropdown ul li a{ color: #666;}
 .subhead_city ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf}
 .subhead_city ul li b{font-weight:bold;}
 .show{display:block;}
-
-/* selectNumberScreen */
-.selectNumberScreen{width:795px;height:240px;margin:20px auto;}
-.screenBox dl.noborder{border-bottom:0px;border-left:0px;border-top:0px;border-right:0px}
-.screenBox dl.goodstype{border-bottom:#e6e6e6 1px dashed}
-.screenBox dl dt{font-size: 14px;font-weight:normal;
-    float: left;}
-.screenBox dl dd span.more{position:absolute;width:39px;display:block;height:14px;top:6px;cursor:pointer;right:1px}
-.screenBox dl dd span.more label{display:inline-block;cursor:pointer}
-.hasBeenSelected{padding:2px;margin-top:10px;overflow:hidden;}
-.hasBeenSelected dl{width:784px;background:#f6f8fd;overflow:hidden}
-.hasBeenSelected dl dt{float:left}
-.hasBeenSelected dl dd{float:left}
-.hasBeenSelected dl dt{text-align:right;line-height:30px;width:108px;height:30px;font-weight:600}
-.hasBeenSelected dl dd{padding-bottom:4px;padding-left:0px;width:676px;padding-right:0px;padding-top:0px}
-.selectedInfor{position:relative;white-space:nowrap;float:left;
-    font-size: 14px;
-    border: 1px solid #e8e8e8;
-    margin-top: 5px;margin-right:20px;
-    height: 24px;
-    line-height: 24px;
-    padding-left: 4px;width:80px;
-
-}
-.selectedInfor label{color:#666;font-weight:normal;}
-.eliminateCriteria{line-height: 24px;
-    margin-top: 4px;
-    color: #666;
-    cursor: pointer;
-    background: #eee;
-    border-radius: 25%;
-    padding: 2px 5px;}
-.selectedInfor em{background:url("../images/h/close.png") no-repeat;cursor:pointer;display:block;height:13px;overflow:hidden;position:absolute;right:2px;top:5px;width:13px;}
-
-
-
-
-
-
-
-
-
-.subhead_search{float:right;}
-.subhead_search .search-form {padding: 8px 0;background-color: #fff;}
-.subhead_search input.txt {    height: 35px;
-    padding-left: 10px;
-    font-size: 14px;
-    color: #999;
-    width: 300px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    margin-top: 8px;}
-.search-sort-con .btn, .search-sort-con .txt {border: 0;padding: 0;}
-.subhead_search input.btn {float: right;
-    height: 45px;
-    width: 40px;}
-.search-sort-con .btn {background:url(../images/h/ic_search_search.png) no-repeat center center}
-.select_com .select{margin:20px 0}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* selectd */
+/* 副级头部的城市选择 旧版 */
 .selectd{float:left;margin-right:10px;}
 .selectd dt{height:28px;display:inline-block;border:1px solid #e8e8e8;background:url(../images/h/province_sprites4.png) no-repeat 60px center;line-height:28px;font-weight:bold;padding-left:10px;cursor:pointer;width:80px;padding-right:12px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;z-index:99;}
 .selectd dt:hover,.selectd dt.cur{border:1px solid #e66140}
 .selectd dd{position:absolute;top:228px;border:1px solid #e8e8e8;background:#fff;display:none;width:80px;z-index:9}
-
-
-
-
 .selectd dd ul{width:78px;max-height:250px;overflow:auto;}
 .selectd dd ul li a{line-height:28px;display:block;padding:0 8px;color:#666}
 .selectd dd ul li a:hover{background:#f5f5f5;}
+.subhead_city .selectd dd {top:100px;z-index:100;}
+.subhead_city .selectd dt {border:none;margin-top:20px;font-size:20px;color:#e66140;font-weight: normal;background:url(../images/h/updown.png) no-repeat 60px -12px;}
+/* 副级头部搜索框 */
+.subhead_search{float:right;}
+.subhead_search .search-form {padding: 8px 0;background-color: #fff;}
+.subhead_search input.txt {height: 35px;padding-left: 10px;font-size: 14px;color: #999;width: 300px;border: 1px solid #eee;border-radius: 5px;margin-top: 8px;}
+.search-sort-con .btn, .search-sort-con .txt {border: 0;padding: 0;}
+.subhead_search input.btn {float: right;height: 45px;width: 40px;}
+.search-sort-con .btn {background:url(../images/h/ic_search_search.png) no-repeat center center}
+.select_com .select{margin:20px 0}
 
+/* select 顶部房产选择 房产区域 房产类型 房产特色 拍卖状态*/
+.selects{padding:5px 10px;border:#ddd 1px solid;border-radius:4px;width:100%;margin:20px auto;}
+.selects li{list-style:none;padding:10px 0 5px 100px}
+.selects .select-list{border-bottom:#eee 1px dashed}
+.selects .select-list:last-child{border-bottom:#eee 0px dashed}
+.selects dl{zoom:1;position:relative;line-height:24px;}
+.selects dl:after{content:" ";display:block;clear:both;height:0;overflow:hidden}
+.selects dt{width:100px;margin-bottom:5px;position:absolute;top:0;left:-100px;text-align:center;color:#666;height:24px;line-height:24px;font-weight: normal;}
+.selects dt{width:100px;margin-bottom:5px;position:absolute;top:0;left:-100px;text-align:center;color:#666;height:24px;line-height:24px；font-weight: normal;}
+.selects dd{float:left;display:inline;margin:0 0 5px 5px;}
+.selects a{display:inline-block;white-space:nowrap;height:24px;padding:0 10px;text-decoration:none;color:#444;border-radius:2px;line-height:24px;}
+.selects a:hover{color:#444;background-color:#eee}
+.selects .s_ed a{color:#fff;background-color:#e66140}
 
-
-
-.subhead_city .selectd dd {
-    top:100px;z-index:100;
-}
-
-.subhead_city .selectd dt {
-	border:none;
-	margin-top:20px;
-	font-size:20px;
-	color:#e66140;font-weight: normal;
-	background:url(../images/h/updown.png) no-repeat 60px -12px;
-}
-
-
-
-
-
-
-
-
-
+/* 房产列表标题 */
 .houselist h2 {margin: 20px 0 20px;font-size:30px;text-align:left}
 .houselist h2 span{margin: 50px 0 20px;font-size:16px;}
-
-
-
-
-
-
-.search{position: absolute;top:14px; left: 34%; width:477px; _width:477px; height: 81px;}
-.keyword a{ font-size: 12px; line-height: 18px; color:#999; padding:0 4px;}
-.keyword a span{ color:#fb5004;}
-.tab-bar li.current{ color: #1d7ad9; font-weight: bold; background: url(../images/trian_up.png) no-repeat center bottom; padding-bottom: 9px;}
-.tab-bar li{ width:38px; text-align: center; color: #444; float: left; cursor: pointer;}
-.tab-bar li.tab-line{ width: 2px; color: #c9c9c9; margin:0 2px;}
-.tab-box{ border:2px solid #1d7ad9;}
-.text{ color: #a9a9a9; width:376px; height: 31px; border:none; text-indent: 10px; float:left; outline: none; border:0;}
-.button{ width: 97px; height: 32px; text-align: center; color: #fff; font-size:18px;background: #1d7ad9; border:none; float: left;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Gallery Section 
-==============================*/
-#works-section {
-	padding: 80px 0;
-}
-.categories {
-	padding-bottom: 30px;
-	text-align: center;
-}
-ul.cat li {
-	display: inline-block;
-}
-#works-section li.pull-right {
-	margin-top: 10px;
-}
-ol.type li {
-	display: inline-block;
-	margin-left: 20px;
-}
-ol.type li:after {
-	content: ' | ';
-	margin-left: 20px;
-}
-ol.type li:last-child:after {
-	content: '';
-}
-ol.type li a {
-	color: #222222
-}
-ol.type li a.active {
-	color: #c08d00;
-	font-weight: bold;
-}
-ol.type li a:hover {
-	color: #c08d00;
-}
-.isotope-item {
-	z-index: 2
-}
-.isotope-hidden.isotope-item {
-	z-index: 1
-}
-.isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
-.portfolio-item {
-	margin-bottom: 30px;
-}
-.portfolio-item .hover-bg {
-	height: 260px;
-	overflow: hidden;
-	position: relative;
-}
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
-.hover-bg:hover .hover-text {
-	opacity: 1;
-}
-#works-section i.fa {
-	height: 30px;
-	width: 30px;
-	border: 1px solid #c08d00;
-	font-size: 20px;
-	padding: 5px;
-	border-radius: 50%;
-	color: #c08d00;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* 司法拍卖 */
 .houselists .select h2 {font-size:14px;padding: 8px 10px;float:left}
@@ -474,80 +95,37 @@ ol.type li a:hover {
 .houselists .info2 .house_otherinfo .discount{float:right;font-size:16px;color:#e66140;}
 .houselists .info2 .house_otherinfo .discount i{font-size:25px;color:#e66140}
 
-
-
-
-
-.search-wrapper{width:610px;margin:0 auto;text-align:center;margin-top:200px}
-.search-body{width:100%;height:60px;background:#fff;border-radius:10px;padding:8px}
-.search-body input{border:none;float:left;line-height:44px;outline:none;margin-left:5px}
-.search-body button{border:none;background:#e66140;border-radius: 5px;height: 44px;width:100px;color:#fff;float:right;line-height:44px}
-
-
-
+/* 房产列表排序 */
 .houselist_head{border:1px solid #e8e8e8;margin:0px auto 20px;}
 .houselists ul.filter1_1 { text-align: left; font-size: 0;margin: 0 }
 .filter1_1 li { display: inline-block; padding: 10px 20px; font-size: 14px; color: #333;cursor: pointer;border-right:1px solid #e8e8e8;}
-
-
-.aorder {
-    width: 17px;
-    height: 18px;
-    z-index: 999;
-    float: right;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-
-
+/* .aorder {width: 17px;height: 18px;z-index: 999;float: right;margin-left: 5px;cursor: pointer;}
 .arrow2 {background-image: url(../images/order.png);background-position: 61px -33px; }
 .arrow3 {background-image: url(../images/order.png);background-position: 61px -0px; }
-
-
 li.active .arrow2 {background-image: url(../images/order.png);background-position: 77px -33px; }
-li.active .arrow3 {background-image: url(../images/order.png);background-position: 77px -0px; }
-
-
-
-
+li.active .arrow3 {background-image: url(../images/order.png);background-position: 77px -0px; } */
+/* ul li{float:left; padding:5px 20px; border:1px solid #000;cursor:pointer} */
+/* ul li.active{float:left; padding:5px 20px; background:yellow} */
+.filter1_1 .active em{float:right;width: 17px;height: 18px;z-index: 999;cursor: pointer;}
+.filter1_1 .arrow2 em{background-image: url(../images/order2.png);background-position:0px 17px;}
+.filter1_1 .arrow3 em{background-image: url(../images/order2.png);background-position:0px 2px;}
 .ordered li {padding: 10px;text-align:center}
-.ordered li em{cursor: pointer; 
-    display: block;
-    height: 13px;
-    float: right;
-    margin-top:3px;
-    width: 13px;
-    background: url(../images/h/province_sprites4.png) no-repeat;}
-	
-	
+.ordered li em{cursor: pointer; display: block;height: 13px;float: right;margin-top:3px;width: 13px;background: url(../images/h/province_sprites4.png) no-repeat;}	
 .filter1_1 .active { color: #fff; background-color: #e66140;border-right:1px solid #e8e8e8;}
 .ordered .active { color: #666; background:none;border:none;}
 .ordered .active em{ background: url(../images/h/province_sprites3.png) no-repeat;}
 .filtr-item {width: 390px;padding:10px;}
 
 
-
-
+/* 直通车 尾房 */
 .houselist2_l{width:840px;float:left;background:#fff;padding:20px;}
-
-.houselist2_l .filtr-item {
-    width: 840px;
-}
-
-
+.houselist2_l .filtr-item {width: 840px;}
 .houselist2_con{box-shadow: 0 1px 2px #ddd;height:240px;padding:20px;background:#fff;width:780px;border-bottom:1px solid #eee;float:left}
-
 .houselist2_con.wf{height:auto}
-.houselist2_con.wf p.fs14 span{
-	margin:0 2px;padding:2px 5px;background:#e66140;color:#fff;border-radius:5px;
-}
-.houselist2_con.wf p.fs14{
-	text-align:center;
-}
+.houselist2_con.wf p.fs14 span{margin:0 2px;padding:2px 5px;background:#e66140;color:#fff;border-radius:5px;}
+.houselist2_con.wf p.fs14{text-align:center;}
 .houselist2_countdown{float:left;width:320px;}
 .houselist2_vouchers{text-align:left;float:left;width:418px;overflow:hidden;height:60px}
-
 .houselist2_vouchers .voucher {border:1px solid #e66140;width:200px;margin:4px;float:left}
 .houselist2_vouchers .voucher .voucher_info{width:70%;float:left;text-align:center;padding-top:2px}
 .houselist2_vouchers .voucher .voucher_info .voucher_name{color:#e66140;}
@@ -555,15 +133,7 @@ li.active .arrow3 {background-image: url(../images/order.png);background-positio
 .houselist2_vouchers .voucher .voucher_info .voucher_limit{font-size:12px}
 .houselist2_vouchers .voucher .voucher_a {width:30%;float:right;text-align:center;background:#e66140;height:48px;padding-top:8px}
 .houselist2_vouchers .voucher .voucher_a p{color:#fff;font-size:12px}
-
-
-.wf .voucher_more{
-    width: 420px;
-    float: right;
-}
-
-
-
+.wf .voucher_more{width: 420px;float: right;}
 .houselist2_con:hover{box-shadow: 5px 5px 5px #ddd;border-left:1px solid #eee;z-index:999;}
 .houselist2_img{float:left;width:320px;height:210px;margin-right:10px}
 .houselist2_img img{width:300px;height:200px;}
@@ -573,32 +143,13 @@ li.active .arrow3 {background-image: url(../images/order.png);background-positio
 .houselist2_text p{padding:10px}
 .hot p{padding:5px}
 .hot p.wf_focus span{color:#e66140;font-size:20px}
-
-
-
-.hot{width: 120px;
-    position: relative;
-    top: -165px;
-    float: right;}
-
-
-
-	
-	
-
-
+.hot{width: 120px;position: relative;top: -165px;float: right;}
 .houselist2_text p.house_price1{font-weight:bold}
 .houselist2_text p.house_price1 span{padding-right:5px}
 .houselist2_text p.house_price2 span{text-decoration:line-through}
 .houselist2_text p.house_tags span{background:#e66140;margin:0 2px;padding:2px 5px;border-radius:2px;color:#fff;font-size:12px}
-
-
 .houselist2_2{width:340px;float:right;background:#fff;padding:20px;}
-.houselist2_2 h2 {
-    margin: 50px 0 20px;
-    font-size: 30px;
-    text-align: left;
-}
+.houselist2_2 h2 {margin: 50px 0 20px;font-size: 30px;text-align: left;}
 .houselist2_recommended{height:274px;padding:20px;background:#fff;width:300px;border-bottom:1px solid #eee;float:right}
 .houselist2_recommended .houselist2_img{float:left;width:260px;height:175px;}
 .houselist2_recommended .houselist2_img img{width:260px;height:175px;}
@@ -608,274 +159,37 @@ li.active .arrow3 {background-image: url(../images/order.png);background-positio
 .houselist2_recommended .houselist2_text p.re_info .re_price{width:50%;float:right;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:12px;line-height:20px;text-align:right}
 .houselist2_recommended .houselist2_text p.re_voucher .re_v{float:left;color:#e66140;line-height:30px}
 .houselist2_recommended .houselist2_text p.re_voucher .re_btn{float:right;color:#fff;background:#e66140;padding:3px 10px}
-
-
-
-
-/* 司法拍卖 */
-
 .wf_name{font-size: 20px;font-weight: bold;}
-.wf_name span{font-size: 12px;
-    padding: 2px;
-    background: #e66140;
-    margin-left:5px;
-    color: #fff;}
-
-
-
-
-
-
+.wf_name span{font-size: 12px;padding: 2px;background: #e66140;margin-left:5px;color: #fff;}
 .houselist{text-align:center}
 .houselist .fs30{margin-top:100px;margin-bottom:30px}
 .houselist_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:20px;background:#fff;position:relative;}
 .houselist_con:hover{box-shadow: 5px 5px 5px #ddd;}
 .houselist_con img{width:360px;height:240px}
-
-
-/* .houselist_con .tips{
-    position: absolute;
-    top: 41px;
-    left: 15px;
-    z-index: 200;
-
+/* .houselist_con .tips{position: absolute;top: 41px;left: 15px;z-index: 200;
 } */
-/* .houselist_con .tips p{
-    height: 16px;
-    line-height: 16px;
-    padding: 0 5px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    transform: rotate(-45deg);
-    border-bottom: 16px solid #e66140;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    height: 0;
-}
+/* .houselist_con .tips p{height: 16px;line-height: 16px;padding: 0 5px;font-size: 12px;text-align: center;color: #fff;transform: rotate(-45deg);border-bottom: 16px solid #e66140;   border-left: 16px solid transparent;border-right: 16px solid transparent;height: 0;}
  */
-/* .houselist_con .tips p{
-	height:50px ;line-height:50px ;
-	width:100px;
-    padding: 0 5px;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-	background:#e66140;
-}
+/* .houselist_con .tips p{height:50px ;line-height:50px ;width:100px;padding: 0 5px;font-size: 20px;text-align: center;color: #fff;background:#e66140;}
  */
- 
-.houselist_con .tips{
-    position: absolute;
-    top: 25px;
-    left: -27px;
-    z-index: 200;
-}
-.houselist_con .tips p{
-    height: 25px;
-    line-height: 25px;
-	width: 125px;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-    transform: rotate(-45deg);
-    border-bottom: 25px solid rgba(255,0,0,0.5);
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    height: 0;
-}
-
-.houselist_con .tips.past p {
-    border-bottom: 25px solid rgba(0,0,0,0.5);
-}
-.houselist_con .tips p span{
-    font-size:20px!important;color:#fff;
-}
-
-
-
-
-
-
-
-
-
-.houselist2_con .tips{
-    position: absolute;
-    top: 41px;
-    left: 25px;
-    z-index: 200;
-
-}
-.houselist2_con .tips p{
-    height: 16px;
-    line-height: 16px;
-    padding: 0 5px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    transform: rotate(-45deg);
-    border-bottom: 16px solid #e66140;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    height: 0;
-}
-
-
-.wf .tips{
-    position: static;
-	margin-top:-190px;margin-left:-5px;
-    z-index: 200;width:66px
-}
-.wf .tips p{
-    height: 16px;
-    line-height: 16px;
-    padding: 0 5px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    transform: rotate(-45deg);
-    border-bottom: 16px solid #e66140;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    height: 0;
-}
-
-
-
-
-
-
-
+.houselist_con .tips{position: absolute;top: 25px;left: -27px;z-index: 200;}
+.houselist_con .tips p{height: 25px;line-height: 25px;width: 125px;font-size: 16px;text-align: center;color: #fff;transform: rotate(-45deg);border-bottom: 25px solid rgba(255,0,0,0.5);border-left: 25px solid transparent;border-right: 25px solid transparent;height: 0;}
+.houselist_con .tips.past p {border-bottom: 25px solid rgba(0,0,0,0.5);}
+.houselist_con .tips p span{font-size:20px!important;color:#fff;}
+.houselist2_con .tips{position: absolute;top: 41px;left: 25px;z-index: 200;}
+.houselist2_con .tips p{height: 16px;line-height: 16px;padding: 0 5px;font-size: 12px;text-align: center;color: #fff;transform: rotate(-45deg);border-bottom: 16px solid #e66140;border-left: 16px solid transparent;border-right: 16px solid transparent;height: 0;}
+.wf .tips{position: static;margin-top:-190px;margin-left:-5px;z-index: 200;width:66px}
+.wf .tips p{height: 16px;line-height: 16px;padding: 0 5px;font-size: 12px;text-align: center;color: #fff;transform: rotate(-45deg);border-bottom: 16px solid #e66140;border-left: 16px solid transparent;border-right: 16px solid transparent;height: 0;}
 .houselist_text{text-align:left;}
 
-
-
-
-
-.slide { _margin-top:-10000px; }
-.slide ul.widget { float:left; width:340px;margin:0 10px }
-.slide ul.last { margin-right:0px; }
-.slide ul.widget .img {float:left; }
-.slide ul.widget img {width:150px;height:110px;margin-right:10px }
-.slide ul.widget .xinxi2 p{padding:2px 0}
-.slide ul.widget .xinxi2 .pt{color:#e66140;font-size:18px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
-
-.slide ul.widget .xinxi2 p span.qipaijia{color:#e66140;font-size:24px;}
-
-
-
-
-.carousel-control.right {
-background-image: none;	right:-100px}
-.carousel-control.left {
-    background-image: none;left:-100px
-}
-
-.carousel-control {
-    top: 40px;
-	left:-100px
-}
-
-
-.carousel-inner {
-    position: relative;top:-50px;
-    width: 100%;
-    overflow: hidden;
-}
+/* 分页 */
+.pagination {border-radius:0px;}
+.pagination>li:first-child>a ,.pagination>li:last-child>a{border-radius: 0px;}
+.pagination>li>a{position: relative;float: left;padding: 6px 12px;margin-left: -1px;line-height: 1.42857143;color: #666;text-decoration: none;background-color: #fff;border: 1px solid #666;margin:5px}
+.pagination>li>a:hover, .pagination>li>a:focus{color: #666;background-color: #eee;border-color: #666;}
 
 
 
 
 
-
-.pagination {
-    border-radius:0px;
-}
-.pagination>li:first-child>a ,.pagination>li:last-child>a{
-    border-radius: 0px;
-}
-.pagination>li>a{
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    margin-left: -1px;
-    line-height: 1.42857143;
-    color: #666;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #666;
-	margin:5px
-}
-
-.pagination>li>a:hover, .pagination>li>a:focus{
-    color: #666;
-    background-color: #eee;
-    border-color: #666;
-}
-
-
-
-
-
-
-
-@media (max-width: 1200px){
-	.news.con12{width:800px}
-	.value.con12{width:800px;}
-}
-@media (max-width: 820px){
-	.value.con12{width:400px;}
-}
-
-@media (max-width: 800px){
-	.news.con12{width:400px}
-	video{width:100%;height:auto}
-}
-
-@media (max-width: 630px){
-	.search-wrapper {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-		margin-top: 200px;
-	}
-}
-
-@media (max-width: 480px){
-	.search-hdr img{
-		width:100%;
-	}
-}
-
-@media (max-width: 420px){
-	.value.con12{width:100%;}
-	.value_con {
-		float: none;
-		width: 300px;margin:5px auto;
-	}	
-	.w360 p {
-		width: 300px;
-	}
-	.w372 p {
-		width: 300px;
-	}
-	.value_con img {
-		width: 300px;
-		height: 225px;
-	}	
-	.news.con12{width:100%}	
-	
-	.news_con {
-		float: none;
-		box-shadow: 0 1px 2px #ddd;
-		width: 300px;
-		height: 385px;margin:5px auto;
-	}
-	.news_con img {
-		width: 300px;
-		height: 225px;
-	}
-	
-}
 
