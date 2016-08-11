@@ -106,11 +106,13 @@ footer .im .wechat-con .wechat {width: 145px;height: 140px;background: url(../im
 footer .im li:last-child {margin-right: 0;}
 
 
-
-
-
-
-
+.navbar-default {background-color: rgba(255,255,255,1);border-color: none;}
+.navbar {position: relative;min-height: 50px;margin-bottom: 0;border: none;}
+#nav a {float: left;margin: 0}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {color: #e66140;background-color: rgba(0,0,0,0);}
+.active a{color:#e66140}
+nav{width:500px;float:left}
+.navbar-default .navbar-nav>li>a {color: #333;}
 
 
 
@@ -130,49 +132,4 @@ footer .im li:last-child {margin-right: 0;}
 @media (max-width: 620px){
 	#other{display:none}
 }
-
-
-
-
-
-
-.navbar-default {
-    background-color: rgba(255,255,255,1);
-    border-color: none;
-}
-.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 0;
-    border: none;
-}
-#nav a {
-    float: left;
-    margin: 0;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-    color: #e66140;
-    background-color: rgba(0,0,0,0);
-}
-
-.active a{color:#e66140}
-
-nav{width:500px;float:left}
-.navbar-default .navbar-nav>li>a {color: #333;}
-@media (max-width: 786px){
-	nav{width:100%;float:right;margin-top:-100px;position:static;z-index:1;}
-	.navbar {
-		position: static;
-	}	
-}	
-#nav a {
-    width: 100%;
-	text-align: center;	}
-}
-
-
-
-
-
-
 

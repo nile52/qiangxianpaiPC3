@@ -1,22 +1,13 @@
 ﻿a {color: #e66140;}
-.modal-title {margin: 0;line-height: 1.42857143;text-align: center;font-size: 20px;}
-.modal-body form{width:80%;margin:0 auto;}
-.modal-body form input{width:100%;margin:0 auto;height: 43px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;}
-.modal-body form input.verification{width:70%;float:left;}
-.modal-body form input.getcode{width:26%;float:right;margin:0 2%;background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
-.modal-body form input[type=submit] {background:#e66140;border-radius:5px;line-height:20px;color:#fff;}
-.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
-.modal-body form input[type=checkbox] {width:15px;padding:0px 20px;outline-color:#e66140;border-radius:5px;border:1px solid #eee;float:left;margin:4px;}
-#myModal_xieyi .modal-body p{line-height: 20px;text-indent: 2em;padding: 5px;}
-#myModal_xieyi .modal-body{max-height:550px;overflow-y:scroll;}
 
-
-
+/* 头部3张轮播图 */
 #indexCarousel .carousel-inner .carouselimg1{background:url(../images/index/carousel1.jpg) no-repeat center;height: 550px;background-size: cover;}
 #indexCarousel .carousel-inner .carouselimg2{background:url(../images/index/carousel2.jpg) no-repeat center;height: 550px;background-size: cover;}
 #indexCarousel .carousel-inner .carouselimg3{background:url(../images/index/carousel3.jpg) no-repeat center;height: 550px;background-size: cover;}
+.carousel-inner{position:relative;top:-50px;width:100%;overflow:hidden}
 
 
+/* 头部搜索框 */
 .nav-box {top: 0;width: 100%;position: absolute;}
 .search-con {margin-top: 150px;}
 .search-con h1 {color: #fff;line-height: 1;font-weight: 700;}
@@ -37,22 +28,7 @@
 
 
 
-.search{position: absolute;top:14px; left: 34%; width:477px; _width:477px; height: 81px;}
-.keyword a{ font-size: 12px; line-height: 18px; color:#999; padding:0 4px;}
-.keyword a span{ color:#fb5004;}
-.tab-bar li.current{ color: #1d7ad9; font-weight: bold; background: url(../images/trian_up.png) no-repeat center bottom; padding-bottom: 9px;}
-.tab-bar li{ width:38px; text-align: center; color: #444; float: left; cursor: pointer;}
-.tab-bar li.tab-line{ width: 2px; color: #c9c9c9; margin:0 2px;}
-.tab-box{ border:2px solid #1d7ad9;}
-.text{ color: #a9a9a9; width:376px; height: 31px; border:none; text-indent: 10px; float:left; outline: none; border:0;}
-.button{ width: 97px; height: 32px; text-align: center; color: #fff; font-size:18px;background: #1d7ad9; border:none; float: left;}
-
-.playvideo{margin:20px;text-align:center;}
-.playvideo a{margin:20px;color:#fff;font-size:20px}
-.playvideo img{margin:0 20px;}
-
-
-
+/* 模块入口 */
 .module-grid h4{font-size:28px;line-height:1;font-weight:500;color:#555;text-align:center}
 .module-grid img{margin:20px auto}
 .module-grid img:hover{transform:rotateY(360deg);-webkit-transform:rotateY(360deg);-moz-transform:rotateY(360deg);transition:transform 2s;-moz-transition:transform 2s;-webkit-transition:transform 2s;-o-transition:transform 2s}
@@ -120,20 +96,18 @@
 .city_tuijian .info2 .house_otherinfo .house_tags .house_tag{padding:2px 5px;margin:0 5px;background:#e66140;color:#fff;font-size:14px;}
 .city_tuijian .info2 .house_otherinfo .discount{float:right;font-size:16px;color:#e66140;}
 .city_tuijian .info2 .house_otherinfo .discount i{font-size:25px}
+.value{text-align:center}
+.value .fs30{margin-top:100px;margin-bottom:30px}
+.value_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:10px;background:#fff}
+.value_con:hover{box-shadow: 5px 5px 5px #ddd;}
+.value_con img{width:360px;height:240px}
+.value_text{text-align:left;}
 
 
 
 
 
-.search-wrapper{width:610px;margin:0 auto;text-align:center;margin-top:200px}
-.search-body{width:100%;height:60px;background:#fff;border-radius:10px;padding:8px}
-.search-body input{border:none;float:left;line-height:44px;outline:none;margin-left:5px}
-.search-body button{border:none;background:#e66140;border-radius: 5px;height: 44px;width:100px;color:#fff;float:right;line-height:44px}
-
-
-
-
-/* 司法拍卖 */
+/* 资讯信息 */
 .news{width:1140px;margin:0 auto}
 .news1{width: 570px;margin: 0 auto;float: left;background: #fff;padding: 0 40px;padding-bottom: 30px;}
 .news2{width:570px;margin:0 auto;float:right;background: #fff;padding: 0 40px;padding-bottom: 30px;}
@@ -149,43 +123,6 @@
 .news_text{padding:20px;text-align:left;color:#888;float:left;width:290px;}
 .news_text h2{font-size:20px;margin-bottom:5px;max-height:45px;text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;color:#222}
 .news_text p{padding-bottom:5px;max-height:140px;text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;color:#666}
-
-
-.value{text-align:center}
-.value .fs30{margin-top:100px;margin-bottom:30px}
-.value_con{float:left;box-shadow: 0 1px 2px #ddd;height:350px;margin:10px;background:#fff}
-.value_con:hover{box-shadow: 5px 5px 5px #ddd;}
-.value_con img{width:360px;height:240px}
-.value_text{text-align:left;}
-
-
-.slide { _margin-top:-10000px; }
-.slide ul.widget { float:left; width:340px;margin:0 10px }
-.slide ul.last { margin-right:0px; }
-.slide ul.widget .img {float:left; }
-.slide ul.widget img {width:150px;height:110px;margin-right:10px }
-.slide ul.widget .xinxi2 p{padding:2px 0}
-.slide ul.widget .xinxi2 .pt{color:#e66140;font-size:18px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
-.slide ul.widget .xinxi2 p span.qipaijia{color:#e66140;font-size:24px;}
-
-
-.carousel-control.right{background-image:none;right:-100px}
-.carousel-control.left{background-image:none;left:-100px}
-.carousel-control{top:40px;left:-100px}
-.carousel-inner{position:relative;top:-50px;width:100%;overflow:hidden}
-
-
-
-/* 城市选择 */
-.City {width: 70px;height: 42px;background: #C00;padding-left: 10px;position: relative;margin-left: -70px;top: 50px;}
-.City strong{width:48px;height:42px;color:#FFF;line-height:42px;font-size:14px;font-weight:bold;display:block;float:left;}
-.City span{width:50px;height:24px;line-height:24px;border:1px solid #999;background:#FFF url(../images/index/province_sprites.png) no-repeat 39px -2px;display:block;float:left;margin-top:8px;padding-left:4px;cursor:pointer;}
-.City ul{width:70px;height:auto;background:#FFF;border:1px solid #dfdfdf;border-bottom:none;clear:both;position:absolute;left:0;top:42px;display:none;z-index:9999;}
-.City ul li{height:30px;line-height:30px;border-bottom:1px solid #dfdfdf;padding-left:10px;}
-.City ul li b{font-weight:bold;}
-ul,li{list-style:none;}
-.show{display:block;}
-
 
 
 /* 平台特点 */

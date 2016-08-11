@@ -74,26 +74,7 @@
                                     <input type="submit" class="btn" value="搜索">
                                 </form>
                             </div>
-                        </div>
-						<p class="playvideo"><a href="" data-toggle="modal" data-target="#myModal_video1" data-dismiss="modal" aria-hidden="true"><img src="images/index/play.png">  超值资产，点击开启简陋之旅</a></p>		
-						<!-- 视频模态框（Modal） -->
-						<div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
-						   aria-labelledby="myModalLabel" aria-hidden="true">
-						   <div class="modal-dialog">
-							  <div class="modal-content">
-								<video width="100%" controls id="video1">
-								  <source src="images/index/sp(1).mp4" type="video/mp4">
-								</video>
-							  </div><!-- /.modal-content -->
-						   </div><!-- /.modal -->
-						</div>							
-						<script>
-							// 视频播放	   
-							var myVideo=document.getElementById("video1"); 
-							function playPause(){ 
-								  myVideo.play(); 
-							} 	  
-						</script>													
+                        </div>									
                     </div>				
 				</div>
 			</div>
@@ -800,23 +781,15 @@
 				</a> <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.lightappbuilder.qxp"></a>
 			</div>
 			<img src="images/index/wechat.png" alt="qr" class="qrcode"> 
-			<!-- <img src="images/index/video.png" title="抢先拍视频" alt="videos" class="videos" data-toggle="modal" onclick="playPause()" data-target="#myModal_video1"> -->
 			<img src="images/index/video.png" title="抢先拍视频" alt="videos" class="videos">
-			
+			<section class="video-mask" style="display:none; opacity: 1;">
+				<video controls="" src="images/index/sp(1).mp4" id="video1"></video>
+				<i class="btn-close"  onclick="pauseVid()">×</i>
+			</section>			
 		</div>
 	</div>
 </div>			
-<!-- 视频模态框（Modal） -->
-<div class="modal fade" id="myModal_video1" tabindex="-1" role="dialog" 
-   aria-labelledby="myModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-	  <div class="modal-content">
-		<video width="100%" controls id="video1">
-		  <source src="images/index/sp(1).mp4" type="video/mp4">
-		</video>
-	  </div><!-- /.modal-content -->
-   </div><!-- /.modal -->
-</div>							
+					
 
 
 <div style="background:#f5f5f5;padding:50px 0">	
@@ -898,10 +871,7 @@
 	<img src="images/index/partner (7).jpg">
 </div>
 
-<section class="video-mask" style="display: none; opacity: 1;">
-	<video controls="" src="images/index/sp(1).mp4" id="video1"></video>
-	<i class="btn-close"  onclick="pauseVid()" >×</i>
-</section>
+
 
 
 <footer class="noprint">
@@ -936,17 +906,11 @@
 		</div>
 	</div>	
 </footer>
-<!-- 二维码显隐 -->
-<script type="text/javascript">
-function  showImg(){
-	$(".wechat").css("display","block");
-}                                                                                           
-function hideImg(){
-	$(".wechat").css("display","none");
-}
-</script>
 <script>
-   $(function(){		  
+<!-- 二维码显隐 -->
+function showImg(){$(".wechat").css("display","block");}
+function hideImg(){$(".wechat").css("display","none");}	
+$(function(){		  
 	$("#indexCarousel").carousel('cycle');// 背景图片自动轮播
 	// 搜索切换
 	$('#tabBar').on('click', 'li', function(){
@@ -956,24 +920,17 @@ function hideImg(){
 			$('#keyword').attr('placeholder',tips)
 		}
 	});
-
-	
-
-   });  
-
-	var myVideo=document.getElementById("video1");
-	function pauseVid()
-	  {
-	  myVideo.resume();
-	  }	
-	$(".videos").click(function(){
-	  $(".video-mask").css('display','block'); 
-	});
-	$(".btn-close").click(function(){
-	  $(".video-mask").css('display','none'); 
-	  pauseVid();
-	});   
+	// 开启/关闭视频
+	$(".videos").click(function(){$(".video-mask").css('display','block'); });	  
+	$(".btn-close").click(function(){$(".video-mask").css('display','none'); });	
+});   
 </script>		
+<script>// 关闭视频的同时暂停视频播放，jQ用“.pause()”暂停不了，故使用原生js
+var myVideo=document.getElementById("video1");
+function pauseVid(){
+	myVideo.pause(); 
+}
+</script>
 
 </body>
 </html>

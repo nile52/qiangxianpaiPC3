@@ -48,7 +48,6 @@ label.error {margin-left: 10px;color: red;    display: inline-block;min-width: 1
 .con .con-left {position: relative;top: -4px;float: left;width: 200px;}
 .con .con-left, .con .con-right {background: #fff;border: 1px solid #e8e8e8;}
 .con .con-left ul {padding: 20px 0;}
-
 .con .con-left ul li.active, .con .con-left ul li:hover {border-left: 4px solid #e66140;color: #e66140;text-indent: -4px;}
 .con .con-left ul li.active, .con .con-left ul li:hover {border-left: 4px solid #e66140;color: #e66140;text-indent: -4px;}
 .con .con-left ul li {height: 41px;line-height: 41px;text-align: center;cursor: pointer;color: #666;font-size: 14px;}
