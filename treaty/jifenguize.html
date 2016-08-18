@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>登录 - 抢先拍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<link href="../css/reset.css" rel="stylesheet">
+	<link href="../css/public.css" rel="stylesheet">
+	<link href="../css/login.css" rel="stylesheet">	
+</head>
+<body>	
+<!-- 头部开始 -->
+<div id="header">	
+	<div class="con12">
+		<div id="top">
+			<div class="header3_logo"></div>
+			<div id="nav">
+				<nav class="navbar navbar-default" role="navigation">
+				   <div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" 
+						 data-target="#example-navbar-collapse">
+						 <span class="sr-only">切换导航</span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+					  </button>
+				   </div>
+				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+					  <ul class="nav navbar-nav">
+						 <li><a href="index.html">首页</a></li>
+						 <li class="active"><a href="houselist.html">房屋列表</a></li>
+						 <li><a href="newslist.html">资讯信息</a></li>
+						 <li><a href="videolist.html">视频中心</a></li>
+						 <li><a href="about.html">关于我们</a></li>
+					  </ul>
+				   </div>
+				</nav>
+			</div>
+			<div id="other">
+				<p><a href="login.html">登录</a><a href="register.html">注册</a></p>			
+				<p><a href="" style="display:none">用户名</a></p>
+				<p style="padding:0 10px">免费咨询电话：400-060-2595</p>
+			</div>						
+			<div class="clearfix"></div>
+		</div>
+	</div>	
+</div>	
+
+<div class="bg_f8">
+	<div class="con">
+		<div class="con-left">
+			<ul>
+				<li><a href="xieyi.html">用户协议</a></li>
+				<li><a href="falvshengming.html">法律声明</a></li>
+				<li class="active"><a href="jifenguize.html">积分规则</a></li>
+			</ul>
+		</div>
+		<div class="con-right">
+			<h2 class="title">积分说明</h2>
+			<div class="padd25">
+			<p class="title">1、用户积分系统</p>
+			<p class="tab">注册积分： </p>
+			<p class="tab">第一次注册送50积分</p>
+			<p class="tab">邀请一人注册，送100积分	</p>
+			<p class="title">2、经纪人积分系统</p>
+			<p class="tab">经纪人注册积分： </p>
+			<p class="tab">成功申请注册经纪人,送500积分</p>
+			<p class="tab">成功邀请一个客户注册,送200积分</p>		
+			<p class="title">3、签到积分：</p>
+			<p class="tab">每次签到，加5积分； </p>
+			<p class="tab">每月签到7天，送10积分；</p>
+			<p class="tab">签到28天及以上送100积分。</p>		
+			<p class="title">积分后期可以兑换优惠券等更多奖励哦~</p>			
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="noprint">
+	<ul class="ib sub-nav">
+		<li><a target="_self" href="">关于我们</a></li>
+		<li class="line" ng-if="!is91Flight">|</li>
+		<li><a target="_self" href="">合作伙伴</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="">商务合作</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="">加入我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="">联系我们</a></li>
+		<li class="line">|</li>
+		<li><a target="_self" href="">服务声明</a></li>
+	</ul>
+	<ul class="ib im">
+		<li class="wechat-con"><a href="javscript:void(0);" onMouseOut="hideImg()"  onmouseover="showImg()">微信</a><div class="wechat"></div></li>
+		<li class="sina"><a href="http://weibo.com/qiangxianpai?refer_flag=1001030101_" target="_blank">新浪微博</a></li>
+		<li class="taobao" ng-if="!is91Flight"><a href="https://shop143101383.taobao.com/index.htm?spm=2013.1.w5002-14693851524.2.TSpzsC" target="_blank">淘宝</a></li>
+	</ul>
+	<div style="width:500px;margin:0 auto">
+		<a href=""><img src="images/public/mfund.png" style="float:left"></a>
+		<div style="float:left;text-align:left;padding-top:20px;">
+			<p>抢先拍@2016 All rights reserved</p>
+			<p>增值电信业务经营许可证:浙B2-20160073</p>
+			<p>浙ICP备15018503号</p>
+			<p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
+		</div>
+	</div>	
+</footer>
+<!-- 二维码显隐 -->
+<script type="text/javascript">
+function  showImg(){
+	$(".wechat").css("display","block");
+}
+function hideImg(){
+	$(".wechat").css("display","none");
+}
+</script>
+
+</body>
+</html>
+
+
