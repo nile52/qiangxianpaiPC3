@@ -205,20 +205,21 @@
 		</div>
 	</div>	
 </footer>
-<!-- 二维码显隐 -->
+
 <script type="text/javascript">
+// 二维码显隐
 function  showImg(){
 	$(".wechat").css("display","block");
 }
 function hideImg(){
 	$(".wechat").css("display","none");
 }
-</script>
-<script>
+// 照片上传
 $(function () {
-$("#up").uploadPreview({ Img: "ImgPr", Width: 180, Height: 180 });
+	$("#up").uploadPreview({ Img: "ImgPr", Width: 180, Height: 180 });
 });
 </script>
+
 
 </body>
 </html>
