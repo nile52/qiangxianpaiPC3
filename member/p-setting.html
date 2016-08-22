@@ -57,6 +57,9 @@
 	<div class="slideleft noprint">
 		<div class="photo">
 			<img src="http://pic.uhouzz.com/geren/default_photo.png">
+			<!-- <p class="role"><em class="lawyer">律师</em></p> -->
+			<p class="role"><em class="agent">经纪人</em></p>
+			<!-- 普通用户不显示角色标签 -->
 			<p>用户昵称用户昵称</p>
 			<p>我的积分：<span>600</span></p>
 			<button id="send-btn">签到+5</button>
@@ -95,7 +98,7 @@
 									<a href="">忘记密码？</a><br>
 								<li>
 									<span class="">新登录密码</span> 
-									<input type="password" maxlength="20" name="pwd" required="">									
+									<input type="password" maxlength="20" name="pwd" required="">		
 								</li>
 								<li>
 									<span>确认新密码</span> 
@@ -118,30 +121,30 @@
 					<div class="setForm" style="display:none">
 						<form name="setForm">
 							<div class="my_portrait">
-								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr">
-								<label class="file">本地照片<input type="file" id="up"/></label>
-								<p>仅支持JPG、PNG格式，文件小于3M。</p>
+								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr1">
+								<label class="file">身份证正面照<input type="file" id="up1"/></label>
+								<p>身份证个人信息所在面，文件小于3M。</p>
 							</div>
 							<div class="my_portrait">
-								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr">
-								<label class="file">本地照片<input type="file" id="up"/></label>
-								<p>仅支持JPG、PNG格式，文件小于3M。</p>
-							</div>							
+								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr2">
+								<label class="file">身份证背面照<input type="file" id="up2"/></label>
+								<p>身份证国徽图案所在面，文件小于3M。</p>
+							</div>
+							<div class="my_portrait">
+								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr3">
+								<label class="file">律师资格证照<input type="file" id="up3"/></label>
+								<p>上传律师资格证照，文件小于3M。</p>
+							</div><div class="clearfix"></div>						
 							<ul>
 								<li>
-									<span>当前登录密码</span> 
-									<input type="password" name="oldPwd" required=""> 
-									<a href="">忘记密码？</a><br>
+									<span>所属公司</span> 
+									<input type="text" required="" placeholder="请填写您所在的律师事务所"> 
 								<li>
-									<span class="">新登录密码</span> 
-									<input type="password" maxlength="20" name="pwd" required="">									
-								</li>
-								<li>
-									<span>确认新密码</span> 
-									<input type="password" required=""><br>
+									<span>所在城市</span> 
+									<input type="text" required="" placeholder="请填写您所在的城市（地级市）">			
 								</li>
 							</ul>
-							<input type="submit" value="确定" disabled="disabled" class="ok_gray">
+							<input type="submit" value="提交申请" class="ok_gray">
 						</form>					
 					</div>
 				</ul>
@@ -157,22 +160,31 @@
 					</li>
 					<div class="setForm" style="display:none">
 						<form name="setForm">
-							<p>定期更换密码可以让你的账户更加安全，请确保登录密码与支付密码不同，建议密码采用字母与数字混合，并且不短于6位</p>
+							<div class="my_portrait">
+								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr4">
+								<label class="file">身份证正面照<input type="file" id="up4"/></label>
+								<p>身份证个人信息所在面，文件小于3M。</p>
+							</div>
+							<div class="my_portrait">
+								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr5">
+								<label class="file">身份证背面照<input type="file" id="up5"/></label>
+								<p>身份证国徽图案所在面，文件小于3M。</p>
+							</div>
+							<div class="my_portrait">
+								<img src="http://pic.uhouzz.com/geren/default_photo.png" id="ImgPr6">
+								<label class="file">经纪人资格证照<input type="file" id="up6"/></label>
+								<p>上传经纪人资格证照，文件小于3M。</p>
+							</div><div class="clearfix"></div>						
 							<ul>
 								<li>
-									<span>当前登录密码</span> 
-									<input type="password" name="oldPwd" required=""> 
-									<a href="">忘记密码？</a><br>
+									<span>所属公司</span> 
+									<input type="text" required="" placeholder="请填写您所在的中介公司"> 
 								<li>
-									<span class="">新登录密码</span> 
-									<input type="password" maxlength="20" name="pwd" required="">									
-								</li>
-								<li>
-									<span>确认新密码</span> 
-									<input type="password" required=""><br>
+									<span>所在城市</span> 
+									<input type="text" required="" placeholder="请填写您所在的城市（地级市）">			
 								</li>
 							</ul>
-							<input type="submit" value="确定" disabled="disabled" class="ok_gray">
+							<input type="submit" value="提交申请" class="ok_gray">
 						</form>					
 					</div>
 
@@ -233,7 +245,12 @@ $(".formshow").click(function(){
 });		
 // 照片上传
 $(function () {
-	$("#up").uploadPreview({ Img: "ImgPr", Width: 180, Height: 180 });
+	$("#up1").uploadPreview({ Img: "ImgPr1", Width: 180, Height: 180 });
+	$("#up2").uploadPreview({ Img: "ImgPr2", Width: 180, Height: 180 });
+	$("#up3").uploadPreview({ Img: "ImgPr3", Width: 180, Height: 180 });
+	$("#up4").uploadPreview({ Img: "ImgPr4", Width: 180, Height: 180 });
+	$("#up5").uploadPreview({ Img: "ImgPr5", Width: 180, Height: 180 });
+	$("#up6").uploadPreview({ Img: "ImgPr6", Width: 180, Height: 180 });
 });
 </script>
 

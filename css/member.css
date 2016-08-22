@@ -1,5 +1,5 @@
 ﻿a{color:#666;font-weight:normal}
-
+/*个人中心整体框架*/
 .bg_f8{background:#f8f8f8}
 .wrapper,header .wrap{clear:both;width:1000px;margin:0 auto;padding:20px 0}
 .slideleft{float:left;position:relative;z-index:2;width:200px;background:#fff;border:1px solid #e8e8e8;margin-bottom:20px}
@@ -13,7 +13,6 @@
 .slideleft .photo p em.agent{background: #84CC24;}
 .slideleft .photo p a{color: #e66140;font-size: 12px;}
 .slideleft .photo button{background: #e66140;color: #fff;padding: 5px;border-radius: 5px;border:none;margin:10px;width:60px;}
-
 .slideleft ul{padding:20px 0}
 .slideleft ul li{height:40px;text-align:center;margin:0 0 5px;font-weight:700;color:#666}
 .slideleft ul li .tabs{display:block;width:100%;height:40px;line-height:40px}
@@ -28,8 +27,6 @@
 .slideleft ul li.slideleft-messages a i{position:absolute;top:16px;right:50px;display:block;width:10px;height:10px;border-radius:50%;background-color:#e66140}
 .slideleft ul .quit {border-top: 1px solid #e8e8e8;margin-top:10px;padding-top: 10px;}
 .slideRight{float:right;width:780px;min-height:565px;background-color:#fafafa;margin:0 0 20px}
-
-
 .slideRight .title{height:60px;line-height:60px;padding:0 0 0 30px;font-size:20px;font-weight:700;color:#333;margin-bottom:10px}
 .slideRight .container,.slideRight .title{background-color:#fff;border:1px solid #e8e8e8}
 .account .info{float:left;width:778px;min-height:530px;background-color:#fff;border:1px solid #e8e8e8}
@@ -57,7 +54,10 @@
 .nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{color:#666;cursor:default;border:none}
 .nav-tabs>li>a:hover{border:none}
 .nav>li>a:hover,.nav>li>a:focus{background-color:#fff}
-.tab-content{padding:20px}
+a:hover, a:focus {
+    color: #666;
+}
+/*.tab-content{padding:20px}*/
 .service-page{padding:20px}
 .service-page .ser-items-title{background:#fff;padding:10px;color:#999;border-bottom:1px #eee solid}
 .service-page .ser-main{background:#fff}
@@ -72,7 +72,7 @@
 
 
 
-
+/* 服务平台2——时间轴 */
 .l{float:left}
 .r{float:right}
 .c{clear:both}
@@ -99,8 +99,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .content .main .year.yellow h2 i{border-color:#999 transparent transparent transparent}
 .content .main .year.red h2 i{border-color:#999 transparent transparent transparent}
 .content .main .year.green h2 i{border-color:#999 transparent transparent transparent}
-
-
 .content .main .year .list{margin:10px 0;position:relative;overflow:hidden;-webkit-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;-moz-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;-ms-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;-o-transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s;transition:height 1s cubic-bezier(0.025,0.025,0.000,1.115),opacity 1s}
 .content .main .year .list ul{bottom:0}
 .content .main .year .list ul li{background:url("../images/timeline1.jpg") no-repeat 242px 12px;padding:3px 0;color:#a1a4b8}
@@ -115,9 +113,7 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .content .main .year.yellow .list ul li .date,.content .main .year.yellow .list ul li .intro{color:#999}
 .content .main .year.red .list ul li .date,.content .main .year.red .list ul li .intro{color:#999}
 .content .main .year.green .list ul li .date,.content .main .year.green .list ul li .intro{color:#999}
-
 .content .main .year .list ul li .date,.content .main .year .list ul li .version{float:left;display:block;clear:left;width:225px;line-height:24px;text-align:right}
-
 .content .main .year .list ul li .intro,.content .main .year .list ul li .more{float:left;display:block;width:400px;margin-left:50px;line-height:24px}
 .content .main .year .list ul li .intro{font-size:14px;line-height:20px;}
 .content .main .year .list ul li .intro a{display: block;height: 40px;line-height: 40px;text-align: center;color: #fff;border-radius: 6px;width:150px;}
@@ -125,9 +121,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .content .main .year.yellow .list ul li .intro a{background: #f5c67d;}
 .content .main .year.red .list ul li .intro a{background: #fa876b;}
 .content .main .year.green .list ul li .intro a{background: #aad783;}
-
-
-
 .content .wrap:first-child .main .year.closes h2 i{transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg)}
 .content .wrap:first-child .main .year.closes .list{opacity:0;height:0!important}
 .ie7 .content .main .year h2 i{left:40px}
@@ -200,17 +193,45 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .info .order_details .order_img img{ width:200px;height: 150px}
 .info .order_details .mask p{ width:200px;font-size: 12px;background: rgba(0,0,0,0.5);color: #fff;margin-top: -22px;position: absolute;padding:2px 5px;}
 
+/*我的订单*/
+.info table thead {background: #eee;}
+.info table thead th{padding: 10px 0;text-align: center;}
+.info table tbody tr{border-bottom: 1px solid #eee}
+.info table tbody td{text-align: center;}
+.info table tbody td .order2_name{text-align: center;padding-bottom: 10px}
+.info table tbody td .order2_coupons{text-align: center;color: #e66140;}
+.info .order2_details{ padding: 20px }
+.info .order2_details .order2_img{position: relative;}
+.info .order2_details .order2_img img{ width:150px;height: 150px;border-radius: 50%;margin:0 20px;}
+.info .order2_details .lawyer_name{padding-top:5px;}
+.info .order2_details .mask p{ width:200px;font-size: 12px;background: rgba(0,0,0,0.5);color: #fff;margin-top: -22px;position: absolute;padding:2px 5px;}
+
+/*步骤条*/
+#msform{width:400px;margin:50px auto;text-align:center;position:relative}
+#progressbar{margin-bottom:30px;overflow:hidden;counter-reset:step}
+#progressbar li{list-style-type:none;color:white;text-transform:uppercase;font-size:9px;width:33.33%;float:left;position:relative}
+#progressbar li:before{content:counter(step);counter-increment:step;width:20px;line-height:20px;display:block;font-size:10px;color:#333;background:white;border-radius:3px;margin:0 auto 5px auto}
+#progressbar li:after{content:'';width:100%;height:2px;background-color:#e66140!important;position:absolute;left:-50%;top:9px;z-index:-1}
+#progressbar li:first-child:after{content:none}
+#progressbar li.active:before,#progressbar li.active:after{background:#27AE60;color:white}
+
+
+
+
+
+
 
 /*个人信息*/
-
 .info_box{margin:20px; padding:20px;}
 .info_box h2{padding: 5px 20px;font-size: 20px;font-weight: bold;border-left: 3px solid #e66140;margin: 20px 0;}
+/*图片上传*/
 .info_box .my_portrait{float: left;margin-right: 20px;width: 200px}
 .info_box .my_portrait img{width: 180px;height: 180px;border:1px solid #eee;}
 .info_box .my_portrait{text-align: center;}
 .info_box .my_portrait label.file{text-align: center;background: #e66140;width: 100px;height: 40px;margin: 10px auto;line-height: 40px;font-weight: normal;color: #fff;border-radius: 5px;}
-.info_box .my_basic_info{float: left;}
 .info_box .my_portrait label.file input {opacity: 0;}
+/*图片上传*/
+.info_box .my_basic_info{float: left;}
 .info_box .my_basic_info p{padding:10px;color: #666}
 .info_box .my_basic_info p span{display: inline-block;}
 .info_box .my_basic_info p span.w100{width: 100px;text-align: right;padding-right: 20px}
@@ -224,97 +245,64 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 
 
 /*setting*/
-.setting .info {
-    padding: 36px 0;
-    border: 1px solid #e8e8e8;
-    background-color: #fff;
-    margin:10px 0;
-}
-.setting .info ul li {
-    margin-left: 85px;
+.setting .info{padding:36px 0;border:1px solid #e8e8e8;background-color:#fff;margin:10px 0}
+.setting .info ul li{margin-left:85px;height:50px}
+.setting .info ul li .span-i{margin:0 20px 0 28px;padding-left:20px;background:url(http://pc.pic.uhouzz.com/online/cdn/profile/images/icon_suo.97268e0d.png) left center no-repeat;background-size:12px 15px}
+.setting .info ul li input.formshow{width:120px;height:40px;background:#e66140;color:#fff;border-radius:3px;outline:medium none;border:none;font-size:16px;cursor:pointer}
+.setting .setForm{padding:35px 0 0 78px}
+.setting .setForm .my_portrait{float:left;margin-right:20px;width:280px;text-align:center}
+.setting .setForm .my_portrait img{width:250px;height:180px;border:1px solid #eee}
+.setting .setForm .my_portrait label.file{text-align:center;background:#e66140;width:100px;height:40px;margin:10px auto;line-height:40px;font-weight:normal;color:#fff;border-radius:5px}
+.setting .setForm .my_portrait label.file input{opacity:0}
+.setting .setForm ul li input{width:120px;height:45px;background:#fff;border-radius:3px;outline:medium none;border:none;font-size:16px;cursor:pointer}
+.setting .setForm p{width:470px;line-height:24px}
+.setting .setForm .my_portrait p{width:280px;line-height:24px;margin-top: -25px;margin-bottom: 30px;}
+.setting .setForm ul li{margin-top:20px;margin-left:0}
+.setting .setForm ul li span{display: inline-block;width: 90px;line-height: 45px;text-align: right;margin: 0 10px;}
+.setting .setForm ul li input{border:1px solid #e8e8e8;border-radius:3px;width:320px;height:43px;padding:0 10px}
+.setting .setForm ul li a,.setting .setForm ul li a:visited{margin-left:20px}
+.setting .setForm ul li a.error{display:inline-block;padding-top:5px;margin-left:105px;font-size:12px;color:#ff5a5f}
+.setting .setForm .ok_gray{width:320px;background:#e66140;color:#fff}
+.setting .setForm .ok_gray,.setting .setForm input.ok_btn{margin:35px 0 0 107px;height:40px;border:none;outline:0 none;border-radius:3px;font-size:16px;cursor:pointer}
 
-    height: 50px;
-}
-.setting .info ul li .span-i {
-    margin: 0 20px 0 28px;
-    padding-left: 20px;
-    background: url(http://pc.pic.uhouzz.com/online/cdn/profile/images/icon_suo.97268e0d.png) left center no-repeat;
-    background-size: 12px 15px;
-}
-.setting .info ul li input {
-    width: 120px;
-    height: 40px;
-    background: #e66140;
-    color: #fff;
-    border-radius: 3px;
-    outline: medium none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
 
-.setting .setForm{
-    padding: 35px 0 0 78px;
-}
 
-.setting .setForm ul li input {
-    width: 120px;
-    height: 45px;
+
+
+/*消息中心*/
+.message_title{margin:0 auto}
+.message_title{background-color:#fff;border-bottom:1px solid #e8e8e8}
+.message_title li{height:47px;margin:0 24px;float:left;width:340px;text-align:center;cursor:pointer;font-size:16px}
+.message_title .active{border-bottom:4px solid #e66140}
+.message_title li a span{display:inline-block;height:18px;padding:0px 6px;line-height:18px;background:#e66140;color:#fff;border-radius:9px;text-align:center;margin-left:10px;font-size:12px}
+.message_title li a span.no-num{background:#fff}
+
+.message-warp{margin:20px;}
+.message-warp a{display:block;padding:10px;border-bottom:1px #efefef solid;background:#fff}
+.message-warp .mess-type{position:relative;height:28px;line-height:28px}
+.message-warp .mess-type .un-icon{position:absolute;width:10px;height:10px;border-radius:50%;background:#e66140;top:3px}
+.message-warp .mess-type h4{padding-left:20px;font-size:14px;color:#000;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.message-warp p{padding-left:20px;font-size:14px;color:#999;word-wrap:break-word}
+.mess-time{display:block;padding-left:20px;padding-top:5px;font-size:12px;color:#999}
+.allread {/* display: none; */height: 40px;line-height: 40px;text-align: center;font-size: 14px;color: #fff;background: #e66140;width: 100px;margin: 10px 30px;border-radius: 5px;}
+
+
+
+
+/*我的贷款*/
+.account .loan_info{padding: 20px;}
+.account .loan_info a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px #efefef solid;
     background: #fff;
-    color: #fff;
-    border-radius: 3px;
-    outline: medium none;
-    border: none;
+}
+
+.account .loan_info a .loan_title {
     font-size: 16px;
-    cursor: pointer;
-}
+    color: #666;
+    font-weight: bold;padding-bottom: 10px;
 
-.setting .setForm p {
-    width: 470px;
-    line-height: 24px;
-}
-
-.setting .setForm ul li {
-    margin-top: 20px; margin-left: 0;
-}
-
-.setting .setForm ul li span {
-    display: inline-block;
-    width: 105px;
-    line-height: 45px;
-}
-
-.setting .setForm ul li input {
-    border: 1px solid #e8e8e8;
-    border-radius: 3px;
-    width: 320px;
-    height: 43px;
-    padding: 0 10px;
-}
-
-.setting .setForm ul li a, .setting .setForm ul li a:visited {
-    margin-left: 20px;
-}
-.setting .setForm ul li a.error {
-    display: inline-block;
-    padding-top: 5px;
-    margin-left: 105px;
-    font-size: 12px;
-    color: #ff5a5f;
-}
-.setting .setForm .ok_gray {
-    width: 320px;
-    background: #e66140;
-    color: #fff;
-}
-.setting .setForm .ok_gray, .setting .setForm input.ok_btn {
-    margin: 35px 0 0 107px;
-    height: 40px;
-    border: none;
-    outline: 0 none;
-    border-radius: 3px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 
@@ -324,8 +312,8 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 
 
 
-
-
+/*消息缺省*/
+.no-message-warp {display: none;padding: 120px 10px;text-align: center;}
 
 
 
