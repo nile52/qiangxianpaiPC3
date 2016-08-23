@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>登录 - 抢先拍</title>
+	<title>预约服务 - 服务平台</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -49,8 +49,6 @@
 	</div>	
 </div>	
 
-
-
 <div class="bg_f8">
 <div class="wrapper martop20">
 	<div class="slideleft noprint">
@@ -58,16 +56,15 @@
 			<img src="http://pic.uhouzz.com/geren/default_photo.png">
 			<!-- <p class="role"><em class="lawyer">律师</em></p> -->
 			<p class="role"><em class="agent">经纪人</em></p>
-			<!-- 普通用户不显示角色标签 -->
 			<p>用户昵称用户昵称</p>
 			<p>我的积分：<span>600</span></p>
 			<button id="send-btn">签到+5</button>
 			<p><a href="">积分规则</a></p>
 		</div>
 		<ul>
-			<li><a class="tabs" href="p-center.html">服务平台</a></li>
+			<li><a class="tabs active" href="p-center.html">服务平台</a></li>
 			<li><a class="tabs" href="p-info.html">个人信息</a></li>
-			<li><a class="tabs active" href="p-money.html">我的钱包</a></li>
+			<li><a class="tabs" href="p-money.html">我的钱包</a></li>
 			<li><a class="tabs" href="p-coupons.html">我的卡券<i></i></a></li>
 			<li><a class="tabs" href="p-order.html">我的订单</a></li>
 			<li><a class="tabs" href="p-collect.html">我的收藏</a></li>
@@ -80,24 +77,53 @@
 	</div>	
 	<div class="slideRight">
 		<div class="account">
-			<div class="title">我的钱包</div>
+			<div class="title">服务平台-预约律师</div>
 			<div class="info">
-				<div class="my_money">
-					<p><img src="../images/qianbao.png">余额</p>
-					<div class="money_box">
-						<p id="myMoney">￥1000</p>
-						<p id="hideMoney">****</p>
-						<div class="toggle_btn eyeopen"></div>
-					</div><div class="clearfix"></div>
-					<div class="download">
-						<img src="">
-						<p>扫码下载抢先拍手机版<br>轻松查看余额明细</p>
-					</div>					
-				</div>
-
-
-
-
+				<div class="laywer_list">
+					<div class="dev-table recom-laywer-warp">
+						<a class="dev-table-cell recom-laywer-info" href="">
+							<div class="dev-box l-i-left">
+								<img src="">
+								<div class="l-i-right">
+									<p>谢路杭</p>
+									<p class="company">北京炜衡（杭州）律师事务所</p>
+									<p><span class="level cus-0"></span></p>
+<!-- 									<p><span class="level cus-1"></span></p>
+									<p><span class="level cus-2"></span></p>
+									<p><span class="level cus-3"></span></p>
+									<p><span class="level cus-4"></span></p>
+									<p><span class="level cus-5"></span></p>
+									<p><span class="level cus-0-5"></span></p>
+									<p><span class="level cus-1-5"></span></p>
+									<p><span class="level cus-2-5"></span></p>
+									<p><span class="level cus-3-5"></span></p>
+									<p><span class="level cus-4-5"></span></p>
+									<p><span class="level cus-5-5"></span></p> -->
+									<p><span class="reply"><em>0</em>个私人回答</span></p>
+								</div>
+							</div>
+						</a>
+						<div class="dev-table-cell recom-layer-btn">
+							<a href="">购买</a>
+						</div>
+					</div>
+					<div class="dev-table recom-laywer-warp">
+						<a class="dev-table-cell recom-laywer-info" href="">
+							<div class="dev-box l-i-left">
+								<img src="">
+								<div class="dev-box-flex l-i-right">
+									<p>谢路杭</p>
+									<p class="company">北京炜衡（杭州）律师事务所</p>
+									<p><span class="level cus-0"></span></p>
+									<p><span class="reply"><em>0</em>个私人回答</span></p>
+								</div>
+							</div>
+						</a>
+						<div class="dev-table-cell recom-layer-btn">
+							<a href="">购买</a>
+						</div>
+					</div>
+				</div>			
 			</div>
 		</div>
 	</div>
@@ -139,31 +165,18 @@
 		</div>
 	</div>	
 </footer>
-
+<!-- 二维码显隐 -->
 <script type="text/javascript">
-// 二维码显隐
 function  showImg(){
 	$(".wechat").css("display","block");
 }
 function hideImg(){
 	$(".wechat").css("display","none");
 }
-//排序按钮
-$ (".toggle_btn").click (function (){
-	$ (".eyeclose").toggleClass ("eyeopen");
-	$("#myMoney").toggle();
-	$("#hideMoney").toggle();
-});	
-
-
-
-$(".toggle_btn").toggle(
-	function(){$ ("myMoney").hide();},
-	function(){$ ("#myMoney").hide();},
-});
-
-
 </script>
+
+
+
 
 
 </body>

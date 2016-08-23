@@ -312,6 +312,64 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 
 
 
+
+
+
+
+/*预约律师*/
+.laywer_list{padding:20px}
+.recom-laywer-warp{padding:15px;background:#fff;border-bottom:1px #f0f0f0 solid}
+.dev-table{display:table}
+.recom-laywer-info{width:100%}
+.dev-table-cell{display:table-cell}
+.dev-box{display:box;display:-webkit-box;display:-moz-box}
+.l-i-left img{width:120px;height:120px;border-radius:10%;border:1px solid #e66140}
+.l-i-right{padding-left:15px}
+.l-i-right p{padding:4px 0}
+.l-i-right .company{display:block;color:#999;font-size:14px}
+.l-i-right .level{display:inline-block;width: 100px;height: 20px;background-image:url('../images/star_lawyer.png');background-repeat:no-repeat;background-size:100%;background-position:0 0}
+.l-i-right .cus-0{background-position:0 0}
+.l-i-right .cus-0-5{background-position:0 -19.5px}
+.l-i-right .cus-1{background-position:0 -39px}
+.l-i-right .cus-1-5{background-position:0 -58.5px}
+.l-i-right .cus-2{background-position:0 -78px}
+.l-i-right .cus-2-5{background-position:0 -97.5px}
+.l-i-right .cus-3{background-position:0 -117px}
+.l-i-right .cus-3-5{background-position:0 -136.5px}
+.l-i-right .cus-4{background-position:0 -155px}
+.l-i-right .cus-4-5{background-position:0 -175.5px}
+.l-i-right .cus-5{background-position:0 -194px}
+.l-i-right .reply{font-size:12px;color:#999}
+.l-i-right .reply em{color:#e66140}
+.recom-layer-btn{padding:0 10px}
+.dev-table-cell{display:table-cell}
+.recom-layer-btn a{display:block;width:100px;height:40px;line-height:40px;color:#e66140;border-radius:5px;text-align:center;border:1px solid #e66140;}
+
+
+
+
+
+/*我的钱包*/
+.my_money{width: 230px;margin:20px auto;text-align: center;}
+.money_box{background: #e66140;border-radius:5px;margin:10px auto; width: 200px; height:60px;padding: 15px}
+.money_box p{    float: left;
+    width: 100px;
+    text-align: left;
+    font-size: 20px;color:#fff;}
+.toggle_btn {float:right;width: 30px;height: 30px;}
+.eyeopen {background: url(../images/eye_open.png);}
+.eyeclose {background: url(../images/eye_close.png);}
+
+
+
+
+
+
+
+
+
+
+
 /*消息缺省*/
 .no-message-warp {display: none;padding: 120px 10px;text-align: center;}
 
