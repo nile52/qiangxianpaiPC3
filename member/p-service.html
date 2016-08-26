@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>登录 - 抢先拍</title>
+	<title>服务平台 - 个人中心</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="../js/uploadPreview.js" type="text/javascript"></script><!-- 上传照片 -->
 	<link href="../css/reset.css" rel="stylesheet">
 	<link href="../css/public.css" rel="stylesheet">
 	<link href="../css/member2.css" rel="stylesheet">	
@@ -69,76 +68,119 @@
 			<li><a class="" href="p-info.html">我的主页</a></li>	
 			<li><a class="" href="p-order.html">我的订单</a></li>	
 			<li><a class="" href="p-subscribe.html">我的订阅</a></li>
-			<li><a class="" href="p-service.html">服务平台</a></li>
+			<li><a class="active" href="p-service.html">服务平台</a></li>
 			<li><a class="" href="p-collect.html">我的收藏</a></li>
 			<li><a class="" href="p-wallet.html">我的钱包</a></li>
-			<li><a class="active" href="p-setting.html">设置</a></li>					
+			<li><a class="" href="p-setting.html">设置</a></li>						
 		</ul>
 	</div>
 </div>
 
 
-<div class="bgfa">
-<div class="setting">
-	<ul id="myTab" class="nav nav-tabs">   
-	   <li><a href="#Suggestions" data-toggle="tab"><span class="no-num">反馈与建议</span></a></li>
-	   <li class="active"><a href="#About" data-toggle="tab">关于抢先拍</a></li>
-	   <li><a href="#reset" data-toggle="tab">修改密码</a></li>
-	</ul>
-	<div id="myTabContent" class="tab-content">
-	   <div class="tab-pane fade suggestions-warp" id="Suggestions">	   	
-	   		<p>您好！欢迎您给我们提出使用中遇到的问题或建议！留下联系方式，将有机会获得精美礼品！</p>
-	   		<form name="setForm">
-				<textarea placeholder="请输入详细内容"></textarea>	
-				<p class="c_red">我们会尽快给您回复，请耐心等待~</p>
-				<input type="submit" value="确定" class="ok_gray">
-			<form>
-	   </div>
-	   <div class="tab-pane fade in active order-warp" id="About">	
-	   		<div class="about_qxp">
-		   		<p>抢先拍——浙商资产管理研究院战略合作伙伴、魔量资本投资企业。</p>
-		   		<p>抢先拍于2015年12月正式上线运营，“超值资产，抢先一步”是抢先拍为客户提供服务的核心目标。平台以为用户提供具有性价比的不动产信息为切入点，聚合了法院、银行、产交所、开发商等多个渠道的低价不动产。并为用户提供在线法律、贷款申请、委托交易等服务，实现价值资产从售前到售后的交易闭环。</p>
-		   		<p>平台已覆盖全国16个城市、139个城区，约10771个社区，约9万个标的资产，累计资产价值超过996亿元。</p>
-		   		<p>目前抢先拍已经同步退出了iOS、安卓、微信、PC端版本，可以完全满足用户的全平台使用需求。</p>
-		   		<p>抢先拍将努力成为全国领先的价值资产交易服务平台。</p>		   		   			
-	   		</div>
-	   </div>
-	   <div class="tab-pane fade order-warp" id="reset">	   	
-			<ul>
-				<div class="setForm">
-					<form name="setForm">
-						<ul>
-							<li>
-								<span>当前登录密码</span> 
-								<input type="password" name="oldPwd" required=""> 
-								<a href="">忘记密码？</a><br>
-							<li>
-								<span class="">新登录密码</span> 
-								<input type="password" maxlength="20" name="pwd" required="">		
-							</li>
-							<li>
-								<span>确认新密码</span> 
-								<input type="password" required=""><br>
-							</li>
-						</ul>
-						<input type="submit" value="确认修改" disabled="disabled" class="ok_gray">
-					</form>					
+<div class="bg_f8">
+<div class="wrapper martop20">
+	<div class="slideleft noprint">
+		<ul>
+		   <li class="active"><a href="#ser_1" data-toggle="tab"><span class="no-num">委托拍卖</span></a></li>
+		   <li><a href="#ser_2" data-toggle="tab">委托过户</a></li>
+		   <li><a href="#ser_3" data-toggle="tab">背调服务</a></li>
+		   <li><a href="#ser_4" data-toggle="tab">咨询服务</a></li>
+		</ul>
+	</div>	
+	<div class="slideRight">
+		<div class="account">
+			<div class="info">
+				<div id="myTabContent" class="tab-content">
+				   <div class="tab-pane fade in active" id="ser_1">
+						<div class="about4">
+							<div class="about4_ch">委托拍卖流程：</div>
+							<div class="about4_main">
+								<div class="time_line"></div>
+								<ul>
+									<li>用户明确参拍标的</li>
+									<li>支付服务费用至平台托管</li>
+									<li>用户与受托人签定全权竞拍委托协议（明确出价上限）</li>
+									<li>用户交付竞拍帐号给受托人（缴纳足额保证金前提下）</li>
+									<li>受托人参与竞拍</li>
+									<li>拍卖结束后，用户收回竞拍账户，更改密码</li>
+									<li>至平台确认受托人服务完成</li>
+									<li>平台支付费用给受托人</li>
+									<li>交易结束</li>
+								</ul>
+							</div><div class="clearfix"></div>
+						</div>
+						<div class="go-to-btn">
+							<a href=""><img src="../images/member/appointment.jpg"><p>一键预约</p></a>
+						</div>
+				   </div>
+				   <div class="tab-pane fade" id="ser_2">
+						<div class="about4">
+							<div class="about4_ch">委托过户流程：</div>
+							<div class="about4_main">
+								<div class="time_line"></div>
+								<ul>
+									<li>用户支付服务费用至平台托管</li>
+									<li>用户与受托人签定全权委托过户协议</li>
+									<li>用户与受托人至法院办理相关委托证明</li>
+									<li>受托人至房管局办理委托过户手续（用户提供相关资料）</li>
+									<li>用户缴纳税费</li>
+									<li>受托人办理产权过户手续</li>
+									<li>用户确认服务完成，平台支付服务费给受托人</li>
+									<li>交易结束</li>
+								</ul>
+							</div>
+						</div>										  
+						<div class="go-to-btn">
+							<a href=""><img src="../images/member/appointment.jpg"><p>一键预约</p></a>
+						</div>
+				   </div>
+				   <div class="tab-pane fade" id="ser_3">
+						<div class="about4">
+							<div class="about4_ch">背调服务流程：</div>
+							<div class="about4_main">
+								<div class="time_line"></div>
+								<ul>
+									<li>支付服务费用至平台托管</li>
+									<li>用户与受托人签定服务协议</li>
+									<li>受托人交付背调报告</li>
+									<li>用户确认收取报告，并确认服务</li>
+									<li>平台支付费用给受托人</li>
+									<li>服务结束</li>
+								</ul>
+							</div>
+						</div>										  
+						<div class="go-to-btn">
+							<a href=""><img src="../images/member/appointment.jpg"><p>一键预约</p></a>
+						</div>
+				   </div>				   
+				   <div class="tab-pane fade" id="ser_4">
+						<div class="about4">
+							<div class="about4_ch">咨询服务流程：</div>
+							<div class="about4_main">
+								<div class="time_line"></div>
+								<ul>
+									<li>税费咨询</li>
+									<li>风险咨询</li>
+									<li>报名协助</li>
+									<li>过户咨询</li>
+									<li>解答拍卖流程</li>
+								</ul>
+							</div>
+						</div>	
+						<div class="go-to-btn">
+							<a href=""><img src="../images/member/appointment.jpg"><p>一键预约</p></a>
+						</div>
+				   </div>
 				</div>
-			</ul>
-			<div class="clear"></div>			
-	   	</div>
+			</div>
+		</div>
 	</div>
+	<div style="clear: both;"></div>
 </div>
-
-
-
-
-
-
-
-
-
-
+		
+</div>				
+					
+					
 					
 					
 					
@@ -171,6 +213,7 @@
 		</div>
 	</div>	
 </footer>
+
 <script type="text/javascript">
 // 二维码显隐
 function  showImg(){
@@ -179,11 +222,16 @@ function  showImg(){
 function hideImg(){
 	$(".wechat").css("display","none");
 }
-// 显示隐藏
-$(".formshow").click(function(){
-	$(this).parent().siblings("div").toggle();
-});		
+// 时间轴
+$(document).ready(function(e) {
+	var h = $(".about4_main ul li:first-child").height()/2;<!--第一个li高度的一半-->
+	var h1 = $(".about4_main ul li:last-child").height()/2;<!--最后一个li高度的一半-->
+	$(".time_line").css("top",h);
+	$(".time_line").height($(".about4_main").height()-h1-h);
+});
 </script>
+
+
 
 
 </body>

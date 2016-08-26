@@ -31,20 +31,6 @@
 .slideRight .container,.slideRight .title{background-color:#fff;border:1px solid #e8e8e8}
 .account .info{float:left;width:778px;min-height:530px;background-color:#fff;border:1px solid #e8e8e8}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 服务平台 */
 .carousel-inner>.item>img,.carousel-inner>.item>a>img{width:100%;height: 312px}
 .center_title{margin:0 auto}
@@ -58,7 +44,7 @@ a:hover, a:focus {
     color: #666;
 }
 /*.tab-content{padding:20px}*/
-.service-page{padding:20px}
+/*.service-page{padding:20px}
 .service-page .ser-items-title{background:#fff;padding:10px;color:#999;border-bottom:1px #eee solid}
 .service-page .ser-main{background:#fff}
 .dev-table{width:100%}
@@ -69,8 +55,13 @@ a:hover, a:focus {
 .service-page p{padding-top:10px;font-size:14px;line-height:20px;color:#333}
 .service-page .go-to-btn{background:#e66140;border-radius:5px;margin-top:20px}
 .service-page .go-to-btn a{display:block;height:40px;line-height:40px;text-align:center;color:#fff;border-radius:6px}
-
-
+*/
+.about4{width:648px;margin:40px auto 0 auto;}
+.about4_ch{font-size:18px;color:#d80017;margin-bottom:30px;}
+.about4_main{position:relative;padding-left:20px;overflow:hidden;}
+.line{width:2px;height:100%;background:url(../images/line-bg.png);position:absolute;left:26px;z-index:-1;}
+.about4_main ul li{padding-left:25px;font-size:14px;color:#333333;line-height:30px;margin-bottom:30px;background:url(../images/about4_icon.png) left center no-repeat;}
+.about4_main ul li:last-child{margin-bottom:0px;}
 
 /* 服务平台2——时间轴 */
 .l{float:left}
@@ -124,14 +115,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .content .wrap:first-child .main .year.closes h2 i{transform:rotate(-90deg);-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg)}
 .content .wrap:first-child .main .year.closes .list{opacity:0;height:0!important}
 .ie7 .content .main .year h2 i{left:40px}
-
-
-
-
-
-
-
-
 
 /*我的收藏*/
 .collect{padding:10px}
@@ -215,12 +198,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 #progressbar li:first-child:after{content:none}
 #progressbar li.active:before,#progressbar li.active:after{background:#27AE60;color:white}
 
-
-
-
-
-
-
 /*个人信息*/
 .info_box{margin:20px; padding:20px;}
 .info_box h2{padding: 5px 20px;font-size: 20px;font-weight: bold;border-left: 3px solid #e66140;margin: 20px 0;}
@@ -241,8 +218,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .info_box .lawyer_box{border: 1px solid #eee}
 .info_box .lawyer_box td{padding:10px;}
 .info_box .lawyer_box td input{border: 0;outline:none;}
-
-
 
 /*setting*/
 .setting .info{padding:36px 0;border:1px solid #e8e8e8;background-color:#fff;margin:10px 0}
@@ -265,10 +240,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .setting .setForm .ok_gray{width:320px;background:#e66140;color:#fff}
 .setting .setForm .ok_gray,.setting .setForm input.ok_btn{margin:35px 0 0 107px;height:40px;border:none;outline:0 none;border-radius:3px;font-size:16px;cursor:pointer}
 
-
-
-
-
 /*消息中心*/
 .message_title{margin:0 auto}
 .message_title{background-color:#fff;border-bottom:1px solid #e8e8e8}
@@ -276,7 +247,6 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .message_title .active{border-bottom:4px solid #e66140}
 .message_title li a span{display:inline-block;height:18px;padding:0px 6px;line-height:18px;background:#e66140;color:#fff;border-radius:9px;text-align:center;margin-left:10px;font-size:12px}
 .message_title li a span.no-num{background:#fff}
-
 .message-warp{margin:20px;}
 .message-warp a{display:block;padding:10px;border-bottom:1px #efefef solid;background:#fff}
 .message-warp .mess-type{position:relative;height:28px;line-height:28px}
@@ -286,35 +256,10 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .mess-time{display:block;padding-left:20px;padding-top:5px;font-size:12px;color:#999}
 .allread {/* display: none; */height: 40px;line-height: 40px;text-align: center;font-size: 14px;color: #fff;background: #e66140;width: 100px;margin: 10px 30px;border-radius: 5px;}
 
-
-
-
 /*我的贷款*/
 .account .loan_info{padding: 20px;}
-.account .loan_info a {
-    display: block;
-    padding: 10px;
-    border-bottom: 1px #efefef solid;
-    background: #fff;
-}
-
-.account .loan_info a .loan_title {
-    font-size: 16px;
-    color: #666;
-    font-weight: bold;padding-bottom: 10px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
+.account .loan_info a {display: block;padding: 10px;border-bottom: 1px #efefef solid;background: #fff;}
+.account .loan_info a .loan_title {font-size: 16px;color: #666;font-weight: bold;padding-bottom: 10px;}
 
 /*预约律师*/
 .laywer_list{padding:20px}
@@ -345,30 +290,16 @@ hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border
 .dev-table-cell{display:table-cell}
 .recom-layer-btn a{display:block;width:100px;height:40px;line-height:40px;color:#e66140;border-radius:5px;text-align:center;border:1px solid #e66140;}
 
-
-
-
-
 /*我的钱包*/
-.my_money{width: 230px;margin:20px auto;text-align: center;}
+.my_money{width: 230px;margin:50px auto;text-align: center;}
+.my_money h3{font-size: 16px}
+.my_money h3 img{margin:5px;}
 .money_box{background: #e66140;border-radius:5px;margin:10px auto; width: 200px; height:60px;padding: 15px}
-.money_box p{    float: left;
-    width: 100px;
-    text-align: left;
-    font-size: 20px;color:#fff;}
-.toggle_btn {float:right;width: 30px;height: 30px;}
-.eyeopen {background: url(../images/eye_open.png);}
+.money_box p{float: left;width: 100px;text-align: left;font-size: 20px;color:#fff;background: #e66140}
+.money_box #hideMoney{font-size: 24px}
+.toggle_btn {float:right;width: 30px;height: 30px;background: url(../images/eye_open.png);}
 .eyeclose {background: url(../images/eye_close.png);}
-
-
-
-
-
-
-
-
-
-
+.my_money .download img{margin:50px 0 10px 0;}
 
 /*消息缺省*/
 .no-message-warp {display: none;padding: 120px 10px;text-align: center;}

@@ -7,7 +7,6 @@
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="../js/uploadPreview.js" type="text/javascript"></script><!-- 上传照片 -->
 	<link href="../css/reset.css" rel="stylesheet">
 	<link href="../css/public.css" rel="stylesheet">
 	<link href="../css/member2.css" rel="stylesheet">	
@@ -71,76 +70,27 @@
 			<li><a class="" href="p-subscribe.html">我的订阅</a></li>
 			<li><a class="" href="p-service.html">服务平台</a></li>
 			<li><a class="" href="p-collect.html">我的收藏</a></li>
-			<li><a class="" href="p-wallet.html">我的钱包</a></li>
-			<li><a class="active" href="p-setting.html">设置</a></li>					
+			<li><a class="active" href="p-wallet.html">我的钱包</a></li>
+			<li><a class="" href="p-setting.html">设置</a></li>						
 		</ul>
 	</div>
 </div>
 
-
-<div class="bgfa">
-<div class="setting">
-	<ul id="myTab" class="nav nav-tabs">   
-	   <li><a href="#Suggestions" data-toggle="tab"><span class="no-num">反馈与建议</span></a></li>
-	   <li class="active"><a href="#About" data-toggle="tab">关于抢先拍</a></li>
-	   <li><a href="#reset" data-toggle="tab">修改密码</a></li>
-	</ul>
-	<div id="myTabContent" class="tab-content">
-	   <div class="tab-pane fade suggestions-warp" id="Suggestions">	   	
-	   		<p>您好！欢迎您给我们提出使用中遇到的问题或建议！留下联系方式，将有机会获得精美礼品！</p>
-	   		<form name="setForm">
-				<textarea placeholder="请输入详细内容"></textarea>	
-				<p class="c_red">我们会尽快给您回复，请耐心等待~</p>
-				<input type="submit" value="确定" class="ok_gray">
-			<form>
-	   </div>
-	   <div class="tab-pane fade in active order-warp" id="About">	
-	   		<div class="about_qxp">
-		   		<p>抢先拍——浙商资产管理研究院战略合作伙伴、魔量资本投资企业。</p>
-		   		<p>抢先拍于2015年12月正式上线运营，“超值资产，抢先一步”是抢先拍为客户提供服务的核心目标。平台以为用户提供具有性价比的不动产信息为切入点，聚合了法院、银行、产交所、开发商等多个渠道的低价不动产。并为用户提供在线法律、贷款申请、委托交易等服务，实现价值资产从售前到售后的交易闭环。</p>
-		   		<p>平台已覆盖全国16个城市、139个城区，约10771个社区，约9万个标的资产，累计资产价值超过996亿元。</p>
-		   		<p>目前抢先拍已经同步退出了iOS、安卓、微信、PC端版本，可以完全满足用户的全平台使用需求。</p>
-		   		<p>抢先拍将努力成为全国领先的价值资产交易服务平台。</p>		   		   			
-	   		</div>
-	   </div>
-	   <div class="tab-pane fade order-warp" id="reset">	   	
-			<ul>
-				<div class="setForm">
-					<form name="setForm">
-						<ul>
-							<li>
-								<span>当前登录密码</span> 
-								<input type="password" name="oldPwd" required=""> 
-								<a href="">忘记密码？</a><br>
-							<li>
-								<span class="">新登录密码</span> 
-								<input type="password" maxlength="20" name="pwd" required="">		
-							</li>
-							<li>
-								<span>确认新密码</span> 
-								<input type="password" required=""><br>
-							</li>
-						</ul>
-						<input type="submit" value="确认修改" disabled="disabled" class="ok_gray">
-					</form>					
-				</div>
-			</ul>
-			<div class="clear"></div>			
-	   	</div>
+<!-- 我的钱包 -->
+<div class="info">
+	<div class="my_money">
+		<h3><img src="../images/member/wallet.png">余额</h3>
+		<div class="money_box">
+			<p id="myMoney" style="display:block">￥1000</p>
+			<p id="hideMoney" style="display:none">****</p>
+			<div class="toggle_btn eyeopen"></div>
+		</div><div class="clearfix"></div>
+		<div class="download">
+			<img src="../images/index/wechat.png"> 
+			<p>扫码下载抢先拍手机版<br>轻松查看余额明细</p>
+		</div>					
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-					
-					
 					
 <footer class="noprint">
 	<ul class="ib sub-nav">
@@ -179,13 +129,14 @@ function  showImg(){
 function hideImg(){
 	$(".wechat").css("display","none");
 }
-// 显示隐藏
-$(".formshow").click(function(){
-	$(this).parent().siblings("div").toggle();
-});		
+//显隐金额
+$ (".toggle_btn").click (function (){
+	$ (".eyeopen").toggleClass ("eyeclose");
+	$("#myMoney").toggle();
+	$("#hideMoney").toggle();
+});	
+
 </script>
-
-
 </body>
 </html>
 
