@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>服务平台 - 个人中心</title>
+	<title>登录 - 抢先拍</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,6 @@
 		</div>
 	</div>	
 </div>	
-
 <!-- 个人中心头部 -->
 <div class="p_head">
 	<div class="con12">
@@ -66,76 +65,138 @@
 	<div class="p_nav">
 		<ul class="con12">
 			<li><a class="" href="p-info.html">我的主页</a></li>	
-			<li><a class="" href="p-order.html">我的订单</a></li>	
+			<li><a class="active" href="p-order.html">我的订单</a></li>	
 			<li><a class="" href="p-subscribe.html">我的订阅</a></li>
-			<li><a class="active" href="p-service.html">服务平台</a></li>
+			<li><a class="" href="p-service.html">服务平台</a></li>
 			<li><a class="" href="p-collect.html">我的收藏</a></li>
 			<li><a class="" href="p-wallet.html">我的钱包</a></li>
-			<li><a class="" href="p-setting.html">设置</a></li>						
+			<li><a class="" href="p-setting.html">设置</a></li>							
 		</ul>
 	</div>
 </div>
-
-
-<div class="bg_f8">
-<div class="wrapper martop20">
-	<div class="slideleft noprint">
-		<ul>
-		   <li class="active"><a href="#ser_1" data-toggle="tab"><span class="no-num">委托拍卖</span></a></li>
-		   <li><a href="#ser_2" data-toggle="tab">委托过户</a></li>
-		   <li><a href="#ser_3" data-toggle="tab">背调服务</a></li>
-		   <li><a href="#ser_4" data-toggle="tab">咨询服务</a></li>
-		</ul>
-	</div>	
-	<div class="slideRight">
-		<div class="account">
-			<div class="info">
-				<div class="laywer_list">
-					<h3>请您选择要预约的律师</h3>
-					<div class="dev-table recom-laywer-warp">
-						<a class="dev-table-cell recom-laywer-info" href="">
-							<div class="dev-box l-i-left">
-								<img src="">
-								<div class="l-i-right">
-									<p>谢路杭</p>
-									<p>北京炜衡（杭州）律师事务所</p>
-									<p><span>0</span>个私人回答</p>
-								</div>
-							</div>
-						</a>
-						<div class="dev-table-cell recom-layer-btn">
-							<a href="">购买</a>
-						</div>
+<!-- 我的订单 -->
+<div class="my_order_detail">
+	<div class="top_title"><img src="../images/member/order.png"><p>我的订单<span> my order</span></p></div>
+	<ol class="breadcrumb">
+		<li><a href="#">抢先拍</a></li>
+		<li><a href="#">个人中心</a></li>
+		<li><a href="#">我的订单</a></li>
+		<li class="active">订单详情</li>
+	</ol>	
+	<div class="my_order_status">
+		<p class="my_status">当前状态：待支付 <span>请在3天 内付款；若未及时付款，系统将自动取消订单</span></p>
+		<p class="contact">联系客服：400-060-2595</p>
+	</div><div class="clearfix"></div>
+	<div class="detail_box">
+		<div class="stepbar">
+			<div class="sui-steps-round steps-round-auto steps-4">
+				<div class="r_red">
+					<div class="wrap">
+						<div class="round"></div>
+						<div class="bar"></div>
 					</div>
-					<div class="dev-table recom-laywer-warp">
-						<a class="dev-table-cell recom-laywer-info" href="">
-							<div class="dev-box l-i-left">
-								<img src="">
-								<div class="dev-box-flex l-i-right">
-									<p>谢路杭</p>
-									<p>北京炜衡（杭州）律师事务所</p>
-									<p><span>0</span>个私人回答</p>
-								</div>
-							</div>
-						</a>
-						<div class="dev-table-cell recom-layer-btn">
-							<a href="">购买</a>
-						</div>
+					<label>确认订单</label>
+				</div>
+				<div class="r_white">
+					<div class="wrap">
+						<div class="round"></div>
+						<div class="bar"></div>
 					</div>
-				</div>	
-								
-			</div>
+					<label>支付</label>
+				</div>
+				<div class="r_white">
+					<div class="wrap">
+						<div class="round"></div>
+						<div class="bar"></div>
+					</div>
+					<label>律师接单</label>
+				</div>
+				<div class="r_white last">
+					<div class="wrap">
+						<div class="round"></div>
+					</div>
+					<label>交易完成</label>
+				</div>
+			</div>			
 		</div>
+		<div class="detail_info">
+			<h3>产品信息</h3>
+			<table width="100%">
+					<tr>
+						<td>项目服务</td>
+						<td>支付金额</td>
+						<td>所属律师</td>
+						<td>公司</td>
+					</tr>
+					<tr>
+						<td>咨询</td>
+						<td>￥1000.00</td>
+						<td>杨甜</td>
+						<td>北京大成（杭州）律师事务所</td>
+					</tr>					
+			</table>	
+		</div>
+		<div class="detail_info">
+			<h3>订单信息</h3>
+			<div class="detail_time">
+				<p>订单编号：2571812573</p>
+				<p>下单时间：2016.08.15  16:41</p>
+				<p>支付时间：- - : - - : - -</p>
+			</div>			
+		</div>	
+		<!-- 未支付状态 - 显示按钮 -->
+		<div class="order_btn two_btn">
+			<button class="">取消订单</button><button class="">支付</button>
+		</div>
+		<!-- 已支付状态 - 显示服务流程 -->
+		<div class="detail_info" style="display:none">
+			<h3>服务流程</h3>
+			<!-- 委托拍卖 - 服务流程 -->
+			<div class="detail_time">
+				<p>1、用户明确参拍标的</p>
+				<p>2、支付服务费用至平台托管</p>
+				<p>3、用户与受托人签定全权竞拍委托协议（明确出价上限）</p>
+				<p>4、用户交付竞拍帐号给受托人（缴纳足额保证金前提下）</p>
+				<p>5、受托人参与竞拍</p>
+				<p>6、拍卖结束后，用户收回竞拍账户，更改密码</p>
+				<p>7、至平台确认受托人服务完成</p>
+				<p>8、平台支付费用给受托人</p>
+				<p>9、交易结束</p>				
+			</div>	
+			<!-- 委托过户 - 服务流程 -->
+			<div class="detail_time" style="display:none">
+				<p>1、用户支付服务费用至平台托管</p>
+				<p>2、用户与受托人签定全权委托过户协议</p>
+				<p>3、用户与受托人至法院办理相关委托证明</p>
+				<p>4、受托人至房管局办理委托过户手续（用户提供相关资料）</p>
+				<p>5、用户缴纳税费</p>
+				<p>6、受托人办理产权过户手续</p>
+				<p>7、用户确认服务完成，平台支付服务费给受托人</p>
+				<p>8、交易结束</p>				
+			</div>	
+			<!-- 背调服务 - 服务流程 -->
+			<div class="detail_time" style="display:none">
+				<p>1、支付服务费用至平台托管</p>
+				<p>2、用户与受托人签定服务协议</p>
+				<p>3、受托人交付背调报告</p>
+				<p>4、用户确认收取报告，并确认服务</p>
+				<p>5、平台支付费用给受托人</p>
+				<p>6、服务结束</p>
+			</div>
+			<!-- 咨询服务 - 服务流程 -->
+			<div class="detail_time" style="display:none">
+				<p>1、税费咨询</p>
+				<p>2、风险咨询</p>
+				<p>3、报名协助</p>
+				<p>4、过户咨询</p>
+				<p>5、解答拍卖流程</p>
+			</div>	
+		</div>	
 	</div>
-	<div style="clear: both;"></div>
 </div>
+
+
 		
-</div>				
-					
-					
-					
-					
-					
 <footer class="noprint">
 	<ul class="ib sub-nav">
 		<li><a target="_self" href="">关于我们</a></li>
@@ -165,9 +226,8 @@
 		</div>
 	</div>	
 </footer>
-
+<!-- 二维码显隐 -->
 <script type="text/javascript">
-// 二维码显隐
 function  showImg(){
 	$(".wechat").css("display","block");
 }
@@ -175,9 +235,6 @@ function hideImg(){
 	$(".wechat").css("display","none");
 }
 </script>
-
-
-
 
 </body>
 </html>
