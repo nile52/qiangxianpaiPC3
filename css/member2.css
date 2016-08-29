@@ -23,22 +23,34 @@
 .basic_info{padding:30px;}
 .basic_info .info_img{margin-right: 80px;text-align: center;width: 150px;float: left;}
 .basic_info .info_img img{border: 1px solid #EEEEEE;width: 147px;height: 147px;}
-.basic_info button{color:#e66140;border: 1px solid #E56140;border-radius: 3px;width: 87px;height: 34px;margin-top: 40px;background: #fff}
+.basic_info .info_img label.file {text-align: center;background: #e66140;width: 100px;height: 36px;margin: 10px auto;line-height: 36px;font-weight: normal;color: #fff;border-radius: 5px;}
+.basic_info .info_img label.file input {opacity: 0;}
 .basic_info input[type=submit]{color:#e66140;border: 1px solid #E56140;border-radius: 3px;width: 87px;height: 34px;margin-top: 40px;background: #fff}
 .basic_info .info_detail{float: left;}
 .basic_info .info_detail p{margin-bottom: 5px}
 .basic_info .info_detail p textarea {width: 550px;height:60px }
 .basic_info .info_detail p span.info_detail_title{width: 80px;display: inline-block}
+.basic_info .info_detail p span.info_detail_title{width: 80px;display: inline-block}
+.basic_info .info_detail p input[type=text]{width: 220px;min-height: 34px;padding: 6px 8px;-height: 20px;color: #333;background-color: #fafafa;border: 1px solid #ddd;border-radius: 3px;outline: none;box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);margin-left: 4px;}
+.basic_info .info_detail p input[type=radio]{margin:10px 5px 10px 15px;}
+.basic_info .info_detail p input[type=text]:focus{background-color: #fff;}
+.basic_info .info_detail p select{padding: 6px 8px;-height: 20px;color: #333;background-color: #fafafa;border: 1px solid #ddd;border-radius: 3px;outline: none;box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);}
+.basic_info .info_detail p select:focus{background: #fff}
+.basic_info .info_detail p textarea{padding: 6px 8px;-height: 20px;color: #333;background-color: #fafafa;border: 1px solid #ddd;border-radius: 3px;outline: none;box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);margin-left: 4px;}
+.basic_info .info_detail p textarea:focus{background: #fff}
+
+
+
 /*律师信息*/
 .lawyer_info{background: url(../images/member/lawyerinfo_background.png);height: 260px;}
 .lawyer_info .con12{padding: 30px}
 .lawyer_info .con12 h2{padding-bottom: 15px}
 /*.lawyer_info .con12 table{border-color:#EEEEEE; }*/
-.lawyer_info .con12 table td{height: 36px;text-align: center; }
+.lawyer_info .con12 table td{height: 36px;text-align: center; border:1px solid #eee;}
+.lawyer_info .con12 table td input{width: 70px}
 .lawyer_info .con12 table td.m_btn{text-align: right;padding:0 25px; }
+.lawyer_info .con12 table td.m_btn input{border:none;background:none;color:#e66140;outline: none}
 .lawyer_info .con12 table td a{color: #e66140 }
-
-
 
 
 /*我的收藏*/
@@ -97,6 +109,8 @@
 .my_order table tbody td .order_name{text-align: center;padding-bottom: 10px}
 .my_order table tbody td .order_coupons{text-align: center;color: #e66140;}
 .my_order table tbody td .order_countdown{font-size: 12px;color:#999; }
+.my_order table tbody td p a{color:#333; }
+.my_order table tbody td p a:hover{color:#e66140; }
 .my_order table tbody td .order_countdown img{margin: 0 5px;margin-top: -3px;}
 .my_order .order_details{ padding: 20px }
 .my_order .order_details .order_img{ width:200px;height: 150px;position: relative;}
@@ -172,7 +186,7 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .selects {padding:5px 10px;border:#ddd 1px solid;border-radius:4px;width:100%;margin:0px auto;}
 .selects li {list-style:none;padding:10px 0 5px 100px}
 .selects li button {border:1px solid #e66140;color: #e66140;background: none;margin: 0 20px;padding: 5px 10px; border-radius: 2px;outline: none}
-.selects li button:hover {color: #fff;background:#e66140}
+.selects li button.tick {padding-left: 25px;background: url(../images/member/tick.png) no-repeat;}
 .selects .select-list {border-bottom:#eee 1px dashed}
 .selects .select-list:last-child {border-bottom:#eee 0px dashed}
 .selects dl {zoom:1;position:relative;line-height:24px;}
@@ -215,8 +229,8 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .setting .nav-tabs {width: 392px;margin:0 auto;background-image: linear-gradient(-180deg, #FAF7F5 3%, #F5F5F5 53%, #F0F0F0 98%);border: 1px solid #FFFFFF;box-shadow: -1px 1px 3px 0px rgba(114,91,91,0.30);border-radius: 3px;}
 .setting .nav-tabs>li {float: left;width: 130px;height: 46px;}
 .setting .nav-tabs>li.active {width: 130px;height: 50px;background-image: linear-gradient(-180deg, #FA8061 0%, #FFD1C5 11%, #FCA28B 30%, #FF6A45 76%, #FF6B45 97%);box-shadow: -2px 2px 2px 0px rgba(114,1,1,0.30);border-top-left-radius: 0.5em;border-top-right-radius:0.5em;z-index: 1;margin-top: -4px}
-.setting .nav-tabs>li>a, .nav-tabs>li>a:hover, .nav-tabs>li>a:focus {color: #e66140;cursor: default;background:none;text-align: center;margin-top: 5px;border: none;border-bottom-color: transparent;}
-.setting .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {color: #fff;cursor: default;background:none;border: none;text-align: center;margin-top: 5px;border-bottom-color: transparent;}
+.setting .nav-tabs>li>a, .setting .nav-tabs>li>a:hover,.setting .nav-tabs>li>a:focus {color: #e66140;cursor: default;background:none;text-align: center;margin-top: 5px;border: none;border-bottom-color: transparent;}
+.setting .nav-tabs>li.active>a, .setting .nav-tabs>li.active>a:hover, .setting .nav-tabs>li.active>a:focus {color: #fff;cursor: default;background:none;border: none;text-align: center;margin-top: 5px;border-bottom-color: transparent;}
 .setting .order-warp{padding: 40px 60px;}
 .setting .order-warp .about_qxp{padding: 40px 5px;}
 .setting .order-warp .about_qxp p{padding-bottom: 10px;}

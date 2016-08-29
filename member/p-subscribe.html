@@ -64,7 +64,7 @@
 	</div>
 	<div class="p_nav">
 		<ul class="con12">
-			<li><a class="" href="p-info.html">我的主页</a></li>	
+			<li><a class="" href="p-index.html">我的主页</a></li>	
 			<li><a class="" href="p-order.html">我的订单</a></li>	
 			<li><a class="active" href="p-subscribe.html">我的订阅</a></li>
 			<li><a class="" href="p-service.html">服务平台</a></li>
@@ -106,7 +106,7 @@
 				</dl>
 			</li>
 			<li class="select-list">
-				<dl id="select3">
+				<dl id="select2">
 				<dt>房产类型</dt>
 				<dd class="select-all s_ed"><a href="">全部</a></dd>
 				<dd><a href="">住宅</a></dd>
@@ -117,7 +117,7 @@
 				</dl>
 			</li>
 			<li class="select-list">
-				<dl id="select4">
+				<dl id="select3">
 					<dt>房产特色</dt>
 					<dd class="select-all s_ed"><a href="">全部</a></dd>
 					<dd><a href="">学区房</a></dd>
@@ -126,7 +126,7 @@
 				</dl>
 			</li>
 			<li class="select-list">
-				<dl id="select5">
+				<dl id="select4">
 					<dt>拍卖来源</dt>
 					<dd class="select-all s_ed"><a href="">全部</a></dd>
 					<dd><a href="">一拍</a></dd>
@@ -136,7 +136,7 @@
 				</dl>
 			</li>
 			<li class="select-list">
-				<dl id="select6">
+				<dl id="select5">
 					<dt>总价</dt>
 					<dd class="select-all s_ed"><a href="">不限</a></dd>
 					<dd><a href="">100万以下</a></dd>
@@ -152,6 +152,24 @@
 			</li>
 		</ul>
 	</div>
+
+<script>  //7.27号新的筛选
+$(document).ready(function(){			
+	$("#select1 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select2 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select3 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});		
+	$("#select4 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+});
+</script>	
+	
 	<div class="collect">
 		<div class="houselist_con w360">
 			<div class="houselist_img">
@@ -305,15 +323,40 @@
 		</div>
 	</div>	
 </footer>
-<!-- 二维码显隐 -->
+
 <script type="text/javascript">
+// 二维码显隐
 function  showImg(){
 	$(".wechat").css("display","block");
 }
 function hideImg(){
 	$(".wechat").css("display","none");
 }
+		
+
+//排序按钮
+$ (".select-list button").click (function (){
+	$(this).addClass("active tick").siblings().removeClass("active tick");
+});	
 </script>
+
+
+<script>  //7.27号新的筛选
+$(document).ready(function(){			
+	$("#select1 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select2 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});	
+	$("#select3 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");		
+	});		
+	$("#select4 dd").click(function () {
+		$(this).addClass("s_ed").siblings().removeClass("s_ed");
+	});	
+});
+</script>	
 </body>
 </html>
 
