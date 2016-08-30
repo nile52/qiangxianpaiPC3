@@ -211,20 +211,20 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .money_box #hideMoney{font-size: 24px}
 .toggle_btn {float:right;width: 30px;height: 30px;background: url(../images/member/eyeopen.png);}
 .eyeclose {background: url(../images/member/eyeclose.png);}
-.my_money .download img{margin:100px 0 10px 0;}
+.download img{margin:100px 0 10px 0;}
 
 
 /*setting*/
-.setting .setForm{padding:35px 0 0 78px}
-.setting .setForm ul li input{width:120px;height:45px;background:#fff;border-radius:3px;outline:medium none;border:none;font-size:16px;cursor:pointer}
+.setting .setForm ul {width: 350px;margin: 0 auto}
+.setting .setForm ul li input{background:#fff;font-size:16px;cursor:pointer;border:1px solid #e8e8e8;border-radius:3px;width:200px;height:40px;padding:0 10px;outline-color: #FF6C47;}
+.setting .setForm ul li label.error{padding-left: 125px;color: red;text-align: right;}
 .setting .setForm p{width:470px;line-height:24px}
 .setting .setForm ul li{margin-top:20px;margin-left:0}
-.setting .setForm ul li span{display: inline-block;width: 90px;line-height: 45px;text-align: right;margin: 0 10px;}
-.setting .setForm ul li input{border:1px solid #e8e8e8;border-radius:3px;width:320px;height:43px;padding:0 10px}
+.setting .setForm ul li span{display: inline-block;width: 100px;line-height: 45px;text-align: right;margin: 0 10px;}
 .setting .setForm ul li a,.setting .setForm ul li a:visited{margin-left:20px}
 .setting .setForm ul li a.error{display:inline-block;padding-top:5px;margin-left:105px;font-size:12px;color:#ff5a5f}
 .setting .setForm .ok_gray{width:320px;background:#e66140;color:#fff}
-.setting .setForm .ok_gray,.setting .setForm input.ok_btn{margin:35px 0 0 107px;height:40px;border:none;outline:0 none;border-radius:3px;font-size:16px;cursor:pointer}
+.setting .setForm .ok_gray,.setting .setForm input.ok_btn{width:150px;margin: 35px 20px;margin-left: 250px;height:40px;border:none;outline:0 none;border-radius:3px;font-size:16px;cursor:pointer}
 .setting{width: 800px;margin:0 auto;padding: 50px 0;}
 .setting .nav-tabs {width: 392px;margin:0 auto;background-image: linear-gradient(-180deg, #FAF7F5 3%, #F5F5F5 53%, #F0F0F0 98%);border: 1px solid #FFFFFF;box-shadow: -1px 1px 3px 0px rgba(114,91,91,0.30);border-radius: 3px;}
 .setting .nav-tabs>li {float: left;width: 130px;height: 46px;}
@@ -284,11 +284,36 @@ letter-spacing: 0.66px;}
 .recom-layer-btn a:hover{color:#fff;background: #e66140}
 
 
-
-
-
-
-
+/*咨询支付*/
+.xixun_pay{width: 500px;margin:60px auto;}
+.xixun_pay .laywer_list{width: 500px;margin: 0 auto;}
+.xixun_pay .laywer_list .download{float: left;width: 200px;text-align: center;}
+.xixun_pay .laywer_list h3{padding: 50px 0 20px 0;font-size: 16px;color: #333333;letter-spacing: 0.66px;}
+.xixun_pay .laywer-warp{padding:15px 0;background:#fff;}
+.xixun_pay .dev-table{display:table}
+.xixun_pay .recom-laywer-info{width:100%}
+.xixun_pay .dev-table-cell{display:table-cell}
+.xixun_pay .dev-box{display:box;display:-webkit-box;display:-moz-box}
+.xixun_pay .l-i-left img{width:110px;height:110px;border-radius:10%;border:1px solid #e66140}
+.xixun_pay .laywer_right{padding: 20px 15px;}
+.xixun_pay .laywer_right p{padding:5px 0;color: #333333;letter-spacing: 0.66px;}
+.xixun_pay .laywer_right p span{color: #e66140}
+.xixun_pay .recom-layer-btn{padding:0 10px}
+.xixun_pay .dev-table-cell{display:table-cell}
+.xixun_pay .recom-layer-btn a{display:block;width:87px;height:36px;line-height:36px;color:#e66140;border-radius:5px;text-align:center;border:1px solid #e66140;}
+.xixun_pay .recom-layer-btn a:hover{color:#fff;background: #e66140}
+.xixun_pay table td{border: 1px solid #eee;text-align: center;height: 36px;}
+.xixun_pay .pay_forms {float: left;width: 200px}
+.xixun_pay .pay_forms p{float: left;}
+.xixun_pay .pay_forms div.pay_form {float: left;padding: 10px}
+.xixun_pay .pay_forms div.pay_form p{width: 117px;height:36px;border-radius: 26px;padding: 0 10px }
+.xixun_pay .pay_forms div.pay_form p span{line-height: 36px;color:#fff;}
+.xixun_pay .pay_forms div.pay_form p img {margin: 5px;width: 24px}
+.xixun_pay .pay_forms div.pay_form p.wechat{background: #0BC01E;}
+.xixun_pay .pay_forms div.pay_form p.alipay{background: #1CB9F2;}
+.pay_list_c1 {width: 16px;height: 16px;float: right;padding-top: 3px;cursor: pointer;text-align: center;background-image: url(../images/member/pic_pay_way@2x.png);margin-top: 20px;background-repeat: no-repeat;background-position: -16px 0;}
+.radioclass {opacity: 0;cursor: pointer;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);}
+.on {background-position: 0 0;}
 
 
 

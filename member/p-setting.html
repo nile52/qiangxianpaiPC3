@@ -88,11 +88,11 @@
 	<div id="myTabContent" class="tab-content">
 	   <div class="tab-pane fade suggestions-warp" id="Suggestions">	   	
 	   		<p>您好！欢迎您给我们提出使用中遇到的问题或建议！留下联系方式，将有机会获得精美礼品！</p>
-	   		<form name="setForm">
+	   		<form action="" method="">
 				<textarea placeholder="请输入详细内容"></textarea>	
 				<p class="c_red">我们会尽快给您回复，请耐心等待~</p>
 				<input type="submit" value="确定" class="ok_gray">
-			<form>
+			</form>
 	   </div>
 	   <div class="tab-pane fade in active order-warp" id="About">	
 	   		<div class="about_qxp">
@@ -100,48 +100,34 @@
 		   		<p>抢先拍于2015年12月正式上线运营，“超值资产，抢先一步”是抢先拍为客户提供服务的核心目标。平台以为用户提供具有性价比的不动产信息为切入点，聚合了法院、银行、产交所、开发商等多个渠道的低价不动产。并为用户提供在线法律、贷款申请、委托交易等服务，实现价值资产从售前到售后的交易闭环。</p>
 		   		<p>平台已覆盖全国16个城市、139个城区，约10771个社区，约9万个标的资产，累计资产价值超过996亿元。</p>
 		   		<p>目前抢先拍已经同步退出了iOS、安卓、微信、PC端版本，可以完全满足用户的全平台使用需求。</p>
-		   		<p>抢先拍将努力成为全国领先的价值资产交易服务平台。</p>		   		   			
+		   		<p>抢先拍将努力成为全国领先的价值资产交易服务平台。</p>		
 	   		</div>
 	   </div>
-	   <div class="tab-pane fade order-warp" id="reset">	   	
-			<ul>
-				<div class="setForm">
-					<form name="setForm">
-						<ul>
-							<li>
-								<span>当前登录密码</span> 
-								<input type="password" name="oldPwd" required=""> 
-								<a href="">忘记密码？</a><br>
-							<li>
-								<span class="">新登录密码</span> 
-								<input type="password" maxlength="20" name="pwd" required="">		
-							</li>
-							<li>
-								<span>确认新密码</span> 
-								<input type="password" required=""><br>
-							</li>
-						</ul>
-						<input type="submit" value="确认修改" disabled="disabled" class="ok_gray">
-					</form>					
-				</div>
-			</ul>
+	   <div class="tab-pane fade order-warp" id="reset">	
+			<div class="setForm">
+				<form action="" method="" id="repswForm">
+					<ul>
+						<li>
+							<span>当前登录密码：</span> 
+							<input type="password" name="oldPwd" id="oldPwd" required="">
+						</li>
+						<li>
+							<span class="">新登录密码：</span> 
+							<input type="password" maxlength="20" name="newpwd" id="newpwd" required="">		
+						</li>
+						<li>
+							<span>确认新密码：</span> 
+							<input type="password" name="comfirmpwd" id="comfirmpwd" required="">
+						</li>
+					</ul>
+					<input type="submit" value="确认修改" class="ok_gray"/><a href="">忘记密码？</a>					
+				</form>									
+			</div>
 			<div class="clear"></div>			
 	   	</div>
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-					
-					
-					
+				
 <footer class="noprint">
 	<ul class="ib sub-nav">
 		<li><a target="_self" href="">关于我们</a></li>
@@ -183,6 +169,52 @@ function hideImg(){
 $(".formshow").click(function(){
 	$(this).parent().siblings("div").toggle();
 });		
+</script>
+<script src="../js/jquery.validate-1.13.1.js"></script>
+<script>//基本表单验证
+    var validator;
+    $(document).ready(function () {
+        $.validator.setDefaults({
+            debug: true
+        });
+        validator = $("#repswForm").validate({
+            rules: {
+                oldPwd: {
+                    required: true,
+                    rangelength: [6,6]
+                },				
+                newpwd: {
+                    required: true,
+                    rangelength: [6,18]
+                },				
+                comfirmpwd: {
+					required: true,
+					equalTo: "#password"
+                }
+            },
+            messages: {
+                oldPwd: {
+                    required: "必须填写验证码",
+                    rangelength:"请输入6位验证码"
+                },				
+                newpwd: {
+                    required: "必须填写密码",
+                    rangelength:"请输入6位验证码"
+                },				
+                comfirmpwd: {
+					required: "请再次输入密码",
+					equalTo: "两次输入的密码不一致"
+                }
+            },
+            submitHandler: function (form) {
+                console.log($(form).serialize());
+            }
+        });
+        $.validator.addMethod("phonerule", function(value, element, params){
+            var phonerule = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+            return this.optional(element) || (phonerule.test(value));
+        }, $.validator.format("请填写正确的手机号！"));
+    });
 </script>
 
 
