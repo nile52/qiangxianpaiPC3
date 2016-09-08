@@ -41,7 +41,7 @@
 			</div>
 			<div id="other">
 				<p><a href="login.html">登录</a><a href="register.html">注册</a></p>			
-				<p><a href="" style="display:none">用户名</a></p>
+				<p style="display:none"><a href=""><img src="../../images/member/default_photo.png"> qxp000001</a></p>
 				<p style="padding:0 10px">免费咨询电话：400-060-2595</p>
 			</div>						
 			<div class="clearfix"></div>
@@ -87,11 +87,8 @@
 		<p class="my_status">当前状态：待支付 <span>请在3天 内付款；若未及时付款，系统将自动取消订单</span></p>
 		<p class="contact">联系客服：400-060-2595</p>
 	</div><div class="clearfix"></div>
-<!-- 	<div class="my_order_status">
-		<p class="my_status">当前状态：已支付</p>
-		<p class="contact">联系客服：400-060-2595</p>
-	</div><div class="clearfix"></div>	
- -->
+	<!-- 当前状态：待支付，已支付，退款中，已退款，券失效，已取消，已兑换 -->
+
 	<div class="detail_box">
 		<div class="stepbar">
 			<div class="sui-steps-round steps-round-auto steps-4">
@@ -163,15 +160,18 @@
 			</div>			
 		</div>	
 
-		<!-- 已支付状态 - 显示按钮 -->
-		<div class="order_btn one_btn" style="display:none">
+		<!-- 未支付状态 -->
+		<div class="order_btn">
+			<button class="">取消订单</button><button class="">支付</button>
+		</div>
+
+		<!-- 已支付状态 券失效 -->
+		<div class="order_btn" style="display:none">
 			<button class="">申请退款</button>
 		</div>
 
-		<!-- 未支付状态 - 显示按钮 -->
-		<div class="order_btn two_btn">
-			<button class="">取消订单</button><button class="">支付</button>
-		</div>
+		<!-- 已退款、退款中、已取消、已兑换，这4种状态没有用户操作button -->
+		<div class="order_btn" style="display:none"></div>
 
 	</div>
 </div>

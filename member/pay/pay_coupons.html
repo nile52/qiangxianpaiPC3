@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>关于我们 - 抢先拍</title>
+	<title>支付 - 抢先拍</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/public.css" rel="stylesheet">
-	<link href="css/about.css" rel="stylesheet">	
+	<link href="../../css/reset.css" rel="stylesheet">
+	<link href="../../css/public.css" rel="stylesheet">
+	<link href="../../css/member2.css" rel="stylesheet">	
 </head>
 <body>	
 <!-- 头部开始 -->
@@ -41,7 +41,7 @@
 			</div>
 			<div id="other">
 				<p><a href="login.html">登录</a><a href="register.html">注册</a></p>			
-				<p><a href="" style="display:none">用户名</a></p>
+				<p style="display:none"><a href=""><img src="../../images/member/default_photo.png"> qxp000001</a></p>
 				<p style="padding:0 10px">免费咨询电话：400-060-2595</p>
 			</div>	
 						
@@ -50,43 +50,60 @@
 	</div>	
 </div>	
 <!-- 头部结束 -->
-
+	
 
 
 
 
 <!-- 支付开始 -->
 <div class="coupons_pay">
-	<div class="laywer_list">
-		<div class="dev-table laywer-warp">
-			<a class="dev-table-cell recom-laywer-info" href="">
-				<div class="dev-box l-i-left">
-					<img src="">
-					<div class="laywer_right">
-						<p>谢路杭</p>
-						<p>北京炜衡（杭州）律师事务所</p>
-					</div>
-				</div>
-			</a>
-		</div>
-
-		<table width="100%">
+	<h3>温馨提示</h3>
+	<div class="coupons_con"><p>购券后请尽快使用，不确保房源有售~</p></div>
+	<h3>确认订单信息</h3>
+	<div class="coupons_con my_order">
+		<table width="1000px" style="margin: 0">
+			<thead>
+				<tr>
+					<th  colspan="2" width="500px">优惠券信息</th>
+					<th width="165px">单价</th>
+					<th width="165px">数量</th>
+					<th width="185px">总计</th>
+				</tr>
+			</thead>
 			<tbody>
 				<tr>
-					<td>服务内容</td>
-					<td>支付金额</td>
-				</tr>
-				<tr>
-					<td>委托过户</td>
+					<td>
+						<div class="order_details">
+							<a href="">
+							<div class="order_img">
+								<img src="http://pic.uhouzz.com/geren/default_photo.png">
+								<div class="mask"><p>万科股份有限公司</p></div>
+							</div></a>
+						</div>
+					</td>
+					<td>
+						<p class="order_name">杭州萧山区开元加州阳光别墅群</p>
+					 	<p class="order_coupons">8000元房款抵扣券</p>
+					</td>
 					<td>￥1000.00</td>
-				</tr>					
+					<td>1</td>
+					<td>￥1000.00</td>
+				</tr>
 			</tbody>
 		</table>
-		<div class="pay_forms">
-			<h3>支付方式</h3>
+		<div class="pay_info">
+			<p>商品金额：￥1000.00</p>
+			<p>实付款：<span>￥1000.00</span></p>
+		</div>
+
+
+	</div>
+	<h3>支付方式</h3>
+	<div class="coupons_con my_order">
+		<div class="pay_forms">		
 			<p><span class="pay_list_c1 right on"><input type="radio" name="paylist" value="1" class="radioclass"></span></p>
 			<div class="pay_form">
-				<p class="wechat">
+				<p class="wechatpay">
 					<img src="../../images/member/wechat.png" width="24">
 					<span class="refund_reason left">微信</span>				
 				</p>			
@@ -112,11 +129,7 @@
 
 
 
-
-
-
-
-<!-- 页脚结束 -->	
+<!-- 页脚结束 -->		
 <footer class="noprint">
 	<ul class="ib sub-nav">
 		<li><a target="_self" href="/general-pages/about-us">关于我们</a></li>
@@ -137,24 +150,29 @@
 		<li class="taobao" ng-if="!is91Flight"><a href="https://shop143101383.taobao.com/index.htm?spm=2013.1.w5002-14693851524.2.TSpzsC" target="_blank">淘宝</a></li>
 	</ul>
 	<div style="width:500px;margin:0 auto">
-		<a href=""><img src="images/public/mfund.png" style="float:left"></a>
+		<a href=""><img src="../../images/public/mfund.png" style="float:left"></a>
 		<div style="float:left;text-align:left;padding-top:20px;">
 			<p>抢先拍@2016 All rights reserved</p>
 			<p>增值电信业务经营许可证:浙B2-20160073</p>
 			<p>浙ICP备15018503号</p>
-			<p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
+			<p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010502002186" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="../../images/public/ghs.png" style="float:left;"/>&nbsp;浙公网安备 33010502002186号</a></p>
 		</div>
 	</div>	
 </footer>
-<!-- 二维码显隐 -->
 <script type="text/javascript">
+// 二维码显隐
 function  showImg(){
 	$(".wechat").css("display","block");
 }
 function hideImg(){
 	$(".wechat").css("display","none");
 }
+// 支付方式单选	
+$(".pay_list_c1").on("click",function(){
+	$(this).addClass("on").parent().siblings().children(".pay_list_c1").removeClass("on");
+})
 </script>
+
 
 
 </body>

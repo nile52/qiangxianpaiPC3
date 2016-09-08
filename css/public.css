@@ -65,7 +65,7 @@ transition: background 1s;
 #other a{color:#e66140}
 #other p{float:left;}
 #other p a{padding:0 10px;border-right: 1px solid #eee;}
-#other p img{padding:0px 10px 0 20px}
+#other p a img{width:40px;height: 40px;border:1px solid #eee;border-radius: 50% }
 
 #nav a{float:left;margin:0 25px}
 #nav a:hover{color:#e66140}
