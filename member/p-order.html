@@ -41,7 +41,7 @@
 			</div>
 			<div id="other">
 				<p><a href="login.html">登录</a><a href="register.html">注册</a></p>			
-				<p style="display:none"><a href=""><img src="../../images/member/default_photo.png"> qxp000001</a></p>
+				<p style="display:none"><a href=""><img src="../images/member/default_photo.png"> qxp000001</a></p>
 				<p style="padding:0 10px">免费咨询电话：400-060-2595</p>
 			</div>						
 			<div class="clearfix"></div>
@@ -58,18 +58,21 @@
 			</div>
 			<div class="m_info">
 				<p>qxp00000001</p>
-				<p><img src="../images/member/money.png">1000.00元</p>
 			</div>
 		</div>
 	</div>
 	<div class="p_nav">
 		<ul class="con12">
 			<li><a class="" href="p-index.html">我的主页</a></li>	
+			<li><a class="" href="p-experts.html">我的专家</a></li>	
+			<li><a class="" href="p-open.html">公开问答</a></li>	
+			<li><a class="" href="p-private.html">私人问答</a></li>		
 			<li><a class="active" href="p-order.html">我的订单</a></li>	
 			<li><a class="" href="p-subscribe.html">我的订阅</a></li>
 			<li><a class="" href="p-service.html">服务平台</a></li>
 			<li><a class="" href="p-collect.html">我的收藏</a></li>
 			<li><a class="" href="p-wallet.html">我的钱包</a></li>
+			<li><a class="" href="p-message.html">我的消息</a></li>
 			<li><a class="" href="p-setting.html">设置</a></li>							
 		</ul>
 	</div>
@@ -79,10 +82,87 @@
 <div class="my_order">
 	<ul id="myTab" class="nav nav-tabs">   
 	   <li><a href="#weifang" data-toggle="tab">抵扣券<span class="no-num"></span></a></li>
-	   <li class="active"><a href="#zixun" data-toggle="tab">服务</a></li>
+	   <li><a href="#fuwu" data-toggle="tab">服务订单</a></li>
+	   <li class="active"><a href="#yonghu" data-toggle="tab">用户订单</a></li>
 	</ul>
 	<div id="myTabContent" class="tab-content">
-	   <div class="tab-pane fade in active order-warp" id="zixun">
+	
+	   <div class="tab-pane fade in active order-warp" id="yonghu">
+			<table width="100%">
+				<thead>
+					<tr>
+						<th width="200px">订单信息</th>
+						<th width="220px"></th>
+						<th>数量</th>
+						<th>总价</th>
+						<th>订单状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="order2_details">
+								<a href="">
+								<div class="order2_img">
+									<img src="http://pic.uhouzz.com/geren/default_photo.png">
+								</div></a>
+							</div>
+						</td>
+						<td>
+							<p class="t_a_l">咨询服务</p>
+						 	<p class="t_a_l">用户0872312</p>
+						 	<p class="t_a_l">13512345678</p>
+						</td>
+						<td>1</td>
+						<td>￥1000.00</td>
+						<td>
+							<p class="order_countdown"><img src="../images/member/countdown.png">离自动拒绝服务还有5天00小时00分</p>
+							<p class="order_status">待开始服务</p>
+							<p class=""><a href="" target="_blank">查看详情</a></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="order2_details">
+								<a href="">
+								<div class="order2_img">
+									<img src="http://pic.uhouzz.com/geren/default_photo.png">
+								</div></a>
+							</div>
+						</td>
+						<td>
+							<p class="t_a_l">咨询服务</p>
+						 	<p class="t_a_l">用户0872312</p>
+						 	<p class="t_a_l">13512345678</p>
+						</td>
+						<td>1</td>
+						<td>￥1000.00</td>
+						<td>
+							<p class="order_countdown"><img src="../images/member/countdown.png">离自动拒绝服务还有5天00小时00分</p>
+							<p class="order_status">待开始服务</p>
+							<p class=""><a href="" target="_blank">查看详情</a></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+			<!-- 分页 -->
+			<div class="page">	
+				<ul class="pagination">
+				  <li><a href="#">上一页</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">下一页</a></li>
+				</ul>	
+			</div>	
+			<!-- 内容缺省 -->
+			<div class="no_record" style="display:none"><img src="http://pc.pic.uhouzz.com/online/cdn/profile/images/no-data-icon.0528030b.png"> <span>您还没有订单记录哦</span></div>			
+	   </div>	
+	
+	
+	   <div class="tab-pane fade order-warp" id="fuwu">
 			<table width="100%">
 				<thead>
 					<tr>

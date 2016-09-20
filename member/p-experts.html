@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>登录 - 抢先拍</title>
+	<title>我的专家 - 个人中心</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -66,7 +66,7 @@
 	<div class="p_nav">
 		<ul class="con12">
 			<li><a class="" href="p-index.html">我的主页</a></li>	
-			<li><a class="" href="p-experts.html">我的专家</a></li>	
+			<li><a class="active" href="p-experts.html">我的专家</a></li>	
 			<li><a class="" href="p-open.html">公开问答</a></li>	
 			<li><a class="" href="p-private.html">私人问答</a></li>	
 			<li><a class="" href="p-order.html">我的订单</a></li>	
@@ -75,91 +75,155 @@
 			<li><a class="" href="p-collect.html">我的收藏</a></li>
 			<li><a class="" href="p-wallet.html">我的钱包</a></li>
 			<li><a class="" href="p-message.html">我的消息</a></li>
-			<li><a class="active" href="p-setting.html">设置</a></li>						
+			<li><a class="" href="p-setting.html">设置</a></li>						
 		</ul>
 	</div>
 </div>
 
 
-<div class="bgfa">
-<div class="setting">
-	<ul id="myTab" class="nav nav-tabs">   
-	   <li class="active"><a href="#Suggestions" data-toggle="tab"><span class="no-num">反馈与建议</span></a></li>
-	   <li><a href="#About" data-toggle="tab">关于抢先拍</a></li>
-	   <li><a href="#reset" data-toggle="tab">修改密码</a></li>
-	   <li><a href="#lawyer" data-toggle="tab">律师认证</a></li>
-	</ul>
-	<div id="myTabContent" class="tab-content">
-	   <div class="tab-pane fade suggestions-warp" id="Suggestions">	   	
-	   		<p>您好！欢迎您给我们提出使用中遇到的问题或建议！留下联系方式，将有机会获得精美礼品！</p>
-	   		<form action="" method="">
-				<textarea placeholder="请输入详细内容"></textarea>	
-				<p class="c_red">我们会尽快给您回复，请耐心等待~</p>
-				<input type="submit" value="确定" class="ok_gray">
-			</form>
-	   </div>
-	   <div class="tab-pane fade in active order-warp" id="About">	
-	   		<div class="about_qxp">
-		   		<p>抢先拍——浙商资产管理研究院战略合作伙伴、魔量资本投资企业。</p>
-		   		<p>抢先拍于2015年12月正式上线运营，“超值资产，抢先一步”是抢先拍为客户提供服务的核心目标。平台以为用户提供具有性价比的不动产信息为切入点，聚合了法院、银行、产交所、开发商等多个渠道的低价不动产。并为用户提供在线法律、贷款申请、委托交易等服务，实现价值资产从售前到售后的交易闭环。</p>
-		   		<p>平台已覆盖全国16个城市、139个城区，约10771个社区，约9万个标的资产，累计资产价值超过996亿元。</p>
-		   		<p>目前抢先拍已经同步退出了iOS、安卓、微信、PC端版本，可以完全满足用户的全平台使用需求。</p>
-		   		<p>抢先拍将努力成为全国领先的价值资产交易服务平台。</p>		
-	   		</div>
-	   </div>
-	   <div class="tab-pane fade order-warp" id="reset">	
-			<div class="setForm">
-				<form action="" method="" id="repswForm">
-					<ul>
-						<li>
-							<span>当前登录密码：</span> 
-							<input type="password" name="oldPwd" id="oldPwd" required="">
-						</li>
-						<li>
-							<span class="">新登录密码：</span> 
-							<input type="password" maxlength="20" name="newpwd" id="newpwd" required="">		
-						</li>
-						<li>
-							<span>确认新密码：</span> 
-							<input type="password" name="comfirmpwd" id="comfirmpwd" required="">
-						</li>
-					</ul>
-					<input type="submit" value="确认修改" class="ok_gray"/><a href="">忘记密码？</a>					
-				</form>									
-			</div>
-			<div class="clear"></div>			
-	   	</div>
-	   <div class="tab-pane fade order-warp" id="lawyer">	
-			<div class="setForm">
-				<form action="" method="" id="">
-					<div class="info_img">			
-						<img src="../images/member/default_photo.png"  id="ImgPr1">
-						<label class="file"><img src="../images/member/upload.png"><input type="file" id="up1"/></label>
-						<p>上传身份证正面照</p>
-					</div>	
-					<div class="info_img">			
-						<img src="../images/member/default_photo.png"  id="ImgPr2">
-						<label class="file"><img src="../images/member/upload.png"><input type="file" id="up2"/></label>
-						<p>上传身份证正面照</p>
-					</div>						
-					<div class="info_img">			
-						<img src="../images/member/default_photo.png"  id="ImgPr3">
-						<label class="file"><img src="../images/member/upload.png"><input type="file" id="up3"/></label>
-						<p>上传律师资格证照片</p>
+<div class="setting experts">
+	<!-- 律师信息 -->
+	<div class="expert_info_box">
+		<div class="dev-table info-l">
+			<a class="dev-table-cell recom-laywer-info" href="">
+				<div class="dev-box">
+					<img src="../images/member/default_photo.png">
+					<div class="expert_info">
+						<p class="name">谢路杭</p>
+						<p class="firm">北京炜衡（杭州）律师事务所</p>
+						<p>
+							<span class="lay-level cus-0"></span><span class="separated"> | </span>
+							<span class="reply"><em>0</em>个私人回答</span>
+						</p>
+						<p class="firm">电话：400-080-2584</p>
 					</div>
-					<div class="info_img">	
-						<div class="info_other"> 
-							<p>所属公司：<input type="" name="" placeholder="请填写您所在的律师事务所"></p>
-							<p>所在城市：<input type="" name="" placeholder="请填写您所在的城市（地级市）"></p>
-						</div>		
-					</div>	
-					<div class="clearfix"></div>		
-					<input class="lawyer_submit" type="submit" name="" value="提交">				
-				</form>									
-			</div>
-	   	</div>	   	
+				</div>
+			</a>
+		</div>	
+		<div class="dev-table-cell info-r">
+			<p class="text">回答率</p>
+			<p class="ratio">50.67%</p>
+			<button>提问</button>
+		</div>
+		<div class="clearfix"></div>
+		<div class="experts_introduction">
+			<p>这里是个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案个人简介，文案文案文案</p>
+		</div>		
 	</div>
 </div>
+
+
+<div class="service_offer">
+	<div class="setting">
+		<h2 class="my_expert_title">提供服务</h2>
+		<div class="service">
+			<img src="../images/member/service1.png">
+			<p class="service_tpye">委托过户</p>
+			<p class="service_price">￥1000</p>
+			<button>购买服务</button>
+		</div>
+		<div class="service">
+			<img src="../images/member/service2.png">
+			<p class="service_tpye">背调服务</p>
+			<p class="service_price">￥2000</p>
+			<button>购买服务</button>
+		</div>
+		<div class="service">
+			<img src="../images/member/service3.png">
+			<p class="service_tpye">咨询服务</p>
+			<p class="service_price">￥1</p>
+			<button>购买服务</button>
+		</div>	
+		<div class="clearfix"></div>		
+	</div>
+</div>
+
+
+
+
+<div class="setting">
+	<h2 class="my_expert_title" style="margin-bottom:70px">服务评价</h2>
+	<div class="evaluation">
+		<div class="evaluation_img">
+			<img src="../images/member/default_photo.png">
+		</div>
+		<div class="evaluation_other">
+			<div class="evaluation_other_top">
+				<p class="e_o_l">
+					<span class="name">我是谁</span>
+					<span class="time">2016-07-16  08:23</span>
+				</p>
+				<p class="e_o_r">
+					<span class="lay-level cus-0"></span>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<p class="evaluation_con">
+				这本散文集，则是一个另类，更像一个睿智的老者在你耳边喃喃自语，他自说他的，你听不听得到，并无什么相干。这，或许也正是自在独行的状态。红楼梦说：世事洞明皆学问，人情练达即文章。文人大都首先是聪明人，又大都是懒人，这两种特质缺一不可。不然当不了大文人.
+			</p>
+		</div>	
+		<div class="clearfix"></div>		
+	</div>
+	<div class="evaluation">
+		<div class="evaluation_img">
+			<img src="../images/member/default_photo.png">
+		</div>
+		<div class="evaluation_other">
+			<div class="evaluation_other_top">
+				<p class="e_o_l">
+					<span class="name">我是谁</span>
+					<span class="time">2016-07-16  08:23</span>
+				</p>
+				<p class="e_o_r">
+					<span class="lay-level cus-0"></span>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<p class="evaluation_con">
+				这本散文集，则是一个另类，更像一个睿智的老者在你耳边喃喃自语，他自说他的，你听不听得到，并无什么相干。这，或许也正是自在独行的状态。红楼梦说：世事洞明皆学问，人情练达即文章。文人大都首先是聪明人，又大都是懒人，这两种特质缺一不可。不然当不了大文人.
+			</p>
+		</div>	
+		<div class="clearfix"></div>		
+	</div>
+	<div class="evaluation">
+		<div class="evaluation_img">
+			<img src="../images/member/default_photo.png">
+		</div>
+		<div class="evaluation_other">
+			<div class="evaluation_other_top">
+				<p class="e_o_l">
+					<span class="name">用户名称很长怎么办</span>
+					<span class="time">2016-07-16  08:23</span>
+				</p>
+				<p class="e_o_r">
+					<span class="lay-level cus-0"></span>
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<p class="evaluation_con">
+				这本散文集，则是一个另类，更像一个睿智的老
+			</p>
+		</div>	
+		<div class="clearfix"></div>		
+	</div>
+	<!-- 分页 -->
+	<div class="page">	
+		<ul class="pagination">
+		  <li><a href="#">上一页</a></li>
+		  <li><a href="#">1</a></li>
+		  <li><a href="#">2</a></li>
+		  <li><a href="#">3</a></li>
+		  <li><a href="#">4</a></li>
+		  <li><a href="#">5</a></li>
+		  <li><a href="#">下一页</a></li>
+		</ul>	
+	</div>	
+	<!-- 内容缺省 -->
+	<div class="no_record" style="display:none"><img src="../images/member/no-data-icon.png"><span>您还没有收到任何评价哦</span></div>		
+</div>
+
+
+
 				
 <footer class="noprint">
 	<ul class="ib sub-nav">
@@ -198,17 +262,38 @@ function  showImg(){
 function hideImg(){
 	$(".wechat").css("display","none");
 }
-// 上传照片
-$(function () {
-	$("#up1").uploadPreview({ Img: "ImgPr1", Width: 180, Height: 180 });
-	$("#up2").uploadPreview({ Img: "ImgPr2", Width: 180, Height: 180 });
-	$("#up3").uploadPreview({ Img: "ImgPr3", Width: 180, Height: 180 });
-});
 // 显示隐藏
 $(".formshow").click(function(){
 	$(this).parent().siblings("div").toggle();
 });		
+// 评价星星
+window.onload = function (){ 
+  var i = iScore = iStar = 0; 
+  for (i = 1; i <= $("#star li").length; i++) {  
+    $("#star li")[i - 1].index = i;  
+    //鼠标移过显示分数  
+    $("#star li")[i - 1].onmouseover = function ()  {   
+      fnPoint(this.index);   
+    };  
+    //鼠标离开后恢复上次评分  
+    $("#star li")[i - 1].onmouseout = function ()  {   
+      fnPoint();   
+    };  
+    //点击后进行评分处理  
+    $("#star li")[i - 1].onclick = function ()  {   
+      iStar = this.index;   
+    } 
+  } 
+  //评分处理 
+  function fnPoint(iArg) {  
+    //分数赋值  
+    iScore = iArg || iStar;  
+    for (i = 0; i < $("#star li").length; i++) 
+      $("#star li")[i].className = i < iScore ? "on" : "";
+  }
+};
 </script>
+
 <script src="../js/jquery.validate-1.13.1.js"></script>
 <script>//基本表单验证
     var validator;
