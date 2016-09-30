@@ -39,7 +39,7 @@
 				   </div>
 				</nav>
 			</div>
-			<div id="other">		
+			<div id="other">
 				<p><a href="login.html">登录</a><a href="register.html">注册</a></p>			
 				<p style="display:none"><a href=""><img src="../../images/member/default_photo.png"> qxp000001</a></p>
 				<p style="padding:0 10px">免费咨询电话：400-060-2595</p>
@@ -56,7 +56,10 @@
 
 
 <!-- 支付开始 -->
-<div class="xixun_pay">
+<div class="coupons_pay">
+	<h3>温馨提示</h3>
+	<div class="coupons_con"><p>温馨提示温馨提示温馨提示温馨提示温馨提示~</p></div>
+	<h3>确认订单信息</h3>
 	<div class="laywer_list">
 		<div class="dev-table laywer-warp">
 			<a class="dev-table-cell recom-laywer-info" href="">
@@ -69,7 +72,6 @@
 				</div>
 			</a>
 		</div>
-
 		<table width="100%">
 			<tbody>
 				<tr>
@@ -82,33 +84,62 @@
 				</tr>					
 			</tbody>
 		</table>
-		<h3>支付方式</h3>
-		<div class="pay_forms">			
-			<p><span class="pay_list_c1 right on"><input type="radio" name="paylist" value="1" class="radioclass"></span></p>
+	</div>
+	<h3>支付方式</h3>
+	<div class="coupons_con my_order">
+		<div class="pay_forms">		
 			<div class="pay_form">
-				<p class="wechat">
-					<img src="../../images/member/wechat.png" width="24">
-					<span class="refund_reason left">微信</span>				
-				</p>			
-			</div><div class="clearfix"></div>
-			<p><span class="pay_list_c1 right"><input type="radio" name="paylist" value="1" class="radioclass"></span></p>
-			<div class="pay_form">
-				<p class="alipay">
+				<p class="alipay" id="alipay">
 					<img src="../../images/member/alipay.png" width="24">
 					<span class="refund_reason left">支付宝</span>				
-				</p>			
+				</p><!-- 有选中状态， -->			
 			</div><div class="clearfix"></div>	
 		</div>
-		<div class="download">
-			<img src="../../images/index/wechat.png"> 
-			<p>请使用微信扫一扫<br>扫描二维码支付</p>
-		</div>
 		<div class="clearfix"></div>	
+	</div>
+	<div class="coupons_con my_order">
+		<div class="pay_info">
+			<p>商品金额：￥1000.00</p>
+			<p>实付款：<span>￥1000.00</span></p>
+		</div>
+		<div class="paysure_btn">
+			<button class=" " data-toggle="modal" data-target="#tijiaodingdan">提交订单</button>
+		</div>		
 	</div>
 </div>
 <!-- 支付结束 -->
 
 
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="tijiaodingdan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+			</div>
+			<div class="modal-body">
+				<h1>请在新打开的页面上完成付款</h1>
+				付款完成前不要关闭本窗口<br>
+				付款完成后，请根据您的情况点击下面的按钮：
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-paystatus" data-dismiss="modal">支付完成</button>
+				<button type="button" class="btn btn-paystatus">付款遇到问题</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<style type="text/css">
+#tijiaodingdan .modal-header {border-bottom: 0;}
+#tijiaodingdan .modal-body {text-align: center;}
+#tijiaodingdan .modal-body h1{font-size: 30px;color: #e66140;padding-bottom: 50px}
+#tijiaodingdan .modal-footer {border-top:0;text-align:center;height:100px}
+#tijiaodingdan .modal-footer button{background: #e66140;color: #fff;width: 150px}
+</style>
 
 
 
@@ -150,10 +181,10 @@ function  showImg(){
 function hideImg(){
 	$(".wechat").css("display","none");
 }
-// 支付方式单选	
-$(".pay_list_c1").on("click",function(){
-	$(this).addClass("on").parent().siblings().children(".pay_list_c1").removeClass("on");
-})
+//支付
+$("#alipay").click(function(){
+	$(this).toggleClass("enable");
+});
 </script>
 
 

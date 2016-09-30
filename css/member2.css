@@ -206,7 +206,9 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .setting .setForm .ok_gray{width:320px;background:#e66140;color:#fff}
 .setting .setForm .ok_gray,.setting .setForm input.ok_btn{width:150px;margin: 35px 20px;margin-left: 250px;height:40px;border:none;outline:0 none;border-radius:3px;font-size:16px;cursor:pointer}
 .setting{width: 800px;margin:0 auto;padding: 50px 0;}
-.setting .nav-tabs {width:522px;margin:0 auto;background-image: linear-gradient(-180deg, #FAF7F5 3%, #F5F5F5 53%, #F0F0F0 98%);border: 1px solid #FFFFFF;box-shadow: -1px 1px 3px 0px rgba(114,91,91,0.30);border-radius: 3px;}
+.setting .nav-tabs {margin:0 auto;background-image: linear-gradient(-180deg, #FAF7F5 3%, #F5F5F5 53%, #F0F0F0 98%);border: 1px solid #FFFFFF;box-shadow: -1px 1px 3px 0px rgba(114,91,91,0.30);border-radius: 3px;}
+#open_wenda {width:395px;}
+#setting {width:522px;}
 .setting .nav-tabs>li {float: left;width: 130px;height: 46px;}
 .setting .nav-tabs>li.active {width: 130px;height: 50px;background-image: linear-gradient(-180deg, #FA8061 0%, #FFD1C5 11%, #FCA28B 30%, #FF6A45 76%, #FF6B45 97%);box-shadow: -2px 2px 2px 0px rgba(114,1,1,0.30);border-top-left-radius: 0.5em;border-top-right-radius:0.5em;z-index: 1;margin-top: -4px}
 .setting .nav-tabs>li>a, .setting .nav-tabs>li>a:hover,.setting .nav-tabs>li>a:focus {color: #e66140;cursor: default;background:none;text-align: center;margin-top: 5px;border: none;border-bottom-color: transparent;}
@@ -248,6 +250,7 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .recom-laywer-info{width:100%}
 .dev-table-cell{display:table-cell}
 .dev-box{display:box;display:-webkit-box;display:-moz-box}
+.l-i-left{margin:10px 0}
 .l-i-left img{width:110px;height:110px;border-radius:10%;border:1px solid #e66140}
 .l-i-right{padding: 10px 15px;}
 .l-i-right p{padding:5px 0;color: #333333;letter-spacing: 0.66px;}
@@ -301,13 +304,17 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .coupons_pay .pay_forms {float: left;width: 200px}
 .coupons_pay .pay_forms p{float: left;}
 .coupons_pay .pay_forms div.pay_form {float: left;padding: 10px}
-.coupons_pay .pay_forms div.pay_form p{width: 117px;height:36px;border-radius: 26px;padding: 0 10px }
-.coupons_pay .pay_forms div.pay_form p span{line-height: 36px;color:#fff;}
-.coupons_pay .pay_forms div.pay_form p img {margin: 5px;width: 24px}
+.coupons_pay .pay_forms div.pay_form p{width:117px;height:36px;padding:0 10px;cursor:pointer;}
+.coupons_pay .pay_forms div.pay_form p span{line-height: 30px;}
+.coupons_pay .pay_forms div.pay_form p img {margin:0 5px;width: 24px}
 .coupons_pay .pay_forms div.pay_form p.wechatpay{background: #0BC01E;}
-.coupons_pay .pay_forms div.pay_form p.alipay{background: #1CB9F2;}
-.my_order .pay_info{text-align: right;padding-top:50px;}
+.coupons_pay .pay_forms div.pay_form p.alipay{border:2px solid #e66140;}
+.coupons_pay .pay_forms div.pay_form p.enable{background:url(../images/member/pic_pay_way@2x.png) no-repeat bottom right;}
+.my_order .pay_info{text-align: right;padding: 20px;margin: 20px 0;background: #f5f5f5;border-top:2px solid #eee;}
+.my_order .paysure_btn{text-align: right;}
+.my_order .paysure_btn button{background: #e66140;border: 0;border-radius: 5px;width: 150px;height: 36px;color: #fff}
 .my_order .pay_info p span{color: #E56140;font-size: 20px}
+
 
 
 /*支付成功*/
@@ -322,7 +329,7 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 /*公开问答*/
 .ask_item {padding: 20px 0;border-bottom: 1px solid #CCC; }
 .ask_item p span{display:inline-block;}
-.ask_item p{margin: 5px 0}
+.ask_item>p{margin: 5px 0}
 .ask_item .house_num {font-size: 16px;color: #E56140; }
 .ask_item .ask_title {font-size: 14px;color: #666;padding-right:10px;float: left;}
 .ask_item .ask_title_small {font-size: 12px;color: #666;margin-right:10px;}
@@ -405,7 +412,8 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 
 .service_offer{background: #FFFBFA;}
 .my_expert_title{text-align:center;font-size: 20px;color: #333;}
-.service_offer .service{width:178px;text-align:center;float:left;margin:0 44px}
+.service_offer .services{display: inline-table;width: 800px;}
+.service_offer .service{width:178px;text-align:center;display: table-cell;}
 .service_offer .service img{width:178px;margin:36px 0}
 .service_offer .service .service_tpye{font-size: 16px;color: #333333;}
 .service_offer .service .service_price{font-size: 24px;color: #E56140;margin:10px 0}
