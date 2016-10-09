@@ -325,6 +325,14 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .con12 .fr{float: left;width:720px }
 .con12 .fr .about4_main ul li {margin-bottom: 20px;}
 
+/*支付成功2*/
+.pay_success{width: 500px;text-align: center;margin:80px auto;}
+.pay_success img{margin:50px auto;}
+.pay_success .fs36{font-size: 36px;font-weight: bold;}
+.pay_success .fs20{font-size: 20px;margin: 20px auto;}
+.pay_success .fs20 a{color: #e66140;}
+
+
 
 /*公开问答*/
 .ask_item {padding: 20px 0;border-bottom: 1px solid #CCC; }
