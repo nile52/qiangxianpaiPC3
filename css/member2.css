@@ -217,7 +217,7 @@ border-radius: 3px;background: #fff;outline-color: #E56140;margin: 70px auto;col
 .setting .order-warp .about_qxp{padding: 40px 5px;}
 .setting .order-warp .about_qxp p{padding-bottom: 10px;}
 .setting .suggestions-warp{padding: 40px 0px;}
-.setting .suggestions-warp textarea{border: 1px solid #FF6C47;outline-color:#FF6C47;width: 800px;height: 200px;margin: 10px 0;padding: 20px}
+.setting .suggestions-warp textarea{border: 1px solid #FF6C47;outline-color:#FF6C47;width: 800px;height: 200px;margin: -3px 0;padding: 20px}
 .setting .suggestions-warp form {text-align: center;}
 .setting .suggestions-warp form p.c_red{text-align: right;}
 .setting .suggestions-warp form .ok_gray{margin:100px auto;background: #e66140;border:none;outline:0 none;border-radius:3px;font-size:16px;width: 150px;height:36px;color: #fff}

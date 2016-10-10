@@ -1,12 +1,13 @@
 ### 9.9
 说明：
- - 1. 页头右侧抢拍热线之前，增加 登录注册 功能，新增登录注册忘记密码页面分别为login.html , register.html , passport.html
 
- - 2. 新增房贷计算器页面 calculator.html 
+1. 页头右侧抢拍热线之前，增加 登录注册 功能，新增登录注册忘记密码页面分别为login.html , register.html , passport.html
 
- - 3.	新增协议条款的页面，法律声明，积分规则，用户协议分别为 treaty/falvshengming.html,jifenguize.html,xiyi.html
+1. 新增房贷计算器页面 calculator.html 
 
- - 4.	新增个人中心板块
+1. 新增协议条款的页面，法律声明，积分规则，用户协议分别为 treaty/falvshengming.html,jifenguize.html,xiyi.html
+
+1. 新增个人中心板块
 
 ### 8.11
 说明：
@@ -24,13 +25,13 @@
  
   解决：司法拍卖详情页右侧推荐板块，图片宽高已经做好限制，大小为340*250
 
- - 其他说明：
+其他说明：
  
- 1.样式文件已经整理，格式化为不换行
+1. 样式文件已经整理，格式化为不换行
  
- 2.登录注册页面大致已经处理好
+1. 登录注册页面大致已经处理好
  
- 3.关于我们页面，去掉了底部“法律声明”版块；这部分内容参照异乡好居的[页面](http://www.uhouzz.com/general-pages/service-protocol)具体修改已经[改好](https://github.com/nile52/qiangxianpaiPC3/blob/master/falvshengming.html)
+1. 关于我们页面，去掉了底部“法律声明”版块；这部分内容参照异乡好居的[页面](http://www.uhouzz.com/general-pages/service-protocol)具体修改已经[改好](https://github.com/nile52/qiangxianpaiPC3/blob/master/falvshengming.html)
  
 ### 7.28
 进度：完成资讯列表页和详页，房屋详情页地图问题解决了（d1，d3）
